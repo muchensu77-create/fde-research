@@ -9,7 +9,16 @@
 
   var REVEAL_SEL = '.reveal,.card,.stats,.tablewrap,.note,.think,.quote,.kdom,.mdbox,.wrap h2';
   function initReveal() {
-    document.querySelectorAll(REVEAL_SEL).forEach(function (el) { io.observe(el); });
+    var els = document.querySelectorAll(REVEAL_SEL);
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    els.forEach(function (el) { io.observe(el); });
+    // 兜底：防 observer 未触发(部分手机/快速滚动/低端机)导致内容永久卡在 opacity:0
+    setTimeout(function () {
+      els.forEach(function (el) { el.classList.add('in'); });
+    }, 1400);
   }
 
   // 2. 导航毛玻璃阴影
@@ -48,10 +57,12 @@
         });
       }, { threshold: 0.6 });
       co.observe(el);
+      // 兜底：防 rAF/observer 在部分环境不推进，导致数字永远卡在 0
+      setTimeout(function () { el.textContent = target.toLocaleString() + suffix; }, 1500);
     });
   }
 
-  function init() { initNav(); initReveal(); initCount(); }
+  function init() { initNav(); initReveal(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();

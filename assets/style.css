@@ -301,7 +301,8 @@ figure.fig figcaption{font-size:12px;color:var(--ink3);margin-top:9px;text-align
 /* ---------- scroll 揭入 (Apple 缓动) ---------- */
 html.js .reveal,html.js .card,html.js .stats,html.js .tablewrap,html.js .note,
 html.js .think,html.js .quote,html.js .kdom,html.js .mdbox,html.js .wrap h2,html.js .eco-layer{
-  opacity:0;transform:translateY(36px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+  animation:revealIn .7s var(--ease) both}
+@keyframes revealIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
 .in{opacity:1!important;transform:none!important}
 .hero>*{animation:heroIn .9s var(--ease) both}
 .hero>*:nth-child(2){animation-delay:.07s}.hero>*:nth-child(3){animation-delay:.14s}.hero>*:nth-child(4){animation-delay:.21s}
