@@ -1,0 +1,1342 @@
+{
+  "companies-us": [
+    {
+      "title": "AI FDE • Overview • Palantir",
+      "url": "https://www.palantir.com/docs/foundry/ai-fde/overview",
+      "source": "Palantir 官方文档",
+      "note": "Palantir AI FDE（AI Forward Deployed Engineer）产品官方概述，介绍如何用自然语言操控 Foundry 平台",
+      "year": "2025"
+    },
+    {
+      "title": "Press Releases | Palantir",
+      "url": "https://www.palantir.com/newsroom/press-releases/",
+      "source": "Palantir 官方新闻室",
+      "note": "Palantir 官方新闻稿汇总页，包含所有企业 AI 部署与合作的最新公告",
+      "year": "2025"
+    },
+    {
+      "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs \\ Anthropic",
+      "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
+      "source": "Anthropic 官方博客",
+      "note": "Anthropic 联合黑石、高盛等机构成立企业 AI 服务公司的官方公告",
+      "year": "2025"
+    },
+    {
+      "title": "Accenture and Anthropic launch multi-year partnership to move enterprises from AI pilots to production \\ Anthropic",
+      "url": "https://www.anthropic.com/news/anthropic-accenture-partnership",
+      "source": "Anthropic 官方博客",
+      "note": "Anthropic 与埃森哲成立联合业务组，约 3 万名埃森哲员工接受 Claude 培训，推动企业 AI 从试点到生产",
+      "year": "2024"
+    },
+    {
+      "title": "Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises \\ Anthropic",
+      "url": "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership",
+      "source": "Anthropic 官方博客",
+      "note": "Anthropic 与 Snowflake 签署 2 亿美元多年期合作协议，面向全球 1.26 万家企业客户开放 Claude 模型",
+      "year": "2025"
+    },
+    {
+      "title": "1 million business customers: the fastest-growing business platform in history | OpenAI",
+      "url": "https://openai.com/index/1-million-businesses-putting-ai-to-work/",
+      "source": "OpenAI 官方博客",
+      "note": "OpenAI 宣布企业客户突破 100 万，ChatGPT Enterprise 年增 9 倍，成为史上增长最快的商业平台",
+      "year": "2025"
+    },
+    {
+      "title": "The state of enterprise AI | OpenAI",
+      "url": "https://openai.com/index/the-state-of-enterprise-ai-2025-report/",
+      "source": "OpenAI 官方博客",
+      "note": "OpenAI 发布 2025 年企业 AI 现状报告，涵盖采纳率、生产力提升数据与组织落地路径",
+      "year": "2025"
+    },
+    {
+      "title": "BBVA puts AI at the core of banking with OpenAI | OpenAI",
+      "url": "https://openai.com/index/bbva/",
+      "source": "OpenAI 官方博客",
+      "note": "OpenAI 官方 BBVA 案例：西班牙最大银行将 ChatGPT Enterprise 部署至逾 10 万名员工，成为金融行业最大规模落地之一",
+      "year": "2024"
+    },
+    {
+      "title": "Harvey Raises $300M Series D Led by Sequoia",
+      "url": "https://www.harvey.ai/blog/harvey-raises-series-d",
+      "source": "Harvey 官方博客",
+      "note": "Harvey 官方公告 3 亿美元 D 轮融资，由 Sequoia 领投，2024 年 ARR 增长 4 倍，客户覆盖全球前十律所",
+      "year": "2025"
+    },
+    {
+      "title": "OpenAI-backed legal tech startup Harvey raises $100M | TechCrunch",
+      "url": "https://techcrunch.com/2024/07/23/openai-backed-legaltech-startup-harvey-raises-100m/",
+      "source": "TechCrunch",
+      "note": "TechCrunch 报道 Harvey C 轮 1 亿美元融资，估值 15 亿美元，Google Ventures、Sequoia、OpenAI 参投",
+      "year": "2024"
+    },
+    {
+      "title": "Legal AI startup Harvey confirms $8B valuation | TechCrunch",
+      "url": "https://techcrunch.com/2025/12/04/legal-ai-startup-harvey-confirms-8b-valuation/",
+      "source": "TechCrunch",
+      "note": "TechCrunch 确认 Harvey 估值达 80 亿美元，a16z 领投 1.6 亿美元融资",
+      "year": "2025"
+    },
+    {
+      "title": "Glean raises over $200M at $2.2B valuation to accelerate deployment of generative AI in the enterprise",
+      "url": "https://www.glean.com/blog/glean-series-d",
+      "source": "Glean 官方博客",
+      "note": "Glean D 轮融资超 2 亿美元、估值 22 亿美元官方公告，聚焦企业生成式 AI 安全部署",
+      "year": "2024"
+    },
+    {
+      "title": "Glean raises $150M Series F at $7.2B valuation to transform how companies use AI to accelerate innovation",
+      "url": "https://www.glean.com/blog/glean-series-f-announcement",
+      "source": "Glean 官方博客",
+      "note": "Glean F 轮融资 1.5 亿美元、估值 72 亿美元官方公告，ARR 已突破 1 亿美元",
+      "year": "2025"
+    },
+    {
+      "title": "Glean, gen AI enterprise search startup, raises $150 million in deal adding billions to valuation",
+      "url": "https://www.cnbc.com/2025/06/10/glean-gen-ai-search-startup-raises-150-million-at-7-billion-value.html",
+      "source": "CNBC",
+      "note": "CNBC 报道 Glean F 轮融资细节，企业 AI 搜索赛道估值跃升至 72 亿美元",
+      "year": "2025"
+    },
+    {
+      "title": "Bret Taylor's customer service AI startup just raised $175M | TechCrunch",
+      "url": "https://techcrunch.com/2024/10/28/bret-taylors-customer-service-ai-startup-just-raised-175m/",
+      "source": "TechCrunch",
+      "note": "TechCrunch 报道 Sierra（前 Salesforce 联席 CEO Bret Taylor 创立）1.75 亿美元融资，估值 45 亿美元",
+      "year": "2024"
+    },
+    {
+      "title": "Bret Taylor's Sierra raises $350M at a $10B valuation | TechCrunch",
+      "url": "https://techcrunch.com/2025/09/04/bret-taylors-sierra-raises-350m-at-a-10b-valuation/",
+      "source": "TechCrunch",
+      "note": "Sierra 融资 3.5 亿美元、估值 100 亿美元，成为企业 AI 客服 Agent 赛道最高估值公司之一",
+      "year": "2025"
+    },
+    {
+      "title": "Data-labeling startup Scale AI raises $1B as valuation doubles to $13.8B | TechCrunch",
+      "url": "https://techcrunch.com/2024/05/21/data-labeling-startup-scale-ai-raises-1b-as-valuation-doubles-to-13-8b/",
+      "source": "TechCrunch",
+      "note": "Scale AI F 轮融资 10 亿美元、估值翻倍至 138 亿美元，Amazon、Meta 参投",
+      "year": "2024"
+    },
+    {
+      "title": "Scale AI Expands Pentagon AI Partnership to $500 Million | Scale AI",
+      "url": "https://scale.com/blog/Scale-ai-pentagon-cdao-500-million-agreement",
+      "source": "Scale AI 官方博客",
+      "note": "Scale AI 官方公告将五角大楼 AI 合作框架从 1 亿美元扩展至 5 亿美元，展示政府 AI 落地规模",
+      "year": "2026"
+    },
+    {
+      "title": "Press Release: Cresta Closes $125M Series D to Accelerate Adoption of Human-Centric AI in the Contact Center | Cresta",
+      "url": "https://cresta.com/press/cresta-closes-125m-series-d-to-accelerate-adoption-of-human-centric-ai-in-the-contact-center",
+      "source": "Cresta 官方新闻室",
+      "note": "Cresta D 轮 1.25 亿美元官方公告，WiL、QIA 领投，聚焦联络中心人机协同 AI 平台",
+      "year": "2024"
+    },
+    {
+      "title": "Report: Cresta named a Leader in The Forrester Wave™: Conversation Intelligence Solutions for Contact Centers, Q2 2025 | Cresta",
+      "url": "https://cresta.com/reports/cresta-named-a-leader-in-the-forrester-wave-conversation-intelligence-solutions-for-contact-centers-q2-2025",
+      "source": "Cresta 官方 / Forrester",
+      "note": "Forrester Wave 2025 Q2 联络中心对话智能报告，Cresta 被评为领导者象限",
+      "year": "2025"
+    }
+  ],
+  "companies-cn": [
+    {
+      "title": "智谱AI启动上市：估值超200亿，成首家启动IPO大模型六小虎",
+      "url": "https://36kr.com/p/3251196943983110",
+      "source": "36氪",
+      "note": "智谱AI启动港股IPO，成为大模型「六小虎」中首家正式启动上市的公司",
+      "year": "2025"
+    },
+    {
+      "title": "智谱、MiniMax港股IPO，熬过孤独的人和500亿奖赏 | 深氪lite",
+      "url": "https://36kr.com/p/3631042586395657",
+      "source": "36氪",
+      "note": "深度复盘智谱与MiniMax赴港上市历程，分析两家公司估值与商业路径",
+      "year": "2026"
+    },
+    {
+      "title": "智谱与MiniMax港股上市、巨头加速收购新势力...2026 AI 世界的开年大戏正在上演",
+      "url": "https://36kr.com/p/3640290917265927",
+      "source": "36氪",
+      "note": "2026年开年AI行业动态：智谱与MiniMax同步赴港上市，巨头并购潮加速",
+      "year": "2026"
+    },
+    {
+      "title": "月之暗面Kimi完成新一轮约20亿美元融资",
+      "url": "https://www.stcn.com/article/detail/3899605.html",
+      "source": "证券时报",
+      "note": "月之暗面完成约20亿美元新一轮融资，投后估值突破200亿美元",
+      "year": "2026"
+    },
+    {
+      "title": "阿里腾讯加码！Kimi估值，突破100亿美元",
+      "url": "https://www.stcn.com/article/detail/3645003.html",
+      "source": "证券时报",
+      "note": "阿里、腾讯联合跟投，Kimi估值首次突破百亿美元大关",
+      "year": "2026"
+    },
+    {
+      "title": "月之暗面发布新一代开源模型Kimi K2.5",
+      "url": "https://www.stcn.com/article/detail/3621058.html",
+      "source": "证券时报",
+      "note": "月之暗面发布Kimi K2.5开源模型，发布不到一月收入已超2025全年",
+      "year": "2026"
+    },
+    {
+      "title": "融资5亿美元，月之暗面距离真正的\"安全区\"还有多远",
+      "url": "https://36kr.com/p/3631566219522822",
+      "source": "36氪",
+      "note": "分析月之暗面C轮5亿美元融资后的商业化压力与竞争格局",
+      "year": "2025"
+    },
+    {
+      "title": "MiniMax冲刺IPO：收入增长近8倍、年亏损32亿，如何突围大厂围剿？",
+      "url": "https://stcn.com/article/detail/3550404.html",
+      "source": "证券时报",
+      "note": "MiniMax赴港IPO前财务数据首次曝光：收入8倍增长但仍亏损，揭示盈利挑战",
+      "year": "2025"
+    },
+    {
+      "title": "智谱、MiniMax陆续通过港交所聆讯 国产AI大模型公司角逐\"大模型第一股\"",
+      "url": "https://www.stcn.com/article/detail/3554740.html",
+      "source": "证券时报",
+      "note": "智谱与MiniMax先后通过港交所聆讯，两家公司竞争「大模型第一股」头衔",
+      "year": "2025"
+    },
+    {
+      "title": "382人、平均95后，MiniMax百亿估值冲刺IPO，招股书首次披露业绩",
+      "url": "https://36kr.com/p/3606464589923336",
+      "source": "36氪",
+      "note": "MiniMax招股书深度解读：团队规模、估值逻辑与研发成本仅为OpenAI的1%",
+      "year": "2025"
+    },
+    {
+      "title": "科大讯飞2025年净利润同比预增40%至70% 经营性净现金流创历史新高",
+      "url": "https://www.stcn.com/article/detail/3617683.html",
+      "source": "证券时报",
+      "note": "科大讯飞2025年业绩预告：净利润大幅增长，经营现金流创历史新高",
+      "year": "2026"
+    },
+    {
+      "title": "科大讯飞亮相2026世界智能产业博览会 大模型走向行业纵深",
+      "url": "https://www.stcn.com/article/detail/3933745.html",
+      "source": "证券时报",
+      "note": "科大讯飞在2026世博会展示星火大模型在教育、医疗、翻译等垂直场景的最新落地",
+      "year": "2026"
+    },
+    {
+      "title": "机构：2025年科大讯飞在通用大模型厂商中实现中标数量与中标金额双第一",
+      "url": "https://www.36kr.com/newsflashes/3625888926090246",
+      "source": "36氪",
+      "note": "机构数据显示科大讯飞2025年政府采购中标数量与金额均居大模型厂商之首",
+      "year": "2026"
+    },
+    {
+      "title": "商汤，生成式AI收入占比逾70%！",
+      "url": "https://www.stcn.com/article/detail/3696093.html",
+      "source": "证券时报",
+      "note": "商汤科技生成式AI业务占总收入比例突破70%，揭示业务结构转型进展",
+      "year": "2026"
+    },
+    {
+      "title": "商汤新融资超32亿港元，AI龙头盈利魔咒为何难破？",
+      "url": "https://www.36kr.com/p/3787064853797890",
+      "source": "36氪",
+      "note": "分析商汤2026年4月完成32亿港元配售融资背后的盈利困境与战略压力",
+      "year": "2026"
+    },
+    {
+      "title": "AI大模型时代，商汤科技为什么掉队了？",
+      "url": "https://beta.huxiu.com/article/4318423.html",
+      "source": "虎嗅",
+      "note": "虎嗅深度分析商汤在大模型竞赛中的战略失误与市场定位困境",
+      "year": "2025"
+    },
+    {
+      "title": "第四范式发行2590万股认购股份 净筹13.06亿港元",
+      "url": "https://www.stcn.com/article/detail/2620884.html",
+      "source": "证券时报",
+      "note": "第四范式完成新一轮股份认购，以每股50.5港元净筹约13亿港元",
+      "year": "2025"
+    },
+    {
+      "title": "深度拆解\"AIGC第一股\"出门问问",
+      "url": "https://www.36kr.com/p/2747219595770884",
+      "source": "36氪",
+      "note": "深度解析出门问问商业模式、产品矩阵与港股「AIGC第一股」的市场估值逻辑",
+      "year": "2024"
+    },
+    {
+      "title": "出门问问上半年亏损收窄99.5% TicNote全球销量已突破3万台",
+      "url": "https://www.stcn.com/article/detail/3239824.html",
+      "source": "证券时报",
+      "note": "出门问问2025年上半年扭亏为盈，AI录音硬件TicNote全球销量超3万台",
+      "year": "2025"
+    }
+  ],
+  "cases": [
+    {
+      "title": "Klarna AI assistant handles two-thirds of customer service chats in its first month",
+      "url": "https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/",
+      "source": "Klarna官方新闻",
+      "note": "Klarna官方公告：AI助手首月处理230万次对话，相当于700名全职客服工作量，客户满意度与人工持平，预计全年节省4000万美元",
+      "year": "2024"
+    },
+    {
+      "title": "AI helps Klarna cut marketing agency spend by 25% and run more campaigns",
+      "url": "https://www.klarna.com/international/press/ai-helps-klarna-cut-marketing-agency-spend-by-25-and-run-more-campaigns/",
+      "source": "Klarna官方新闻",
+      "note": "Klarna利用AI将外部营销代理商支出削减25%，同时还能同时运行更多营销活动",
+      "year": "2024"
+    },
+    {
+      "title": "90% of Klarna staff are using AI daily - game changer for productivity",
+      "url": "https://www.klarna.com/international/press/90-of-klarna-staff-are-using-ai-daily-game-changer-for-productivity/",
+      "source": "Klarna官方新闻",
+      "note": "Klarna公告：90%员工每天使用AI工具，内部AI助手Kiki累计响应超25万次员工问询",
+      "year": "2024"
+    },
+    {
+      "title": "Collaboration with OpenAI: Transforming the Way We Work and Innovate Through AI",
+      "url": "https://www.modernatx.com/en-US/media-center/all-media/blogs/collaboration-with-openai",
+      "source": "Moderna官网博客",
+      "note": "Moderna官方叙述与OpenAI合作历程：部署ChatGPT Enterprise后两个月内员工创建750个定制GPT，80%员工实现AI工作流采纳",
+      "year": "2024"
+    },
+    {
+      "title": "Moderna and OpenAI Collaborate To Advance mRNA Medicine",
+      "url": "https://investors.modernatx.com/news/news-details/2024/Moderna-and-OpenAI-Collaborate-To-Advance-mRNA-Medicine/default.aspx",
+      "source": "Moderna投资者关系",
+      "note": "Moderna投资者公告：正式宣布与OpenAI深化合作，聚焦mRNA药物研发流程自动化与临床文档提速",
+      "year": "2024"
+    },
+    {
+      "title": "Lyft and Anthropic Team Up to Redefine Customer-Obsessed AI",
+      "url": "https://www.lyft.com/blog/posts/lyft-and-anthropic-team-up-to-redefine-customer-obsessed-ai",
+      "source": "Lyft官方博客",
+      "note": "Lyft官方宣布与Anthropic合作，部署Claude驱动客服AI助手，平均解决时长缩短87%，超半数问题3分钟内关闭",
+      "year": "2025"
+    },
+    {
+      "title": "Lyft Anthropic customer support AI",
+      "url": "https://techcrunch.com/2025/02/06/lyfts-new-ai-customer-assistant-is-powered-by-anthropics-claude",
+      "source": "TechCrunch",
+      "note": "TechCrunch报道Lyft上线Claude驱动的AI客服助手，服务4000万骑手和100万司机，支持英西双语24/7在线",
+      "year": "2025"
+    },
+    {
+      "title": "Bringing the magic of AI to Mattel's iconic brands",
+      "url": "https://openai.com/index/mattels-iconic-brands/",
+      "source": "OpenAI官网",
+      "note": "OpenAI官方案例：Mattel与OpenAI合作将AI融入芭比、风火轮等品牌的产品开发、创意策划与消费者互动",
+      "year": "2025"
+    },
+    {
+      "title": "Mattel partners with OpenAI to integrate AI into toy development",
+      "url": "https://www.digitalcommerce360.com/2025/06/12/mattel-partnership-openai-ai-toy-development/",
+      "source": "Digital Commerce 360",
+      "note": "行业媒体报道Mattel与OpenAI战略合作细节：部署ChatGPT Enterprise加速产品开发并推出AI互动玩具产品线",
+      "year": "2025"
+    },
+    {
+      "title": "Customer Stories | Claude by Anthropic",
+      "url": "https://www.anthropic.com/customers",
+      "source": "Anthropic官网",
+      "note": "Anthropic官方客户案例汇总页，包含Lyft/Smartsheet/Moody's等企业使用Claude的成果数据",
+      "year": "2025"
+    },
+    {
+      "title": "How enterprises are driving AI transformation with Claude",
+      "url": "https://www.anthropic.com/news/driving-ai-transformation-with-claude",
+      "source": "Anthropic官网",
+      "note": "Anthropic发布企业AI转型报告：覆盖金融、医疗、安全等行业客户如何用Claude实现流程自动化和效率跃升",
+      "year": "2024"
+    },
+    {
+      "title": "OpenAI Stories | OpenAI",
+      "url": "https://openai.com/stories/",
+      "source": "OpenAI官网",
+      "note": "OpenAI官方客户故事聚合页，收录Indeed/Lowe's/Intercom等企业的AI落地成果案例",
+      "year": "2025"
+    },
+    {
+      "title": "The state of enterprise AI | OpenAI",
+      "url": "https://openai.com/business/guides-and-resources/the-state-of-enterprise-ai-2025-report/",
+      "source": "OpenAI官网",
+      "note": "OpenAI 2025年企业AI现状报告：ChatGPT Enterprise席位同比增长9倍，用户每天平均节省40-60分钟",
+      "year": "2025"
+    },
+    {
+      "title": "Palantir AIP Bootcamp",
+      "url": "https://www.palantir.com/platforms/aip/bootcamp/",
+      "source": "Palantir官网",
+      "note": "Palantir官方介绍AIP Bootcamp：企业客户5天内从零搭建AI用例，推动批量企业快速上线AIP平台",
+      "year": "2024"
+    },
+    {
+      "title": "Deploying Full Spectrum AI in Days: How AIP Bootcamps Work",
+      "url": "https://blog.palantir.com/deploying-full-spectrum-ai-in-days-how-aip-bootcamps-work-21829ec8d560",
+      "source": "Palantir官方博客",
+      "note": "Palantir工程博客详解AIP Bootcamp运作机制：如何帮助企业在数天内落地全栈AI，附客户实施案例",
+      "year": "2024"
+    }
+  ],
+  "landscape": [
+    {
+      "title": "OpenAI Finalizes $10 Billion Joint Venture With PE Firms to Deploy AI",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-04/openai-finalizes-10-billion-joint-venture-with-pe-firms-to-deploy-ai",
+      "source": "Bloomberg",
+      "note": "OpenAI正式完成100亿美元合资企业(DeployCo)，联合19家PE/咨询/系统集成商，直接向企业派驻工程师落地AI",
+      "year": "2026"
+    },
+    {
+      "title": "Anthropic and OpenAI are both launching joint ventures for enterprise AI services",
+      "url": "https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/",
+      "source": "TechCrunch",
+      "note": "同日对比报道：Anthropic联手高盛、黑石等成立15亿美元合资企业，与OpenAI DeployCo竞争企业AI服务市场",
+      "year": "2026"
+    },
+    {
+      "title": "Anthropic teams with Goldman, Blackstone and others on $1.5 billion AI venture targeting PE-owned firms",
+      "url": "https://www.cnbc.com/2026/05/04/anthropic-goldman-blackstone-ai-venture.html",
+      "source": "CNBC",
+      "note": "Anthropic与高盛、黑石、H&F联合成立15亿美元合资企业，嵌入PE持有的企业重构工作流",
+      "year": "2026"
+    },
+    {
+      "title": "OpenAI's enterprise adoption appears to be accelerating, at the expense of rivals",
+      "url": "https://techcrunch.com/2025/05/10/openais-enterprise-adoption-appears-to-be-accelerating-at-the-expense-of-rivals/",
+      "source": "TechCrunch",
+      "note": "OpenAI企业端采用率加速增长，付费商业用户超300万，竞争对手份额承压",
+      "year": "2025"
+    },
+    {
+      "title": "OpenAI is coming for those sweet enterprise dollars in 2026",
+      "url": "https://techcrunch.com/2026/01/22/openai-is-coming-for-those-sweet-enterprise-dollars-in-2026/",
+      "source": "TechCrunch",
+      "note": "深度分析OpenAI 2026年企业战略：企业营收已占总收入40%+，目标年内与消费端并驾齐驱",
+      "year": "2026"
+    },
+    {
+      "title": "OpenAI revenue chief Dresser says enterprise AI adoption is 'at a tipping point'",
+      "url": "https://www.cnbc.com/2026/05/11/open-ai-dresser-enterprise-business.html",
+      "source": "CNBC",
+      "note": "OpenAI营收主管表示企业AI采用已到临界点，OpenAI同期宣布收购咨询公司Tomoro为DeployCo补充人员",
+      "year": "2026"
+    },
+    {
+      "title": "McKinsey Executives Plot Job Cuts in Slowdown for Consulting Industry",
+      "url": "https://www.bloomberg.com/news/articles/2025-12-15/mckinsey-executives-plot-job-cuts-in-slowdown-for-consulting-industry",
+      "source": "Bloomberg",
+      "note": "麦肯锡高管酝酿数千人裁员计划，咨询业整体放缓，AI替代是核心驱动因素",
+      "year": "2025"
+    },
+    {
+      "title": "Ex-McKinsey Consultants Are Training AI Models to Replace Them",
+      "url": "https://www.bloomberg.com/news/articles/2025-10-30/ex-mckinsey-consultants-are-training-ai-models-to-replace-them",
+      "source": "Bloomberg",
+      "note": "前麦肯锡咨询师正在训练AI模型取代自身岗位，揭示咨询业被颠覆的内部视角",
+      "year": "2025"
+    },
+    {
+      "title": "Accenture plans on 'exiting' staff who can't be reskilled on AI amid restructuring strategy",
+      "url": "https://www.cnbc.com/2025/09/26/accenture-plans-on-exiting-staff-who-cant-be-reskilled-on-ai.html",
+      "source": "CNBC",
+      "note": "埃森哲明确淘汰无法AI转型的员工，55万人已完成基础AI技能再培训，咨询业结构性重组加速",
+      "year": "2025"
+    },
+    {
+      "title": "Gartner Expects Most Enterprises to Abandon Assistive AI for Outcome-Focused Workflow by 2028",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-04-02-gartner-expects-most-enterprises-to-abandon-assistive-ai-for-outcome-focused-workflow-by-2028",
+      "source": "Gartner",
+      "note": "Gartner预测2028年前多数企业将放弃辅助式AI、转向按结果付费的工作流平台，outcome定价模式将成主流",
+      "year": "2026"
+    },
+    {
+      "title": "Gartner Forecasts Worldwide AI Spending to Grow 47% in 2026",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026",
+      "source": "Gartner",
+      "note": "Gartner最新预测：2026年全球AI支出同比增长47%，总规模达2.59万亿美元",
+      "year": "2026"
+    },
+    {
+      "title": "Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026, Up from Less Than 5% in 2025",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025",
+      "source": "Gartner",
+      "note": "Gartner预测2026年40%企业应用将内嵌AI Agent，2025年这一比例不足5%，渗透速度远超预期",
+      "year": "2025"
+    },
+    {
+      "title": "SaaS in, SaaS out: Here's what's driving the SaaSpocalypse",
+      "url": "https://techcrunch.com/2026/03/01/saas-in-saas-out-heres-whats-driving-the-saaspocalypse/",
+      "source": "TechCrunch",
+      "note": "分析AI Agent浪潮如何终结传统按席位SaaS模式，outcome定价正在重塑企业软件商业逻辑",
+      "year": "2026"
+    },
+    {
+      "title": "OpenAI calls in the consultants for its enterprise push",
+      "url": "https://techcrunch.com/2026/02/23/openai-calls-in-the-consultants-for-its-enterprise-push/",
+      "source": "TechCrunch",
+      "note": "OpenAI与埃森哲、麦肯锡、Capgemini、波士顿咨询签多年合作协议，借咨询巨头渠道打入大企业",
+      "year": "2026"
+    },
+    {
+      "title": "Anthropic and Accenture sign multi-year AI strategic partnership",
+      "url": "https://techcrunch.com/2025/12/09/anthropic-and-accenture-sign-multi-year-ai-strategic-partnership/",
+      "source": "TechCrunch",
+      "note": "Anthropic与埃森哲签署多年战略合作，3万名埃森哲专业人员将接受Claude认证培训",
+      "year": "2025"
+    },
+    {
+      "title": "Palantir tops estimates, boosts fourth-quarter guidance on AI adoption",
+      "url": "https://www.cnbc.com/2025/11/03/palantir-pltr-q3-earnings-2025.html",
+      "source": "CNBC",
+      "note": "Palantir Q3业绩超预期，美国商业AI营收同比翻倍达3.97亿美元，企业AI落地标杆案例持续涌现",
+      "year": "2025"
+    }
+  ],
+  "charts": [
+    {
+      "title": "Gartner Says Worldwide AI Spending Will Total $1.5 Trillion in 2025",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-09-17-gartner-says-worldwide-ai-spending-will-total-1-point-5-trillion-in-2025",
+      "source": "Gartner",
+      "note": "Gartner官方新闻稿：2025年全球AI支出预测达1.5万亿美元",
+      "year": "2025"
+    },
+    {
+      "title": "Gartner Forecasts Worldwide AI Spending to Grow 47% in 2026",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026",
+      "source": "Gartner",
+      "note": "Gartner最新预测：2026年全球AI支出同比增长47%，总额达2.5万亿美元",
+      "year": "2026"
+    },
+    {
+      "title": "Gartner Forecasts Worldwide GenAI Spending to Reach $644 Billion in 2025",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-03-31-gartner-forecasts-worldwide-genai-spending-to-reach-644-billion-in-2025",
+      "source": "Gartner",
+      "note": "Gartner预测2025年全球生成式AI支出将达6440亿美元",
+      "year": "2025"
+    },
+    {
+      "title": "IDC - AI Infrastructure Spending Caps Historic Year at ~$90 Billion in Q4 2025; 2029 Spending to Eclipse $1 Trillion",
+      "url": "https://www.idc.com/resource-center/blog/ai-infrastructure-spending-caps-historic-year-at-90-billion-in-q4-2025-2029-spending-to-eclipse-1-trillion/",
+      "source": "IDC",
+      "note": "IDC博客：2025年Q4 AI基础设施支出达900亿美元创历史记录，2029年将突破1万亿",
+      "year": "2025"
+    },
+    {
+      "title": "Agentic AI to Dominate IT Budget Expansion Over Next Five Years, Exceeding 26% of Worldwide IT Spending, and $1.3 Trillion in 2029, According to IDC",
+      "url": "https://my.idc.com/getdoc.jsp?containerId=prUS53765225",
+      "source": "IDC",
+      "note": "IDC发布报告：Agent AI将主导未来5年IT预算扩张，2029年规模超1.3万亿美元",
+      "year": "2025"
+    },
+    {
+      "title": "The 2025 AI Index Report | Stanford HAI",
+      "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+      "source": "Stanford HAI",
+      "note": "斯坦福HAI 2025年AI指数报告主页，涵盖技术进展、投资、就业、安全事件等全维度数据",
+      "year": "2025"
+    },
+    {
+      "title": "The 2026 AI Index Report | Stanford HAI",
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+      "source": "Stanford HAI",
+      "note": "斯坦福HAI 2026年AI指数报告：美国私人AI投资达2859亿美元，组织采用率88%",
+      "year": "2026"
+    },
+    {
+      "title": "AI Index 2025: State of AI in 10 Charts | Stanford HAI",
+      "url": "https://hai.stanford.edu/news/ai-index-2025-state-of-ai-in-10-charts",
+      "source": "Stanford HAI",
+      "note": "斯坦福HAI用10张图表呈现2025年AI现状精华，适合快速浏览核心数据",
+      "year": "2025"
+    },
+    {
+      "title": "The state of AI in 2025: Agents, innovation, and transformation",
+      "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-ai",
+      "source": "McKinsey",
+      "note": "麦肯锡2025年AI现状报告主页：88%企业已在至少一个业务职能中使用AI，Agent AI加速渗透",
+      "year": "2025"
+    },
+    {
+      "title": "The state of AI: How organizations are rewiring to capture value",
+      "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value",
+      "source": "McKinsey",
+      "note": "麦肯锡2025年3月版AI报告：聚焦企业如何重构组织以真正从AI中获取商业价值",
+      "year": "2025"
+    },
+    {
+      "title": "Grow Enterprise AI Maturity for Bottom-Line Impact | MIT CISR",
+      "url": "https://cisr.mit.edu/publication/2025_0801_EnterpriseAIMaturityUpdate_WoernerSebastianWeillKaganer",
+      "source": "MIT CISR",
+      "note": "MIT信息系统研究中心：企业AI成熟度模型更新，聚焦从试点到规模化落地的关键挑战",
+      "year": "2025"
+    },
+    {
+      "title": "The Emerging Agentic Enterprise: How Leaders Must Navigate a New Age of AI | MIT Sloan Management Review",
+      "url": "https://sloanreview.mit.edu/projects/scholars/the-emerging-agentic-enterprise-how-leaders-must-navigate-a-new-age-of-ai/",
+      "source": "MIT Sloan Management Review",
+      "note": "MIT斯隆管理评论：Agent企业崛起，35%组织已采用Agent AI，44%正在计划部署",
+      "year": "2025"
+    },
+    {
+      "title": "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity - METR",
+      "url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/",
+      "source": "METR",
+      "note": "METR随机对照实验：有经验的开源开发者使用AI工具后反而慢了19%，但主观感觉快了20%",
+      "year": "2025"
+    },
+    {
+      "title": "Measuring AI Ability to Complete Long Tasks - METR",
+      "url": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/",
+      "source": "METR",
+      "note": "METR提出'时间跨度'指标衡量AI自主完成长任务能力，记录模型能力指数级增长趋势",
+      "year": "2025"
+    },
+    {
+      "title": "Evaluation Reports - METR",
+      "url": "https://metr.org/evaluations/",
+      "source": "METR",
+      "note": "METR前沿AI模型自主能力评测报告汇总页，包含与Anthropic/OpenAI合作的官方评估",
+      "year": "2025"
+    },
+    {
+      "title": "What I learned analyzing 1K forward deployed engineer jobs",
+      "url": "https://bloomberry.com/blog/i-analyzed-1000-forward-deployed-engineer-jobs-what-i-learned/",
+      "source": "Bloomberry",
+      "note": "Bloomberry分析1000个FDE职位：前沿部署工程师岗位2025年爆增1165%，薪资中位数超50万美元",
+      "year": "2025"
+    },
+    {
+      "title": "I analyzed 180M jobs to see what jobs AI is actually replacing today",
+      "url": "https://bloomberry.com/blog/i-analyzed-180m-jobs-to-see-what-jobs-ai-is-actually-replacing-today/",
+      "source": "Bloomberry",
+      "note": "Bloomberry分析1.8亿个职位发现AI实际替代规律：执行型岗位下降，策略型岗位抗性强",
+      "year": "2025"
+    },
+    {
+      "title": "The jobs being replaced by AI - an analysis of 5M freelancing jobs",
+      "url": "https://bloomberry.com/blog/i-analyzed-5m-freelancing-jobs-to-see-what-jobs-are-being-replaced-by-ai/",
+      "source": "Bloomberry",
+      "note": "Bloomberry分析500万自由职业岗位：量化哪些自由职业类别正被AI快速替代",
+      "year": "2025"
+    }
+  ],
+  "industries": [
+    {
+      "title": "The paradigm shift: How agentic AI is redefining banking operations",
+      "url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-paradigm-shift-how-agentic-ai-is-redefining-banking-operations",
+      "source": "McKinsey & Company",
+      "note": "深度分析 Agentic AI 如何重构银行运营流程，早期落地方可实现20-30%成本节省",
+      "year": "2025"
+    },
+    {
+      "title": "Move first or fall behind: How AI is rewriting the rules of banking",
+      "url": "https://www.mckinsey.com/industries/financial-services/our-insights/move-first-or-fall-behind-how-ai-is-rewriting-the-rules-of-banking",
+      "source": "McKinsey & Company",
+      "note": "探讨银行业AI先发优势，金融科技公司占全部AI落地案例近70%的现象分析",
+      "year": "2025"
+    },
+    {
+      "title": "Agentic AI will shake up banking, shrinking global profit pools",
+      "url": "https://www.mckinsey.com/industries/financial-services/our-insights/banking-matters/agentic-ai-will-shake-up-banking-shrinking-global-profit-pools",
+      "source": "McKinsey & Company",
+      "note": "预测自主型AI将压缩全球银行业利润池，分析其对传统银行业务模式的冲击",
+      "year": "2025"
+    },
+    {
+      "title": "Gartner Survey Shows Finance AI Adoption Remains Steady in 2025",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-11-18-gartner-survey-shows-finance-ai-adoption-remains-steady-in-2025",
+      "source": "Gartner",
+      "note": "Gartner 2025年调查：金融行业AI采用率保持稳定增长的数据与趋势",
+      "year": "2025"
+    },
+    {
+      "title": "Generative AI in healthcare: ROI, agentic AI, and integration | McKinsey",
+      "url": "https://www.mckinsey.com/industries/healthcare/our-insights/generative-ai-in-healthcare-current-trends-and-future-outlook",
+      "source": "McKinsey & Company",
+      "note": "2025年底50%医疗机构已部署生成式AI，分析ROI、Agentic AI应用与系统集成路径",
+      "year": "2025"
+    },
+    {
+      "title": "Generative AI in Medicine — Evaluating Progress and Challenges",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMsb2503956",
+      "source": "New England Journal of Medicine",
+      "note": "《新英格兰医学杂志》评估生成式AI在医疗实践中的进展与挑战，权威医学期刊视角",
+      "year": "2025"
+    },
+    {
+      "title": "At the Frontier: Gauging Health Care's Readiness for Agentic AI Innovation",
+      "url": "https://ai.nejm.org/doi/full/10.1056/AI-S2501336",
+      "source": "NEJM AI",
+      "note": "NEJM旗下AI专刊评估医疗机构对Agentic AI的准备程度与落地挑战",
+      "year": "2025"
+    },
+    {
+      "title": "Mapping AI regulation in health care with the Health & AI Policy Index",
+      "url": "https://www.nature.com/articles/s41746-026-02734-y",
+      "source": "npj Digital Medicine (Nature)",
+      "note": "《自然》子刊绘制全球医疗AI监管图谱，为合规落地提供政策参考",
+      "year": "2026"
+    },
+    {
+      "title": "Agentic AI in Engineering and Manufacturing: Industry",
+      "url": "https://decode.mit.edu/assets/papers/2026_Edwards_Agentic_AI_in_Engineering_and_Manufacturing.pdf",
+      "source": "MIT",
+      "note": "MIT发布2026年制造与工程领域Agentic AI白皮书，涵盖工业场景落地案例",
+      "year": "2026"
+    },
+    {
+      "title": "Generative AI in manufacturing lighthouses",
+      "url": "https://www.mckinsey.com/capabilities/operations/our-insights/how-manufacturings-lighthouses-are-capturing-the-full-value-of-ai",
+      "source": "McKinsey & Company",
+      "note": "麦肯锡分析制造业灯塔工厂如何通过AI实现全价值链捕获，含钢铁等行业真实案例",
+      "year": "2025"
+    },
+    {
+      "title": "Agentic AI implementations in advanced industries | McKinsey",
+      "url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/empowering-advanced-industries-with-agentic-ai",
+      "source": "McKinsey & Company",
+      "note": "聚焦汽车与先进制造业Agentic AI落地，库存与物流成本降低20%以上案例分析",
+      "year": "2025"
+    },
+    {
+      "title": "Gartner Predicts at Least 80% of Governments Will Deploy AI Agents To Automate Routine Decision-Making by 2028",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-03-17-gartner-predicts-at-least-80-percent-of-governments-will-deploy-ai-agents-to-automate-routine-decision-making-by-2028",
+      "source": "Gartner",
+      "note": "Gartner预测2028年前80%政府机构将部署AI Agent自动化日常决策流程",
+      "year": "2026"
+    },
+    {
+      "title": "Where does federal AI spending stand in 2026?",
+      "url": "https://www.brookings.edu/articles/where-does-federal-ai-spending-stand-in-2026/",
+      "source": "Brookings Institution",
+      "note": "布鲁金斯学会追踪2026年美国联邦政府AI预算，潜在合同规模同比增长1912%",
+      "year": "2026"
+    },
+    {
+      "title": "Assessing the state of AI adoption across the federal government",
+      "url": "https://www.brookings.edu/articles/assessing-the-state-of-ai-adoption-across-the-federal-government/",
+      "source": "Brookings Institution",
+      "note": "系统评估美国联邦政府AI采用现状，2024年各机构公开AI用例已超1757个",
+      "year": "2025"
+    },
+    {
+      "title": "AI-native public infrastructure for smart cities | McKinsey",
+      "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/how-ai-native-public-infrastructure-changes-how-cities-operate",
+      "source": "McKinsey & Company",
+      "note": "麦肯锡分析AI原生公共基础设施如何改变城市运营模式，适用于政务数字化场景",
+      "year": "2025"
+    },
+    {
+      "title": "Merchants unleashed: How agentic AI transforms retail merchandising",
+      "url": "https://www.mckinsey.com/industries/retail/our-insights/merchants-unleashed-how-agentic-ai-transforms-retail-merchandising",
+      "source": "McKinsey & Company",
+      "note": "Agentic AI重塑零售商品管理，Zara等案例展示比传统方式快3-4周识别流行趋势",
+      "year": "2025"
+    },
+    {
+      "title": "The agentic commerce opportunity: How AI agents are ushering in a new era for consumers and merchants",
+      "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-agentic-commerce-opportunity-how-ai-agents-are-ushering-in-a-new-era-for-consumers-and-merchants",
+      "source": "McKinsey & Company",
+      "note": "预测AI购物代理2030年将撮合3-5万亿美元全球消费交易，分析平台与商家机会",
+      "year": "2025"
+    },
+    {
+      "title": "Walmart's latest AI innovations represent a shift for big retail",
+      "url": "https://www.cnbc.com/2025/08/30/walmart-stores-ai-innovation-retail-shopping-shift.html",
+      "source": "CNBC",
+      "note": "CNBC报道沃尔玛最新AI创新实践，数字孪生+空间AI提前两周预测并排查门店问题",
+      "year": "2025"
+    },
+    {
+      "title": "'Silent killers': How AI start-ups are trying to solve one of the retail industry's biggest problems",
+      "url": "https://www.cnbc.com/2026/04/05/ai-retail-start-ups-virtual-try-on-tech-margins.html",
+      "source": "CNBC",
+      "note": "CNBC报道AI虚拟试穿创业公司如何应对2025年美国零售退货率高达15.8%（约8499亿美元）的行业痛点",
+      "year": "2026"
+    }
+  ],
+  "knowledge": [
+    {
+      "title": "A Survey on Large Language Model based Autonomous Agents",
+      "url": "https://arxiv.org/abs/2308.11432",
+      "source": "arXiv",
+      "note": "LLM Agent领域引用量最高的奠基综述，系统梳理Agent构建框架、能力模块与多领域应用",
+      "year": "2023"
+    },
+    {
+      "title": "A Survey on LLM-based Multi-Agent System: Recent Advances and New Frontiers in Application",
+      "url": "https://arxiv.org/abs/2412.17481",
+      "source": "arXiv",
+      "note": "2024年底最新多智能体系统综述，覆盖协作机制、新兴应用场景与前沿挑战",
+      "year": "2024"
+    },
+    {
+      "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "url": "https://arxiv.org/abs/2312.10997",
+      "source": "arXiv",
+      "note": "RAG领域经典综述，提出Naive/Advanced/Modular RAG三阶段演进框架，被广泛引用",
+      "year": "2023"
+    },
+    {
+      "title": "Evaluation of Retrieval-Augmented Generation: A Survey",
+      "url": "https://arxiv.org/abs/2405.07437",
+      "source": "arXiv",
+      "note": "专门针对RAG评估的综述，系统比较检索与生成两阶段的关键指标（相关性/准确性/忠实度）",
+      "year": "2024"
+    },
+    {
+      "title": "A Comprehensive Survey of Retrieval-Augmented Generation (RAG): Evolution, Current Landscape and Future Directions",
+      "url": "https://arxiv.org/abs/2410.12837",
+      "source": "arXiv",
+      "note": "2024年10月最新RAG全景综述，从基础概念到SOTA进展完整覆盖",
+      "year": "2024"
+    },
+    {
+      "title": "Building Effective AI Agents",
+      "url": "https://www.anthropic.com/research/building-effective-agents",
+      "source": "Anthropic",
+      "note": "Anthropic官方研究博客：区分Workflow与Agent，给出构建可靠AI Agent的实战设计原则",
+      "year": "2024"
+    },
+    {
+      "title": "How we built our multi-agent research system",
+      "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+      "source": "Anthropic",
+      "note": "Anthropic工程博客：详解其多智能体研究系统的架构设计、LeadResearcher调度机制与踩坑经验",
+      "year": "2025"
+    },
+    {
+      "title": "New tools for building agents",
+      "url": "https://openai.com/index/new-tools-for-building-agents/",
+      "source": "OpenAI",
+      "note": "OpenAI官方发布：Responses API + Agents SDK + Computer Use等核心Agent基础设施的正式介绍",
+      "year": "2025"
+    },
+    {
+      "title": "Function calling and other API updates",
+      "url": "https://openai.com/index/function-calling-and-other-api-updates/",
+      "source": "OpenAI",
+      "note": "OpenAI Function Calling能力发布原文，LLM Tool Use技术路线的起点性文档",
+      "year": "2023"
+    },
+    {
+      "title": "GitHub - luo-junyu/Awesome-Agent-Papers: LLM Agent Survey on Methodology, Applications and Challenges",
+      "url": "https://github.com/luo-junyu/awesome-agent-papers",
+      "source": "GitHub",
+      "note": "持续更新的LLM Agent论文汇总仓库，按构建/协作/演化/工具/安全/评测分类整理",
+      "year": "2024"
+    },
+    {
+      "title": "GitHub - xinzhel/LLM-Agent-Survey: Survey on LLM Agents (CoLing 2025)",
+      "url": "https://github.com/xinzhel/LLM-Agent-Survey",
+      "source": "GitHub",
+      "note": "CoLing 2025收录的LLM Agent综述配套仓库，涵盖Tool Use、Planning、Feedback Learning三大范式",
+      "year": "2025"
+    },
+    {
+      "title": "GitHub - Poll-The-People/awesome-rag: A collection of awesome things related to Retrieval-Augmented Generation",
+      "url": "https://github.com/Poll-The-People/awesome-rag",
+      "source": "GitHub",
+      "note": "RAG领域资源聚合仓库，包含论文、框架、评估工具（如Ragas）等实用资源",
+      "year": "2024"
+    }
+  ],
+  "academy-eng": [
+    {
+      "title": "LangChain overview - Docs by LangChain",
+      "url": "https://python.langchain.com/docs/tutorials/",
+      "source": "LangChain 官方文档",
+      "note": "LangChain Python 官方教程总览页，涵盖 RAG、Agent、工具调用等核心场景的动手教程",
+      "year": "2025"
+    },
+    {
+      "title": "Build an Agent | LangChain",
+      "url": "https://python.langchain.com/docs/tutorials/agents/",
+      "source": "LangChain 官方文档",
+      "note": "LangChain 官方 Agent 构建教程，手把手演示如何用 ReAct 模式搭建工具调用 Agent",
+      "year": "2025"
+    },
+    {
+      "title": "Build a RAG agent with LangChain - Docs by LangChain",
+      "url": "https://python.langchain.com/docs/tutorials/rag/",
+      "source": "LangChain 官方文档",
+      "note": "LangChain 官方 RAG 教程，演示如何基于非结构化文本构建问答应用",
+      "year": "2025"
+    },
+    {
+      "title": "LangGraph Python Tutorials — Examples",
+      "url": "https://langchain-ai.github.io/langgraph/tutorials/overview/",
+      "source": "LangGraph 官方文档 (langchain-ai.github.io)",
+      "note": "LangGraph 官方示例总览，列出从基础到高级的所有图结构 Agent 教程入口",
+      "year": "2025"
+    },
+    {
+      "title": "Adaptive RAG — LangGraph Tutorial",
+      "url": "https://langchain-ai.github.io/langgraph/tutorials/rag/langgraph_adaptive_rag/",
+      "source": "LangGraph 官方文档 (langchain-ai.github.io)",
+      "note": "用 LangGraph 实现自适应 RAG 的完整教程，结合向量库和条件路由控制检索策略",
+      "year": "2025"
+    },
+    {
+      "title": "Building effective agents — Anthropic",
+      "url": "https://www.anthropic.com/research/building-effective-agents",
+      "source": "Anthropic",
+      "note": "Anthropic 官方 Agent 设计指南，系统讲解何时用工作流、何时用 Agent 以及各类架构模式",
+      "year": "2024"
+    },
+    {
+      "title": "Tool use with Claude - Claude API Docs",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/overview",
+      "source": "Anthropic 官方文档 (docs.anthropic.com)",
+      "note": "Claude API 工具调用官方文档，涵盖如何定义工具、处理工具返回及构建工具型 Agent",
+      "year": "2025"
+    },
+    {
+      "title": "Model Context Protocol (MCP) - Anthropic",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/mcp",
+      "source": "Anthropic 官方文档 (docs.anthropic.com)",
+      "note": "Anthropic MCP 协议官方文档，讲解如何通过标准化协议连接外部工具与数据源",
+      "year": "2025"
+    },
+    {
+      "title": "Effective context engineering for AI agents — Anthropic",
+      "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "source": "Anthropic Engineering Blog",
+      "note": "Anthropic 工程博客：Agent 上下文工程策略，讲解如何在推理过程中维护最优 token 集合",
+      "year": "2025"
+    },
+    {
+      "title": "Claude Code Overview - Claude Code Docs",
+      "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+      "source": "Anthropic 官方文档 (docs.anthropic.com)",
+      "note": "Claude Code 官方概述文档，介绍这款命令行 AI 编码助手的核心能力与使用方式",
+      "year": "2025"
+    },
+    {
+      "title": "Common workflows - Claude Code Docs",
+      "url": "https://docs.anthropic.com/en/docs/claude-code/tutorials",
+      "source": "Anthropic 官方文档 (docs.anthropic.com)",
+      "note": "Claude Code 常用工作流教程，覆盖代码调试、重构、写测试、PR 管理等日常开发场景",
+      "year": "2025"
+    },
+    {
+      "title": "Cursor Docs — Agent, Rules, MCP, Skills & CLI",
+      "url": "https://docs.cursor.com/get-started/introduction",
+      "source": "Cursor 官方文档 (docs.cursor.com)",
+      "note": "Cursor AI 编辑器官方入门文档，涵盖 Agent 模式、Rules 自定义、MCP 接入等核心功能",
+      "year": "2025"
+    },
+    {
+      "title": "Cursor – Rules (Custom AI Instructions)",
+      "url": "https://docs.cursor.com/context/rules",
+      "source": "Cursor 官方文档 (docs.cursor.com)",
+      "note": "Cursor Rules 官方文档，讲解如何编写自定义规则让 AI 更好地理解项目约定与编码规范",
+      "year": "2025"
+    },
+    {
+      "title": "Introduction to RAG | LlamaIndex Developer Documentation",
+      "url": "https://docs.llamaindex.ai/en/stable/understanding/rag/",
+      "source": "LlamaIndex 官方文档 (docs.llamaindex.ai)",
+      "note": "LlamaIndex 官方 RAG 概念入门，清晰解释检索增强生成的原理及核心组件",
+      "year": "2025"
+    },
+    {
+      "title": "LangChain for LLM Application Development - DeepLearning.AI",
+      "url": "https://learn.deeplearning.ai/courses/langchain/lesson/u9olq/introduction",
+      "source": "DeepLearning.AI (learn.deeplearning.ai)",
+      "note": "DeepLearning.AI 与 LangChain 联合出品的免费课程，涵盖 Prompt、Memory、Chain、Agent 全流程",
+      "year": "2023"
+    },
+    {
+      "title": "AI Agents in LangGraph - DeepLearning.AI",
+      "url": "https://learn.deeplearning.ai/courses/ai-agents-in-langgraph/information",
+      "source": "DeepLearning.AI (learn.deeplearning.ai)",
+      "note": "DeepLearning.AI LangGraph Agent 课程，从零用 Python 和 LLM 构建 Agent 再用 LangGraph 重构",
+      "year": "2024"
+    },
+    {
+      "title": "Building and Evaluating Advanced RAG - DeepLearning.AI",
+      "url": "https://learn.deeplearning.ai/courses/building-evaluating-advanced-rag/lesson/nwy74/introduction",
+      "source": "DeepLearning.AI (learn.deeplearning.ai)",
+      "note": "DeepLearning.AI 高级 RAG 课程，教授句子窗口、自动合并等高阶检索技术及系统评估方法",
+      "year": "2024"
+    },
+    {
+      "title": "Multi AI Agent Systems with crewAI - DeepLearning.AI",
+      "url": "https://learn.deeplearning.ai/courses/multi-ai-agent-systems-with-crewai/lesson/wwou5/introduction",
+      "source": "DeepLearning.AI (learn.deeplearning.ai)",
+      "note": "DeepLearning.AI 多 Agent 系统课程，使用 CrewAI 框架学习角色分工、工具共享与任务协作",
+      "year": "2024"
+    }
+  ],
+  "academy-local": [
+    {
+      "title": "GitHub - ollama/ollama: Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, Qwen, Gemma and other models.",
+      "url": "https://github.com/ollama/ollama",
+      "source": "GitHub / Ollama官方",
+      "note": "Ollama官方仓库，本地一键运行主流开源大模型的核心工具，含所有安装与使用说明",
+      "year": "2025"
+    },
+    {
+      "title": "Introduction - Ollama API Documentation",
+      "url": "https://docs.ollama.com/api/introduction",
+      "source": "Ollama官方文档",
+      "note": "Ollama REST API完整参考文档，包含推理接口、模型管理等端点说明",
+      "year": "2025"
+    },
+    {
+      "title": "Quickstart - vLLM Documentation",
+      "url": "https://docs.vllm.ai/en/stable/getting_started/quickstart/",
+      "source": "vLLM官方文档",
+      "note": "vLLM快速入门指南，高吞吐量LLM推理引擎的安装与部署教程",
+      "year": "2025"
+    },
+    {
+      "title": "GitHub - vllm-project/vllm: A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "url": "https://github.com/vllm-project/vllm",
+      "source": "GitHub / vLLM官方",
+      "note": "vLLM官方仓库，支持200+模型架构，PagedAttention技术大幅提升推理吞吐",
+      "year": "2025"
+    },
+    {
+      "title": "Qwen2.5: A Party of Foundation Models! | Qwen Blog",
+      "url": "https://qwenlm.github.io/blog/qwen2.5/",
+      "source": "Qwen Team / qwenlm.github.io",
+      "note": "Qwen2.5系列官方发布博客，涵盖0.5B至72B各规格模型能力说明与基准对比",
+      "year": "2024"
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection on Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "source": "Hugging Face / Qwen官方",
+      "note": "Qwen2.5全系列模型在HF的官方合集页，含预训练与Instruct版本直接下载",
+      "year": "2024"
+    },
+    {
+      "title": "deepseek-ai (DeepSeek) - Hugging Face Organization",
+      "url": "https://huggingface.co/deepseek-ai",
+      "source": "Hugging Face / DeepSeek官方",
+      "note": "DeepSeek官方HF主页，托管V3/V4/R1等所有开源模型权重",
+      "year": "2025"
+    },
+    {
+      "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2501.12948",
+      "source": "arXiv",
+      "note": "DeepSeek-R1技术报告，纯强化学习训练推理模型的方法论，达到o1-1217级别性能",
+      "year": "2025"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "source": "Hugging Face / DeepSeek官方",
+      "note": "DeepSeek-R1模型卡片页，含模型说明、使用方法与许可协议",
+      "year": "2025"
+    },
+    {
+      "title": "Langfuse - Open Source LLM Observability & Application Tracing",
+      "url": "https://langfuse.com/docs",
+      "source": "Langfuse官方文档",
+      "note": "Langfuse完整文档，开源LLM可观测性平台，支持trace、eval、prompt管理与成本追踪",
+      "year": "2025"
+    },
+    {
+      "title": "GitHub - langfuse/langfuse: Open source LLM engineering platform",
+      "url": "https://github.com/langfuse/langfuse",
+      "source": "GitHub / Langfuse官方",
+      "note": "Langfuse官方仓库，YC W23孵化，集成OpenAI/LangChain/LiteLLM等主流框架",
+      "year": "2025"
+    },
+    {
+      "title": "Ragas - Official Documentation",
+      "url": "https://docs.ragas.io/en/stable/",
+      "source": "Ragas官方文档",
+      "note": "RAGAS官方文档，RAG管道自动化评测框架，覆盖忠实度/答案相关性/上下文精度等核心指标",
+      "year": "2025"
+    },
+    {
+      "title": "[2309.15217] Ragas: Automated Evaluation of Retrieval Augmented Generation",
+      "url": "https://arxiv.org/abs/2309.15217",
+      "source": "arXiv",
+      "note": "RAGAS原始论文，提出无需参考答案自动评估RAG系统的方法论",
+      "year": "2023"
+    },
+    {
+      "title": "PEFT · Hugging Face - Parameter-Efficient Fine-Tuning",
+      "url": "https://huggingface.co/docs/peft/en/index",
+      "source": "Hugging Face官方文档",
+      "note": "PEFT库官方文档首页，参数高效微调全套方法（LoRA/QLoRA/Prefix-Tuning等）",
+      "year": "2025"
+    },
+    {
+      "title": "LoRA · Hugging Face - Conceptual Guide",
+      "url": "https://huggingface.co/docs/peft/main/en/conceptual_guides/lora",
+      "source": "Hugging Face官方文档",
+      "note": "LoRA低秩适配原理详解，含rank/target_modules等核心参数配置说明",
+      "year": "2025"
+    },
+    {
+      "title": "Open LLM Leaderboard - Hugging Face Space",
+      "url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
+      "source": "Hugging Face官方",
+      "note": "HF开源大模型评测排行榜，基于IFEval/GPQA/MATH等benchmark对比各模型能力",
+      "year": "2025"
+    },
+    {
+      "title": "MLOps Community | Learn, Meet & Grow in Real-World MLOps",
+      "url": "https://mlops.community/",
+      "source": "MLOps Community",
+      "note": "MLOps从业者社区，7万+工程师分享实战经验，含播客/博客/活动资源",
+      "year": "2025"
+    },
+    {
+      "title": "Using LLM-as-a-Judge For Evaluation: A Complete Guide – Hamel's Blog",
+      "url": "https://hamel.dev/blog/posts/llm-judge/",
+      "source": "hamel.dev / Hamel Husain",
+      "note": "帮助30+公司落地LLM评测的实战总结，手把手指导如何用LLM自动打分替代人工评估",
+      "year": "2024"
+    },
+    {
+      "title": "Evaluating the Effectiveness of LLM-Evaluators (aka LLM-as-Judge)",
+      "url": "https://eugeneyan.com/writing/llm-evaluators/",
+      "source": "eugeneyan.com / Eugene Yan",
+      "note": "系统评估LLM作为评判者的有效性研究，分析偏差来源与可信度问题",
+      "year": "2024"
+    }
+  ],
+  "mindset": [
+    {
+      "title": "How 100 Enterprise CIOs Are Building and Buying Gen AI in 2025",
+      "url": "https://a16z.com/ai-enterprise-2025/",
+      "source": "Andreessen Horowitz (a16z)",
+      "note": "调研100位企业CIO的AI采购与自建策略，含模型选型、预算增长、Anthropic vs OpenAI占比等一手数据",
+      "year": "2025"
+    },
+    {
+      "title": "Where Enterprises are Actually Adopting AI",
+      "url": "https://a16z.com/where-enterprises-are-actually-adopting-ai/",
+      "source": "Andreessen Horowitz (a16z)",
+      "note": "基于财富500强真实合同数据，揭示企业AI落地集中在编码/客服/搜索三大场景，并给出「窄工作流+干净数据+可量化指标」的成功条件",
+      "year": "2024"
+    },
+    {
+      "title": "16 Changes to the Way Enterprises Are Building and Buying Generative AI",
+      "url": "https://a16z.com/generative-ai-enterprise-2024/",
+      "source": "Andreessen Horowitz (a16z)",
+      "note": "访谈70+企业高管总结的16条生成式AI采购趋势，含预算从创新项移向常规软件支出线的关键转变",
+      "year": "2024"
+    },
+    {
+      "title": "AI's $600B Question",
+      "url": "https://sequoiacap.com/article/ais-600b-question/",
+      "source": "Sequoia Capital",
+      "note": "红杉经典分析：AI基础设施投入与实际终端营收之间存在5000亿美元缺口，质疑AI投资回报是否可持续",
+      "year": "2024"
+    },
+    {
+      "title": "The AI Supply Chain Tug of War",
+      "url": "https://sequoiacap.com/article/the-ai-supply-chain-tug-of-war/",
+      "source": "Sequoia Capital",
+      "note": "拆解AI供应链各层（芯片/云/应用）的利润博弈：Nvidia、大型云厂商与AI应用公司如何争夺边际利润",
+      "year": "2024"
+    },
+    {
+      "title": "AI in 2025: Building Blocks Firmly in Place",
+      "url": "https://sequoiacap.com/article/ai-in-2025/",
+      "source": "Sequoia Capital",
+      "note": "红杉年度AI判断：基础设施已就绪，竞争焦点转向应用层与商业模式，预测哪些垂直场景最先创造真实价值",
+      "year": "2025"
+    },
+    {
+      "title": "Outcome-based pricing for AI Agents",
+      "url": "https://sierra.ai/blog/outcome-based-pricing-for-ai-agents",
+      "source": "Sierra AI",
+      "note": "Sierra（Bret Taylor创办，$150M+ ARR）官方阐述为何客服AI必须按成功解决对话付费而非按座席收费，含定价设计原理",
+      "year": "2025"
+    },
+    {
+      "title": "Pricing AI: Outcome-Based Pricing - The Holy Grail for AI",
+      "url": "https://impactpricing.com/blog/pricing-ai-outcome-based-pricing-the-holy-grail-for-ai/",
+      "source": "Impact Pricing",
+      "note": "定价专家视角：分析AI产品为何适合按结果定价（不同于传统SaaS按席位收费），并拆解归因难题与实操挑战",
+      "year": "2024"
+    },
+    {
+      "title": "Outcome-based pricing is NOT the future",
+      "url": "https://getlago.substack.com/p/outcome-based-pricing-is-not-the",
+      "source": "Lago (Substack)",
+      "note": "反方论点：从计费基础设施角度质疑按结果定价的可行性，指出归因复杂度与客户接受度的真实障碍",
+      "year": "2024"
+    },
+    {
+      "title": "Forward Deployed Engineers",
+      "url": "https://www.svpg.com/forward-deployed-engineers/",
+      "source": "Silicon Valley Product Group (SVPG)",
+      "note": "产品管理权威机构对Palantir FDE模式的经典拆解：FDE不是服务商、是产品发现机制，负责在客户现场找到可复用的产品原语",
+      "year": "2024"
+    },
+    {
+      "title": "AI FDE • Overview • Palantir",
+      "url": "https://www.palantir.com/docs/foundry/ai-fde/overview",
+      "source": "Palantir Technologies (官方文档)",
+      "note": "Palantir官方文档：将FDE模式数字化为AI Forward Deployed Engineer产品，用自然语言驱动Foundry平台操作的官方技术说明",
+      "year": "2025"
+    },
+    {
+      "title": "The Enterprise AI Playbook: Lessons from 51 Successful Deployments",
+      "url": "https://digitaleconomy.stanford.edu/publication/enterprise-ai-playbook",
+      "source": "Stanford Digital Economy Lab",
+      "note": "斯坦福研究：分析41家机构51个真实AI落地案例，核心结论：成功的前提是先做工作流重设计，技术选型排在其后",
+      "year": "2026"
+    },
+    {
+      "title": "Why most enterprise AI projects fail — and the patterns that actually work",
+      "url": "https://workos.com/blog/why-most-enterprise-ai-projects-fail-patterns-that-work",
+      "source": "WorkOS",
+      "note": "系统梳理企业AI项目失败的根因：数据孤岛、工作流断层、组织激励错位，并给出可复用的成功模式",
+      "year": "2025"
+    },
+    {
+      "title": "AI deployments gone wrong: The fallout and lessons learned",
+      "url": "https://www.techtarget.com/searchenterpriseai/feature/AI-deployments-gone-wrong-The-fallout-and-lessons-learned",
+      "source": "TechTarget / SearchEnterpriseAI",
+      "note": "企业AI落地翻车案例集：含真实失败案例的事后复盘与可转移的教训，适合做风险清单参考",
+      "year": "2024"
+    }
+  ],
+  "future": [
+    {
+      "title": "The Future of Jobs Report 2025 | World Economic Forum",
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+      "source": "World Economic Forum (WEF)",
+      "note": "2025年1月发布的旗舰报告，预测2030年前AI将净创造7800万个就业岗位，170万个新增、9200万个消失，是目前最权威的全球就业展望",
+      "year": "2025"
+    },
+    {
+      "title": "Future of Jobs Report 2025: 78 Million New Job Opportunities by 2030 but Urgent Upskilling Needed to Prepare Workforces",
+      "url": "https://www.weforum.org/press/2025/01/future-of-jobs-report-2025-78-million-new-job-opportunities-by-2030-but-urgent-upskilling-needed-to-prepare-workforces/",
+      "source": "World Economic Forum (WEF)",
+      "note": "WEF官方新闻稿，浓缩版关键数据：86%雇主预期AI将在2030年前深度重塑其业务，59%劳动者需再培训",
+      "year": "2025"
+    },
+    {
+      "title": "Generative AI and the future of work in America | McKinsey",
+      "url": "https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america",
+      "source": "McKinsey Global Institute",
+      "note": "麦肯锡预测生成式AI每年可提升美国劳动生产率0.5–0.9个百分点，到2030年多达1200万人需转换职业",
+      "year": "2023"
+    },
+    {
+      "title": "A new future of work: The race to deploy AI and raise skills in Europe and beyond | McKinsey",
+      "url": "https://www.mckinsey.com/mgi/our-research/a-new-future-of-work-the-race-to-deploy-ai-and-raise-skills-in-europe-and-beyond",
+      "source": "McKinsey Global Institute",
+      "note": "2024年最新报告，聚焦欧洲及全球AI部署与技能升级竞赛，更新了自动化对就业转型规模的预测",
+      "year": "2024"
+    },
+    {
+      "title": "Generative AI at Work | NBER",
+      "url": "https://www.nber.org/papers/w31161",
+      "source": "NBER (National Bureau of Economic Research)",
+      "note": "Brynjolfsson等人基于5179名客服人员的实验：AI工具平均提升生产率14%，新手提升34%，资深员工影响极小——揭示AI对技能溢价的重塑机制",
+      "year": "2023"
+    },
+    {
+      "title": "Applying AI to Rebuild Middle Class Jobs | NBER",
+      "url": "https://www.nber.org/papers/w32140",
+      "source": "NBER / MIT David Autor",
+      "note": "MIT经济学家David Autor论文，提出AI若设计得当可扩展普通工人的专业决策能力，有望重建被自动化掏空的中产阶层就业",
+      "year": "2024"
+    },
+    {
+      "title": "MIT launches Working Group on Generative AI and the Work of the Future | MIT News",
+      "url": "https://news.mit.edu/2024/mit-launches-working-group-generative-ai-and-work-of-the-future-0328",
+      "source": "MIT News",
+      "note": "MIT宣布成立生成式AI与未来工作研究工作组，由Acemoglu、Autor、Johnson三位经济学家联合主持，系统研究AI对劳动力市场的影响",
+      "year": "2024"
+    },
+    {
+      "title": "The Economics of Generative AI | NBER Reporter",
+      "url": "https://www.nber.org/reporter/2024number1/economics-generative-ai",
+      "source": "NBER Reporter",
+      "note": "NBER旗舰综述文章，梳理生成式AI对生产率、劳动力需求和工资分配的经济学研究最新进展，适合作为学术引导入口",
+      "year": "2024"
+    }
+  ],
+  "fde-role": [
+    {
+      "title": "Why the forward-deployed engineer is tech's hottest job",
+      "url": "https://thenewstack.io/why-the-forward-deployed-engineer-is-techs-hottest-job/",
+      "source": "The New Stack",
+      "note": "The New Stack深度报道为何FDE成为科技行业最热门职位，分析这一角色在AI落地浪潮中的崛起",
+      "year": "2025"
+    },
+    {
+      "title": "Forward deployed engineer is AI's hottest job as OpenAI and Google race to hire. Here's how to become one.",
+      "url": "https://thenewstack.io/forward-deployed-engineer-fde-openai-google/",
+      "source": "The New Stack",
+      "note": "The New Stack详解OpenAI、Google等公司争抢FDE人才的背景，并给出入行路径指南",
+      "year": "2025"
+    },
+    {
+      "title": "What I learned analyzing 1K forward deployed engineer jobs",
+      "url": "https://bloomberry.com/blog/i-analyzed-1000-forward-deployed-engineer-jobs-what-i-learned/",
+      "source": "Bloomberry",
+      "note": "Bloomberry对1000条FDE招聘数据的深度分析：岗位同比增长1165%、中位薪资17.4万美元、核心技能分布等",
+      "year": "2025"
+    },
+    {
+      "title": "Dev versus Delta: Demystifying engineering roles at Palantir",
+      "url": "https://blog.palantir.com/dev-versus-delta-demystifying-engineering-roles-at-palantir-ad44c2a6e87",
+      "source": "Palantir Blog",
+      "note": "Palantir官方博客解释Dev（产品工程师）与Delta（FDE）两种工程师角色的本质区别与职责边界",
+      "year": "2022"
+    },
+    {
+      "title": "A Day in the Life of a Palantir Forward Deployed Software Engineer",
+      "url": "https://blog.palantir.com/a-day-in-the-life-of-a-palantir-forward-deployed-software-engineer-45ef2de257b1",
+      "source": "Palantir Blog",
+      "note": "Palantir官方博客通过真实工程师访谈，呈现FDSE在国防客户现场的一天工作实录",
+      "year": "2022"
+    },
+    {
+      "title": "Forward Deployed Engineer (FDE) - SF | OpenAI",
+      "url": "https://openai.com/careers/forward-deployed-engineer-(fde)-sf-san-francisco/",
+      "source": "OpenAI",
+      "note": "OpenAI官方招聘页面，展示FDE岗位在旧金山的完整职责与任职要求，代表顶级AI公司标准定义",
+      "year": "2025"
+    },
+    {
+      "title": "Palantir Forward Deployed Software Engineer Salary | $171K-$295K+",
+      "url": "https://www.levels.fyi/companies/palantir/salaries/software-engineer/title/fdse",
+      "source": "Levels.fyi",
+      "note": "Levels.fyi薪酬数据库：Palantir FDSE岗位总薪酬区间171K-295K美元，含股权与奖金分布",
+      "year": "2025"
+    },
+    {
+      "title": "Forward Deployed Software Engineer Salary (all companies)",
+      "url": "https://www.levels.fyi/t/software-engineer/title/fdse",
+      "source": "Levels.fyi",
+      "note": "Levels.fyi全行业FDE薪酬汇总页，横向对比各公司该职位的总薪资水平",
+      "year": "2025"
+    },
+    {
+      "title": "Forward Deployed Engineers - Silicon Valley Product Group",
+      "url": "https://www.svpg.com/forward-deployed-engineers/",
+      "source": "Silicon Valley Product Group (SVPG)",
+      "note": "产品管理权威机构SVPG从产品视角诠释FDE模式的价值：嵌入客户是最快创造真实价值的路径",
+      "year": "2024"
+    },
+    {
+      "title": "Forward Deployed Engineer - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Forward_Deployed_Engineer",
+      "source": "Wikipedia",
+      "note": "Wikipedia对FDE职业的标准化定义与历史沿革，包括与CSE、解决方案架构师等相关角色的对比",
+      "year": "2025"
+    }
+  ]
+}

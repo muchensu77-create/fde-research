@@ -1,0 +1,8 @@
+# 仅发布静态站；生成脚本含本地绝对路径/session id，不上线
+*.py
+__pycache__/
+*.pyc
+# 打包产物与杂项
+*.zip
+Thumbs.db
+.DS_Store

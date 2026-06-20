@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>思维导图 · FDE调研</title>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/mermaid.min.js"></script>
+<style>
+  .mm-card{background:var(--paper);border:1px solid var(--line2);border-radius:18px;padding:18px;margin:18px 0;box-shadow:var(--shadow);overflow-x:auto}
+  .mm-card .mermaid{min-width:760px}
+</style>
+</head>
+<body class="t-blue"><nav class="nav"><div class="nav-inner">
+  <span class="brand">FDE 全行业调研</span>
+  <a href="index.html">总览</a>
+  <a href="companies-us.html">美国公司</a>
+  <a href="companies-cn.html">中国公司</a>
+  <a href="cases.html">硅谷案例</a>
+  <a href="industries.html">行业全景</a>
+  <a href="fde-guide.html">FDE指南</a>
+  <a href="academy.html">FDE养成</a>
+  <a href="landscape.html">市场格局</a>
+  <a href="charts.html">数据图表</a>
+  <a href="knowledge.html">知识结构</a><a href="concepts.html">概念图鉴</a>
+  <a href="mindset.html">认知升级</a>
+  <a href="future.html">未来趋势</a>
+  <a href="analysis.html">深度分析</a>
+  <a href="comments.html">评论分析</a>
+  <a href="mindmap.html" class="active">思维导图</a>
+</div></nav>
+<div class="wrap">
+<div class="hero"><div class="eyebrow">MINDMAP · 全站知识体系</div>
+<h1>FDE 知识体系思维导图</h1>
+<p class="sub">把整份调研的 14 个板块收成一张图：从「是什么」到「产业版图」「市场格局」，再到「怎么做（能力电路）」「怎么想（认知升级）」与「未来生产关系」。本地渲染，离线可看。</p></div>
+<div class="mm-card"><pre class="mermaid">
+mindmap
+  root((FDE 前线部署工程师))
+    什么是FDE
+      模型不是产品 落地才是
+      迷你CTO 双重身份 反哺产品
+      源自Palantir 2025爆火
+      OpenAI/Anthropic 部署公司
+    产业版图
+      美国113家 6赛道
+      中国62家 交付/私有化
+      硅谷50案例 含ROI成本
+      100行业适用性
+    市场格局
+      模型厂亲自下场
+      卖outcome不卖token
+      PE资本驱动 AI roll-up
+      中美路径分野
+    怎么做 能力电路
+      串联主干 缺一断路
+        编程→Agent→RAG→评估
+        落地方法论→客户交付
+      并联支路 多选叠加
+        行业深耕
+        本地大模型私有化
+        商业定价谈判
+      接地线 贯穿全局
+        Skill沉淀 复利护城河
+        韧性与Agency
+    怎么想 认知升级
+      第一性原理 信息断层
+      二阶三阶效应
+      博弈论 棋子还是棋手
+      逆向验尸 反共识
+    未来与生产关系
+      AI是新质生产力
+      人是AI的触手
+      价值分配重构
+      FDE终局 过渡还是长期
+    知识与学术
+      4支柱16领域
+      150篇文献
+      LLM Agent/RAG/eval
+</pre></div>
+<div class="note">提示：这是用本地 mermaid 渲染的<b>静态思维导图</b>（离线可看）。若想要<b>可缩放/折叠</b>的交互版，父目录的 <span class="mono">bili_思维导图_OpenAI_FDE.html</span> 是 markmap 交互版（需联网加载）。</div>
+<div class="foot">FDE 全行业调研 · 全站知识体系思维导图 · 本地 mermaid 渲染 · 离线可用</div>
+</div>
+<script>
+mermaid.initialize({startOnLoad:false,theme:'base',securityLevel:'loose',themeVariables:{fontFamily:'PingFang SC,Microsoft YaHei,sans-serif',fontSize:'15px',primaryColor:'#eef3fd',primaryBorderColor:'#2f6ae0',primaryTextColor:'#1d1c1a',lineColor:'#aab4c6'}});
+mermaid.run({querySelector:'.mermaid'});
+</script>
+<script src="assets/anim.js"></script>
+</body></html>

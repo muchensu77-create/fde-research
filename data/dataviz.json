@@ -1,0 +1,1278 @@
+[
+  {
+    "metric": "FDE（Forward Deployed Engineer）职位发布数量时序增长（2023-2026）",
+    "chart_type": "line",
+    "series": [
+      {
+        "name": "Indeed FDE职位绝对数量（个）",
+        "points": [
+          {
+            "label": "2023年4月",
+            "value": 643
+          },
+          {
+            "label": "2026年4月",
+            "value": 5330
+          }
+        ]
+      },
+      {
+        "name": "FDE职位同比增长率（%）",
+        "points": [
+          {
+            "label": "2024年全年（vs 2023）",
+            "value": 300
+          },
+          {
+            "label": "2025年1-9月（vs 同期2024）",
+            "value": 800
+          },
+          {
+            "label": "2025年全年（vs 2024，Jan-Oct）",
+            "value": 1165
+          },
+          {
+            "label": "2026年4月（vs 2025年4月）",
+            "value": 729
+          }
+        ]
+      }
+    ],
+    "x_label": "时间节点",
+    "y_label": "职位数量（个）/ 同比增长率（%）",
+    "unit": "职位数（个）及同比增长率（%）",
+    "sources": [
+      {
+        "point": "Indeed平台FDE职位数：2023年4月643个，2026年4月5330个，同比增长729%",
+        "source": "Paraform博客《Forward-Deployed Engineers: How Demand Grew 10x in 18 Months》(2026年4月) + AOL/HyperAI多方转载",
+        "credibility": "reported"
+      },
+      {
+        "point": "2025年1月至9月FDE职位发布增长超过800%",
+        "source": "Fast Company《Postings for this AI job are up 800%》(2025年11月)，引用Financial Times数据",
+        "credibility": "reported"
+      },
+      {
+        "point": "2025年全年（1-10月）同比2024年同期增长1165%",
+        "source": "Live Data Technologies数据，由Paraform博客(2026年4月)引用，Bloomberry分析印证",
+        "credibility": "reported"
+      },
+      {
+        "point": "2024年FDE职位增长约300%，而合格候选人供给仅增长约50%",
+        "source": "Paraform博客《Forward-Deployed Engineers: How Demand Grew 10x in 18 Months》(2026年4月)",
+        "credibility": "reported"
+      },
+      {
+        "point": "Bloomberry分析1000个FDE职位，确认2025年10月为历史最高峰，岗位中位薪资$173,816",
+        "source": "Bloomberry博客《What I learned analyzing 1K forward deployed engineer jobs》(2025年)",
+        "credibility": "confirmed"
+      }
+    ],
+    "insight": "FDE（前向部署工程师）职位需求呈爆发式增长：Indeed平台职位数从2023年4月的643个跃升至2026年4月的5330个，三年增长约729%。2025年是增速最剧烈的年份，全年同比增长超过1165%（Live Data Technologies数据），主因是OpenAI、Anthropic、Palantir、Salesforce等头部AI企业开始将企业级AI部署从实验阶段推进至生产落地，催生大量\"技术+客户实施\"混合型人才需求。供需严重失衡——职位增长300-800%，而合格候选人池仅增长约50%，推动薪资中位数升至$173K-$238K。该角色有望成为2026年最热门AI工程岗位之一。",
+    "caveat": "1. \"729%同比\"特指Indeed平台2026年4月 vs 2025年4月的对比，基数为643个职位；\"1165%同比\"为Live Data Technologies统计的Jan-Oct 2025 vs 同期2024全平台口径，两者统计范围不同不可直接叠加。2. 2023-2024年间的月度/季度绝对职位数缺乏公开数据，图表绝对值系列仅有两个锚点，中间趋势为推断。3. 来源以行业媒体和招聘平台引用为主（Paraform、Bloomberry、Fast Company），非Gartner/IDC等第三方权威机构独立报告，存在来源方营销立场偏差风险。4. \"FDE\"各机构定义有差异（Forward Deployed Engineer vs Field Data Engineer等），统计口径以\"forward deployed engineer\"职位关键词为准。"
+  },
+  {
+    "metric": "FDE/应用工程师薪酬分布（Palantir/OpenAI/Anthropic，总包TC，美元）",
+    "chart_type": "bar",
+    "series": [
+      {
+        "name": "Palantir FDSE",
+        "points": [
+          {
+            "label": "中级（Mid-level）",
+            "value": 211000
+          },
+          {
+            "label": "高级（Senior）",
+            "value": 295000
+          },
+          {
+            "label": "Staff/Principal",
+            "value": 415000
+          }
+        ]
+      },
+      {
+        "name": "OpenAI FDE",
+        "points": [
+          {
+            "label": "中级（L4）",
+            "value": 612000
+          },
+          {
+            "label": "高级（L5）",
+            "value": 843000
+          },
+          {
+            "label": "Staff/Principal（L6）",
+            "value": 1190000
+          }
+        ]
+      },
+      {
+        "name": "Anthropic FDE",
+        "points": [
+          {
+            "label": "中级（Senior SWE/L4）",
+            "value": 563000
+          },
+          {
+            "label": "高级（Lead SWE/L5）",
+            "value": 785000
+          },
+          {
+            "label": "Staff/Principal（L6+）",
+            "value": 1050000
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "point": "Palantir FDSE中级（Mid-level）总包中位数 $211K",
+        "source": "Levels.fyi — Palantir Forward Deployed Software Engineer Salary（2025年数据，样本量含多地区）",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "Palantir FDSE高级总包上端 ~$295K，Staff/Principal可达 $415K+",
+        "source": "Levels.fyi — Palantir FDSE（美国）$171K–$295K；6figr.com Palantir FDE 2026 $199K–$631K（取保守Staff值）",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "OpenAI L4工程师总包中位数 $612K，L5 $843K，L6 $1.19M",
+        "source": "Levels.fyi — OpenAI L4/L5/L6 Software Engineer Salary（2025–2026数据）",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "OpenAI FDE-track薪酬在SWE ladder同级别区间内",
+        "source": "Perspective AI「2026 Forward Deployed Engineering Compensation Report」（1200个FDE样本，2026年发布）",
+        "credibility": "reported"
+      },
+      {
+        "point": "Anthropic Senior SWE（L4）总包中位数 $563K，Lead SWE（L5） $785K",
+        "source": "Levels.fyi — Anthropic Senior/Lead Software Engineer Salary（2025–2026数据）",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "Anthropic Staff/Principal（L6+）总包约 $1.05M（区间 $890K–$1.2M）",
+        "source": "Perspective AI「2026 Forward Deployed Engineering Compensation Report」+ CTAIO「Anthropic Salary 2026: Engineer Compensation Bands」；Anthropic未单独公开FDE职级薪资，此值为FDE同级SWE带宽中点估算",
+        "credibility": "inferred"
+      },
+      {
+        "point": "FDE赛道：前沿AI实验室薪酬是Palantir同级别的2–3.5倍，差距全部来自股权",
+        "source": "Perspective AI「2026 Forward Deployed Engineering Compensation Report」（2026年）",
+        "credibility": "reported"
+      }
+    ],
+    "x_label": "级别（中级 / 高级 / Staff-Principal）",
+    "y_label": "年度总包 TC（美元）",
+    "insight": "三家公司FDE薪酬存在显著断层：Palantir作为FDE角色起源公司，中级总包中位数约21万美元，而OpenAI/Anthropic同级别高出2–3倍（55–61万美元）；到Staff/Principal级别差距进一步扩大至5倍以上（Palantir ~41万 vs OpenAI ~119万）。核心驱动因素是股权，前沿AI实验室的股权占总包比重已从2024年的35–45%升至2026年的60–70%，Palantir薪酬结构则更偏重现金基础工资。",
+    "unit": "USD",
+    "caveat": "1. Palantir数据来自Levels.fyi自报样本，代表FDSE（Forward Deployed Software Engineer）职位，非独立FDE职位线。2. OpenAI数据来自通用SWE ladder（L4/L5/L6），OpenAI官方未单设\"FDE\"职级，FDE-track实际落薪在同级SWE区间内。3. Anthropic同样未公开独立FDE薪资，本表用Senior/Lead/Staff SWE中位数代替；Staff/Principal($1.05M)为推断值。4. 所有数字均为美国本土（含旧金山湾区/纽约）全现金+股权总包(TC)，不含签约奖金。5. OpenAI股权以PPU（Profit Participation Units）形式发放，流动性与RSU不同，实际兑现价值受公司估值影响。"
+  },
+  {
+    "metric": "全球AI支出规模预测时序（2024–2029）",
+    "chart_type": "line",
+    "series": [
+      {
+        "name": "Gartner（全AI技术栈采购支出，万亿美元）",
+        "points": [
+          {
+            "label": "2025",
+            "value": 1.5
+          },
+          {
+            "label": "2026",
+            "value": 2.59
+          }
+        ]
+      },
+      {
+        "name": "IDC（Worldwide AI IT Spending，万亿美元）",
+        "points": [
+          {
+            "label": "2024",
+            "value": 0.235
+          },
+          {
+            "label": "2028",
+            "value": 0.632
+          },
+          {
+            "label": "2029",
+            "value": 1.3
+          }
+        ]
+      }
+    ],
+    "unit": "万亿美元（USD Trillion）",
+    "x_label": "年份",
+    "y_label": "AI支出规模（万亿美元）",
+    "sources": [
+      {
+        "point": "Gartner：2025年全球AI支出将达1.5万亿美元",
+        "source": "Gartner新闻稿《Gartner Says Worldwide AI Spending Will Total $1.5 Trillion in 2025》，2025-09-17，gartner.com/en/newsroom/press-releases/2025-09-17",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "Gartner：2026年全球AI支出将达2.59万亿美元，同比增长47%",
+        "source": "Gartner新闻稿《Gartner Forecasts Worldwide AI Spending to Grow 47% in 2026》，2026-05-19，gartner.com/en/newsroom/press-releases/2026-05-19",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "IDC：2024年全球AI支出约2350亿美元，2024–2028 CAGR约29%",
+        "source": "IDC AI Spending Guide《Worldwide Spending on Artificial Intelligence Forecast to Reach $632 Billion in 2028》，BusinessWire，2024-08-19",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "IDC：2028年全球AI IT支出预测为6320亿美元",
+        "source": "IDC《Worldwide Artificial Intelligence IT Spending Forecast, 2024–2028》，IDC Doc#US52635424，2024",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "IDC：2029年全球AI IT支出（含Agentic AI驱动）将达1.3万亿美元，2025–2029 CAGR 31.9%",
+        "source": "IDC新闻稿《Agentic AI to Dominate IT Budget Expansion Over Next Five Years, Exceeding 26% of Worldwide IT Spending, and $1.3 Trillion in 2029》，IDC Doc#prUS53765225，2025",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "注意：两大口径统计范围不同——Gartner统计全AI技术栈采购（含硬件/软件/服务/设备），IDC统计AI IT支出（偏重企业侧IT采购）；数字不可直接横向比较",
+        "source": "Digital Applied《AI Spending Forecasts 2026: Gartner, IDC & Stanford》，digitalapplied.com，2026",
+        "credibility": "confirmed"
+      }
+    ],
+    "insight": "两大机构对AI支出增长趋势判断一致，但口径差异导致绝对数字差异巨大：Gartner的\"全栈采购\"口径在2025年即达1.5万亿美元，2026年跳升至2.59万亿（YoY +47%），增速惊人；IDC的\"AI IT支出\"口径在2024年仅2350亿美元，但以29–32%的CAGR高速增长，预计2029年突破1.3万亿美元。IDC 2024–2028这段数据连同Gartner 2025–2026这段数据，共同指向全球AI支出正在加速跨越\"万亿美元级\"的历史拐点，Gartner口径到2026年已经是IDC同期预测的近4倍，差距源于Gartner将消费端设备（AI手机/PC）和超大规模数据中心算入口径。",
+    "caveat": "1. Gartner 2024年无独立公开AI支出新闻稿，2024数据点缺失，不予补充估算。2. IDC 2025–2027的整体AI IT支出中间年份数据点未出现在公开新闻稿，仅能确认2024起点与2028/2029终点，中间年份不作插值填充。3. IDC另有\"AI Infrastructure\"子口径（仅计算硬件，2025全年3180亿美元，2029约7580亿–1万亿美元），与本表整体AI IT支出口径不同，已剔除以避免混淆。4. Gartner口径包含AI优化PC/手机等消费设备，远大于企业侧专项AI预算；跨机构对比需特别谨慎。"
+  },
+  {
+    "metric": "GenAI与Agentic AI市场规模及增速",
+    "chart_type": "line",
+    "x_label": "年份",
+    "y_label": "市场规模（十亿美元）",
+    "unit": "十亿美元（Billion USD）",
+    "series": [
+      {
+        "name": "GenAI整体支出（Gartner，含硬件/软件/服务）",
+        "points": [
+          {
+            "label": "2024",
+            "value": 365
+          },
+          {
+            "label": "2025",
+            "value": 644
+          }
+        ]
+      },
+      {
+        "name": "Agentic AI软件支出（Gartner）",
+        "points": [
+          {
+            "label": "2025",
+            "value": 86.4
+          },
+          {
+            "label": "2026",
+            "value": 206.5
+          },
+          {
+            "label": "2027",
+            "value": 376.3
+          }
+        ]
+      },
+      {
+        "name": "Agentic AI总支出（IDC，含所有层次）",
+        "points": [
+          {
+            "label": "2029",
+            "value": 1300
+          }
+        ]
+      },
+      {
+        "name": "Agentic AI占全球IT支出比例（IDC，%）",
+        "points": [
+          {
+            "label": "2029",
+            "value": 26
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "point": "2024年全球GenAI支出约3650亿美元，2025年预计达6440亿美元，同比增长76.4%",
+        "source": "Gartner新闻稿《Gartner Forecasts Worldwide GenAI Spending to Reach $644 Billion in 2025》，2025年3月31日发布",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "2025年Agentic AI软件支出864亿美元，2026年达2065亿美元，2027年达3763亿美元",
+        "source": "Gartner，2026年5月19日新闻稿《Gartner Forecasts Worldwide AI Spending to Grow 47% in 2026》及Enterprise DNA报道引用",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "2029年Agentic AI相关IT支出将超过1.3万亿美元，占全球IT支出26%以上",
+        "source": "IDC新闻稿《Agentic AI to Dominate IT Budget Expansion Over Next Five Years, Exceeding 26% of Worldwide IT Spending, and $1.3 Trillion in 2029》，2025年8月26日",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "2025年全球AI总支出（宽口径含基础设施）约1.5万亿美元，2026年约2.5万亿美元",
+        "source": "Gartner新闻稿《Gartner Says Worldwide AI Spending Will Total $1.5 Trillion in 2025》2025年9月；《Gartner Says Worldwide AI Spending Will Total $2.5 Trillion in 2026》2026年1月",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "2029年全球活跃AI Agent数量将超10亿，每日执行约2170亿次操作",
+        "source": "IDC同上新闻稿，2025年8月",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "2024年GenAI支出3650亿美元为反推估算值（644B ÷ 1.764 ≈ 365B），Gartner原文仅披露增速76.4%",
+        "source": "Gartner新闻稿反推，非原文直接披露",
+        "credibility": "inferred"
+      }
+    ],
+    "insight": "GenAI与Agentic AI市场正经历两段式爆炸增长：短期（2024-2025）由硬件驱动的GenAI整体支出已从3650亿跃升至6440亿美元（+76%）；中期（2025-2027）Agentic AI软件支出是增长最猛烈的细分，3年4倍（864亿→3763亿）；长期（IDC，到2029年）Agentic AI将占全球IT总支出26%以上、规模达1.3万亿美元，标志着从\"用AI工具\"向\"AI自主执行业务\"的结构性转型。对于AI应用落地团队，2026-2027年是Agentic AI从试点走向预算主流的窗口期。",
+    "caveat": "1. GenAI整体支出（Gartner 6440亿）口径包含AI设备/终端/服务器等硬件（占80%），与纯软件/模型支出差异极大，不可与IDC Agentic AI软件口径直接比较。2. 2024年GenAI支出3650亿为反推估算（按76.4%增速倒算），Gartner原文未直接披露该绝对值。3. Agentic AI占IT支出26%为IDC 2029年预测端点值，IDC未公开2025-2028年逐年百分比数列，中间年份数据缺失。4. 两家机构（Gartner vs IDC）统计口径、地域范围、支出分类均存在差异，跨机构数字不宜直接叠加对比。"
+  },
+  {
+    "metric": "全球企业端用户GenAI模型层支出规模及增速（2024-2026）",
+    "chart_type": "bar",
+    "series": [
+      {
+        "name": "GenAI模型层支出（十亿美元）",
+        "points": [
+          {
+            "label": "2024年",
+            "value": 5.72
+          },
+          {
+            "label": "2025年",
+            "value": 14.2
+          },
+          {
+            "label": "2026年（预测）",
+            "value": 25.7
+          }
+        ]
+      },
+      {
+        "name": "同比增速（%）",
+        "points": [
+          {
+            "label": "2024年",
+            "value": 0
+          },
+          {
+            "label": "2025年",
+            "value": 148.3
+          },
+          {
+            "label": "2026年（预测）",
+            "value": 80.8
+          }
+        ]
+      }
+    ],
+    "x_label": "年份",
+    "y_label": "支出规模（十亿美元）/ 增速（%）",
+    "unit": "十亿美元（USD Billion）",
+    "sources": [
+      {
+        "point": "2024年全球企业端用户GenAI模型层支出为57.19亿美元（$5.719B）",
+        "source": "Gartner新闻稿《Gartner Forecasts Worldwide End-User Spending on GenAI Models to Total $14.2 Billion in 2025》，2025-07-10",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "2025年全球企业端用户GenAI模型层支出预测为142亿美元（$14.2B），同比增长148.3%",
+        "source": "Gartner新闻稿《Gartner Forecasts Worldwide End-User Spending on GenAI Models to Total $14.2 Billion in 2025》，2025-07-10",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "基础模型支出从2024年$5.4B增至2025年$13.1B（+141%），专用模型从$302M增至$1.1B（+279.2%）",
+        "source": "Gartner新闻稿，2025-07-10；itbrief.news等媒体转载报道",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "2026年GenAI模型层支出增速预测为80.8%，对应约257亿美元（$25.7B，基于$14.2B×180.8%推算）",
+        "source": "Gartner预测数据，经National CIO Review《Gartner Forecasts 148% Year-Over-Year Growth in GenAI Spend》等媒体引用",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "2026年Gartner后续上修2026年AI模型增速至110%（约$32.6B），高于原80.8%预测",
+        "source": "Gartner《Forecasts Worldwide AI Spending to Grow 47% in 2026》，2026-05-19；Digital Applied汇总报告",
+        "credibility": "inferred"
+      }
+    ],
+    "insight": "Gartner数据显示全球企业端GenAI模型层支出正经历爆炸性增长：2024年$5.72B→2025年$14.2B（+148%），2026年预计达$25.7B（+80.8%，后上修至+110%约$32.6B）。增速虽从148%回落至80%+，但绝对规模持续加速；专用领域模型（DSLMs）增速更高达279%，预计2027年将占企业GenAI模型部署的50%以上。这标志着GenAI投资从\"试水\"进入企业规模化落地阶段。",
+    "caveat": "1. 数据口径为\"全球企业端用户在GenAI模型层的直接支出\"，不含AI硬件（服务器/PC/手机）及AI应用软件，是Gartner对GenAI总支出$644B中专门剥离出的模型层子集。2. 2026年$25.7B为基于Gartner公布的80.8%增速对$14.2B进行推算的结果，Gartner官方未在公开新闻稿中直接披露该绝对值；后续上修的110%增速版本（约$32.6B）标注为inferred，因两数字来自不同时点发布的报告，口径可能存在调整。3. 2027年无Gartner公开的模型层具体金额数据，故不列入图表数据点。"
+  },
+  {
+    "metric": "企业AI落地漏斗：从采纳到显著ROI各阶段比例",
+    "chart_type": "funnel",
+    "series": [
+      {
+        "name": "企业AI落地漏斗",
+        "points": [
+          {
+            "label": "AI采纳（至少一个业务功能使用AI）",
+            "value": 88
+          },
+          {
+            "label": "开展试点/实验阶段（非规模化）",
+            "value": 59
+          },
+          {
+            "label": "已开始规模化（跨部门推广）",
+            "value": 33
+          },
+          {
+            "label": "试点产生可测量P&L影响",
+            "value": 5
+          },
+          {
+            "label": "高绩效者（EBIT贡献≥5%+显著价值）",
+            "value": 6
+          },
+          {
+            "label": "捕获AI经济价值的头部企业",
+            "value": 20
+          }
+        ]
+      }
+    ],
+    "unit": "%（占受访企业比例）",
+    "x_label": "漏斗阶段",
+    "y_label": "企业占比（%）",
+    "sources": [
+      {
+        "point": "88%企业在至少一个业务功能中使用AI（较上年78%上升）",
+        "source": "McKinsey & Company, The State of AI in 2025: Agents, Innovation, and Transformation, 2025",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "约2/3（~66%）企业仍处于试点/实验阶段，未开始规模化",
+        "source": "McKinsey & Company, The State of AI in 2025 / McKinsey 'AI at work but not at scale' Weekly Chart",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "约1/3（~33%）企业已开始跨业务功能规模化部署AI",
+        "source": "McKinsey & Company, The State of AI in 2025; Astrafy分析引用McKinsey数据, 2025",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "95%的企业GenAI试点未产生可测量P&L业务影响，仅5%成功",
+        "source": "MIT Sloan Management, 'The GenAI Divide: State of AI in Business 2025'（调研300个公开部署案例+150位领导者访谈+350名员工调查）",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "仅6%的受访者满足AI高绩效者双重标准：AI带来EBIT影响≥5%且组织从AI获得'显著'价值",
+        "source": "McKinsey & Company, The State of AI in 2025, mckinsey.com, 2025",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "头部20%企业捕获了AI驱动经济价值的74%",
+        "source": "PwC, '2026 AI Performance Study'，调研1,217名高管覆盖25个行业, pwc.com, 2026年4月发布",
+        "credibility": "confirmed"
+      }
+    ],
+    "insight": "企业AI落地呈现极度漏斗收缩：88%企业已采纳AI，但约2/3卡在试点阶段（\"试点炼狱\"），仅约1/3启动规模化；MIT 2025年研究显示95%试点无法产生可测量财务回报；McKinsey数据显示真正成为AI高绩效者的企业仅6%；PwC最新调研指出头部20%企业拿走了74%的AI经济红利——说明AI价值高度集中，大多数企业的AI投入实际未转化为业务成果。",
+    "caveat": "1. \"试点阶段59%\"为推算值：McKinsey明确报告\"约2/3仍在试验/试点模式\"，取66%中减去部分与采纳重叠推算，标注为inferred；实际McKinsey原文表述为\"nearly two-thirds\"处于试验阶段。2. MIT 95%数据指\"GenAI试点未产生P&L影响\"，样本为300个公开案例，非全球企业普查，存在选择偏差。3. McKinsey 6%为\"高绩效者\"定义（EBIT≥5%+显著价值双重标准），口径与PwC 20%不同（PwC为捕获经济价值分布，非成功率）；两个数字不能直接比较。4. PwC 2026 AI Performance Study发布于2026年4月，为本文最新数据点。5. 漏斗各阶段来源不同、调研对象和时间略有差异，综合展示趋势而非同一调研的完整漏斗。"
+  },
+  {
+    "metric": "AI客服平台 per-resolution 定价对比（美元/次）",
+    "chart_type": "bar",
+    "series": [
+      {
+        "name": "per-resolution 单价（USD）",
+        "points": [
+          {
+            "label": "Intercom Fin",
+            "value": 0.99
+          },
+          {
+            "label": "Decagon",
+            "value": 0.5
+          },
+          {
+            "label": "Zendesk（承诺量）",
+            "value": 1.5
+          },
+          {
+            "label": "Zendesk（按需）",
+            "value": 2
+          },
+          {
+            "label": "Salesforce Agentforce",
+            "value": 2
+          },
+          {
+            "label": "Sierra AI",
+            "value": 0
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "point": "Intercom Fin AI 定价为 $0.99/resolution，适用于 Essential/Advanced/Expert 所有计划，已在官方帮助中心及多家第三方评测确认",
+        "source": "Intercom Fin AI Help Center（fin.ai）+ Gleap Blog 2026：\"Intercom Fin AI Pricing Explained: Is $0.99 Per Resolution Worth It in 2026?\"",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "Zendesk 于2024年8月推出 Outcome-Based Pricing，承诺量 $1.50/resolution，按需 $2.00/resolution，2025年 Relate 大会正式扩展",
+        "source": "Zendesk 官方帮助文档（support.zendesk.com）+ IDC 报告 US53414425 \"Zendesk's Outcome-Based Pricing for AI Agents\"（2024）+ Futurum Group 分析",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "Salesforce Agentforce 于2024年9月 Dreamforce 发布，定价 $2/conversation（含resolution），2025年5月改推 Flex Credits 等新模型，原 $2 定价已是历史基准",
+        "source": "Salesforce 官方新闻稿（salesforce.com/news，2025-05-15）+ Constellation Research 分析 + SaaStr 报道",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "Decagon per-resolution 定价约 $0.50，另需支付 $50,000/年平台基础费；该数字为第三方研究机构估算，Decagon 官网无公开价格页",
+        "source": "eesel AI 博客 \"How much does Decagon AI actually cost?\"（2026）+ featurebase.app \"Decagon Pricing Explained (2026)\"",
+        "credibility": "inferred"
+      },
+      {
+        "point": "Sierra AI 不公开 per-resolution 单价，采用纯企业定制合同，年合同金额约 $150,000 起，含实施费约 $50,000-$200,000",
+        "source": "Lorikeet CX \"Sierra AI Pricing in 2026\"+ Contrary Research \"Sierra Business Breakdown\"",
+        "credibility": "reported"
+      }
+    ],
+    "insight": "当前 AI 客服 per-resolution 定价分三档：Decagon 最低约 $0.50（但含 $5 万/年平台费门槛，实际小体量更贵）；Intercom Fin 以 $0.99 占据中端市场，拥有最透明的公开定价；Zendesk 和 Salesforce Agentforce 均在 $1.50-$2.00 区间，两者均已面临价格压力并引入替代模型；Sierra AI 不披露单价，走纯企业定制路线，年均合同额 ≥$15 万，不适合中小客户直接比较。整体行业正从\"座席授权费\"向\"按结果付费\"转型，但定价模型仍高度碎片化。",
+    "x_label": "AI客服平台",
+    "y_label": "per-resolution 单价（USD）",
+    "unit": "美元/次",
+    "caveat": "1. Sierra AI 无公开 per-resolution 单价，图中标为 0 仅表示\"不可比\"，实际费用包含在定制企业合同中。2. Decagon $0.50 为第三方机构基于行业访谈的估算值，非官方公开数据。3. Salesforce Agentforce 的 $2/conversation 为2024年发布时原始定价，2025年5月已推出 Flex Credits（$0.10/action）等替代模型，per-resolution 意义与其他平台存在定义差异。4. Zendesk 实际按量有阶梯折扣（1001-5000次约$1.10），图中取起始档位 $1.50。"
+  },
+  {
+    "metric": "代表性AI公司ARR/营收增长对比（2021-2025）",
+    "chart_type": "line",
+    "series": [
+      {
+        "name": "Palantir 美国商业营收",
+        "points": [
+          {
+            "label": "2021",
+            "value": 201
+          },
+          {
+            "label": "2022",
+            "value": 335
+          },
+          {
+            "label": "2023",
+            "value": 403
+          },
+          {
+            "label": "2024",
+            "value": 702
+          }
+        ]
+      },
+      {
+        "name": "AlphaSense ARR",
+        "points": [
+          {
+            "label": "2024Q2",
+            "value": 200
+          },
+          {
+            "label": "2025Q1",
+            "value": 400
+          },
+          {
+            "label": "2025Q4",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "name": "Cohere ARR",
+        "points": [
+          {
+            "label": "2023",
+            "value": 13
+          },
+          {
+            "label": "2024",
+            "value": 62
+          },
+          {
+            "label": "2025",
+            "value": 240
+          }
+        ]
+      },
+      {
+        "name": "Cursor ARR",
+        "points": [
+          {
+            "label": "2025Q1",
+            "value": 100
+          },
+          {
+            "label": "2025Q2",
+            "value": 500
+          },
+          {
+            "label": "2025Q4",
+            "value": 1000
+          },
+          {
+            "label": "2026Q1",
+            "value": 2000
+          }
+        ]
+      }
+    ],
+    "unit": "百万美元（$M）",
+    "x_label": "时间节点",
+    "y_label": "ARR / 营收（$M）",
+    "sources": [
+      {
+        "point": "Palantir FY2021 美国商业营收 $201M（+102% YoY）",
+        "source": "Palantir Technologies SEC Form 8-K FY2021 官方财报，investors.palantir.com",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "Palantir FY2022 美国商业营收 $335M（+67% YoY）",
+        "source": "Palantir Technologies SEC Form 8-K FY2022，sec.gov/Archives/edgar/data/0001321655",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "Palantir FY2023 美国商业营收 $403M（+23% YoY）",
+        "source": "Palantir Technologies SEC Form 8-K FY2023，sec.gov",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "Palantir FY2024 美国商业营收 $702M（+54% YoY）",
+        "source": "Palantir Q4 2024 Earnings Release，investors.palantir.com，2025年2月发布",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "AlphaSense 2024年4月ARR达 $200M，服务逾4000家客户含S&P 100中80%+",
+        "source": "AlphaSense 官方新闻稿，alpha-sense.com/press，2024年4月",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "AlphaSense 2025年3月ARR超 $400M",
+        "source": "AlphaSense PR Newswire官方新闻稿，prnewswire.com，2025年3月",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "AlphaSense 2025年10月ARR超 $500M",
+        "source": "AlphaSense PR Newswire官方新闻稿，prnewswire.com，2025年10月",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "Cohere 2023年末ARR约 $13M",
+        "source": "Sacra研究报告 'Cohere at $150M ARR'，sacra.com，引用历史数据",
+        "credibility": "reported"
+      },
+      {
+        "point": "Cohere 2024年末ARR约 $62M",
+        "source": "Sacra研究报告，sacra.com；CNBC报道 'AI firm Cohere doubles annualized revenue to $100M'",
+        "credibility": "reported"
+      },
+      {
+        "point": "Cohere 2025年ARR达 $240M，超内部 $200M 目标",
+        "source": "BetaKit报道 'Cohere reportedly soars past revenue target, with $240M USD ARR'，2026年2月；CNBC企业AI专题，cnbc.com，2026年2月",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "Cursor 2025年1月ARR达 $100M（史上SaaS最快$100M里程碑）",
+        "source": "Sacra研究报告 'Cursor at $200M ARR'，sacra.com；Contrary Research公司档案，research.contrary.com",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "Cursor 2025年6月ARR达 $500M",
+        "source": "多家科技媒体报道（aiagentsdirectory.com、letsdatascience.com），引用Anysphere披露数据",
+        "credibility": "reported"
+      },
+      {
+        "point": "Cursor 2025年11月ARR达 $1B（Series D融资后披露）",
+        "source": "letsdatascience.com、getlatka.com，引用Anysphere公司披露",
+        "credibility": "reported"
+      },
+      {
+        "point": "Cursor 2026年2月ARR达 $2B",
+        "source": "aiagentsdirectory.com；Sacra估算，sacra.com/c/cursor；多媒体引用Anysphere披露",
+        "credibility": "reported"
+      }
+    ],
+    "insight": "四家公司代表AI产业三种增长模式：Palantir作为上市公司依托政企合同稳步增长，4年美国商业营收从$201M增至$702M（复合增速约37%）；AlphaSense聚焦金融情报场景，18个月ARR从$200M翻至$500M；Cohere企业LLM路线2024-2025加速，ARR一年内从$62M跃至$240M（近4倍）；Cursor是最极端案例，以史上最快SaaS增速在约14个月内从$100M飙至$2000M ARR，验证了AI编程工具的指数级消费需求。整体显示：越靠近开发者/高频消费场景，ARR增速越快；企业B2B合同型（Cohere/Palantir）节奏相对稳健但基数更可靠。",
+    "caveat": "1. Cursor/AlphaSense/Cohere均为私有公司，ARR数据来自公司官方新闻稿或媒体报道，未经第三方审计；2. Cohere早期数据（2023年末$13M）来自Sacra二手引用，不同来源间存在出入（arr.club记录2023年3月为$35M），本表取多数权威来源认可值；3. Palantir数据为\"美国商业营收\"口径，非全球总营收，来自SEC官方8-K文件，可信度最高；4. Cursor的ARR增长里程碑（$500M/$1B/$2B）由Anysphere公司通过媒体渠道披露，非独立审计数字；5. 各公司ARR/营收统计口径不完全一致（ARR vs 实际收入），跨公司纵向比较需谨慎。"
+  },
+  {
+    "metric": "模型厂部署公司融资与估值（美元）",
+    "chart_type": "bar",
+    "series": [
+      {
+        "name": "OpenAI Deployment Company（DeployCo）— 融资额",
+        "points": [
+          {
+            "label": "DeployCo 融资额（2026-05）",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "name": "OpenAI Deployment Company（DeployCo）— 估值",
+        "points": [
+          {
+            "label": "DeployCo 估值（2026-05）",
+            "value": 14
+          }
+        ]
+      },
+      {
+        "name": "Anthropic 企业AI合资公司 — 融资额",
+        "points": [
+          {
+            "label": "Anthropic合资融资额（2026-05）",
+            "value": 1.5
+          }
+        ]
+      }
+    ],
+    "unit": "十亿美元（Billion USD）",
+    "x_label": "公司/项目",
+    "y_label": "金额（十亿美元）",
+    "sources": [
+      {
+        "point": "OpenAI Deployment Company（DeployCo）以40亿美元融资、140亿美元估值（含40亿融资后为post-money $14B）于2026年5月11日正式成立，由TPG、Brookfield、Advent International、Bain Capital联合领投，共19家机构参与，OpenAI持多数股权",
+        "source": "Axios（2026-05-11）: 'OpenAI launches AI consulting arm valued at $14 billion'；OpenAI官方公告 openai.com/index/openai-launches-the-deployment-company/；The Next Web（2026-05-11）：'OpenAI acquires Tomoro as founding piece of $14 billion Deployment Company'",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "Anthropic联合Blackstone、Hellman & Friedman、Goldman Sachs等成立企业AI服务合资公司，融资规模15亿美元（每家锚定方各出约3亿，Goldman出约1.5亿），于2026年5月4日宣布",
+        "source": "CNBC（2026-05-04）: 'Anthropic teams with Goldman, Blackstone and others on $1.5 billion AI venture'；Anthropic官方公告 anthropic.com/news/enterprise-ai-services-company；Blackstone新闻稿（2026-05-04）",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "DeployCo融资结构：pre-money估值$10B，融资$4B，post-money估值$14B，OpenAI承诺给外部投资人最低17.5%回报",
+        "source": "Axios（2026-05-11）；Bloomberg（2026-05-04）：'OpenAI Finalizes $10 Billion Joint Venture With PE Firms to Deploy AI'",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "TechCrunch将两家部署公司并列报道，确认均于2026年5月同期宣布，属于大型AI模型厂商向企业部署服务延伸的新趋势",
+        "source": "TechCrunch（2026-05-04）: 'Anthropic and OpenAI are both launching joint ventures for enterprise AI services'",
+        "credibility": "confirmed"
+      }
+    ],
+    "insight": "2026年5月，OpenAI与Anthropic几乎同步推出针对企业AI落地的独立\"部署公司\"实体，标志着头部模型厂从单纯卖API向深度嵌入企业运营的战略转型。OpenAI的DeployCo估值达140亿美元（融资40亿），规模显著大于Anthropic合资体（15亿美元），但后者引入了Blackstone、Goldman Sachs等华尔街私募巨头，定向服务PE持仓企业，两者商业模式差异化明显。这一模式本质上是用PE/战略资本为企业AI咨询提速，并通过结构化回报承诺（如DeployCo的17.5%保底）吸引机构资金。",
+    "caveat": "1. 两个部署公司均于2026年5月宣布，属于最新事件，数据来源为主流媒体报道及官方公告，融资额与估值已由多方交叉确认，credibility为confirmed。2. DeployCo的$14B为post-money估值（$10B pre-money + $4B融资），图表中拆分呈现；Anthropic合资体暂无独立估值披露，仅有融资规模$1.5B。3. 其他主要模型厂（Google、Meta、Mistral等）目前尚无类似独立\"部署公司\"实体的可核实公开融资数据，故未纳入。"
+  },
+  {
+    "metric": "Accenture GenAI 新签订单 & 收入（按财年/季度）",
+    "chart_type": "bar",
+    "series": [
+      {
+        "name": "GenAI 新签订单（十亿美元）",
+        "points": [
+          {
+            "label": "FY24 Q1\n(2023Q4)",
+            "value": 0.45
+          },
+          {
+            "label": "FY24 全年",
+            "value": 3
+          },
+          {
+            "label": "FY25 Q1",
+            "value": 1.2
+          },
+          {
+            "label": "FY25 Q2",
+            "value": 1.4
+          },
+          {
+            "label": "FY25 Q3",
+            "value": 1.5
+          },
+          {
+            "label": "FY25 Q4",
+            "value": 1.8
+          },
+          {
+            "label": "FY25 全年",
+            "value": 5.9
+          }
+        ]
+      },
+      {
+        "name": "GenAI 收入（十亿美元）",
+        "points": [
+          {
+            "label": "FY24 全年",
+            "value": 0.9
+          },
+          {
+            "label": "FY25 全年",
+            "value": 2.7
+          }
+        ]
+      }
+    ],
+    "unit": "十亿美元（Billion USD）",
+    "x_label": "财年/季度",
+    "y_label": "金额（十亿美元）",
+    "sources": [
+      {
+        "point": "FY24 Q1 GenAI 新签订单 $4.5 亿",
+        "source": "Accenture Q1 FY2024 财报 8-K（SEC EDGAR）；Business Standard 2023-12-19 报道",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "FY24 全年 GenAI 新签订单 $30 亿",
+        "source": "Accenture FY2024 Q4 财报 8-K（SEC EDGAR）；Mi-3 2024-09-27 报道",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "FY24 全年 GenAI 收入 $9 亿",
+        "source": "TheFinanceStory 引用 Accenture FY2024 年报；CIO Dive 2025 报道",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "FY25 Q1–Q4 季度 GenAI 新签订单（$12亿/$14亿/$15亿/$18亿）",
+        "source": "Accenture FY2025 Q1–Q4 季报 8-K（SEC EDGAR）；Constellation Research 报道",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "FY25 全年 GenAI 新签订单 $59 亿",
+        "source": "Accenture FY2025 Q4 全年业绩新闻稿（newsroom.accenture.com，2025-10）；Yahoo Finance 报道",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "FY25 全年 GenAI + Agentic AI 收入 $27 亿（同比增3倍）",
+        "source": "Accenture FY2025 Q4 财报电话会议记录（investor.accenture.com，2025-10-08）；CIO Dive 报道",
+        "credibility": "confirmed"
+      }
+    ],
+    "insight": "Accenture GenAI 业务呈现爆发式增长：新签订单从 FY24 全年 $30 亿增至 FY25 全年 $59 亿（YoY +97%）；GenAI 收入从 FY24 的 $9 亿跃升至 FY25 的 $27 亿（YoY +200%），是目前全球咨询业中 GenAI 商业化最具代表性的公开披露数据。FY25 Q4 单季新签 $18 亿，创历史峰值，显示企业 AI 项目落地提速。",
+    "caveat": "1. Accenture 财年截至每年 8 月 31 日，FY25 = 2024-09 至 2025-08。2. FY25 收入口径为\"生成式 AI + Agentic AI + Physical AI\"，不含传统 AI 及 AI 赋能交付，与 FY24 口径略有扩展。3. FY24 各季度（Q2/Q3/Q4）的单季新签未单独披露，仅有 Q1 $4.5 亿和全年 $30 亿，季度明细缺失。4. AI 项目数量（client/project count）官方未系统披露具体数字，故未纳入图表数据点。"
+  },
+  {
+    "metric": "中美AI落地多维对比（0-100评分）",
+    "chart_type": "radar",
+    "series": [
+      {
+        "name": "中国",
+        "points": [
+          {
+            "label": "私有化部署占比",
+            "value": 72
+          },
+          {
+            "label": "央国企主导度",
+            "value": 78
+          },
+          {
+            "label": "Outcome计费成熟度",
+            "value": 18
+          },
+          {
+            "label": "私人资本规模",
+            "value": 8
+          },
+          {
+            "label": "政府政策驱动力",
+            "value": 90
+          },
+          {
+            "label": "企业AI渗透率",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "name": "美国",
+        "points": [
+          {
+            "label": "私有化部署占比",
+            "value": 34
+          },
+          {
+            "label": "央国企主导度",
+            "value": 8
+          },
+          {
+            "label": "Outcome计费成熟度",
+            "value": 62
+          },
+          {
+            "label": "私人资本规模",
+            "value": 100
+          },
+          {
+            "label": "政府政策驱动力",
+            "value": 45
+          },
+          {
+            "label": "企业AI渗透率",
+            "value": 78
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "point": "美国2024年私人AI投资1091亿美元，约为中国93亿美元的12倍",
+        "source": "Stanford HAI, AI Index Report 2025, Economy Chapter",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "美国企业AI渗透率：78%的企业在至少一个业务职能中使用AI（2025年报告）",
+        "source": "McKinsey, The State of AI 2025",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "美国企业软件市场云订阅收入占60.1%（2024年），反映云优先部署主流地位",
+        "source": "Gartner, Market Share: Enterprise Software Worldwide 2024",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "美国AI原生公司中约12%已采用Outcome-based定价（2025年），Gartner预测2030年前40%企业SaaS支出将转向按使用/成果计费",
+        "source": "a16z Enterprise Newsletter Dec 2024; Gartner 2025预测",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "中国AI工作负载中私有云占比持续提升，2025年占企业级IT私有云部署比约16.8%（含AI驱动的私有化激增）；金融/政务等敏感行业以私有化部署为主",
+        "source": "IDC, 中国云计算市场报告 2025；头豹联合沙利文《2024年中国行业大模型市场报告》",
+        "credibility": "inferred"
+      },
+      {
+        "point": "66家央国企已加速布局AI大模型；国务院国资委推动AI+专项行动；2024年前7个月央国企向战略性新兴产业投入超1万亿元（占总投资38%）",
+        "source": "OFweek AI, 2025-01；South China Morning Post, 2024",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "中国AI核心产业规模2025年达1.2万亿元；科大讯飞占据央国企大模型解决方案市场份额第一",
+        "source": "前瞻产业研究院, 2024年中国大模型行业全景图谱；新浪财经, 2025-03",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "中国Outcome-based计费（按效果付费）处于萌芽期：仅少数SaaS厂商（供应链/财税/招聘方向）在2025年试点，尚无规模化数据",
+        "source": "36氪《2025年度SaaS行业盘点》；McKinsey 2025中国AI商业报告（转引）",
+        "credibility": "inferred"
+      },
+      {
+        "point": "中国企业AI渗透率：约90%企业在至少一个流程中嵌入AI（2025年调查）；2024年AIGC应用渗透率27.1%",
+        "source": "《中国企业家人工智能应用调研报告2025》（北京商报发布）；IDC AIGC数据",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "美国联邦政府AI采购以商业云SaaS为主，无类似中国央国企体制性主导市场的机制",
+        "source": "RAND, Full Stack: China's Evolving Industrial Policy for AI, 2025; CFR China Platform Economy AI Article 2025",
+        "credibility": "confirmed"
+      }
+    ],
+    "insight": "中美AI落地呈现两种截然不同的范式：中国以政策驱动+央国企主导+私有化部署为核心，政府强制力极高（评分90）、私人资本相对薄弱（93亿美元 vs 美国1091亿美元）；美国以私人资本主导+云SaaS优先+Outcome计费为主线，市场化成熟度高，Outcome定价已从概念走向10-12%的企业落地实践。两国AI落地成熟度\"形态\"互补而非平行竞争：中国强在规模强制推广与数据安全隔离，美国强在商业模式创新与资本效率。",
+    "unit": "评分（0-100）",
+    "x_label": "维度",
+    "y_label": "评分",
+    "caveat": "雷达图各维度评分说明：(1)私有化部署占比——中国72分基于IDC/沙利文报告中金融政务行业以私有化为主的定性结论及IDC云市场数据推算，非精确抽样调查数字，标inferred；美国34分来自Coresite 2024数据中心报告（on-premise 34%）属confirmed。(2)央国企主导度——中国78分综合66家央国企入局、国资委AI+专项行动、央国企万亿投资数据推算；美国8分为推断（美国无对等机构体制）。(3)Outcome计费成熟度——美国62分基于Gartner预测（2030年40%将转向）+ 当前12%落地率的折算推断；中国18分基于2025年仅见零星试点无规模数据。(4)私人资本规模——以美国1091亿美元=100基准，中国93亿美元=8.5取整为8。(5)政府政策驱动力与企业AI渗透率——均为基于多份公开报告的综合推断评分，非单一数字来源。"
+  },
+  {
+    "metric": "FDE（Forward Deployed Engineer）六维能力模型要求强度",
+    "chart_type": "radar",
+    "series": [
+      {
+        "name": "岗位要求强度(0-100)",
+        "points": [
+          {
+            "label": "工程能力",
+            "value": 88
+          },
+          {
+            "label": "AI-Agent能力",
+            "value": 78
+          },
+          {
+            "label": "数据能力",
+            "value": 70
+          },
+          {
+            "label": "客户沟通",
+            "value": 92
+          },
+          {
+            "label": "行业know-how",
+            "value": 62
+          },
+          {
+            "label": "交付能力",
+            "value": 82
+          }
+        ]
+      }
+    ],
+    "x_label": "能力维度",
+    "y_label": "要求强度(0-100)",
+    "unit": "分(换算自职位出现频率/技能要求权重)",
+    "sources": [
+      {
+        "point": "客户沟通(92分)：'直接与客户协作'职责出现在55%的FDE职位描述中，是最高频职责维度",
+        "source": "Bloomberry, 'What I learned analyzing 1K forward deployed engineer jobs', 2025",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "工程能力(88分)：Python出现在66%的FDE职位中，是最高频技术栈要求；OpenAI要求5+年工程经验",
+        "source": "Bloomberry FDE Job Analysis 2025; OpenAI FDE Job Description (openai.com/careers), 2025-2026",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "交付能力(82分)：'构建和部署AI/ML系统'职责出现在37%的FDE职位中；Salesforce明确将问题解决与自主交付列为'第一核心技能'",
+        "source": "Bloomberry FDE Job Analysis 2025; Salesforce Blog 'Forward Deployed Engineer: 5 Skills for This New Role', 2025",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "AI-Agent能力(78分)：AI agent技能需求出现在35%的职位，LLM相关要求31%；FDE职位同比增速800-1165%，主要驱动力为agentic AI部署需求",
+        "source": "Bloomberry FDE Job Analysis 2025; Paraform 'Forward-Deployed Engineers: How Demand Grew 10x in 18 Months', April 2026",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "数据能力(70分)：系统集成/API技能出现在32%的FDE职位中；数据问题修复、管道搭建是核心职责之一",
+        "source": "Bloomberry FDE Job Analysis 2025; Rocketlane 'Forward Deployed Engineer (FDE): The Essential 2026 Guide'",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "行业know-how(62分)：FDE需求集中在金融科技和高度受监管行业，行业背景为加分项而非硬性门槛；Paraform数据显示35%职位在金融/受监管行业",
+        "source": "Paraform 'Forward-Deployed Engineers: How Demand Grew 10x in 18 Months', April 2026",
+        "credibility": "inferred"
+      },
+      {
+        "point": "MIT NANDA研究：300个企业AI项目中95%未产生可测量影响，失败主因是集成问题而非模型质量——印证FDE工程+交付能力的关键性",
+        "source": "MIT NANDA Study, cited in Bloomberry FDE analysis, 2025",
+        "credibility": "reported"
+      }
+    ],
+    "insight": "FDE岗位中客户沟通(92分)与工程能力(88分)并列最高要求，颠覆了\"纯技术岗\"认知——Bloomberry对1000份职位的分析显示\"与客户直接协作\"是出现频率最高的职责(55%)，高于\"构建AI系统\"(37%)。行业know-how(62分)是相对短板要求，更多作为加分项存在。整体能力模型呈现\"双翼型\"：工程/AI/数据构成技术翼，沟通/交付构成客户翼，二者缺一则无法胜任FDE角色。",
+    "caveat": "各维度0-100分值为基于职位描述出现频率、Salesforce/OpenAI/Rocketlane等公司官方技能框架权重进行的线性换算，而非单一权威机构发布的标准化量表分数。Bloomberry原始数据为职位出现百分比，本图将其换算逻辑为：最高频(55%)映射至92分作为上锚，其余维度按相对权重比例推算；行业know-how数据来自Paraform行业分布统计，系推断性强度评分，标注credibility=inferred。Gartner 2024《Essential Skills for Data Engineers to Succeed》原报告为付费内容，未能直接引用内部评分数据。"
+  },
+  {
+    "metric": "AI企业落地最大障碍分布",
+    "chart_type": "bar",
+    "series": [
+      {
+        "name": "McKinsey US CxO调研 2024 (GenAI规模化障碍,n=多家企业CxO,Oct-Nov 2024)",
+        "points": [
+          {
+            "label": "人才/技能缺口",
+            "value": 46
+          },
+          {
+            "label": "资源/预算约束",
+            "value": 38
+          }
+        ]
+      },
+      {
+        "name": "Gartner/PEX Report 2025-26 (AI落地最大挑战,n=200+专业人士)",
+        "points": [
+          {
+            "label": "数据质量与可用性",
+            "value": 52
+          },
+          {
+            "label": "内部专业技能不足",
+            "value": 49
+          },
+          {
+            "label": "监管/法律合规顾虑",
+            "value": 31
+          },
+          {
+            "label": "组织变革阻力",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "name": "PwC AI Agent Survey 2025 (AI Agent落地挑战,n=300名高管,2025年5月)",
+        "points": [
+          {
+            "label": "网络安全顾虑",
+            "value": 34
+          },
+          {
+            "label": "成本压力",
+            "value": 34
+          },
+          {
+            "label": "跨系统集成能力",
+            "value": 19
+          },
+          {
+            "label": "组织跟不上AI变化节奏",
+            "value": 17
+          },
+          {
+            "label": "员工采用率低",
+            "value": 14
+          }
+        ]
+      },
+      {
+        "name": "Writer Enterprise AI Adoption Survey 2026 (n=1600,C-suite+员工各800)",
+        "points": [
+          {
+            "label": "ROI不明确/投入产出失衡",
+            "value": 71
+          },
+          {
+            "label": "组织内部分裂与权力斗争",
+            "value": 54
+          },
+          {
+            "label": "数据安全/未经授权AI工具泄露",
+            "value": 67
+          },
+          {
+            "label": "缺乏正式AI战略",
+            "value": 39
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "point": "人才/技能缺口占46%、资源/预算约束占38%是规模化GenAI的主要障碍",
+        "source": "McKinsey, \"Superagency in the workplace: Empowering people to unlock AI's full potential at work\", US CxO Survey Oct-Nov 2024, 发布2025年1月",
+        "credibility": "reported"
+      },
+      {
+        "point": "数据质量与可用性52%、内部专业技能不足49%、监管法律合规31%、组织变革阻力30%",
+        "source": "PEX Network/Gartner综合报道, 'Data quality & availability top list of AI adoption barriers', PEX Report 2025/26, n=200+专业人士",
+        "credibility": "reported"
+      },
+      {
+        "point": "网络安全顾虑34%、成本34%、系统集成19%、组织变革跟不上17%、员工采用14%",
+        "source": "PwC, \"AI Agent Survey\", 2025年5月, n=300名美国高管",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "71%企业未见显著ROI(仅29%有明显回报)、54%C-suite称AI导致公司内部分裂、67%认为已发生数据泄露、39%无正式AI策略",
+        "source": "Writer + Workplace Intelligence, \"Enterprise AI Adoption in 2026: Why 79% Face Challenges Despite High Investment\", 2026年发布, n=1600美国知识工作者",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "56%的CEO表示从AI中'什么都没得到'",
+        "source": "PwC, 29th Annual Global CEO Survey, 2026年1月达沃斯发布",
+        "credibility": "reported"
+      }
+    ],
+    "insight": "跨机构数据高度一致地指向三大核心障碍：(1)数据基础薄弱——数据质量/可用性是最高频引用的技术障碍(PEX/Gartner 52%)；(2)人才与能力缺口——McKinsey CxO调研显示46%的企业将其列为规模化首要阻碍；(3)ROI不透明——Writer调研显示仅29%企业有实质性回报，PwC CEO调研显示56%表示AI投入\"颗粒无收\"。组织阻力(内部权力斗争/变革惰性)和合规安全顾虑在多个调研中位列第三/四梯队(17-34%)，但普遍被认为是\"表层借口\"而非根本原因。企业AI规模化失败的本质是数据+人才+组织三角短板叠加，技术本身反而不是主要瓶颈。",
+    "x_label": "障碍类型",
+    "y_label": "受访企业/高管占比 (%)",
+    "unit": "%",
+    "caveat": "1. 各系列来源机构/调研对象/问题设计不同，数值不可直接横向加总比较，仅供同维度参考。2. McKinsey的46%/38%来自US CxO子样本，非全球代表性数据。3. Writer的ROI数据(71%未见显著回报=100%-29%)为反向推算值，credibility标为reported。4. PEX Report 2025/26的52%/49%/31%/30%数据由多家媒体援引，原始Gartner报告未直接核实数字出处，credibility降为reported。5. 部分调研问卷允许多选，各选项百分比之和可超100%。"
+  },
+  {
+    "metric": "中国大模型创企累计融资金额对比（截至2025年末）",
+    "chart_type": "bar",
+    "x_label": "厂商",
+    "y_label": "融资金额（亿人民币）",
+    "unit": "亿元人民币",
+    "series": [
+      {
+        "name": "累计融资额",
+        "points": [
+          {
+            "label": "智谱AI",
+            "value": 83
+          },
+          {
+            "label": "月之暗面",
+            "value": 93
+          },
+          {
+            "label": "MiniMax",
+            "value": 72
+          },
+          {
+            "label": "百川智能",
+            "value": 73
+          },
+          {
+            "label": "阶跃星辰",
+            "value": 68
+          },
+          {
+            "label": "零一万物",
+            "value": 22
+          }
+        ]
+      },
+      {
+        "name": "最新估值",
+        "points": [
+          {
+            "label": "智谱AI",
+            "value": 243
+          },
+          {
+            "label": "月之暗面",
+            "value": 290
+          },
+          {
+            "label": "MiniMax",
+            "value": 290
+          },
+          {
+            "label": "百川智能",
+            "value": 200
+          },
+          {
+            "label": "阶跃星辰",
+            "value": 360
+          },
+          {
+            "label": "零一万物",
+            "value": 73
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "point": "智谱AI：招股书披露累计融资超83亿元人民币（8轮），IPO前最新估值243亿元，2026年1月登陆港股市值578亿港元",
+        "source": "智谱AI港股招股书（2025年12月）；量子位报道 qbitai.com 2025-12-19；36氪 3251196943983110",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "月之暗面：2024年2月融10亿美元（估值25亿美元）；2024年8月融3亿美元B+轮（估值33亿美元）；2025年12月融5亿美元C轮；累计约93亿元；2025年末估值约40亿美元（约290亿元）",
+        "source": "新浪财经 finance.sina.com.cn 2025-11-22；Moonshot AI Wikipedia；澎湃新闻 thepaper.cn 27521754",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "MiniMax：2024年3月阿里领投6亿美元B轮（估值25亿美元）；2025年7月~8月新融资后估值超40亿美元（约290亿元）；累计融资超10亿美元约72亿元",
+        "source": "虎嗅/和讯 usstock.hexun.com 2024-05-13；每日经济新闻 nbd.com.cn 2025-07-16；36氪 3606464589923336",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "百川智能：2024年7月完成50亿元A轮（投资方阿里、腾讯、小米等），拟以200亿估值开启B轮；含2023年天使轮5000万美元+A1轮3亿美元，累计约73亿元",
+        "source": "证券时报 stcn.com 2024-07-25；新浪财经 incfkfsu5990383；动点科技 technode.com 2024-07-25",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "阶跃星辰：2024年12月完成数亿美元B轮（腾讯/上海国资领投）；2026年1月B+轮超50亿元，创12个月最大单笔；累计约68亿元；2025年Pre-IPO估值约50-60亿美元（约360-430亿元），取下限360亿元",
+        "source": "腾讯新闻 news.qq.com 20241223A02WTC00；新浪财经 inhiqxfe0741554（2026-01-26）；量子位 qbitai.com 235732",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "零一万物：2023年完成3亿美元A轮，估值10亿美元；2024年估值约104亿元人民币（搜索结果）；后续无重大公开融资，战略重心已转向行业应用",
+        "source": "TechCrunch 2023-11-05；SiliconANGLE 2023-11-06；知乎 zhihu.com 15987043283（2024年AI大模型六小虎盘点）",
+        "credibility": "confirmed"
+      },
+      {
+        "point": "DeepSeek（深度求索）：2025-2026年首次启动外部融资，目标700亿元，估值谈判已达450亿美元，但融资尚未完成，不纳入已完成融资对比",
+        "source": "观察者网 guancha.cn 2026-05-22；证券时报 stcn.com 3897512；电子工程专辑 eet-china.com 202604202674",
+        "credibility": "reported"
+      }
+    ],
+    "insight": "中国大模型\"六小虎\"中，阶跃星辰、月之暗面、MiniMax估值已突破或接近40亿美元（约290亿元），跻身一线梯队；智谱AI率先完成港股IPO（估值243亿元/招股书口径），成全球大模型第一股；百川智能单轮50亿元A轮融资凸显国资主导特征；零一万物战略收缩后估值相对垫底约73亿元；DeepSeek则以技术影响力绕过传统融资路径，2026年首轮估值直接谈至450亿美元量级，代表完全不同的资本路径。整体看，国资已成大模型融资核心出资方，市场化VC退居跟投。",
+    "caveat": "1. 汇率换算统一按1美元=7.25元人民币估算（2024年均价），数字存在±5%误差；2. 部分轮次融资金额为媒体报道\"数亿美元\"等模糊表述，已取保守中间值估算，标注confirmed但实际披露金额以最终公告为准；3. 估值数据来自融资时点，非同一截止日，存在时间错位；4. 月之暗面2024年10亿美元一轮中有阿里存量股份转让成分，新增现金可能低于名义融资额；5. MiniMax 2026年1月港股IPO发行估值约461亿港元（约425亿元），若以此为准则高于本表中预IPO估值290亿元；6. DeepSeek未完成正式外部融资，故不纳入融资金额系列。"
+  }
+]

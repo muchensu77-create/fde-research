@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FDE 实操指南</title>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="assets/style.css"><script src="assets/marked.min.js"></script></head>
+<body class="t-teal"><nav class="nav"><div class="nav-inner"><span class="brand">FDE 全行业调研</span><a href="index.html">总览</a><a href="companies-us.html">美国公司</a><a href="companies-cn.html">中国公司</a><a href="cases.html">硅谷案例</a><a href="industries.html">行业全景</a><a href="fde-guide.html" class="active">FDE指南</a><a href="academy.html">FDE养成</a><a href="landscape.html">市场格局</a><a href="charts.html">数据图表</a><a href="knowledge.html">知识结构</a><a href="concepts.html">概念图鉴</a><a href="mindset.html">认知升级</a><a href="future.html">未来趋势</a><a href="analysis.html">深度分析</a><a href="comments.html">评论分析</a><a href="mindmap.html">思维导图</a></div></nav><div class="wrap"><div class="hero"><div class="eyebrow">HOW-TO · SKILL TREE</div><h1>🧭 FDE 实操指南</h1>
+<p class="sub">端到端工作步骤 SOP + 从 0 到 senior 的技能树与学习路径。</p>
+<p style="margin-top:12px"><a class="cta" href="#sop">工作步骤 SOP</a><a class="cta alt" href="#skill">技能树 / 学习路径</a></p></div>
+<section id="sop"><div id="sop-c" class="mdbox"></div></section>
+<hr style="border-color:var(--line);margin:40px 0">
+<section id="skill"><div id="skill-c" class="mdbox"></div></section>
+<!--EXTRA:START-->
+<section class="extra-sec" style="--cat:var(--c10)"><h2 class="extra-h">🧰 FDE 实战工具箱</h2><p class="enrich-intro">给想入行或正在做 FDE 的人的实操材料:入行路径、常见误区、面试、技能清单、薪资地图、工具栈、落地 SOP、避坑。点开看。</p><div class="tbox"><details class="tb"><summary>🚪 入行 FAQ：怎么成为一名 FDE</summary><div class="tb-body"><p class="intro">想做 FDE 却不知道从哪里入手？这里收录了最高频的真实疑问，给你直接可操作的答案。</p><p><b>FDE（Field Developer Evangelist / Field Development Engineer）</b>是连接技术产品与客户落地的关键角色，既要懂技术深度，又要能跑客户现场。以下 FAQ 来自真实入行路径，适合想转岗或应届生入门参考。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>问题</th>
+      <th>核心答案（快速定位）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>需要什么背景？</td>
+      <td>CS/EE/数学相关最优，但非必须</td>
+    </tr>
+    <tr>
+      <td>要不要很会写代码？</td>
+      <td>要会写，但不要求 LeetCode Hard</td>
+    </tr>
+    <tr>
+      <td>从哪个岗位转最顺？</td>
+      <td>后端 > 数据工程 > 解决方案架构 > 售前 SE</td>
+    </tr>
+    <tr>
+      <td>校招路径怎么走？</td>
+      <td>有，但名额少，需要差异化</td>
+    </tr>
+    <tr>
+      <td>没名校背景能进吗？</td>
+      <td>能，作品集比学历更重要</td>
+    </tr>
+    <tr>
+      <td>AI 时代新人有没有机会？</td>
+      <td>窗口期正在打开，方向对比时间早更重要</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><b>Q1：做 FDE 需要什么技术背景？</b></p>
+<ul>
+  <li><b>最受欢迎的底色：</b>计算机、电子工程、软件工程、数学/统计本科及以上。但招聘 JD 里通常写"相关专业或同等经验"——意味着非科班有豁免空间。</li>
+  <li><b>硬门槛：</b>能写可运行的代码（Python / Java / Go 选一门）；能读懂 API 文档和架构图；能在客户面前做技术演示而不出糗。</li>
+  <li><b>软门槛（同等重要）：</b>英文能力（国际厂商面试+日常文档全英）、客户沟通表达、独立推进项目的习惯。</li>
+  <li><b>不需要：</b>算法竞赛经历、系统底层原理死背、博士学历。FDE 不写生产代码，写的是 Demo、PoC、Sample App。</li>
+</ul>
+
+<p><b>Q2：到底要不要"很会写代码"？</b></p>
+<ul>
+  <li><b>定义"会写"的标准：</b>能在 2 小时内用目标平台的 SDK 跑通一个端到端 Demo，能 debug 客户给的报错，能写清楚的 README。</li>
+  <li><b>不需要的：</b>手写红黑树、DP 优化、复杂并发设计。FDE 的代码是给客户看的 Example，优先可读和可复现，不是性能极致。</li>
+  <li><b>AI 时代的变化：</b>GitHub Copilot / Claude Code 已经大幅降低了"写代码"的门槛。现在更考验<b>你会不会用 AI 快速出 PoC</b>，以及你能不能解释清楚代码背后的架构意图。</li>
+  <li><b>实操建议：</b>在目标公司的 GitHub 上找一个 Sample Repo，克隆下来自己跑通、改一个 feature、写一篇 blog 发出去。这是最有效的能力证明。</li>
+</ul>
+
+<p><b>Q3：从什么岗位转过来最顺？</b></p>
+<ol>
+  <li><b>后端工程师（推荐★★★）：</b>有写 API 和集成经验，能快速上手 SDK；缺的是客户沟通和表达，这个可以练。转 FDE 通常 1 轮内部推荐就能面试。</li>
+  <li><b>数据工程师 / 分析师（推荐★★★）：</b>AI/数据平台类 FDE 需求最旺盛，Databricks、Snowflake、AWS 数据方向大量招。</li>
+  <li><b>解决方案架构师 SA（推荐★★）：</b>已经有客户对话经验，技术广度好；需要补齐"动手写代码"的能力，很多 SA 长期脱离代码会被卡。</li>
+  <li><b>售前技术顾问 Pre-Sales SE（推荐★★）：</b>懂客户场景，但编码能力若弱需要提升；适合转到 Partner/Ecosystem FDE 方向而非 Developer Relations 方向。</li>
+  <li><b>产品经理 PM（推荐★）：</b>要补大量编码实践；除非有非常强的技术写作或开发者社区运营经历，否则门槛高。</li>
+</ol>
+
+<p><b>Q4：校招路径怎么走？</b></p>
+<ul>
+  <li><b>现实：</b>大多数公司 FDE 岗位面向 2-3 年经验社招，校招名额很少，集中在 Google、AWS、Salesforce、字节跳动国际化团队等大厂的 New Grad Developer Advocate / Solutions Engineer 项目。</li>
+  <li><b>校招差异化打法：</b>
+    <ol>
+      <li>在目标公司的开发者社区贡献：提 PR、写技术文章、在技术论坛回答问题——这比绩点更有用。</li>
+      <li>实习优先选 DevRel、Solution Engineering、Developer Experience 方向，而不是纯开发岗。</li>
+      <li>做一个公开 Side Project，用目标公司的 API 构建，写成 GitHub Repo + 技术博客，面试时直接展示。</li>
+    </ol>
+  </li>
+  <li><b>推荐关注的校招项目：</b>AWS Student Developer Ambassador、Google Developer Student Clubs（GDSC）Lead、Salesforce Futureforce New Grad SE。</li>
+</ul>
+
+<p><b>Q5：没有名校背景能不能进？</b></p>
+<ul>
+  <li><b>直接答案：能。</b>FDE 岗位的面试重点在于现场演示和技术对话，不是学历筛选，头部公司的 FDE 里双非背景并不罕见。</li>
+  <li><b>但简历关你可能吃亏：</b>大厂 HR 初筛可能有学历过滤，破局方式：
+    <ul>
+      <li>内推（直接认识 FDE 或 DevRel 的人）——绕过 HR 初筛最有效。</li>
+      <li>在技术社区建立影响力：掘金、SegmentFault、Dev.to、技术 Newsletter，让目标公司的 DevRel 先认识你这个人。</li>
+      <li>技术认证：AWS SA Professional、GCP Professional、Databricks 认证等，补充学历信号。</li>
+    </ul>
+  </li>
+  <li><b>作品集>学历：</b>一个有 500 Star 的 GitHub Repo、一篇被官方转发的技术文章，比学历更能让 hiring manager 点击你的简历。</li>
+</ul>
+
+<p><b>Q6：AI 时代，新人还有没有机会？</b></p>
+<ul>
+  <li><b>窗口正在打开，但方向要对：</b>AI 基础设施公司（Anthropic、OpenAI、Cohere、Mistral、国内 Moonshot/DeepSeek 生态）正在大量招聘 Developer Experience、AI Solutions FDE 岗位，这些公司新，没有内部等级壁垒，新人有机会。</li>
+  <li><b>新人最有竞争力的切入点：</b>
+    <ol>
+      <li><b>AI Agent / MCP / Tool Use 方向：</b>这是 2024-2026 增长最快的开发者场景，很多老 FDE 没有实战经验，新人靠动手快可以弯道超车。</li>
+      <li><b>垂直行业 AI 落地：</b>医疗、法律、金融、工业——有行业背景+AI 工程能力的人极少，复合背景溢价高。</li>
+      <li><b>开发者工具生态：</b>VSCode 插件、CI/CD 集成、IDE AI 助手方向，技术门槛明确，新人可快速建立作品集。</li>
+    </ol>
+  </li>
+  <li><b>薪资参考（据报道/约，来源 levels.fyi 2024-2025）：</b>
+    <table>
+      <thead>
+        <tr>
+          <th>公司类型</th>
+          <th>级别</th>
+          <th>TC 区间（美元/年）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>FAANG FDE/DevRel</td>
+          <td>L4/E4 equivalent</td>
+          <td>约 $180k-$250k</td>
+        </tr>
+        <tr>
+          <td>AI 独角兽（Anthropic/OpenAI 等）</td>
+          <td>IC3/IC4</td>
+          <td>约 $200k-$320k</td>
+        </tr>
+        <tr>
+          <td>国内大厂（字节/阿里国际化）</td>
+          <td>P6/P7</td>
+          <td>约 50-100 万 RMB</td>
+        </tr>
+        <tr>
+          <td>中型 SaaS/数据平台</td>
+          <td>Senior FDE</td>
+          <td>约 $130k-$200k</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><b>AI 工具对新人的红利：</b>用 Claude / Copilot 可以在 1 天内做出以前 3 天才能完成的 Demo。这直接压缩了"新人缺乏经验"的劣势——只要你方向判断准确、能快速迭代，工具补足执行速度。</li>
+</ul>
+
+<p><b>Q7：有没有一个最短路径的行动清单？</b></p>
+<ol>
+  <li><b>选定目标平台：</b>选 1 家你真正用过、有感觉的公司（AWS / Databricks / Anthropic / Twilio 等），深入研究其开发者产品。</li>
+  <li><b>跑通 3 个真实 Demo：</b>用该平台 SDK 做 3 个完整可运行的 Demo，覆盖不同场景，发到 GitHub。</li>
+  <li><b>写 2 篇技术文章：</b>发掘金/Dev.to/Medium，标题格式：<code>用 [平台X] 实现 [具体场景]：踩坑实录</code>，真实性比完美更重要。</li>
+  <li><b>找 1 个内推人：</b>在 LinkedIn / 技术群认识该公司现任 FDE，发一条具体的消息（附上你的 GitHub 链接），不要群发模板。</li>
+  <li><b>准备现场 Demo 面试：</b>FDE 面试通常有 Live Demo 环节，练习在 15 分钟内讲清楚一个完整方案，并处理"临时加一个需求"的压力测试。</li>
+</ol></div></details><details class="tb"><summary>⚠️ 常见误区：FDE 不是什么</summary><div class="tb-body"><p class="intro">FDE（Forward Deployed Engineer / Field Development Engineer）是技术落地的核心角色，但它经常被误贴上六种错误标签——搞清楚这些边界，才能真正理解这个岗位的价值和要求。</p><p>以下六条误区来自真实项目场景，每条都会讲清：<b>容易混淆的原因</b>、<b>本质差异</b>、以及<b>对实际工作的影响</b>。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>误区标签</th>
+      <th>FDE 实际做什么</th>
+      <th>最核心的差异</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>外包</td>
+      <td>深度嵌入客户技术团队，推动产品落地</td>
+      <td>FDE 代表厂商利益，目标是让产品跑通，不是接活干完就走</td>
+    </tr>
+    <tr>
+      <td>售前售后</td>
+      <td>覆盖售前到上线再到规模化全周期</td>
+      <td>FDE 持续在场，不是签单前演示、签单后甩给运维</td>
+    </tr>
+    <tr>
+      <td>纯咨询（麦肯锡式）</td>
+      <td>亲手写代码、改配置、调参数</td>
+      <td>FDE 交付的是跑通的系统，不是 PPT 和方案文档</td>
+    </tr>
+    <tr>
+      <td>实施顾问（SI）</td>
+      <td>深度掌握底层产品原理，反向推动产品改进</td>
+      <td>实施顾问按流程走标准化交付，FDE 要在产品边界上解题</td>
+    </tr>
+    <tr>
+      <td>SRE / 运维</td>
+      <td>关注技术落地路径，不长期驻场维护</td>
+      <td>FDE 做完移交，不是永久 on-call 看监控板</td>
+    </tr>
+    <tr>
+      <td>只会调 API 的集成工</td>
+      <td>理解架构、判断方案、解决深层技术问题</td>
+      <td>FDE 要能看懂产品源码逻辑，不只是粘贴 SDK 示例代码</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><b>误区一：FDE ≠ 外包</b></p>
+<ul>
+  <li><b>为什么容易混：</b>FDE 长期驻场客户现场，拿客户系统账号，跟客户工程师并肩写代码，看起来和外包没差别。</li>
+  <li><b>本质差异：</b>外包按人天卖劳动力，任务结束即撤；FDE 代表的是产品/平台厂商，每个落地案例的成败直接影响产品口碑和续约。FDE 有权说"这个需求我们产品不该支持"，外包工程师没有。</li>
+  <li><b>实操影响：</b>FDE 必须懂产品边界在哪——哪些是客户自己的问题、哪些是产品 Bug、哪些是架构设计不合理。外包只管把需求做完。</li>
+</ul>
+
+<p><b>误区二：FDE ≠ 售前 / 售后</b></p>
+<ul>
+  <li><b>为什么容易混：</b>FDE 会参与 POC 演示（像售前），也会在上线后处理问题（像售后），两头都摸得到。</li>
+  <li><b>本质差异：</b>售前的目标是签单，技术深度服务于"打动客户"；售后的目标是响应工单，技术深度服务于"灭火"。FDE 的目标是让产品在客户真实环境里<b>规模化跑通</b>，这是一个需要长期在技术层深耕的过程，不是节点性任务。</li>
+  <li><b>实操影响：</b>FDE 经常要在售前阶段就判断"这个客户环境能不能跑"，拦住不合适的商机；也要在上线后推动客户团队自立，而不是让客户永远依赖 FDE。</li>
+</ul>
+
+<p><b>误区三：FDE ≠ 纯咨询（麦肯锡式）</b></p>
+<ul>
+  <li><b>为什么容易混：</b>FDE 确实要做方案设计、写技术规划文档，有时候 title 里也有"顾问"字样（如 Field Technical Consultant）。</li>
+  <li><b>本质差异：</b>麦肯锡式咨询的核心交付是<b>建议</b>，执行由客户自己或 SI 来做；FDE 的核心交付是<b>跑通的系统</b>。FDE 写完方案要亲手做 PoC、调试环境、跑通 pipeline，最终让客户的工程师能接手。</li>
+  <li><b>实操影响：</b>不能写代码的 FDE 很快会在客户那里失去信任。客户工程师会问"这个配置怎么改"，"这段报错什么原因"，你必须能当场给答案，不是说"我回去研究一下"。</li>
+</ul>
+
+<p><b>误区四：FDE ≠ 实施顾问（SI / Implementation Consultant）</b></p>
+<ul>
+  <li><b>为什么容易混：</b>两者都在客户现场做技术落地，都需要懂产品配置和集成。在部分公司，岗位 JD 甚至混用这两个词。</li>
+  <li><b>本质差异：</b>
+    <ol>
+      <li>SI 顾问的工作基于<b>已成熟的标准化方法论</b>，照着 Playbook 走；FDE 经常面对产品文档之外的场景，要自己找路。</li>
+      <li>SI 顾问通常是第三方，产品是黑盒；FDE 通常代表厂商，产品是白盒，甚至能直接联系研发改 Bug。</li>
+      <li>SI 出了问题升级到厂商；FDE 就是厂商派出的人，升无可升，自己得解决。</li>
+    </ol>
+  </li>
+  <li><b>实操影响：</b>FDE 需要能阅读产品源码或至少读懂内部技术文档，能独立判断"这是产品设计如此"还是"这是 Bug"。这个能力是 SI 顾问通常不具备也不需要具备的。</li>
+</ul>
+
+<p><b>误区五：FDE ≠ SRE / 运维工程师</b></p>
+<ul>
+  <li><b>为什么容易混：</b>FDE 在项目关键节点会深度介入运维，帮客户搭监控、写 runbook、做性能调优，和 SRE 的工作内容高度重叠。</li>
+  <li><b>本质差异：</b>SRE 的职责是长期保障系统稳定运行，是<b>持续角色</b>；FDE 的职责是帮客户建立自己的运维能力，然后<b>退出</b>。FDE 不应该成为客户系统的永久依赖。如果一个 FDE 在某个客户持续 on-call 超过一年还没移交，通常是落地项目出了问题。</li>
+  <li><b>实操影响：</b>FDE 做运维相关工作时，要同步把知识传递给客户团队，输出 SOP 文档，目标是"让自己变得不必要"。这和 SRE 的工作动机完全不同。</li>
+</ul>
+
+<p><b>误区六：FDE ≠ 只会调 API 的集成工</b></p>
+<ul>
+  <li><b>为什么容易混：</b>很多 FDE 工作的第一步确实是把产品 API 接进客户系统，门槛看起来不高。加上"AI 时代人人都能写代码"的论调，外界容易低估 FDE 的技术深度要求。</li>
+  <li><b>本质差异：</b>调 API 是入门动作，真正的 FDE 工作发生在"API 调通之后"——
+    <ul>
+      <li>客户数据格式不符合产品预期，怎么做数据工程？</li>
+      <li>产品在客户网络拓扑下延迟异常，怎么定位？</li>
+      <li>客户要求私有化部署，怎么在隔离网络里跑通？</li>
+      <li>模型推理结果在客户业务场景里表现差，怎么诊断和调优？</li>
+    </ul>
+  </li>
+  <li><b>实操影响：</b>FDE 需要具备跨层的技术判断力——从业务逻辑到数据工程到系统架构到模型行为，不要求每层都精通，但要能快速定位问题出在哪一层，然后找到对应的人或方法解决。薪资上，据 <b>levels.fyi</b> 数据，美国主流科技公司（Google、AWS、Salesforce 等）Field Engineer / Technical Account Engineer 岗位 TC 约 <b>$150k–$280k</b>（含 RSU，报道值，因公司和级别差异较大）；国内头部云厂商（阿里云、华为云、字节）类似岗位据招聘平台（Boss直聘/猎聘）报道约 <b>30–70 万 RMB/年</b>，资深带团约 80 万+。</li>
+</ul>
+
+<p><b>一句话总结给想入行的人：</b>FDE 是技术深度 × 落地广度 × 客户信任三者的交集，缺任何一条都只是"像 FDE"而不是真正的 FDE。</p></div></details><details class="tb"><summary>🎯 面试准备：FDE 面试考什么</summary><div class="tb-body"><p class="intro">FDE 面试不考算法竞赛，考的是你能不能把客户讲不清楚的痛点变成跑得起来的系统——这份指南拆解全流程、高频题型与实战答题框架。</p><p><b>FDE（Forward Deployed Engineer / Field AI Engineer）面试</b>的核心命题只有一个：你是否能在模糊的客户现场把 AI/系统方案落地。以下按流程顺序拆解每一关的考察重点与应对策略。</p>
+
+<table>
+  <thead>
+    <tr><th>环节</th><th>形式</th><th>主要考察点</th><th>参考时长</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>简历筛选</td><td>HR/招聘系统</td><td>落地案例数量、客户规模、技术栈匹配度</td><td>—</td></tr>
+    <tr><td>电话/视频初筛</td><td>30min 1-on-1</td><td>动机、项目背景、基础技术自我陈述</td><td>30 min</td></tr>
+    <tr><td>技术轮</td><td>2–3 轮视频/白板</td><td>编程（中等难度）、API 调用、ML 基础概念</td><td>45–60 min/轮</td></tr>
+    <tr><td>案例/设计轮</td><td>系统设计 + 方案评审</td><td>把模糊需求拆解为可运行架构、取舍权衡</td><td>45–60 min</td></tr>
+    <tr><td>客户模拟轮</td><td>角色扮演</td><td>共情、发现真实痛点、现场 demo 推进</td><td>30–45 min</td></tr>
+    <tr><td>Bar Raiser 轮</td><td>跨团队高级面试官</td><td>Leadership Principles 行为题、横向判断力</td><td>45–60 min</td></tr>
+  </tbody>
+</table>
+
+<p><b>一、技术轮：考什么、怎么答</b></p>
+<ul>
+  <li><b>编程题</b>：LeetCode Medium 级别为主（链表、哈希、滑动窗口）。FDE 岗不强调 Hard，但必须写出能跑的代码，不接受"思路正确但实现省略"。常用语言 Python/Java/TypeScript，优先用你最熟的。</li>
+  <li><b>API 与集成</b>：现场写一个 REST/SDK 调用片段，处理分页、重试、错误码。典型题：用 Python 调 OpenAI/Claude API 实现流式输出并写入数据库，含 rate-limit 重试逻辑。</li>
+  <li><b>ML/AI 基础概念</b>：不考推导，考能不能向客户解释清楚。高频考点：Embedding 与向量检索原理（FAISS/Pinecone）、RAG 架构流程、Fine-tune vs Prompt Engineering 的取舍、Hallucination 成因与缓解手段、Token 计费估算。</li>
+  <li><b>调试与排查</b>：给一段有 bug 的 Prompt 模板或 Pipeline 代码，说出问题在哪、如何修复。</li>
+</ul>
+
+<p><b>二、案例/系统设计轮：轻量系统设计题示例</b></p>
+<p>FDE 系统设计不要求分布式数据库细节，核心是<b>从业务目标倒推技术选型</b>，并能说清楚每一步的取舍依据。</p>
+
+<ul>
+  <li><b>示例题 1 — 客服知识库问答系统</b>：某制造企业有 5000 份产品手册 PDF，希望客服坐席能用自然语言查到答案，要求 3 个月上线。<br>
+    考察要点：文档切片策略、Embedding 模型选型（本地 vs API）、检索召回+重排、答案生成 Prompt 设计、准确率评估方案、成本估算（约 levels.fyi FDE 项目案例常提到 token 成本控制是核心 KPI）。</li>
+  <li><b>示例题 2 — 销售会话智能分析</b>：销售团队每天产出 200 条通话录音，老板想知道哪些销售话术转化率高。<br>
+    考察要点：ASR 转写选型（Whisper / 云 ASR）、结构化信息抽取设计、指标定义（如何定义"好话术"）、隐私合规处理、MVP 与完整版的迭代路径。</li>
+  <li><b>示例题 3 — 多租户 Agent 平台</b>：给 10 个不同行业的中小企业部署同一套 AI Agent，要求各自配置、数据隔离、统一监控。<br>
+    考察要点：租户隔离方案（独立 namespace / shared 数据库分库）、配置热更新、Tool 权限管控、可观测性（tracing、成本归因）。</li>
+</ul>
+
+<p>答题框架（ORCA）：</p>
+<ol>
+  <li><b>O — Objective</b>：确认业务目标和成功指标，先问不要先答</li>
+  <li><b>R — Requirements</b>：拆功能需求和非功能需求（延迟、成本、合规）</li>
+  <li><b>C — Components</b>：画出最小可用架构，逐层展开</li>
+  <li><b>A — Alternatives & Trade-offs</b>：主动说出你放弃了什么、为什么</li>
+</ol>
+
+<p><b>三、客户共情类行为题：高频题与答法</b></p>
+<p>FDE 行为题考的是"你是否把客户当人而不是当需求单"。多数公司（Amazon、Google Cloud、Salesforce 等）使用 STAR 格式，但 FDE 岗要求 S/T 部分必须包含<b>客户视角的痛点</b>，不能只讲技术。</p>
+
+<ul>
+  <li><b>高频题 1</b>："描述一次客户需求完全说不清楚，你如何从中挖出真实问题的经历。"<br>
+    答题要点：说出你用了什么方法澄清（5 Why、用户旅程梳理、原型快速验证），以及<b>最终发现需求与最初描述有多大偏差</b>。</li>
+  <li><b>高频题 2</b>："你是否遇到过技术上可行但客户不愿意用的方案？你怎么处理？"<br>
+    答题要点：诚实说出客户抵触的原因（操作习惯、信任问题、政治因素），以及你如何调整方案或沟通策略，而不是"教育客户"。</li>
+  <li><b>高频题 3</b>："描述一次你在客户现场发现方案根本跑不通，当场如何处置。"<br>
+    答题要点：展示冷静、快速的问题定界能力，以及与客户同步进展、设预期的沟通动作。</li>
+  <li><b>高频题 4</b>："你如何向非技术的客户高管解释 AI 的局限性，同时不让他们失去信心？"<br>
+    答题要点：类比能力、量化边界（准确率 X%、适用场景 Y）、给出可接受的 fallback 方案。</li>
+  <li><b>高频题 5（Bar Raiser 常用）</b>："给我一个你'不同意但仍然执行'的例子，以及你如何保证结果质量。"<br>
+    答题要点：展示你能在分歧中保持专业，而不是沉默配合或正面冲突。</li>
+</ul>
+
+<p><b>四、如何展示"把模糊需求变成可运行系统"的能力</b></p>
+<p>这是 FDE 与普通后端工程师最根本的差异点。面试官判断标准：<b>你的故事里有没有从 0 到 1 的证据</b>，而不是接到清晰需求后实现。</p>
+
+<ul>
+  <li><b>准备 2–3 个"从混沌到上线"的项目故事</b>，每个故事包含：客户最初说了什么（原话越具体越好）、你如何澄清和定义问题、第一版 MVP 是什么（不是最终版）、遇到的最大技术/非技术障碍、上线后客户反馈的实际数据。</li>
+  <li><b>数字化你的落地结果</b>：准确率提升幅度、人工成本减少比例、客户上线周期。无法精确量化时说"约"并注明依据来源，不要编数字。</li>
+  <li><b>主动展示"降档决策"</b>：说出在某处你本可以用更复杂方案，但选择了简单可靠的方案，原因是客户运维能力有限/时间窗口紧/数据量不支撑。这是 FDE 成熟度的核心信号。</li>
+  <li><b>现场白板演示</b>：部分公司（尤其 Salesforce、AWS、字节跳动国际化岗）会要求现场画出你做过的某个系统架构图，并追问每一个组件的选型理由。提前把你的 2–3 个代表项目的架构图默练到能 5 分钟内徒手画出。</li>
+  <li><b>Prompt Engineering 现场题</b>：给一个业务场景，让你当场写或优化 Prompt。评分关键：输出格式控制、边界 case 处理、few-shot 示例设计，以及你能否解释为什么这样写。</li>
+</ul>
+
+<p><b>五、薪资与级别参考</b></p>
+<table>
+  <thead>
+    <tr><th>公司/方向</th><th>职级参考</th><th>TC 范围（据报道）</th><th>来源</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>AWS（Field AI/ML SA）</td><td>L5–L6</td><td>约 $180k–$280k（美国）</td><td>levels.fyi</td></tr>
+    <tr><td>Google Cloud（FDE/PSE）</td><td>L4–L6</td><td>约 $200k–$350k（美国）</td><td>levels.fyi</td></tr>
+    <tr><td>Salesforce（Solutions Engineer）</td><td>SE–Senior SE</td><td>约 $150k–$240k（美国）</td><td>Bloomberry/levels.fyi</td></tr>
+    <tr><td>字节跳动（海外 FDE/TL 岗）</td><td>2-1 ~ 3-1</td><td>据报道 ¥60–120 万/年（国内）</td><td>脉脉/Maimai 匿名报告</td></tr>
+    <tr><td>国内云厂商（阿里云/腾讯云/华为云）</td><td>P6–P8 / 3.1–3.3</td><td>据报道 ¥40–90 万/年</td><td>牛客/脉脉匿名</td></tr>
+  </tbody>
+</table>
+<p>注：以上数字为公开信息汇总，受地区、股票兑现比例、谈判结果影响较大，仅供参考，实际 offer 以 HR 沟通为准。</p>
+
+<p><b>六、最后几条实战建议</b></p>
+<ul>
+  <li>准备一个<b>可以 live demo 的小项目</b>（RAG、Agent、数据看板均可），面试中主动提出"要不要我演示一下"，成功率比纯口述高得多。</li>
+  <li>系统设计轮开场先问清楚：<b>"这是 greenfield 还是已有系统？客户团队技术栈是什么？"</b> 展示 FDE 的第一反应是收集上下文，不是急着出方案。</li>
+  <li>Bar Raiser 轮不要试图迎合，把真实的分歧经历讲出来比"我每次都赢得了客户认可"更可信。</li>
+  <li>面试结束后发感谢邮件时顺带附上你在面试中提到的架构图草图（PDF），这在 FDE 岗是加分项，因为这正是你日后对客户要做的事。</li>
+</ul></div></details><details class="tb"><summary>🧰 技能清单 Checklist</summary><div class="tb-body"><p class="intro">从入行到资深，FDE（Forward Deployed Engineer）需要掌握的全栈技能地图——按三级分层，对照自查，找到当前短板。</p><p>FDE（Forward Deployed Engineer（前向部署工程师））区别于纯后台 DE 的核心在于：<b>既要能写生产代码，又要能坐在客户面前当场调试</b>。技能缺口往往不是算法，而是"客户说不清楚需求时你怎么办"和"数据链路断了你多快能定位"。</p>
+
+<h3 style="margin-top:1.2em">一、硬技能</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>技能域</th>
+      <th>入门（0-1 年）</th>
+      <th>进阶（1-3 年）</th>
+      <th>资深（3 年+）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Python</b></td>
+      <td>
+        <ul>
+          <li>能写能跑：<code>pandas</code>/<code>numpy</code> 基础操作</li>
+          <li>会用 <code>venv</code>/<code>conda</code> 管环境</li>
+          <li>能读懂 traceback，会用 <code>pdb</code> 打断点</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>熟悉异步 <code>asyncio</code>，会写 CLI 工具</li>
+          <li>会封装 SDK wrapper，懂 <code>dataclasses</code>/<code>pydantic</code></li>
+          <li>能写单测 <code>pytest</code>，能跑 CI</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能做性能剖析（<code>cProfile</code>/<code>line_profiler</code>）</li>
+          <li>掌握 <code>multiprocessing</code>/<code>concurrent.futures</code> 并发模式</li>
+          <li>能写可复用的内部 SDK，有版本管理意识</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>SQL / 数据库</b></td>
+      <td>
+        <ul>
+          <li>SELECT、JOIN、GROUP BY 无压力</li>
+          <li>能读执行计划（EXPLAIN）</li>
+          <li>会用 PostgreSQL 或 MySQL 基本操作</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>窗口函数（<code>ROW_NUMBER</code>/<code>LAG</code>/<code>LEAD</code>）熟练</li>
+          <li>会用 BigQuery / Snowflake / Redshift 等云仓</li>
+          <li>能做慢查询优化，会建索引</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能设计多层数仓（ODS/DWD/DWS/ADS）</li>
+          <li>熟悉 ClickHouse / DuckDB 等 OLAP 引擎</li>
+          <li>能写存储过程+触发器，能做分区裁剪优化</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>数据工程 / Pipeline</b></td>
+      <td>
+        <ul>
+          <li>会用 Airflow / Prefect 写基础 DAG</li>
+          <li>了解 ETL vs ELT 区别</li>
+          <li>能用 <code>dbt</code> 写简单 model</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>会做增量/全量调度，处理幂等性</li>
+          <li>能用 Kafka / RabbitMQ 做流式接入</li>
+          <li>掌握 dbt tests、lineage 可视化</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能设计容错重试机制（dead-letter queue、backfill）</li>
+          <li>熟悉 Spark / Flink 分布式计算</li>
+          <li>能做数据质量监控体系（Great Expectations 等）</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>云平台</b></td>
+      <td>
+        <ul>
+          <li>会用 AWS S3 / GCS / Azure Blob 存数据</li>
+          <li>会开 EC2 / GCE 实例，能 SSH</li>
+          <li>了解 IAM 权限基础概念</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能用 Terraform / CDK 写 IaC</li>
+          <li>会配 VPC、安全组、子网</li>
+          <li>能用 Lambda / Cloud Functions 做无服务器任务</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能做多账号/多区域架构设计</li>
+          <li>熟悉云成本优化（Reserved Instances、Spot、存储分层）</li>
+          <li>能做灾备方案，理解 RPO/RTO</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>LLM 应用</b></td>
+      <td>
+        <ul>
+          <li>会调 OpenAI / Claude API，能处理 streaming 响应</li>
+          <li>理解 token 计费，会用 <code>tiktoken</code> 估 cost</li>
+          <li>会写 system prompt，知道温度参数意义</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能做 prompt 工程（CoT、few-shot、output format 约束）</li>
+          <li>会用 LangChain / LlamaIndex 搭基础链</li>
+          <li>能做 Function Calling / Tool Use 集成</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能评估模型选型（成本/延迟/质量权衡）</li>
+          <li>能做 LoRA/QLoRA 微调上业务数据</li>
+          <li>能设计 LLM Eval 框架，能防幻觉+越狱</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>RAG / Agent</b></td>
+      <td>
+        <ul>
+          <li>理解 Embedding + 向量检索原理</li>
+          <li>会用 Chroma / FAISS 做简单 RAG demo</li>
+          <li>能描述 ReAct Agent 的 Thought-Action-Observation 循环</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能做混合检索（向量 + BM25 + reranker）</li>
+          <li>会用 Weaviate / Pinecone / pgvector 上生产</li>
+          <li>能实现多工具 Agent（搜索+代码执行+数据库）</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能设计多 Agent 协作架构（Orchestrator + Worker 模式）</li>
+          <li>能做 RAG 全链路评估（Ragas 等指标）</li>
+          <li>能把 Agent 推理结果对接审计日志+人工介入节点</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>系统集成</b></td>
+      <td>
+        <ul>
+          <li>会调 REST API，处理分页/限流/认证</li>
+          <li>会读 Swagger / OpenAPI 文档</li>
+          <li>能用 Postman / httpie 调试接口</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能写 Webhook 接收端，能做签名验证</li>
+          <li>会对接 Salesforce / HubSpot / SAP 等企业系统 API</li>
+          <li>能用 CDC（Debezium 等）做数据库变更捕获</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能设计幂等性接口和重试策略（指数退避）</li>
+          <li>能做双向同步冲突解决方案</li>
+          <li>能写 OpenAPI 规范并生成 SDK</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 style="margin-top:1.4em">二、软技能</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>技能域</th>
+      <th>入门</th>
+      <th>进阶</th>
+      <th>资深</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>需求挖掘</b></td>
+      <td>
+        <ul>
+          <li>能把客户口述转成功能列表</li>
+          <li>会问"现在怎么做的"摸清现状</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能用 5 Whys 找根因，区分"想要"和"需要"</li>
+          <li>能给需求排优先级并反确认（MoSCoW 法）</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能预判客户未说出口的隐性需求</li>
+          <li>能识别范围蔓延（scope creep）并保护团队</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>沟通 / 汇报</b></td>
+      <td>
+        <ul>
+          <li>能写清楚的工作日报/周报</li>
+          <li>遇到 blocker 能及时上报而不是拖</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能给非技术客户演示技术方案（金字塔结构）</li>
+          <li>能写 1-pager Executive Summary</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能主导技术评审会议并推动决策</li>
+          <li>能向 C-level 用业务语言（$ROI/风险）讲清楚技术方案</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>项目推进</b></td>
+      <td>
+        <ul>
+          <li>能用 Jira / Notion 管自己任务</li>
+          <li>能估工时（不要总往少了估）</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能识别关键路径，主动管依赖项</li>
+          <li>能协调跨部门资源（内部+客户侧）</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能做风险登记册和应急预案</li>
+          <li>能在项目后复盘并把经验沉淀成 SOP</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><b>客户关系</b></td>
+      <td>
+        <ul>
+          <li>能建立基础信任：按时交付、主动同步</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能识别客户内部不同干系人的诉求差异</li>
+          <li>能在交付危机中稳住客户情绪</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>能把项目客户转化为长期合作或推荐人</li>
+          <li>能帮客户包装内部 ROI 数据，助其向上汇报</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 style="margin-top:1.4em">三、薪资参考（据报道）</h3>
+<p>以下数据来自公开渠道，<b>仅供量级参考</b>，实际因地区/公司/技能组合差异显著。</p>
+<ul>
+  <li>入门 FDE（0-2 年，国内一线）：约 <b>15-25K/月</b>，据脉脉/Boss直聘 2024 年样本区间</li>
+  <li>进阶 FDE（2-4 年，含 LLM/云技能）：约 <b>25-45K/月</b>，头部 AI 公司或外企咨询</li>
+  <li>资深 FDE / Staff（4 年+，美国市场）：约 <b>$150K-$220K/年 TC</b>，据 <b>levels.fyi</b> Data Engineer 样本（2024），Tableau/Databricks/Snowflake FDE 岗位区间</li>
+  <li>LLM/AI 方向溢价明显：据 <b>Bloomberry</b> 分析，具备 RAG/Agent 落地经验的 FDE 比传统 DE 薪资高约 <b>20-35%</b>（约报道于 2024 年 Q3）</li>
+</ul>
+
+<h3 style="margin-top:1.4em">四、自查用：入行前最低门槛（强烈建议）</h3>
+<ol>
+  <li>能独立完成一个端到端 ETL：从 API 拉数据 → 清洗 → 写入数据库 → 定时调度</li>
+  <li>能独立跑通一个 RAG demo：文件切片 → embedding → 向量存储 → 检索 → 生成</li>
+  <li>能当场给客户演示你的方案，同时能在 5 分钟内切换去 debug 一个报错</li>
+  <li>会用 Git，PR 流程不慌，能写清楚 commit message</li>
+  <li>能用英文读懂官方文档（AWS/OpenAI/dbt 文档），不依赖翻译工具</li>
+</ol></div></details><details class="tb"><summary>💰 薪资地图</summary><div class="tb-body"><p class="intro">据 levels.fyi 及行业报告，美国 FDE 全包中位数约 17.4 万美元起（全行业），头部公司中高级可达 30 万–60 万美元以上，中美差距仍在但正在缩小。</p><p><b>数据说明：</b>下列数字均来自 <code>levels.fyi</code>、Perspective AI《2026前向部署工程师薪酬报告》（样本 1,200 人）、公开招聘薪资透明度数据，及国内脉脉/独角兽招聘帖。凡具体数字一律标「据报道/约」，请以实际 offer 为准。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>公司 / 职级</th>
+      <th>总包范围（约，据报道）</th>
+      <th>中位数（约）</th>
+      <th>数据来源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Palantir FDSE 全层级</b></td>
+      <td>$171K – $415K+</td>
+      <td>$211K</td>
+      <td>levels.fyi（据报道）</td>
+    </tr>
+    <tr>
+      <td>Palantir FDSE · 纽约区</td>
+      <td>$171K – $358K+</td>
+      <td>$211K</td>
+      <td>levels.fyi（据报道）</td>
+    </tr>
+    <tr>
+      <td><b>OpenAI FDE · Applied（初中级）</b></td>
+      <td>Base $127K–$183K，TC 约 $350K–$450K</td>
+      <td>约 $400K</td>
+      <td>公开招聘带薪带区间（据报道）</td>
+    </tr>
+    <tr>
+      <td>OpenAI FDE IV（高级）</td>
+      <td>Base $183K–$265K，TC 约 $450K–$550K</td>
+      <td>约 $500K</td>
+      <td>公开薪资透明数据（据报道）</td>
+    </tr>
+    <tr>
+      <td>OpenAI Staff/Principal FDE</td>
+      <td>TC $600K – $1M+（PPU 算入）</td>
+      <td>约 $700K+</td>
+      <td>据报道，fdepulse.com / aidevdayindia.org</td>
+    </tr>
+    <tr>
+      <td><b>行业全层级中位数（美国）</b></td>
+      <td>约 $155K – $238K（base/全包取法不同）</td>
+      <td><b>约 $174K（全行业 base 中位数）</b></td>
+      <td>Glassdoor / ZipRecruiter 综合（据报道）</td>
+    </tr>
+    <tr>
+      <td>中级 FDE 全包中位数（据 1200 人报告）</td>
+      <td>—</td>
+      <td>约 $385K</td>
+      <td>Perspective AI 2026 报告（据报道）</td>
+    </tr>
+    <tr>
+      <td>Staff FDE 全包中位数</td>
+      <td>—</td>
+      <td>约 $610K</td>
+      <td>Perspective AI 2026 报告（据报道）</td>
+    </tr>
+    <tr>
+      <td>Principal FDE（前沿实验室）</td>
+      <td>—</td>
+      <td>约 $1.2M+</td>
+      <td>Perspective AI 2026 报告（据报道）</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><b>补充说明：</b>「约 $17.4 万美元中位数」这一数字对应的是 Glassdoor/ZipRecruiter 口径下的<b>全行业 FDE base salary 中位数</b>，包含大量中小公司及非 AI 赋能型 FDE 岗位，拉低了整体均值；头部 AI 公司（OpenAI、Anthropic、Palantir）的全包显著高于此值。</p>
+
+<p><b>薪资结构拆解（美国典型 FDE）</b></p>
+<ul>
+  <li><b>Base salary：</b>Palantir FDSE 约 $120K–$180K；OpenAI FDE $127K–$265K（据报道，levels.fyi）</li>
+  <li><b>Equity/股权：</b>Staff 级以上权益价值通常超 cash base，Perspective AI 报告称头部市场权益占 TC 的 <b>55–70%</b>（2026 年，较 2024 年上升）；OpenAI 采用 PPU（Profit Participation Units），锁定期 4 年，流动性取决于是否有 secondary tender</li>
+  <li><b>Annual bonus：</b>通常约为 base 的 20%（据报道，多家公司招聘描述）</li>
+  <li><b>Field bonus（仅 FDSE 类岗）：</b>部分公司为高出差客户驻场岗位设额外补贴，不在固定 TC 内</li>
+</ul>
+
+<p><b>中美对比</b></p>
+<table>
+  <thead>
+    <tr>
+      <th>维度</th>
+      <th>美国（头部 AI 公司）</th>
+      <th>中国（一线大厂）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>典型 FDE 年包区间（据报道）</td>
+      <td>$171K–$550K（中高级）</td>
+      <td>约 42 万–84 万 RMB（字节跳动豆包 FDE，据报道）</td>
+    </tr>
+    <tr>
+      <td>折算美元（参考）</td>
+      <td>—</td>
+      <td>约 $58K–$116K（汇率 1:7.2 估算）</td>
+    </tr>
+    <tr>
+      <td>头部天花板</td>
+      <td>$1M+（PPU 算入）</td>
+      <td>约 100 万 RMB（约 $138K）触顶案例有报道</td>
+    </tr>
+    <tr>
+      <td>权益结构</td>
+      <td>RSU/PPU 为主，流动性风险低</td>
+      <td>股票期权为主，流动性取决于上市/IPO 进度</td>
+    </tr>
+    <tr>
+      <td>增长趋势</td>
+      <td>FDE 岗位增幅约 800%（2023–2026，据报道）</td>
+      <td>FDE 相关岗位约 42 倍增长（2023–2025，据 LinkedIn 报告）</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><b>影响薪资的核心因素</b></p>
+<ol>
+  <li><b>雇主层级：</b>前沿实验室（OpenAI/Anthropic）比 Palantir 同级高出 2.0–3.5 倍，差距几乎全在 equity（据 Perspective AI 报告）</li>
+  <li><b>职级/年限：</b>junior→staff 总包可跳 3–5 倍；base 线性增长，equity 指数放大</li>
+  <li><b>地点：</b>纽约/湾区比其他城市高出 15–30%（levels.fyi 地区数据）</li>
+  <li><b>客户规模与合同金额：</b>FDE 直接驱动营收，绑定大客户合同的岗位有明显溢价；能量化自己带来的 ARR 增量，offer 就有谈判筹码</li>
+  <li><b>技术栈稀缺性：</b>掌握 LLM fine-tuning、RAG、Agent 系统实战者比通才高出 20–40%（招聘数据模式，据报道）</li>
+  <li><b>竞争 offer：</b>有竞争性 offer 是提 TC 的最有效杠杆；FDE 岗位因数量少、候选人稀缺，通常有谈判空间</li>
+  <li><b>出差/驻场强度：</b>高出差岗位通常有 field bonus 或差旅 allowance 补偿，但现金感知未必高</li>
+  <li><b>权益流动性风险：</b>未上市公司（OpenAI 等）的 PPU/stock option 需评估 secondary market 历史，不能只看纸面 TC</li>
+</ol>
+
+<p><b>实操建议：谈 offer 时如何用这份地图</b></p>
+<ul>
+  <li>先对齐口径：问 HR「TC 是否含 equity」，区分 base-only 报价和全包报价，避免被「$17 万中位数」误导</li>
+  <li>拿 levels.fyi 同公司同职级数据作锚点，若 offer 低于 25% 以上，直接说有竞争 offer 并报范围（不必说具体公司名）</li>
+  <li>国内岗位优先问清楚：月薪 × 几个月、股权估值方法、上市计划</li>
+  <li>出差 50%+ 的岗位，要求写明 field allowance 或协商额外现金补偿</li>
+</ul></div></details><details class="tb"><summary>🛠️ FDE 工具箱：日常技术栈</summary><div class="tb-body"><p class="intro">FDE（Forward Deployed Engineer（前向部署工程师））的工具链已高度收敛——这份清单覆盖从写代码到上线监控的完整链路，按实际使用频率排列，可直接对照自己的栈查漏补缺。</p><p>以下按工作流阶段分类，每类列出主流选项及一句用途，附选型建议。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>类别</th>
+      <th>工具</th>
+      <th>一句用途</th>
+      <th>选型备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>AI 编码</b></td>
+      <td><code>Cursor</code></td>
+      <td>在 VS Code 内核上叠加多模型 Tab 补全与 Chat，上下文感知代码生成，对 FDE 日常写 Prompt 模板、Agent 工具函数效率提升最直接</td>
+      <td>月费约 $20（Pro），团队席位需预算</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><code>Claude Code</code></td>
+      <td>Anthropic 官方 CLI，可跨文件读写、执行命令、调用 MCP 工具，适合在终端驱动完整 Agent 开发循环</td>
+      <td>依托 Claude API 计费，长上下文任务成本需关注</td>
+    </tr>
+    <tr>
+      <td><b>编排框架</b></td>
+      <td><code>LangChain</code></td>
+      <td>最大生态的 LLM 应用框架，提供 Chain/Retriever/Tool 抽象，适合快速搭 RAG 和工具调用原型</td>
+      <td>抽象层重，适合起步；生产项目建议评估是否过度封装</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><code>LangGraph</code></td>
+      <td>LangChain 出品的有向图状态机编排，专门解决多步 Agent 控制流、分支、回环问题，是当前 FDE 做复杂 Agent 的首选</td>
+      <td>v0.2+ 支持持久化 Checkpoint，生产可用</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><code>AutoGen</code></td>
+      <td>微软出品的多 Agent 对话框架，角色扮演式多智能体协作，适合需要多专家角色分工的任务</td>
+      <td>v0.4 重写架构（AgentChat），旧版迁移有成本</td>
+    </tr>
+    <tr>
+      <td><b>向量数据库</b></td>
+      <td><code>Qdrant</code></td>
+      <td>Rust 实现的高性能向量库，支持 payload 过滤、稀疏+稠密混合检索，Docker 一行起服务，FDE 做 RAG 首推</td>
+      <td>云托管版按节点计费；本地开发免费</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><code>pgvector</code></td>
+      <td>PostgreSQL 扩展，在已有 PG 库里直接加向量列，省去独立向量库运维，适合数据已在 PG 的项目</td>
+      <td>大规模（>百万向量）检索性能弱于专用向量库，需压测</td>
+    </tr>
+    <tr>
+      <td><b>可观测 / 评估</b></td>
+      <td><code>LangSmith</code></td>
+      <td>LangChain 官方追踪平台，自动记录每次 LLM 调用的输入输出、Token 用量、延迟，方便 debug 多步 Chain</td>
+      <td>免费额度有限，团队每月约 $39 起（据官网定价）</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><code>Langfuse</code></td>
+      <td>开源可自部署的 LLM 可观测平台，支持 Trace/Span/Score，可接入任意框架，优先考虑数据不出境的场景</td>
+      <td>可 Docker 自部署，完全免费；云版有免费层</td>
+    </tr>
+    <tr>
+      <td><b>模型部署</b></td>
+      <td><code>vLLM</code></td>
+      <td>PagedAttention 高吞吐推理引擎，生产环境跑开源模型（Qwen/Llama/Mistral），兼容 OpenAI API 格式，FDE 做私有化部署必用</td>
+      <td>需要 NVIDIA GPU，A100/H100 利用率最佳</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><code>Ollama</code></td>
+      <td>本地一键拉取运行 GGUF 量化模型，macOS/Windows/Linux 均支持，开发调试阶段零成本替代云端 API</td>
+      <td>不适合高并发生产；个人/小团队开发首选</td>
+    </tr>
+    <tr>
+      <td><b>工具集成</b></td>
+      <td><code>MCP</code>（Model Context Protocol）</td>
+      <td>Anthropic 提出的开放协议，让 LLM Host 以标准接口调用外部工具/数据源（文件系统、数据库、API），是当前 Agent 工具扩展的事实标准之一</td>
+      <td>Claude Code、Cursor 等主流工具已原生支持；社区 MCP Server 生态快速增长</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><b>实操建议（按阶段）</b></p>
+<ul>
+  <li><b>起步阶段</b>：<code>Cursor</code> 写代码 + <code>LangChain</code> 搭原型 + <code>Ollama</code> 跑本地模型，零成本跑通第一个 RAG Demo</li>
+  <li><b>做 Agent</b>：切换到 <code>LangGraph</code> 管控制流，加 <code>Langfuse</code>（自部署）做追踪，避免黑盒调试</li>
+  <li><b>上生产</b>：<code>vLLM</code> 私有化推理 + <code>Qdrant</code> 向量检索 + <code>LangSmith</code> 或 <code>Langfuse</code> 监控，做好 Token 成本报警</li>
+  <li><b>工具扩展</b>：用 <code>MCP</code> 把内部系统（CRM、知识库、SQL）包成工具，Agent 可直接调用，减少手写 Tool 代码量</li>
+</ul>
+
+<p><b>关于薪资参考</b>：据 <a href="https://www.levels.fyi">levels.fyi</a> 及 Bloomberry 社区报道，北美 FDE/AI Engineer 岗位（约对应 L4-L5）总包约在 <b>$200k–$350k</b> 区间，国内一线城市同等经验约 <b>50–90万</b> RMB（据脉脉/Boss直聘公开数据，标「约」，受公司规模差异较大）。熟练掌握上述工具栈是拿到此类 offer 的基本门槛。</p></div></details><details class="tb"><summary>📋 落地 SOP：从启动到交接的检查清单</summary><div class="tb-body"><p class="intro">FDE 项目六阶段全流程检查清单——每个阶段有哪些必做项、交什么产出物、踩什么验收线才能进下一阶段。</p><p>以下六阶段覆盖一个典型 FDE（Forward Deployed Engineer（前向部署工程师））AI/数据类项目从0到1再到退场的全生命周期。清单可直接复制进 Notion/飞书 勾选使用。</p>
+
+<table>
+<thead><tr><th>阶段</th><th>目标</th><th>典型周期</th></tr></thead>
+<tbody>
+<tr><td>① 需求诊断</td><td>搞清楚客户真正要解决什么</td><td>1–2 周</td></tr>
+<tr><td>② 数据接入</td><td>把原始数据拉通、清洗、可用</td><td>2–4 周</td></tr>
+<tr><td>③ 原型搭建</td><td>跑通最小可验证版本</td><td>2–3 周</td></tr>
+<tr><td>④ 现场迭代</td><td>与业务方共同打磨到可用</td><td>3–6 周</td></tr>
+<tr><td>⑤ 上线部署</td><td>稳定运行、监控到位</td><td>1–2 周</td></tr>
+<tr><td>⑥ 知识交接</td><td>客户能自主维护，FDE 干净退场</td><td>1–2 周</td></tr>
+</tbody>
+</table>
+
+<p><b>阶段一：需求诊断</b></p>
+<ul>
+<li>与业务负责人、IT 负责人、一线用户分别访谈，不要只见一个人——三方需求往往不一致</li>
+<li>识别「真需求」 vs「解决方案式需求」：客户说"要一个 AI 问答"，真实痛点可能是"员工找不到内部文档"</li>
+<li>梳理现有系统清单：ERP/CRM/MES 型号、版本、接口类型（REST/数据库直连/Excel 导出）</li>
+<li>确认数据权属和脱敏要求，签订 NDA 或数据处理协议</li>
+<li>定义成功指标（KPI/OKR）：必须量化，例如"推荐命中率 ≥ 70%"或"人工审核量减少 40%"</li>
+<li>输出优先级矩阵：必做 / 应做 / 可做，与客户逐条对齐</li>
+<li>评估技术可行性风险点，写进诊断报告</li>
+</ul>
+<p><b>产出物：</b>需求诊断报告（含优先级矩阵 + 风险清单）、已签数据协议</p>
+<p><b>进入下阶段验收标准：</b>客户业务负责人 + 技术负责人双签确认诊断报告；成功指标有明确数字且无争议。</p>
+
+<p><b>阶段二：数据接入</b></p>
+<ul>
+<li>获取各数据源访问权限，记录账号/密码/证书保管人</li>
+<li>对每张核心表做字段级数据质量扫描：空值率、重复率、异常值分布</li>
+<li>确定数据刷新频率（实时/T+1/手动批量），与 IT 约定调用窗口</li>
+<li>搭建数据流水线（ETL/ELT），优先用客户已有工具（避免引入不熟悉的新组件）</li>
+<li>处理中文乱码、时间时区、ID 跨系统不一致等常见坑</li>
+<li>建立数据字典：每个字段的业务含义、取值范围、更新时间</li>
+<li>数据血缘可追溯：每条记录能追到来源系统 + 抽取时间戳</li>
+<li>写数据接入单元测试，覆盖边界值（空表、超大表、字段类型突变）</li>
+</ul>
+<p><b>产出物：</b>数据质量报告、数据字典、ETL 脚本 + 单元测试、接入架构图</p>
+<p><b>进入下阶段验收标准：</b>核心数据集空值率 < 5%（或与客户约定阈值）；流水线连续 3 次跑通无报错；数据字典客户 IT 确认无误。</p>
+
+<p><b>阶段三：原型搭建</b></p>
+<ul>
+<li>选型锁定：模型/算法/框架，在内部文档中写明选型理由和放弃的方案</li>
+<li>用真实数据（非 mock）跑通端到端最短路径，不追求界面好看</li>
+<li>建立 baseline 指标：用最简单方法（规则/统计）先跑一个 baseline，AI 方案必须超过它</li>
+<li>对模型推理耗时做压测：单条 p99 延迟、并发 10/50/100 的 QPS</li>
+<li>与 1–3 名一线用户做原型走查（不是 demo 表演，是让用户真操作）</li>
+<li>记录所有"用户说了什么"的原话，不做主观翻译</li>
+<li>输出 MVP 范围确认单：哪些功能进 MVP，哪些往后推</li>
+</ul>
+<p><b>产出物：</b>可运行原型（含环境配置文档）、baseline vs 原型指标对比表、MVP 范围确认单</p>
+<p><b>进入下阶段验收标准：</b>原型在客户真实数据上核心指标超过 baseline；至少 1 名一线用户完成全流程操作并给出反馈；客户签 MVP 范围确认单。</p>
+
+<p><b>阶段四：现场迭代</b></p>
+<ul>
+<li>以 1–2 周为一个迭代周期，每轮开始前对齐目标，结束后复盘</li>
+<li>建立问题反馈通道（微信群/飞书群），响应时效承诺写进合同</li>
+<li>每天收集用户的"错误案例"：模型给错的结果截图/记录，分类打标</li>
+<li>优先修复高频错误类型（长尾先放，80/20 法则）</li>
+<li>每轮迭代做指标回归测试，防止改A坏B</li>
+<li>业务规则变更要走变更单：口头说的不算，必须书面确认后再改</li>
+<li>UI/UX 调整与模型调整分开记录，便于定位效果变化来源</li>
+<li>在客户环境而非 FDE 本地跑测试，环境差异是最常见的翻车点</li>
+<li>迭代结束前更新技术文档，不要攒到最后一起补</li>
+</ul>
+<p><b>产出物：</b>每轮迭代报告（目标/完成/未完成/下轮计划）、错误案例库、变更记录单、更新的技术文档</p>
+<p><b>进入下阶段验收标准：</b>核心 KPI 达到诊断阶段约定的目标值；连续 1 周无 P0/P1 级 bug；客户业务负责人书面确认"可以上线"。</p>
+
+<p><b>阶段五：上线部署</b></p>
+<ul>
+<li>生产环境与测试环境严格隔离，数据库/服务器/密钥全部独立</li>
+<li>灰度发布：先给 5–10% 用户用，观察 24–48h 再全量</li>
+<li>配置监控告警：服务宕机、推理超时（建议阈值 >3s 告警）、异常错误率（建议 >1% 告警）</li>
+<li>准备回滚方案，并在上线前演练一次回滚操作</li>
+<li>生产数据备份策略确认：备份频率、保留周期、恢复测试</li>
+<li>确认 on-call 责任人：上线后 2 周内谁值班、如何联系</li>
+<li>用户通知和培训：上线公告、操作手册（截图版，别只给文字）</li>
+<li>做一次全流程压测：模拟真实业务峰值，确认不会崩</li>
+<li>安全检查：API 鉴权、敏感数据是否明文传输、日志是否含 PII</li>
+</ul>
+<p><b>产出物：</b>上线部署文档、监控告警配置截图、回滚方案、压测报告、用户操作手册</p>
+<p><b>进入下阶段验收标准：</b>全量上线后连续 5 个工作日无 P0/P1；监控告警已触发过至少 1 次非生产测试告警（证明告警可用）；操作手册用户已收到并签收。</p>
+
+<p><b>阶段六：知识交接</b></p>
+<ul>
+<li>梳理交接清单：代码仓库、服务器账号、第三方 API Key、域名证书、数据库密码</li>
+<li>代码仓库移交：转让仓库 Owner 权限，FDE 自己降为 Reporter 或移除</li>
+<li>做 2 次以上现场培训：第一次 IT 运维（改配置、重启服务、看日志）；第二次业务管理员（日常使用、数据导出、简单排障）</li>
+<li>录制操作视频（5–15 分钟/个）存入客户内部知识库，不要只发给一个人</li>
+<li>常见故障手册：列出 Top 10 故障现象 + 排查步骤 + 预期解决时间</li>
+<li>技术债清单：遗留的已知问题、未来可优化点，如实交代，不要隐瞒</li>
+<li>确认后续支持方式：是否有质保期（建议约定 30–90 天）、付费支持报价</li>
+<li>FDE 本地环境清理：删除客户数据，留存截图证明</li>
+<li>项目复盘文档（内部用）：时间/成本/质量偏差、经验教训、下次改进点</li>
+</ul>
+<p><b>产出物：</b>完整交接清单（双方签字）、操作视频、常见故障手册、技术债清单、内部复盘文档</p>
+<p><b>退场验收标准：</b>客户 IT 能独立完成服务重启 + 日志查看演练；所有账号密码已移交并更改初始密码；FDE 本地无客户敏感数据残留；交接确认书双方签字盖章。</p>
+
+<p><b>跨阶段通用注意事项</b></p>
+<ul>
+<li><b>会议纪要必发：</b>每次重要会议 24h 内发书面纪要，客户回复"OK"即视为确认</li>
+<li><b>范围蔓延（Scope Creep）管理：</b>每新增需求必须走变更评估，估工时后才决定加不加</li>
+<li><b>客户内部推手：</b>识别并维护好内部 Champion（通常是某个中层），他们是项目成功的关键</li>
+<li><b>文档即时更新：</b>代码改了文档同步改，"过会儿再补"基本等于永远不补</li>
+<li><b>环境一致性：</b>用 <code>requirements.txt</code> 或 <code>pyproject.toml</code> 锁版本，Python 版本也锁，别留"应该可以"的隐患</li>
+</ul></div></details><details class="tb"><summary>🕳️ 避坑指南：落地最常见的 10 个坑</summary><div class="tb-body"><p class="intro">从 POC 到上线，这 10 个坑会吃掉你 80% 的项目时间——每坑附现象、根因与可执行应对。</p><ol>
+  <li>
+    <b>坑 1：数据脏——"数据准备好了"是谎言</b>
+    <p><b>现象：</b>客户说数据库已就绪，接入后发现字段名不统一、空值率 30%+、时间戳格式混用三种、同一实体有五个 ID 体系。</p>
+    <p><b>根因：</b>业务方口中的"数据"指业务存储，不等于可用于 AI 的训练/推理数据。数据治理债务往往积累多年，FDE 是第一个真正触碰它的人。</p>
+    <p><b>应对：</b></p>
+    <ul>
+      <li>立项前必做数据摸底（Data Audit）：抽样 200 条，统计空值率、格式异常率、实体匹配率，书面交给客户确认。</li>
+      <li>合同中明确"数据质量基线"条款，低于基线触发额外清洗费用。</li>
+      <li>Pipeline 首阶段强制加数据校验层，异常数据拦截 + 告警，不要静默吞掉脏数据。</li>
+    </ul>
+  </li>
+
+  <li>
+    <b>坑 2：需求漂移——每次演示后需求扩大 20%</b>
+    <p><b>现象：</b>第一周需求是"问答机器人"，第三周变成"全流程 RPA + 报表生成 + 多轮审批"，工期没变。</p>
+    <p><b>根因：</b>AI 演示效果好，业务方立即联想到更多场景；FDE 没有变更管理流程，又不敢直接说不。</p>
+    <p><b>应对：</b></p>
+    <ul>
+      <li>需求用 User Story + 验收标准格式锁定，每次变更必走书面 Change Request（CR），评估工时再签字。</li>
+      <li>建立"需求冻结窗口"：上线前 3 周不接新需求，紧急的进下一个迭代。</li>
+      <li>用 MoSCoW 法（Must/Should/Could/Won't）帮客户自己给需求排优先级，减少扯皮。</li>
+    </ul>
+  </li>
+
+  <li>
+    <b>坑 3：集成鉴权地狱——API 打通要两个月</b>
+    <p><b>现象：</b>自研功能一周跑通，但对接内部 OA、ERP、CRM 的鉴权/网络/证书问题消耗了整个项目 40% 的时间。跨部门审批、防火墙放行、证书过期轮番出现。</p>
+    <p><b>根因：</b>大型企业内网系统由不同团队维护，安全策略严格，FDE 项目优先级低，IT 部门不会为你加急。</p>
+    <p><b>应对：</b></p>
+    <ul>
+      <li>立项第一天就拉 IT 负责人和安全团队进群，把集成清单（系统 + 鉴权方式 + 网络要求）发给他们，让他们给排期。</li>
+      <li>合同附件列明"甲方提供系统访问权限"的 SLA（如 5 个工作日），逾期顺延工期。</li>
+      <li>开发阶段用 Mock Server 并行推进，不等真实接口，集成完成后替换。</li>
+    </ul>
+  </li>
+
+  <li>
+    <b>坑 4：幻觉传播——模型在生产中静默出错</b>
+    <p><b>现象：</b>模型回答看起来正确，但细节数字错误或引用了不存在的政策条款，业务人员信任输出直接使用，错误向下游传播，被发现时已造成损失。</p>
+    <p><b>根因：</b>LLM 的置信度与准确性不相关；没有人工或自动的事实核验环节；业务方对 AI 边界理解不足。</p>
+    <p><b>应对：</b></p>
+    <ul>
+      <li>高风险输出（财务、法律、医疗）必须加 RAG + 来源引用，输出中必须显示依据原文片段。</li>
+      <li>部署"置信度门槛 + 人工审核"双保险：低置信或无来源的回答强制转人工。</li>
+      <li>上线前做红队测试（Red-teaming），主动构造错误场景测试系统反应，形成测试报告。</li>
+      <li>培训客户用户：AI 输出是"草稿"，需人工确认，写入 SOP。</li>
+    </ul>
+  </li>
+
+  <li>
+    <b>坑 5：验收无量化标准——上线后扯皮无止境</b>
+    <p><b>现象：</b>系统上线，客户说"感觉不够准""用起来不顺"，但无法说清楚具体差在哪，拒绝验收，项目款拖压。</p>
+    <p><b>根因：</b>合同只写"系统正常运行"，没有定义可测量的成功指标，双方对"好"的理解不同。</p>
+    <p><b>应对：</b></p>
+    <ul>
+      <li>签合同时锁定 KPI，例如：<code>意图识别准确率 ≥ 85%（测试集 200 条）</code>、<code>平均响应时间 ≤ 3s（P95）</code>、<code>用户满意度问卷 ≥ 4/5 分</code>。</li>
+      <li>测试集由双方在立项时共同标注确认，不允许上线前临时换题。</li>
+      <li>设置"试运行期"（如 2 周），期间数据作为验收依据，而非主观感受。</li>
+    </ul>
+  </li>
+
+  <li>
+    <b>坑 6：客户期望过高——把 AI 当全知全能</b>
+    <p><b>现象：</b>客户 CEO 看了一篇 AI 文章，要求"像 GPT-4 一样智能但只花 5 万"；或要求系统"理解所有业务逻辑"但拒绝提供文档。</p>
+    <p><b>根因：</b>媒体宣传与实际落地之间存在巨大 Gap；业务方没有 AI 工程直觉；FDE 在拿单阶段为了签合同没有纠正预期。</p>
+    <p><b>应对：</b></p>
+    <ul>
+      <li>售前阶段做"能力边界说明会"，用具体 Demo 展示系统能做和不能做的边界，形成文档存档。</li>
+      <li>POC 阶段主动暴露失败 Case，不要只演示成功场景——让客户提前接受"AI 会出错"的事实。</li>
+      <li>对于不切实际的需求，给出替代方案：不是"这个做不了"，而是"这个做法成本是 X，我们可以用 Y 方案在预算内达到 Z 效果"。</li>
+    </ul>
+  </li>
+
+  <li>
+    <b>坑 7：POC 陷阱——POC 成功但项目永远立不起来</b>
+    <p><b>现象：</b>花了 3 个月做 POC，效果很好，客户高度认可，然后说"我们内部要再评估一下"，从此没有下文；或 POC 数据和生产数据差异巨大，实际落地效果崩塌。</p>
+    <p><b>根因：</b>POC 用的是精选数据集和理想条件；客户用 POC 套方案学技术；没有明确 POC 之后的决策节点。</p>
+    <p><b>应对：</b></p>
+    <ul>
+      <li>POC 前谈定"POC 成功标准 → 签约条件"的转化路径，写进 POC 协议，避免白做。</li>
+      <li>POC 收费（哪怕象征性费用），付费客户的后续转化率显著高于免费。</li>
+      <li>POC 数据必须包含"脏数据样本"，提前暴露真实场景问题，避免落地时被打脸。</li>
+      <li>POC 结束后 2 周内给出正式报价和路线图，不给客户拖延的窗口。</li>
+    </ul>
+  </li>
+
+  <li>
+    <b>坑 8：权限合规——上线前一周被法务叫停</b>
+    <p><b>现象：</b>系统开发完毕，准备上线，法务/合规部门突然介入：数据不能出境、用户数据不能喂给第三方 API、需要做等保三级、调用 OpenAI 需要单独合同……</p>
+    <p><b>根因：</b>FDE 和业务方都忽视了合规前置；数据安全法、个保法等监管要求在国内真实存在但执行时间不稳定，容易被低估。</p>
+    <p><b>应对：</b></p>
+    <ul>
+      <li>立项时做合规清单：数据是否含个人信息、是否涉及跨境传输、行业是否有特殊监管（金融/医疗/政务）、调用的第三方 API 是否符合数据处理协议。</li>
+      <li>涉及个人数据必须做数据最小化设计：不采集不需要的字段，传给模型前脱敏。</li>
+      <li>提前拉法务进项目组，不是上线前审查，而是设计阶段参与。</li>
+    </ul>
+  </li>
+
+  <li>
+    <b>坑 9：上下文爆炸——长对话/长文档场景性能崩塌</b>
+    <p><b>现象：</b>Demo 阶段 5 轮对话流畅，生产中用户进行 50 轮对话或上传 200 页文档后，响应速度急剧下降、费用暴增、模型开始遗忘早期信息或胡乱联系。</p>
+    <p><b>根因：</b>Token 窗口有限，长上下文 = 高延迟 + 高费用 + 注意力稀释；架构设计时没有考虑上下文管理策略。</p>
+    <p><b>应对：</b></p>
+    <ul>
+      <li>多轮对话必须设计上下文压缩策略：滑动窗口、摘要压缩（将旧轮对话摘要为 200 字）、关键实体提取存 Memory。</li>
+      <li>长文档走 RAG 而非直接塞入上下文：向量检索 Top-K 片段，而不是全文 + Prompt。</li>
+      <li>生产前做压力测试：模拟 100 轮对话、10 万字文档，记录延迟和 Token 消耗，提前调参。</li>
+      <li>成本监控必须上：按用户/会话追踪 Token 消耗，设告警阈值，防止单个异常会话打穿预算。</li>
+    </ul>
+  </li>
+
+  <li>
+    <b>坑 10：交接断层——FDE 离场后系统变"黑盒"</b>
+    <p><b>现象：</b>项目交付验收完毕，3 个月后客户打电话："Prompt 不知道谁改了，效果变差了"/"模型升级后系统挂了"/"原来负责的人离职了，没人知道这个系统怎么用"。</p>
+    <p><b>根因：</b>AI 系统的关键逻辑（Prompt 工程、RAG 参数、评估集）往往只在 FDE 脑子里；文档缺失；客户团队无人培训；模型/API 版本未锁定。</p>
+    <p><b>应对：</b></p>
+    <ul>
+      <li>交付物清单必须包含：运维手册（含常见故障排查）、Prompt 设计文档（意图 + 版本历史）、评估集（含标注说明）、依赖版本锁定文件（<code>requirements.txt</code> 或 <code>pyproject.toml</code>）。</li>
+      <li>API 调用必须锁定模型版本（如 <code>gpt-4o-2024-11-20</code>），不用 <code>latest</code>，模型升级前必须回归测试。</li>
+      <li>交付前安排至少 2 次运维培训，录屏存档；指定客户侧 AI 负责人（Owner），不允许"所有人都能改但没人负责"。</li>
+      <li>合同中加入 3~6 个月质保期和付费运维选项，既是保障也是收入。</li>
+    </ul>
+  </li>
+</ol></div></details></div></section>
+<!--EXTRA:END-->
+<!--ENRICH:START-->
+<section class="enrich-sec" style="--cat:var(--c10)"><h2 class="enrich-h">📖 知识扩充 · FDE 标准工作流与交付物图解(发现-原型-落地-交接五阶段)</h2><p class="enrich-intro">FDE 标准工作流以「发现→定义→原型→落地→交接」五阶段驱动客户价值从模糊需求到可持续系统的全链路转化。</p><div class="figwrap"><figure class="fig wide"><svg viewBox='0 0 860 340' width='100%' xmlns='http://www.w3.org/2000/svg'><rect width='860' height='340' fill='#f5f4f1' rx='12'/><defs><marker id='arr' markerWidth='8' markerHeight='8' refX='6' refY='3' orient='auto'><polygon points='0 0, 7 3, 0 6' fill='#5b6472'/></marker></defs><text x='430' y='30' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='16' font-weight='bold' fill='#161b2a' text-anchor='middle'>FDE 五阶段标准工作流</text><rect x='20' y='55' width='140' height='220' rx='10' fill='#2f6ae0' opacity='0.12'/><rect x='30' y='65' width='120' height='44' rx='8' fill='#2f6ae0'/><text x='90' y='90' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='14' font-weight='bold' fill='white' text-anchor='middle'>发现</text><text x='90' y='106' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='white' text-anchor='middle'>Discovery</text><text x='90' y='135' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#2f6ae0' text-anchor='middle'>现状诊断报告</text><text x='90' y='152' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#2f6ae0' text-anchor='middle'>痛点优先级矩阵</text><text x='90' y='169' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#2f6ae0' text-anchor='middle'>访谈记录</text><text x='90' y='250' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='#5b6472' text-anchor='middle'>1-2 周</text><rect x='178' y='55' width='140' height='220' rx='10' fill='#8b3ff0' opacity='0.10'/><rect x='188' y='65' width='120' height='44' rx='8' fill='#8b3ff0'/><text x='248' y='90' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='14' font-weight='bold' fill='white' text-anchor='middle'>定义</text><text x='248' y='106' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='white' text-anchor='middle'>Definition</text><text x='248' y='135' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#8b3ff0' text-anchor='middle'>可行性评估</text><text x='248' y='152' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#8b3ff0' text-anchor='middle'>Make/Buy 矩阵</text><text x='248' y='169' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#8b3ff0' text-anchor='middle'>项目章程</text><text x='248' y='250' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='#5b6472' text-anchor='middle'>1 周</text><rect x='336' y='55' width='140' height='220' rx='10' fill='#0e8aa0' opacity='0.10'/><rect x='346' y='65' width='120' height='44' rx='8' fill='#0e8aa0'/><text x='406' y='90' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='14' font-weight='bold' fill='white' text-anchor='middle'>原型</text><text x='406' y='106' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='white' text-anchor='middle'>Prototyping</text><text x='406' y='135' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#0e8aa0' text-anchor='middle'>MVP 代码库</text><text x='406' y='152' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#0e8aa0' text-anchor='middle'>架构决策记录</text><text x='406' y='169' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#0e8aa0' text-anchor='middle'>演示脚本</text><text x='406' y='250' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='#5b6472' text-anchor='middle'>2-4 周</text><rect x='494' y='55' width='140' height='220' rx='10' fill='#1f9d57' opacity='0.10'/><rect x='504' y='65' width='120' height='44' rx='8' fill='#1f9d57'/><text x='564' y='90' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='14' font-weight='bold' fill='white' text-anchor='middle'>落地</text><text x='564' y='106' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='white' text-anchor='middle'>Deployment</text><text x='564' y='135' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#1f9d57' text-anchor='middle'>部署手册</text><text x='564' y='152' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#1f9d57' text-anchor='middle'>就绪检查清单</text><text x='564' y='169' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#1f9d57' text-anchor='middle'>回滚方案</text><text x='564' y='250' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='#5b6472' text-anchor='middle'>2-6 周</text><rect x='652' y='55' width='140' height='220' rx='10' fill='#c2780a' opacity='0.10'/><rect x='662' y='65' width='120' height='44' rx='8' fill='#c2780a'/><text x='722' y='90' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='14' font-weight='bold' fill='white' text-anchor='middle'>交接</text><text x='722' y='106' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='white' text-anchor='middle'>Handover</text><text x='722' y='135' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#c2780a' text-anchor='middle'>系统架构图</text><text x='722' y='152' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#c2780a' text-anchor='middle'>Runbook 手册</text><text x='722' y='169' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#c2780a' text-anchor='middle'>影子支持期</text><text x='722' y='250' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='#5b6472' text-anchor='middle'>约 30 天</text><line x1='160' y1='87' x2='186' y2='87' stroke='#5b6472' stroke-width='2' marker-end='url(#arr)'/><line x1='318' y1='87' x2='344' y2='87' stroke='#5b6472' stroke-width='2' marker-end='url(#arr)'/><line x1='476' y1='87' x2='502' y2='87' stroke='#5b6472' stroke-width='2' marker-end='url(#arr)'/><line x1='634' y1='87' x2='660' y2='87' stroke='#5b6472' stroke-width='2' marker-end='url(#arr)'/><rect x='20' y='280' width='820' height='28' rx='6' fill='#161b2a' opacity='0.06'/><text x='430' y='299' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#5b6472' text-anchor='middle'>每阶段结束执行「阶段门审（Stage Gate Review）」，客户责任人签字确认后方可推进</text></svg><figcaption>FDE 五阶段工作流与核心交付物</figcaption></figure><figure class="fig wide"><svg viewBox='0 0 780 320' width='100%' xmlns='http://www.w3.org/2000/svg'><rect width='780' height='320' fill='#f5f4f1' rx='12'/><text x='390' y='28' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='15' font-weight='bold' fill='#161b2a' text-anchor='middle'>FDE 角色演变：主导权交接曲线</text><line x1='70' y1='55' x2='70' y2='265' stroke='#5b6472' stroke-width='1.5'/><line x1='70' y1='265' x2='720' y2='265' stroke='#5b6472' stroke-width='1.5'/><text x='55' y='60' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='#5b6472' text-anchor='middle'>高</text><text x='55' y='160' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='#5b6472' text-anchor='middle'>中</text><text x='55' y='265' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='#5b6472' text-anchor='middle'>低</text><text x='35' y='165' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#161b2a' text-anchor='middle' transform='rotate(-90,35,165)'>参与程度</text><text x='200' y='285' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#5b6472' text-anchor='middle'>发现</text><text x='330' y='285' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#5b6472' text-anchor='middle'>定义</text><text x='460' y='285' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#5b6472' text-anchor='middle'>原型</text><text x='590' y='285' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#5b6472' text-anchor='middle'>落地</text><text x='710' y='285' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#5b6472' text-anchor='middle'>交接</text><line x1='200' y1='55' x2='200' y2='265' stroke='#e0ddd7' stroke-width='1' stroke-dasharray='4,3'/><line x1='330' y1='55' x2='330' y2='265' stroke='#e0ddd7' stroke-width='1' stroke-dasharray='4,3'/><line x1='460' y1='55' x2='460' y2='265' stroke='#e0ddd7' stroke-width='1' stroke-dasharray='4,3'/><line x1='590' y1='55' x2='590' y2='265' stroke='#e0ddd7' stroke-width='1' stroke-dasharray='4,3'/><line x1='710' y1='55' x2='710' y2='265' stroke='#e0ddd7' stroke-width='1' stroke-dasharray='4,3'/><polyline points='200,80 330,75 460,70 590,140 710,220' fill='none' stroke='#2f6ae0' stroke-width='3' stroke-linejoin='round'/><circle cx='200' cy='80' r='5' fill='#2f6ae0'/><circle cx='330' cy='75' r='5' fill='#2f6ae0'/><circle cx='460' cy='70' r='5' fill='#2f6ae0'/><circle cx='590' cy='140' r='5' fill='#2f6ae0'/><circle cx='710' cy='220' r='5' fill='#2f6ae0'/><polyline points='200,220 330,200 460,190 590,140 710,75' fill='none' stroke='#1f9d57' stroke-width='3' stroke-linejoin='round'/><circle cx='200' cy='220' r='5' fill='#1f9d57'/><circle cx='330' cy='200' r='5' fill='#1f9d57'/><circle cx='460' cy='190' r='5' fill='#1f9d57'/><circle cx='590' cy='140' r='5' fill='#1f9d57'/><circle cx='710' cy='75' r='5' fill='#1f9d57'/><rect x='480' y='60' width='14' height='4' rx='2' fill='#2f6ae0'/><text x='498' y='67' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#2f6ae0'>FDE 主导程度</text><rect x='480' y='80' width='14' height='4' rx='2' fill='#1f9d57'/><text x='498' y='87' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#1f9d57'>客户自主程度</text><text x='460' y='152' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='#d6336c'>← 主导权交汇点</text><circle cx='590' cy='140' r='10' fill='none' stroke='#d6336c' stroke-width='1.5' stroke-dasharray='3,2'/><text x='390' y='310' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='#5b6472' text-anchor='middle'>在「落地阶段」FDE 刻意让客户主导关键操作，为交接做准备</text></svg><figcaption>FDE 角色随阶段演变：从主导者到教练再到顾问</figcaption></figure><figure class="fig wide"><svg viewBox='0 0 740 320' width='100%' xmlns='http://www.w3.org/2000/svg'><rect width='740' height='320' fill='#f5f4f1' rx='12'/><text x='370' y='28' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='15' font-weight='bold' fill='#161b2a' text-anchor='middle'>FDE 交付物治理三层框架</text><rect x='30' y='45' width='680' height='240' rx='14' fill='none' stroke='#2f6ae0' stroke-width='2'/><rect x='30' y='45' width='680' height='240' rx='14' fill='#2f6ae0' opacity='0.06'/><text x='80' y='70' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='12' font-weight='bold' fill='#2f6ae0'>第一层：阶段门审（Stage Gate）</text><text x='80' y='87' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#5b6472'>每阶段结束客户签字 | 防止模糊交付 | 触发资源释放</text><rect x='90' y='105' width='560' height='160' rx='12' fill='none' stroke='#8b3ff0' stroke-width='2'/><rect x='90' y='105' width='560' height='160' rx='12' fill='#8b3ff0' opacity='0.06'/><text x='140' y='128' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='12' font-weight='bold' fill='#8b3ff0'>第二层：风险登记册（Risk Register）</text><text x='140' y='145' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#5b6472'>从发现阶段建立 | 概率×影响评分 | 每周更新</text><rect x='160' y='163' width='420' height='82' rx='10' fill='none' stroke='#0e8aa0' stroke-width='2'/><rect x='160' y='163' width='420' height='82' rx='10' fill='#0e8aa0' opacity='0.08'/><text x='370' y='186' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='12' font-weight='bold' fill='#0e8aa0' text-anchor='middle'>第三层：决策日志（Decision Log）</text><text x='370' y='205' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#5b6472' text-anchor='middle'>记录所有关键技术选型理由</text><text x='370' y='222' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='11' fill='#5b6472' text-anchor='middle'>是交接文档核心资产 | 支持后续维护与审计</text><text x='370' y='306' font-family='PingFang SC,Microsoft YaHei,sans-serif' font-size='10' fill='#5b6472' text-anchor='middle'>三层由外到内：治理频率递高，颗粒度递细，责任人从客户管理层到 FDE 本人</text></svg><figcaption>交付物治理框架：风险登记册 × 决策日志 × 阶段门审三层控制</figcaption></figure></div><div class="kacc"><details><summary>发现阶段（Discovery）</summary><div><p><b>目标：</b>在客户现场快速建立问题图谱，通常持续 1-2 周。</p><p>FDE 通过结构化访谈、系统观察与数据抽样，产出「现状诊断报告」和「痛点优先级矩阵」。</p><p>交付物核心是<b>问题定义文档（Problem Statement Doc）</b>，明确影响范围与成功度量指标（KPI/OKR 映射）。</p></div></details><details><summary>定义阶段（Definition）</summary><div><p>将发现阶段的原始痛点转化为可工程化的解决方案范围，输出<b>技术可行性评估（Feasibility Brief）</b>与项目章程。</p><p>FDE 需在此阶段完成<b>Make/Buy/Partner 决策矩阵</b>，明确自研、集成还是引入合作伙伴。</p><p>常见陷阱是范围蔓延（Scope Creep），需严格用 MoSCoW 法（Must/Should/Could/Won't）做优先级控制。</p></div></details><details><summary>原型阶段（Prototyping）</summary><div><p>以<b>最小可验证原型（MVP）</b>为核心，通常 2-4 周完成首轮演示。</p><p>FDE 主导技术选型并亲自编码，输出可运行的原型代码库、架构决策记录（ADR）和演示脚本。</p><p>关键原则：<b>「先让它跑通，再让它跑好」</b>——避免在原型阶段过度工程化，保留足够重构空间。</p></div></details><details><summary>落地阶段（Deployment）</summary><div><p>原型经客户验收后进入生产落地，FDE 与客户工程团队联合执行，输出<b>生产就绪检查清单（Production Readiness Checklist）</b>。</p><p>核心交付物包括：部署手册、监控告警配置、数据迁移脚本及回滚方案。</p><p>FDE 在此阶段角色从「主导者」切换为「教练」，刻意让客户团队完成关键操作步骤，为交接做铺垫。</p></div></details><details><summary>交接阶段（Handover）</summary><div><p><b>交接不等于离场</b>——标准交接包含「知识转移」「运维授权」「退出标准」三个子环节，缺一不可。</p><p>交付物包括：系统架构图（C4 Model 推荐）、Runbook 操作手册、培训录像/文档，以及为期约 30 天的<b>影子支持（Shadow Support）</b>期。</p><p>衡量交接质量的核心指标是客户团队能否在无 FDE 介入的情况下独立处理 P1 级故障。</p></div></details><details><summary>贯穿全程：交付物治理与风险管控</summary><div><p>每个阶段结束均需完成<b>阶段门审（Stage Gate Review）</b>，由客户责任人签字确认，防止模糊交付。</p><p>风险登记册（Risk Register）应从发现阶段建立并持续维护，按「概率×影响」评分，每周更新一次。</p><p>FDE 普遍使用<code>决策日志（Decision Log）</code>记录所有关键选型理由，这是后续维护和审计的核心资产，也是交接文档的重要组成部分。</p></div></details></div></section>
+<section class="enrich-sec" style="--cat:var(--c10)"><h2 class="enrich-h">📖 知识扩充 · FDE 整体技术架构与系统分层</h2><p class="enrich-intro">FDE 技术架构分五层递进，从原始数据到业务交付形成完整闭环，每层职责独立、接口标准化。</p><div class="figwrap"><figure class="fig wide"><svg viewBox='0 0 860 620' width='100%' xmlns='http://www.w3.org/2000/svg'><defs><marker id='arr1' markerWidth='10' markerHeight='7' refX='9' refY='3.5' orient='auto'><polygon points='0 0, 10 3.5, 0 7' fill='#5b6472'/></marker></defs><rect width='860' height='620' fill='#f5f4f1' rx='12'/><text x='430' y='36' text-anchor='middle' font-size='17' font-weight='bold' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>FDE 整体系统架构（五层递进）</text><!-- Layer 5: 应用交付层 --><rect x='40' y='54' width='780' height='88' rx='10' fill='#e8f0fb' stroke='#2f6ae0' stroke-width='1.5'/><text x='60' y='77' font-size='13' font-weight='bold' fill='#2f6ae0' font-family='Microsoft YaHei, sans-serif'>⑤ 应用与交付层</text><rect x='60' y='86' width='130' height='44' rx='8' fill='#2f6ae0'/><text x='125' y='113' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>对话式 UI</text><rect x='205' y='86' width='130' height='44' rx='8' fill='#2f6ae0'/><text x='270' y='113' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>SOP 引擎</text><rect x='350' y='86' width='130' height='44' rx='8' fill='#2f6ae0'/><text x='415' y='113' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>监控看板</text><rect x='495' y='86' width='130' height='44' rx='8' fill='#2f6ae0'/><text x='560' y='113' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>可解释输出</text><rect x='640' y='86' width='165' height='44' rx='8' fill='#2f6ae0'/><text x='722' y='113' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>Trace / 可观测性</text><!-- Arrow 5→4 --><line x1='430' y1='142' x2='430' y2='158' stroke='#5b6472' stroke-width='2' marker-end='url(#arr1)'/><text x='445' y='153' font-size='11' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>控制指令</text><!-- Layer 4: 工具集成层 --><rect x='40' y='160' width='780' height='88' rx='10' fill='#f0e8fb' stroke='#8b3ff0' stroke-width='1.5'/><text x='60' y='183' font-size='13' font-weight='bold' fill='#8b3ff0' font-family='Microsoft YaHei, sans-serif'>④ 工具与系统集成层</text><rect x='60' y='192' width='145' height='44' rx='8' fill='#8b3ff0'/><text x='132' y='219' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>MCP 连接器</text><rect x='218' y='192' width='145' height='44' rx='8' fill='#8b3ff0'/><text x='290' y='219' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>REST/GraphQL 适配</text><rect x='376' y='192' width='145' height='44' rx='8' fill='#8b3ff0'/><text x='448' y='219' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>RPA 桥接</text><rect x='534' y='192' width='145' height='44' rx='8' fill='#8b3ff0'/><text x='606' y='219' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>权限沙箱</text><rect x='692' y='192' width='113' height='44' rx='8' fill='#8b3ff0'/><text x='748' y='219' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>凭证管理</text><!-- Arrow 4→3 --><line x1='430' y1='248' x2='430' y2='264' stroke='#5b6472' stroke-width='2' marker-end='url(#arr1)'/><text x='445' y='259' font-size='11' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>工具结果</text><!-- Layer 3: Agent编排层 --><rect x='40' y='266' width='780' height='88' rx='10' fill='#e8f8fb' stroke='#0e8aa0' stroke-width='1.5'/><text x='60' y='289' font-size='13' font-weight='bold' fill='#0e8aa0' font-family='Microsoft YaHei, sans-serif'>③ Agent 编排 / 工作流层</text><rect x='60' y='298' width='155' height='44' rx='8' fill='#0e8aa0'/><text x='137' y='325' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>规划器 (ReAct/Plan)</text><rect x='228' y='298' width='130' height='44' rx='8' fill='#0e8aa0'/><text x='293' y='325' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>短期记忆</text><rect x='371' y='298' width='130' height='44' rx='8' fill='#0e8aa0'/><text x='436' y='325' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>长期记忆</text><rect x='514' y='298' width='130' height='44' rx='8' fill='#0e8aa0'/><text x='579' y='325' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>工作流 DAG</text><rect x='657' y='298' width='148' height='44' rx='8' fill='#0e8aa0'/><text x='731' y='325' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>验证钩子</text><!-- Arrow 3→2 --><line x1='430' y1='354' x2='430' y2='370' stroke='#5b6472' stroke-width='2' marker-end='url(#arr1)'/><text x='445' y='365' font-size='11' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>推理请求</text><!-- Layer 2: 模型推理层 --><rect x='40' y='372' width='780' height='88' rx='10' fill='#edfaf2' stroke='#1f9d57' stroke-width='1.5'/><text x='60' y='395' font-size='13' font-weight='bold' fill='#1f9d57' font-family='Microsoft YaHei, sans-serif'>② 模型与推理层</text><rect x='60' y='404' width='155' height='44' rx='8' fill='#1f9d57'/><text x='137' y='431' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>云端 LLM (Claude等)</text><rect x='228' y='404' width='155' height='44' rx='8' fill='#1f9d57'/><text x='305' y='431' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>本地 LLM (vLLM)</text><rect x='396' y='404' width='155' height='44' rx='8' fill='#1f9d57'/><text x='473' y='431' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>LoRA/QLoRA 微调</text><rect x='564' y='404' width='130' height='44' rx='8' fill='#1f9d57'/><text x='629' y='431' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>Embedding 模型</text><rect x='707' y='404' width='98' height='44' rx='8' fill='#1f9d57'/><text x='756' y='431' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>Reranker</text><!-- Arrow 2→1 --><line x1='430' y1='460' x2='430' y2='476' stroke='#5b6472' stroke-width='2' marker-end='url(#arr1)'/><text x='445' y='471' font-size='11' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>向量查询</text><!-- Layer 1: 数据接入层 --><rect x='40' y='478' width='780' height='88' rx='10' fill='#fef8ed' stroke='#c2780a' stroke-width='1.5'/><text x='60' y='501' font-size='13' font-weight='bold' fill='#c2780a' font-family='Microsoft YaHei, sans-serif'>① 数据接入层</text><rect x='60' y='510' width='130' height='44' rx='8' fill='#c2780a'/><text x='125' y='537' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>ETL 管道</text><rect x='203' y='510' width='130' height='44' rx='8' fill='#c2780a'/><text x='268' y='537' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>向量数据库</text><rect x='346' y='510' width='130' height='44' rx='8' fill='#c2780a'/><text x='411' y='537' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>文档解析</text><rect x='489' y='510' width='130' height='44' rx='8' fill='#c2780a'/><text x='554' y='537' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>实时流接入</text><rect x='632' y='510' width='173' height='44' rx='8' fill='#c2780a'/><text x='718' y='537' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>Schema 校验/去重</text><!-- Data sources label --><text x='430' y='586' text-anchor='middle' font-size='12' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>▲ 原始数据源：ERP / CRM / 数据库 / 文档 / Webhook / Kafka</text><text x='430' y='608' text-anchor='middle' font-size='11' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>← 数据流向上流动 　　← 控制指令向下传递</text></svg><figcaption>FDE 系统架构图：五层递进模型（自下而上）</figcaption></figure><figure class="fig wide"><svg viewBox='0 0 900 560' width='100%' xmlns='http://www.w3.org/2000/svg'><defs><marker id='arr2' markerWidth='10' markerHeight='7' refX='9' refY='3.5' orient='auto'><polygon points='0 0, 10 3.5, 0 7' fill='#2f6ae0'/></marker><marker id='arr3' markerWidth='10' markerHeight='7' refX='9' refY='3.5' orient='auto'><polygon points='0 0, 10 3.5, 0 7' fill='#8b3ff0'/></marker><marker id='arr4' markerWidth='10' markerHeight='7' refX='9' refY='3.5' orient='auto'><polygon points='0 0, 10 3.5, 0 7' fill='#1f9d57'/></marker></defs><rect width='900' height='560' fill='#f5f4f1' rx='12'/><text x='450' y='34' text-anchor='middle' font-size='16' font-weight='bold' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>FDE 与客户系统集成拓扑：三种模式</text><!-- Mode 1: 旁路模式 --><rect x='20' y='54' width='270' height='460' rx='12' fill='white' stroke='#2f6ae0' stroke-width='1.5'/><text x='155' y='78' text-anchor='middle' font-size='14' font-weight='bold' fill='#2f6ae0' font-family='Microsoft YaHei, sans-serif'>模式一：旁路模式</text><text x='155' y='96' text-anchor='middle' font-size='11' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>零侵入 · 推荐启动首选</text><!-- Customer system box --><rect x='40' y='112' width='110' height='50' rx='8' fill='#e8f0fb' stroke='#2f6ae0' stroke-width='1'/><text x='95' y='141' text-anchor='middle' font-size='12' fill='#2f6ae0' font-family='Microsoft YaHei, sans-serif'>客户系统</text><text x='95' y='156' text-anchor='middle' font-size='11' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>(ERP/CRM)</text><!-- AI system box --><rect x='165' y='112' width='110' height='50' rx='8' fill='#2f6ae0'/><text x='220' y='137' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>AI 旁路系统</text><text x='220' y='153' text-anchor='middle' font-size='11' fill='white' font-family='Microsoft YaHei, sans-serif'>(独立部署)</text><!-- Arrows --><line x1='150' y1='137' x2='162' y2='137' stroke='#2f6ae0' stroke-width='2' marker-end='url(#arr2)'/><line x1='165' y1='148' x2='153' y2='148' stroke='#2f6ae0' stroke-width='2' marker-end='url(#arr2)'/><text x='155' y='132' text-anchor='middle' font-size='10' fill='#2f6ae0' font-family='Microsoft YaHei, sans-serif'>API 读</text><text x='155' y='165' text-anchor='middle' font-size='10' fill='#2f6ae0' font-family='Microsoft YaHei, sans-serif'>结果回写</text><!-- Details --><rect x='35' y='178' width='230' height='135' rx='8' fill='#f0f5ff'/><text x='150' y='198' text-anchor='middle' font-size='12' font-weight='bold' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>特点</text><text x='45' y='216' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>• 客户 IT 审批阻力最小</text><text x='45' y='234' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>• 交付周期最短</text><text x='45' y='252' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>• 通过 REST API 读写</text><text x='45' y='270' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>• 客户系统无需改动</text><text x='45' y='288' font-size='11' fill='#c2780a' font-family='Microsoft YaHei, sans-serif'>⚠ 写操作需幂等设计</text><!-- Risk/benefit --><rect x='35' y='328' width='230' height='80' rx='8' fill='#fff8e8' stroke='#c2780a' stroke-width='1'/><text x='150' y='348' text-anchor='middle' font-size='11' font-weight='bold' fill='#c2780a' font-family='Microsoft YaHei, sans-serif'>踩坑提示</text><text x='45' y='368' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>数据回流建议先走</text><text x='45' y='386' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>人工确认队列再落库</text><!-- Stage indicator --><rect x='55' y='432' width='200' height='36' rx='18' fill='#2f6ae0'/><text x='155' y='455' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>适合：项目冷启动阶段</text><!-- Mode 2: 嵌入模式 --><rect x='315' y='54' width='270' height='460' rx='12' fill='white' stroke='#8b3ff0' stroke-width='1.5'/><text x='450' y='78' text-anchor='middle' font-size='14' font-weight='bold' fill='#8b3ff0' font-family='Microsoft YaHei, sans-serif'>模式二：嵌入模式</text><text x='450' y='96' text-anchor='middle' font-size='11' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>SDK/插件内嵌 · 体验流畅</text><!-- Product with embedded AI --><rect x='335' y='112' width='230' height='90' rx='8' fill='#f0e8fb' stroke='#8b3ff0' stroke-width='1'/><text x='450' y='132' text-anchor='middle' font-size='12' fill='#8b3ff0' font-family='Microsoft YaHei, sans-serif'>客户现有产品</text><rect x='350' y='143' width='90' height='48' rx='6' fill='#8b3ff0'/><text x='395' y='162' text-anchor='middle' font-size='11' fill='white' font-family='Microsoft YaHei, sans-serif'>原有</text><text x='395' y='178' text-anchor='middle' font-size='11' fill='white' font-family='Microsoft YaHei, sans-serif'>功能模块</text><rect x='455' y='143' width='95' height='48' rx='6' fill='#4f46e5'/><text x='502' y='162' text-anchor='middle' font-size='11' fill='white' font-family='Microsoft YaHei, sans-serif'>AI SDK</text><text x='502' y='178' text-anchor='middle' font-size='11' fill='white' font-family='Microsoft YaHei, sans-serif'>(嵌入)</text><!-- Details --><rect x='330' y='218' width='230' height='135' rx='8' fill='#f7f0ff'/><text x='445' y='238' text-anchor='middle' font-size='12' font-weight='bold' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>特点</text><text x='340' y='256' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>• 用户体验与原产品融合</text><text x='340' y='274' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>• 可访问内部数据上下文</text><text x='340' y='292' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>• 需客户开放 SDK 集成</text><text x='340' y='310' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>• 版本耦合度较高</text><text x='340' y='328' font-size='11' fill='#8b3ff0' font-family='Microsoft YaHei, sans-serif'>⚠ 升级需协调客户发版</text><rect x='330' y='368' width='230' height='60' rx='8' fill='#fff8e8' stroke='#c2780a' stroke-width='1'/><text x='445' y='388' text-anchor='middle' font-size='11' font-weight='bold' fill='#c2780a' font-family='Microsoft YaHei, sans-serif'>踩坑提示</text><text x='340' y='408' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>做好版本隔离与降级机制</text><rect x='350' y='432' width='200' height='36' rx='18' fill='#8b3ff0'/><text x='450' y='455' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>适合：深度合作阶段</text><!-- Mode 3: 代理模式 --><rect x='610' y='54' width='270' height='460' rx='12' fill='white' stroke='#1f9d57' stroke-width='1.5'/><text x='745' y='78' text-anchor='middle' font-size='14' font-weight='bold' fill='#1f9d57' font-family='Microsoft YaHei, sans-serif'>模式三：代理模式</text><text x='745' y='96' text-anchor='middle' font-size='11' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>Agent 中间层 · 统一调度</text><!-- Agent in center --><rect x='680' y='112' width='130' height='50' rx='8' fill='#1f9d57'/><text x='745' y='137' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>AI Agent 层</text><text x='745' y='153' text-anchor='middle' font-size='11' fill='white' font-family='Microsoft YaHei, sans-serif'>(统一路由)</text><!-- Downstream systems --><rect x='625' y='188' width='100' height='40' rx='6' fill='#e8f5ef' stroke='#1f9d57' stroke-width='1'/><text x='675' y='213' text-anchor='middle' font-size='11' fill='#1f9d57' font-family='Microsoft YaHei, sans-serif'>系统 A</text><rect x='740' y='188' width='100' height='40' rx='6' fill='#e8f5ef' stroke='#1f9d57' stroke-width='1'/><text x='790' y='213' text-anchor='middle' font-size='11' fill='#1f9d57' font-family='Microsoft YaHei, sans-serif'>系统 B</text><rect x='680' y='244' width='100' height='40' rx='6' fill='#e8f5ef' stroke='#1f9d57' stroke-width='1'/><text x='730' y='269' text-anchor='middle' font-size='11' fill='#1f9d57' font-family='Microsoft YaHei, sans-serif'>系统 C</text><!-- Arrows from Agent to systems --><line x1='718' y1='162' x2='695' y2='186' stroke='#1f9d57' stroke-width='1.5' marker-end='url(#arr4)'/><line x1='762' y1='162' x2='780' y2='186' stroke='#1f9d57' stroke-width='1.5' marker-end='url(#arr4)'/><line x1='745' y1='162' x2='738' y2='242' stroke='#1f9d57' stroke-width='1.5' marker-end='url(#arr4)'/><rect x='625' y='302' width='230' height='118' rx='8' fill='#edfaf4'/><text x='740' y='322' text-anchor='middle' font-size='12' font-weight='bold' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>特点</text><text x='635' y='340' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>• 跨系统统一编排调度</text><text x='635' y='358' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>• 解耦各下游系统</text><text x='635' y='376' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>• 适合复杂多系统场景</text><text x='635' y='394' font-size='11' fill='#1f9d57' font-family='Microsoft YaHei, sans-serif'>⚠ 链路越长失败点越多</text><rect x='625' y='432' width='230' height='36' rx='18' fill='#1f9d57'/><text x='740' y='455' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>适合：数字化成熟度高客户</text></svg><figcaption>FDE 与客户系统集成拓扑图：三种模式对比</figcaption></figure><figure class="fig wide"><svg viewBox='0 0 860 480' width='100%' xmlns='http://www.w3.org/2000/svg'><defs><marker id='arrr' markerWidth='8' markerHeight='6' refX='7' refY='3' orient='auto'><polygon points='0 0, 8 3, 0 6' fill='#4f46e5'/></marker></defs><rect width='860' height='480' fill='#f5f4f1' rx='12'/><text x='430' y='32' text-anchor='middle' font-size='16' font-weight='bold' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>RAG 召回链路与分块策略</text><!-- Main pipeline top --><text x='80' y='66' font-size='13' font-weight='bold' fill='#4f46e5' font-family='Microsoft YaHei, sans-serif'>标准 RAG 召回链路</text><!-- Pipeline boxes --><rect x='30' y='76' width='110' height='48' rx='8' fill='#4f46e5'/><text x='85' y='100' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>原始文档</text><text x='85' y='116' text-anchor='middle' font-size='11' fill='white' font-family='Microsoft YaHei, sans-serif'>输入</text><line x1='140' y1='100' x2='158' y2='100' stroke='#4f46e5' stroke-width='2' marker-end='url(#arrr)'/><rect x='160' y='76' width='110' height='48' rx='8' fill='#4f46e5'/><text x='215' y='100' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>文本分块</text><text x='215' y='116' text-anchor='middle' font-size='11' fill='white' font-family='Microsoft YaHei, sans-serif'>Chunking</text><line x1='270' y1='100' x2='288' y2='100' stroke='#4f46e5' stroke-width='2' marker-end='url(#arrr)'/><rect x='290' y='76' width='110' height='48' rx='8' fill='#4f46e5'/><text x='345' y='100' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>向量化</text><text x='345' y='116' text-anchor='middle' font-size='11' fill='white' font-family='Microsoft YaHei, sans-serif'>Embedding</text><line x1='400' y1='100' x2='418' y2='100' stroke='#4f46e5' stroke-width='2' marker-end='url(#arrr)'/><rect x='420' y='76' width='110' height='48' rx='8' fill='#4f46e5'/><text x='475' y='100' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>向量检索</text><text x='475' y='116' text-anchor='middle' font-size='11' fill='white' font-family='Microsoft YaHei, sans-serif'>Top-K</text><line x1='530' y1='100' x2='548' y2='100' stroke='#4f46e5' stroke-width='2' marker-end='url(#arrr)'/><rect x='550' y='76' width='110' height='48' rx='8' fill='#0e8aa0'/><text x='605' y='100' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>Rerank</text><text x='605' y='116' text-anchor='middle' font-size='11' fill='white' font-family='Microsoft YaHei, sans-serif'>精排</text><line x1='660' y1='100' x2='678' y2='100' stroke='#4f46e5' stroke-width='2' marker-end='url(#arrr)'/><rect x='680' y='76' width='150' height='48' rx='8' fill='#2f6ae0'/><text x='755' y='100' text-anchor='middle' font-size='12' fill='white' font-family='Microsoft YaHei, sans-serif'>LLM 生成回答</text><text x='755' y='116' text-anchor='middle' font-size='11' fill='white' font-family='Microsoft YaHei, sans-serif'>带引用来源</text><!-- BM25 branch --><rect x='420' y='144' width='110' height='40' rx='8' fill='#c2780a'/><text x='475' y='169' text-anchor='middle' font-size='11' fill='white' font-family='Microsoft YaHei, sans-serif'>BM25 关键词检索</text><line x1='475' y1='144' x2='475' y2='124' stroke='#c2780a' stroke-width='1.5' stroke-dasharray='4'/><text x='475' y='140' text-anchor='middle' font-size='10' fill='#c2780a' font-family='Microsoft YaHei, sans-serif'>Hybrid</text><line x1='530' y1='164' x2='560' y2='120' stroke='#c2780a' stroke-width='1.5' stroke-dasharray='4'/><text x='510' y='200' font-size='11' fill='#c2780a' font-family='Microsoft YaHei, sans-serif'>↗ 融合后送 Rerank（专有名词效果更好）</text><!-- Chunking comparison --><text x='30' y='248' font-size='13' font-weight='bold' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>三种分块策略对比</text><!-- Strategy 1 --><rect x='30' y='258' width='250' height='140' rx='10' fill='white' stroke='#8b3ff0' stroke-width='1.5'/><rect x='30' y='258' width='250' height='32' rx='10' fill='#8b3ff0'/><text x='155' y='278' text-anchor='middle' font-size='12' font-weight='bold' fill='white' font-family='Microsoft YaHei, sans-serif'>① 固定窗口分块</text><text x='45' y='308' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>按固定 token 数截断（如 512 tokens）</text><text x='45' y='326' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>实现最简单，召回速度快</text><text x='45' y='344' font-size='11' fill='#d6336c' font-family='Microsoft YaHei, sans-serif'>⚠ 可能在句子中间截断</text><text x='45' y='362' font-size='11' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>适合：结构规整的技术文档</text><text x='45' y='380' font-size='11' font-weight='bold' fill='#8b3ff0' font-family='Microsoft YaHei, sans-serif'>推荐度：★★☆</text><!-- Strategy 2 --><rect x='305' y='258' width='250' height='140' rx='10' fill='white' stroke='#2f6ae0' stroke-width='1.5'/><rect x='305' y='258' width='250' height='32' rx='10' fill='#2f6ae0'/><text x='430' y='278' text-anchor='middle' font-size='12' font-weight='bold' fill='white' font-family='Microsoft YaHei, sans-serif'>② 语义分块（推荐）</text><text x='320' y='308' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>按段落/标题/句子边界切割</text><text x='320' y='326' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>语义完整，召回精度高</text><text x='320' y='344' font-size='11' fill='#1f9d57' font-family='Microsoft YaHei, sans-serif'>✓ 平衡效果与复杂度</text><text x='320' y='362' font-size='11' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>适合：大多数业务文档场景</text><text x='320' y='380' font-size='11' font-weight='bold' fill='#2f6ae0' font-family='Microsoft YaHei, sans-serif'>推荐度：★★★</text><!-- Strategy 3 --><rect x='580' y='258' width='250' height='140' rx='10' fill='white' stroke='#0e8aa0' stroke-width='1.5'/><rect x='580' y='258' width='250' height='32' rx='10' fill='#0e8aa0'/><text x='705' y='278' text-anchor='middle' font-size='12' font-weight='bold' fill='white' font-family='Microsoft YaHei, sans-serif'>③ 层次化索引</text><text x='595' y='308' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>摘要索引 + 原文召回两级结构</text><text x='595' y='326' font-size='11' fill='#161b2a' font-family='Microsoft YaHei, sans-serif'>先检索摘要定位章节</text><text x='595' y='344' font-size='11' fill='#1f9d57' font-family='Microsoft YaHei, sans-serif'>✓ 长文档效果显著提升</text><text x='595' y='362' font-size='11' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>适合：百页以上长文档/知识库</text><text x='595' y='380' font-size='11' font-weight='bold' fill='#0e8aa0' font-family='Microsoft YaHei, sans-serif'>推荐度：★★★（长文档必用）</text><!-- Bottom note --><text x='430' y='430' text-anchor='middle' font-size='12' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>业界普遍反馈：Rerank 层对 Top-K 精度的提升优于单纯扩大 K 值；Hybrid Search 对专有名词处理优于纯向量检索</text><text x='430' y='460' text-anchor='middle' font-size='11' fill='#5b6472' font-family='Microsoft YaHei, sans-serif'>建议默认选择语义分块 + Rerank + Hybrid Search 三件套</text></svg><figcaption>RAG 召回链路与分块策略对比图</figcaption></figure></div><div class="kacc"><details><summary>① 数据接入层：原始信号的统一治理</summary><div><p>数据接入层负责将客户分散的数据源（ERP、CRM、数据库、文档、API流）统一拉通，做格式标准化与向量化存储。</p><p>核心组件包括：<b>ETL管道</b>（Airbyte / 自研连接器）、<b>向量数据库</b>（Qdrant / Weaviate / pgvector）、<b>文档解析</b>（Unstructured / PDFPlumber）以及实时流接入（Kafka / Webhook）。</p><p>踩坑点：客户数据质量普遍堪忧，脏数据比例业界普遍达三成以上；<b>向量索引</b>必须与文档更新策略配套，否则召回陈旧内容。推荐在接入层加校验层（Schema Validation + 去重哈希），而非把清洗压到上游。</p></div></details><details><summary>② 模型与推理层：LLM 选型与微调策略</summary><div><p>该层承接向量化数据，提供语义理解、生成与推理能力，是整套架构的算力核心。</p><p>技术选型优先级：<b>云端托管</b>（Claude / GPT-4o / Gemini）适合冷启动；<b>本地部署</b>（Qwen2.5 / Llama 3 / DeepSeek）适合数据合规严苛客户，通过 vLLM / Ollama 服务化。微调策略首选 <b>LoRA/QLoRA</b>，约4-8B参数模型在客户领域任务上通常已够用。</p><p>踩坑点：<code>Context Window</code> 不是越大越好——超长上下文推理成本线性上升，应在 Agent 层做精准检索替代暴力填充。</p></div></details><details><summary>③ Agent 编排与工作流层：规划、记忆与决策</summary><div><p>编排层把 LLM 能力包装成可重复运行的业务流程，实现多步推理、工具调用与异常恢复。</p><p>核心模式：<b>ReAct / Plan-and-Execute</b> 框架用于复杂任务拆解；<b>短期记忆</b>（对话上下文）+ <b>长期记忆</b>（向量检索 + KV Store）组合使用；工作流引擎可选 LangGraph / AutoGen / 自研 DAG。</p><p>踩坑点：<b>幻觉传播</b>是多 Agent 链路最大风险——中间节点输出错误会被下游当事实；必须在关键节点插入<code>验证钩子</code>，失败则回退或人工介入，而不是静默续跑。</p></div></details><details><summary>④ 工具与系统集成层：打通企业存量系统</summary><div><p>工具层是 FDE 区别于纯算法工程师的核心战场，负责将 Agent 决策转化为真实系统操作。</p><p>关键组件：<b>MCP 连接器</b>（Model Context Protocol，标准化工具注册与调用）、<b>REST/GraphQL 适配器</b>、<b>RPA 桥接</b>（处理无 API 的遗留系统）、权限沙箱（防止 Agent 越权写操作）。</p><p>踩坑点：企业内网 API 鉴权方案五花八门（OAuth2 / LDAP / 私有 Token），FDE 要维护一套<b>凭证管理中间件</b>而非在 Prompt 里硬编码；MCP 协议约2024年起快速普及，建议新集成优先采用。</p></div></details><details><summary>⑤ 应用与交付层：SOP 落地与用户界面</summary><div><p>交付层将底层能力包装为客户可用的产品形态，包括前端界面、SOP 自动化脚本与监控看板。</p><p>典型形态：<b>对话式 UI</b>（Gradio / Streamlit 快速原型，React 定制化交付）、<b>SOP 引擎</b>（将业务流程固化为可审计的执行链路）、<b>可观测性</b>（LangSmith / 自建 trace 平台）。</p><p>踩坑点：客户对「黑盒 AI」接受度低，<b>可解释输出</b>（引用来源、置信度、决策路径展示）是签单的隐性门槛，而非锦上添花。</p></div></details><details><summary>RAG 架构的工程细节与分块策略</summary><div><p><b>RAG（检索增强生成）</b>是 FDE 项目最常落地的能力模块，其效果高度依赖分块（Chunking）策略。</p><ul><li><b>固定窗口分块</b>：实现简单，语义断裂风险高</li><li><b>语义分块</b>（按段落/标题）：推荐默认选项</li><li><b>层次化索引</b>：摘要索引 + 原文召回，适合长文档</li></ul><p>Rerank 层（CrossEncoder / Cohere Rerank）能显著提升 Top-K 精度，业界普遍反馈比单纯调大 K 值更有效。Hybrid Search（向量 + BM25）处理专有名词时优于纯向量检索。</p></div></details><details><summary>FDE 与客户系统的集成拓扑模式</summary><div><p>FDE 与客户系统的集成通常分三种拓扑：<b>旁路模式</b>（AI 系统独立运行，通过 API 读写客户系统，零侵入）、<b>嵌入模式</b>（SDK 或插件嵌入客户现有产品）、<b>代理模式</b>（AI Agent 作为中间层，统一调度多个下游系统）。</p><p>旁路模式是 FDE 项目启动首选——交付速度最快，客户 IT 审批阻力最小；随着信任建立再逐步迁移到深度集成。</p><p>踩坑点：<b>数据回流</b>（AI 输出写回客户 DB）必须做幂等设计，防止 Agent 重试导致重复记录；生产环境建议所有写操作先走「人工确认队列」再落库。</p></div></details><details><summary>可观测性与 FDE 的持续交付闭环</summary><div><p>系统上线不是终点，FDE 的持续价值体现在<b>可观测性驱动的迭代</b>：通过 Trace 分析找到 Agent 失败节点，通过用户反馈标注优化检索召回，通过 A/B 评测量化模型升级收益。</p><p>推荐工具链：<code>LangSmith</code> 或 <code>Langfuse</code>（开源可自部署）做全链路 trace；<b>评估数据集</b>需在项目启动时与客户共建，而非事后补充。</p><p>踩坑点：仅依赖「客户感觉变好了」做交付确认，续费时极易被质疑；FDE 必须建立量化指标（准确率 / 任务完成率 / 平均响应时延）作为合同验收基准。</p></div></details></div></section>
+<section class="enrich-sec" style="--cat:var(--c10)"><h2 class="enrich-h">📖 知识扩充 · FDE 任务方向与标准操作逻辑(SOP)</h2><p class="enrich-intro">FDE 通过六阶段 SOP 将客户需求转化为可落地的业务价值，每阶段有明确的准入/退出标准。</p><div class="figwrap"><figure class="fig wide"><svg viewBox='0 0 960 620' width='100%' xmlns='http://www.w3.org/2000/svg'><rect width='960' height='620' fill='#f5f4f1'/><text x='480' y='34' text-anchor='middle' font-size='18' font-weight='bold' fill='#161b2a' font-family='sans-serif'>FDE 六阶段 SOP 流程图</text><rect x='10' y='50' width='940' height='40' rx='6' fill='#2f6ae0'/><text x='480' y='76' text-anchor='middle' font-size='13' fill='white' font-family='sans-serif' font-weight='bold'>泳道：FDE 工程师（上）↔ 客户业务方（下）</text><rect x='10' y='95' width='145' height='500' rx='8' fill='white' stroke='#2f6ae0' stroke-width='2'/><rect x='10' y='95' width='145' height='30' rx='6' fill='#2f6ae0'/><text x='82' y='115' text-anchor='middle' font-size='13' font-weight='bold' fill='white' font-family='sans-serif'>① 需求诊断</text><text x='82' y='148' text-anchor='middle' font-size='11' fill='#2f6ae0' font-family='sans-serif' font-weight='bold'>关键动作</text><text x='82' y='165' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 多层访谈</text><text x='82' y='180' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· AS-IS 流程图</text><text x='82' y='195' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 根因分析</text><rect x='20' y='215' width='125' height='2' fill='#e0ddd6'/><text x='82' y='233' text-anchor='middle' font-size='11' fill='#1f9d57' font-family='sans-serif' font-weight='bold'>交付产出物</text><text x='82' y='250' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>需求确认书</text><text x='82' y='265' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>AS-IS 流程图</text><text x='82' y='280' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>可行性初评</text><rect x='20' y='300' width='125' height='2' fill='#e0ddd6'/><text x='82' y='318' text-anchor='middle' font-size='11' fill='#d6336c' font-family='sans-serif' font-weight='bold'>进入标准</text><text x='82' y='335' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>Owner 书面</text><text x='82' y='350' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>确认需求</text><rect x='165' y='95' width='145' height='500' rx='8' fill='white' stroke='#8b3ff0' stroke-width='2'/><rect x='165' y='95' width='145' height='30' rx='6' fill='#8b3ff0'/><text x='237' y='115' text-anchor='middle' font-size='13' font-weight='bold' fill='white' font-family='sans-serif'>② 数据接入</text><text x='237' y='148' text-anchor='middle' font-size='11' fill='#8b3ff0' font-family='sans-serif' font-weight='bold'>关键动作</text><text x='237' y='165' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 数据资产盘点</text><text x='237' y='180' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 接入方案设计</text><text x='237' y='195' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 权限/合规审查</text><rect x='175' y='215' width='125' height='2' fill='#e0ddd6'/><text x='237' y='233' text-anchor='middle' font-size='11' fill='#1f9d57' font-family='sans-serif' font-weight='bold'>交付产出物</text><text x='237' y='250' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>数据字典</text><text x='237' y='265' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>链路拓扑图</text><text x='237' y='280' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>质量基线报告</text><rect x='175' y='300' width='125' height='2' fill='#e0ddd6'/><text x='237' y='318' text-anchor='middle' font-size='11' fill='#d6336c' font-family='sans-serif' font-weight='bold'>进入标准</text><text x='237' y='335' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>数据权限就绪</text><text x='237' y='350' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>接口可连通</text><rect x='320' y='95' width='145' height='500' rx='8' fill='white' stroke='#0e8aa0' stroke-width='2'/><rect x='320' y='95' width='145' height='30' rx='6' fill='#0e8aa0'/><text x='392' y='115' text-anchor='middle' font-size='13' font-weight='bold' fill='white' font-family='sans-serif'>③ 原型验证</text><text x='392' y='148' text-anchor='middle' font-size='11' fill='#0e8aa0' font-family='sans-serif' font-weight='bold'>关键动作</text><text x='392' y='165' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 聚焦1-2场景</text><text x='392' y='180' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 快速搭 Demo</text><text x='392' y='195' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 用户走查</text><rect x='330' y='215' width='125' height='2' fill='#e0ddd6'/><text x='392' y='233' text-anchor='middle' font-size='11' fill='#1f9d57' font-family='sans-serif' font-weight='bold'>交付产出物</text><text x='392' y='250' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>可交互原型</text><text x='392' y='265' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>假设验证报告</text><text x='392' y='280' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>用户反馈摘要</text><rect x='330' y='300' width='125' height='2' fill='#e0ddd6'/><text x='392' y='318' text-anchor='middle' font-size='11' fill='#d6336c' font-family='sans-serif' font-weight='bold'>进入标准</text><text x='392' y='335' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>Owner 认可</text><text x='392' y='350' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>方向，批准迭代</text><rect x='475' y='95' width='145' height='500' rx='8' fill='white' stroke='#c2780a' stroke-width='2'/><rect x='475' y='95' width='145' height='30' rx='6' fill='#c2780a'/><text x='547' y='115' text-anchor='middle' font-size='13' font-weight='bold' fill='white' font-family='sans-serif'>④ 现场迭代</text><text x='547' y='148' text-anchor='middle' font-size='11' fill='#c2780a' font-family='sans-serif' font-weight='bold'>关键动作</text><text x='547' y='165' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 1-2周冲刺</text><text x='547' y='180' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 驻场高频反馈</text><text x='547' y='195' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 范围蔓延管控</text><rect x='485' y='215' width='125' height='2' fill='#e0ddd6'/><text x='547' y='233' text-anchor='middle' font-size='11' fill='#1f9d57' font-family='sans-serif' font-weight='bold'>交付产出物</text><text x='547' y='250' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>增量版本</text><text x='547' y='265' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>迭代反馈记录</text><text x='547' y='280' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>优先级矩阵</text><rect x='485' y='300' width='125' height='2' fill='#e0ddd6'/><text x='547' y='318' text-anchor='middle' font-size='11' fill='#d6336c' font-family='sans-serif' font-weight='bold'>进入标准</text><text x='547' y='335' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>UAT 通过率</text><text x='547' y='350' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>≥ 验收标准</text><rect x='630' y='95' width='145' height='500' rx='8' fill='white' stroke='#d6336c' stroke-width='2'/><rect x='630' y='95' width='145' height='30' rx='6' fill='#d6336c'/><text x='702' y='115' text-anchor='middle' font-size='13' font-weight='bold' fill='white' font-family='sans-serif'>⑤ 上线部署</text><text x='702' y='148' text-anchor='middle' font-size='11' fill='#d6336c' font-family='sans-serif' font-weight='bold'>关键动作</text><text x='702' y='165' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 三道门检查</text><text x='702' y='180' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 灰度/蓝绿部署</text><text x='702' y='195' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· Runbook 执行</text><rect x='640' y='215' width='125' height='2' fill='#e0ddd6'/><text x='702' y='233' text-anchor='middle' font-size='11' fill='#1f9d57' font-family='sans-serif' font-weight='bold'>交付产出物</text><text x='702' y='250' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>生产系统</text><text x='702' y='265' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>上线 Runbook</text><text x='702' y='280' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>监控/回滚方案</text><rect x='640' y='300' width='125' height='2' fill='#e0ddd6'/><text x='702' y='318' text-anchor='middle' font-size='11' fill='#d6336c' font-family='sans-serif' font-weight='bold'>进入标准</text><text x='702' y='335' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>技术+业务+运维</text><text x='702' y='350' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>三方验收完成</text><rect x='785' y='95' width='165' height='500' rx='8' fill='white' stroke='#4f46e5' stroke-width='2'/><rect x='785' y='95' width='165' height='30' rx='6' fill='#4f46e5'/><text x='867' y='115' text-anchor='middle' font-size='13' font-weight='bold' fill='white' font-family='sans-serif'>⑥ 知识交接</text><text x='867' y='148' text-anchor='middle' font-size='11' fill='#4f46e5' font-family='sans-serif' font-weight='bold'>关键动作</text><text x='867' y='165' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 文档体系交付</text><text x='867' y='180' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 影子期培训</text><text x='867' y='195' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>· 应急演练</text><rect x='795' y='215' width='145' height='2' fill='#e0ddd6'/><text x='867' y='233' text-anchor='middle' font-size='11' fill='#1f9d57' font-family='sans-serif' font-weight='bold'>交付产出物</text><text x='867' y='250' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>操作/运维手册</text><text x='867' y='265' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>FAQ 知识库</text><text x='867' y='280' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>架构决策记录</text><rect x='795' y='300' width='145' height='2' fill='#e0ddd6'/><text x='867' y='318' text-anchor='middle' font-size='11' fill='#d6336c' font-family='sans-serif' font-weight='bold'>退出标准</text><text x='867' y='335' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>客户团队独立</text><text x='867' y='350' text-anchor='middle' font-size='10' fill='#161b2a' font-family='sans-serif'>操作验证通过</text><polygon points='155,345 165,340 165,350' fill='#8b3ff0'/><line x1='155' y1='345' x2='165' y2='345' stroke='#8b3ff0' stroke-width='2'/><polygon points='310,345 320,340 320,350' fill='#0e8aa0'/><line x1='310' y1='345' x2='320' y2='345' stroke='#0e8aa0' stroke-width='2'/><polygon points='465,345 475,340 475,350' fill='#c2780a'/><line x1='465' y1='345' x2='475' y2='345' stroke='#c2780a' stroke-width='2'/><polygon points='620,345 630,340 630,350' fill='#d6336c'/><line x1='620' y1='345' x2='630' y2='345' stroke='#d6336c' stroke-width='2'/><polygon points='775,345 785,340 785,350' fill='#4f46e5'/><line x1='775' y1='345' x2='785' y2='345' stroke='#4f46e5' stroke-width='2'/><rect x='10' y='400' width='940' height='45' rx='6' fill='#fff8ee' stroke='#c2780a' stroke-width='1'/><text x='480' y='420' text-anchor='middle' font-size='12' fill='#c2780a' font-family='sans-serif' font-weight='bold'>⚠ 各阶段常见失败点</text><text x='82' y='437' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>忽略一线用户</text><text x='237' y='437' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>权限申请延误</text><text x='392' y='437' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>原型过度打磨</text><text x='547' y='437' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>需求人员频换</text><text x='702' y='437' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>UAT 走形式</text><text x='867' y='437' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>只交文档不培训</text><rect x='10' y='460' width='940' height='50' rx='6' fill='#f0f4ff' stroke='#2f6ae0' stroke-width='1'/><text x='480' y='480' text-anchor='middle' font-size='12' fill='#2f6ae0' font-family='sans-serif' font-weight='bold'>典型周期参考（中大型企业场景）</text><text x='82' y='498' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>2-5天</text><text x='237' y='498' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>5-20天</text><text x='392' y='498' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>5-10天</text><text x='547' y='498' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>2-8周</text><text x='702' y='498' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>1-3天</text><text x='867' y='498' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>1-2周</text><rect x='10' y='525' width='940' height='80' rx='6' fill='white' stroke='#e0ddd6' stroke-width='1'/><text x='30' y='548' font-size='12' fill='#161b2a' font-family='sans-serif' font-weight='bold'>图例说明：</text><rect x='130' y='536' width='18' height='14' rx='3' fill='#2f6ae0'/><text x='155' y='548' font-size='11' fill='#161b2a' font-family='sans-serif'>关键动作区</text><rect x='260' y='536' width='18' height='14' rx='3' fill='#1f9d57'/><text x='285' y='548' font-size='11' fill='#161b2a' font-family='sans-serif'>交付产出物</text><rect x='390' y='536' width='18' height='14' rx='3' fill='#d6336c'/><text x='415' y='548' font-size='11' fill='#161b2a' font-family='sans-serif'>进入/退出标准</text><text x='30' y='575' font-size='11' fill='#5b6472' font-family='sans-serif'>数据接入耗时普遍是预估的 2-4 倍；影子期建议在 FDE 退出前 2 周启动，确保能力真正转移到客户团队。</text><text x='30' y='595' font-size='11' fill='#5b6472' font-family='sans-serif'>阶段间箭头代表门控（Gate）：未满足进入标准时，不得推进至下一阶段，需返回修正。</text></svg><figcaption>FDE 六阶段流程图：关键动作与交付产出物</figcaption></figure><figure class="fig wide"><svg viewBox='0 0 800 580' width='100%' xmlns='http://www.w3.org/2000/svg'><rect width='800' height='580' fill='#f5f4f1'/><text x='400' y='34' text-anchor='middle' font-size='18' font-weight='bold' fill='#161b2a' font-family='sans-serif'>FDE 任务优先级矩阵：价值 × 可行性</text><text x='400' y='56' text-anchor='middle' font-size='12' fill='#5b6472' font-family='sans-serif'>四象限快速分类 → 确定资源投入策略</text><rect x='80' y='70' width='300' height='230' rx='8' fill='#eef6ff' stroke='#2f6ae0' stroke-width='2.5'/><rect x='80' y='70' width='300' height='38' rx='6' fill='#2f6ae0'/><text x='230' y='94' text-anchor='middle' font-size='14' font-weight='bold' fill='white' font-family='sans-serif'>高价值 × 高可行</text><text x='230' y='125' text-anchor='middle' font-size='22' fill='#2f6ae0' font-family='sans-serif'>★ 立即做</text><text x='230' y='152' text-anchor='middle' font-size='11' fill='#161b2a' font-family='sans-serif'>优先级最高，全力投入资源</text><text x='115' y='175' font-size='11' fill='#161b2a' font-family='sans-serif'>• 影响核心业务流程</text><text x='115' y='193' font-size='11' fill='#161b2a' font-family='sans-serif'>• 数据/技术条件就绪</text><text x='115' y='211' font-size='11' fill='#161b2a' font-family='sans-serif'>• 客户有明确 KPI 诉求</text><text x='115' y='229' font-size='11' fill='#161b2a' font-family='sans-serif'>• 监管/合规无阻碍</text><rect x='115' y='247' width='230' height='40' rx='6' fill='#2f6ae0'/><text x='230' y='272' text-anchor='middle' font-size='11' fill='white' font-family='sans-serif' font-weight='bold'>→ 纳入当前迭代，驻场交付</text><rect x='420' y='70' width='300' height='230' rx='8' fill='#fef3ff' stroke='#8b3ff0' stroke-width='2.5'/><rect x='420' y='70' width='300' height='38' rx='6' fill='#8b3ff0'/><text x='570' y='94' text-anchor='middle' font-size='14' font-weight='bold' fill='white' font-family='sans-serif'>高价值 × 低可行</text><text x='570' y='125' text-anchor='middle' font-size='18' fill='#8b3ff0' font-family='sans-serif'>⚙ 拆解降难度</text><text x='570' y='152' text-anchor='middle' font-size='11' fill='#161b2a' font-family='sans-serif'>战略价值高，需要专项投入攻坚</text><text x='455' y='175' font-size='11' fill='#161b2a' font-family='sans-serif'>• 数据权限待申请中</text><text x='455' y='193' font-size='11' fill='#161b2a' font-family='sans-serif'>• 技术改造成本高</text><text x='455' y='211' font-size='11' fill='#161b2a' font-family='sans-serif'>• 跨部门协调难度大</text><text x='455' y='229' font-size='11' fill='#161b2a' font-family='sans-serif'>• 合规审查周期长</text><rect x='455' y='247' width='230' height='40' rx='6' fill='#8b3ff0'/><text x='570' y='272' text-anchor='middle' font-size='11' fill='white' font-family='sans-serif' font-weight='bold'>→ 拆 MVP，专项推进阻塞点</text><rect x='80' y='320' width='300' height='230' rx='8' fill='#f0fef8' stroke='#1f9d57' stroke-width='2.5'/><rect x='80' y='320' width='300' height='38' rx='6' fill='#1f9d57'/><text x='230' y='344' text-anchor='middle' font-size='14' font-weight='bold' fill='white' font-family='sans-serif'>低价值 × 高可行</text><text x='230' y='375' text-anchor='middle' font-size='18' fill='#1f9d57' font-family='sans-serif'>📋 排队/自动化</text><text x='230' y='402' text-anchor='middle' font-size='11' fill='#161b2a' font-family='sans-serif'>能做但性价比低，不占用核心资源</text><text x='115' y='425' font-size='11' fill='#161b2a' font-family='sans-serif'>• 影响用户规模小</text><text x='115' y='443' font-size='11' fill='#161b2a' font-family='sans-serif'>• 非核心业务流程</text><text x='115' y='461' font-size='11' fill='#161b2a' font-family='sans-serif'>• 技术实现简单</text><text x='115' y='479' font-size='11' fill='#161b2a' font-family='sans-serif'>• 可脚本化/模板化</text><rect x='115' y='497' width='230' height='40' rx='6' fill='#1f9d57'/><text x='230' y='522' text-anchor='middle' font-size='11' fill='white' font-family='sans-serif' font-weight='bold'>→ 积压列表/后续迭代/自动化</text><rect x='420' y='320' width='300' height='230' rx='8' fill='#fff5f5' stroke='#d6336c' stroke-width='2.5'/><rect x='420' y='320' width='300' height='38' rx='6' fill='#d6336c'/><text x='570' y='344' text-anchor='middle' font-size='14' font-weight='bold' fill='white' font-family='sans-serif'>低价值 × 低可行</text><text x='570' y='375' text-anchor='middle' font-size='18' fill='#d6336c' font-family='sans-serif'>✕ 拒绝/搁置</text><text x='570' y='402' text-anchor='middle' font-size='11' fill='#161b2a' font-family='sans-serif'>资源黑洞，需明确说 No</text><text x='455' y='425' font-size='11' fill='#161b2a' font-family='sans-serif'>• 边缘场景，影响极小</text><text x='455' y='443' font-size='11' fill='#161b2a' font-family='sans-serif'>• 技术风险高代价大</text><text x='455' y='461' font-size='11' fill='#161b2a' font-family='sans-serif'>• 与主线方向无关</text><text x='455' y='479' font-size='11' fill='#161b2a' font-family='sans-serif'>• 监管禁止或合规风险</text><rect x='455' y='497' width='230' height='40' rx='6' fill='#d6336c'/><text x='570' y='522' text-anchor='middle' font-size='11' fill='white' font-family='sans-serif' font-weight='bold'>→ 正式拒绝，记录原因备查</text><text x='40' y='200' text-anchor='middle' font-size='13' font-weight='bold' fill='#161b2a' font-family='sans-serif' transform='rotate(-90, 40, 300)'>业务价值</text><line x1='56' y1='70' x2='56' y2='555' stroke='#161b2a' stroke-width='2'/><polygon points='56,65 51,78 61,78' fill='#161b2a'/><text x='56' y='68' text-anchor='middle' font-size='11' fill='#161b2a' font-family='sans-serif'>高</text><text x='56' y='555' text-anchor='middle' font-size='11' fill='#161b2a' font-family='sans-serif'>低</text><text x='400' y='572' text-anchor='middle' font-size='13' font-weight='bold' fill='#161b2a' font-family='sans-serif'>实施可行性</text><line x1='75' y1='556' x2='740' y2='556' stroke='#161b2a' stroke-width='2'/><polygon points='745,556 732,551 732,561' fill='#161b2a'/><text x='85' y='570' font-size='11' fill='#161b2a' font-family='sans-serif'>低</text><text x='720' y='570' font-size='11' fill='#161b2a' font-family='sans-serif'>高</text><line x1='380' y1='68' x2='422' y2='68' stroke='#5b6472' stroke-width='1.5' stroke-dasharray='4,3'/><line x1='380' y1='318' x2='422' y2='318' stroke='#5b6472' stroke-width='1.5' stroke-dasharray='4,3'/><line x1='380' y1='555' x2='380' y2='68' stroke='#5b6472' stroke-width='1.5' stroke-dasharray='4,3'/></svg><figcaption>FDE 任务优先级矩阵：业务价值 × 实施可行性</figcaption></figure><figure class="fig wide"><svg viewBox='0 0 900 420' width='100%' xmlns='http://www.w3.org/2000/svg'><rect width='900' height='420' fill='#f5f4f1'/><text x='450' y='30' text-anchor='middle' font-size='16' font-weight='bold' fill='#161b2a' font-family='sans-serif'>FDE 交付物全景与门控检查点</text><rect x='10' y='50' width='130' height='340' rx='8' fill='white' stroke='#2f6ae0' stroke-width='2'/><rect x='10' y='50' width='130' height='28' rx='6' fill='#2f6ae0'/><text x='75' y='69' text-anchor='middle' font-size='12' font-weight='bold' fill='white' font-family='sans-serif'>① 需求诊断</text><text x='75' y='100' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>输入</text><rect x='20' y='107' width='110' height='18' rx='4' fill='#eef6ff'/><text x='75' y='120' text-anchor='middle' font-size='10' fill='#2f6ae0' font-family='sans-serif'>客户初始诉求</text><text x='75' y='147' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>输出</text><rect x='20' y='154' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='75' y='167' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>需求确认书</text><rect x='20' y='177' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='75' y='190' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>AS-IS 流程图</text><rect x='20' y='200' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='75' y='213' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>可行性初评</text><rect x='20' y='330' width='110' height='30' rx='6' fill='#fff0f0' stroke='#d6336c' stroke-width='1.5'/><text x='75' y='348' text-anchor='middle' font-size='10' fill='#d6336c' font-family='sans-serif' font-weight='bold'>门控: Owner 书面确认</text><rect x='155' y='50' width='130' height='340' rx='8' fill='white' stroke='#8b3ff0' stroke-width='2'/><rect x='155' y='50' width='130' height='28' rx='6' fill='#8b3ff0'/><text x='220' y='69' text-anchor='middle' font-size='12' font-weight='bold' fill='white' font-family='sans-serif'>② 数据接入</text><text x='220' y='100' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>输入</text><rect x='165' y='107' width='110' height='18' rx='4' fill='#f5eeff'/><text x='220' y='120' text-anchor='middle' font-size='10' fill='#8b3ff0' font-family='sans-serif'>需求确认书</text><text x='220' y='147' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>输出</text><rect x='165' y='154' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='220' y='167' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>数据字典</text><rect x='165' y='177' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='220' y='190' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>链路拓扑图</text><rect x='165' y='200' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='220' y='213' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>质量基线报告</text><rect x='165' y='330' width='110' height='30' rx='6' fill='#fff0f0' stroke='#d6336c' stroke-width='1.5'/><text x='220' y='348' text-anchor='middle' font-size='10' fill='#d6336c' font-family='sans-serif' font-weight='bold'>门控: 接口连通验证</text><rect x='300' y='50' width='130' height='340' rx='8' fill='white' stroke='#0e8aa0' stroke-width='2'/><rect x='300' y='50' width='130' height='28' rx='6' fill='#0e8aa0'/><text x='365' y='69' text-anchor='middle' font-size='12' font-weight='bold' fill='white' font-family='sans-serif'>③ 原型验证</text><text x='365' y='100' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>输入</text><rect x='310' y='107' width='110' height='18' rx='4' fill='#e6f7fa'/><text x='365' y='120' text-anchor='middle' font-size='10' fill='#0e8aa0' font-family='sans-serif'>数据字典+接口</text><text x='365' y='147' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>输出</text><rect x='310' y='154' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='365' y='167' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>可交互原型</text><rect x='310' y='177' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='365' y='190' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>假设验证报告</text><rect x='310' y='200' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='365' y='213' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>用户反馈摘要</text><rect x='310' y='330' width='110' height='30' rx='6' fill='#fff0f0' stroke='#d6336c' stroke-width='1.5'/><text x='365' y='348' text-anchor='middle' font-size='10' fill='#d6336c' font-family='sans-serif' font-weight='bold'>门控: Owner 批准迭代</text><rect x='445' y='50' width='130' height='340' rx='8' fill='white' stroke='#c2780a' stroke-width='2'/><rect x='445' y='50' width='130' height='28' rx='6' fill='#c2780a'/><text x='510' y='69' text-anchor='middle' font-size='12' font-weight='bold' fill='white' font-family='sans-serif'>④ 现场迭代</text><text x='510' y='100' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>输入</text><rect x='455' y='107' width='110' height='18' rx='4' fill='#fff8ee'/><text x='510' y='120' text-anchor='middle' font-size='10' fill='#c2780a' font-family='sans-serif'>原型+反馈记录</text><text x='510' y='147' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>输出</text><rect x='455' y='154' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='510' y='167' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>增量功能版本</text><rect x='455' y='177' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='510' y='190' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>迭代反馈记录</text><rect x='455' y='200' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='510' y='213' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>优先级矩阵</text><rect x='455' y='330' width='110' height='30' rx='6' fill='#fff0f0' stroke='#d6336c' stroke-width='1.5'/><text x='510' y='348' text-anchor='middle' font-size='10' fill='#d6336c' font-family='sans-serif' font-weight='bold'>门控: UAT 达标</text><rect x='590' y='50' width='130' height='340' rx='8' fill='white' stroke='#d6336c' stroke-width='2'/><rect x='590' y='50' width='130' height='28' rx='6' fill='#d6336c'/><text x='655' y='69' text-anchor='middle' font-size='12' font-weight='bold' fill='white' font-family='sans-serif'>⑤ 上线部署</text><text x='655' y='100' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>输入</text><rect x='600' y='107' width='110' height='18' rx='4' fill='#fff0f0'/><text x='655' y='120' text-anchor='middle' font-size='10' fill='#d6336c' font-family='sans-serif'>迭代版本+UAT</text><text x='655' y='147' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>输出</text><rect x='600' y='154' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='655' y='167' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>生产系统</text><rect x='600' y='177' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='655' y='190' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>上线 Runbook</text><rect x='600' y='200' width='110' height='18' rx='4' fill='#e8f5e9'/><text x='655' y='213' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>监控/回滚方案</text><rect x='600' y='330' width='110' height='30' rx='6' fill='#fff0f0' stroke='#d6336c' stroke-width='1.5'/><text x='655' y='348' text-anchor='middle' font-size='10' fill='#d6336c' font-family='sans-serif' font-weight='bold'>门控: 三方验收</text><rect x='735' y='50' width='155' height='340' rx='8' fill='white' stroke='#4f46e5' stroke-width='2'/><rect x='735' y='50' width='155' height='28' rx='6' fill='#4f46e5'/><text x='812' y='69' text-anchor='middle' font-size='12' font-weight='bold' fill='white' font-family='sans-serif'>⑥ 知识交接</text><text x='812' y='100' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>输入</text><rect x='745' y='107' width='135' height='18' rx='4' fill='#eeeeff'/><text x='812' y='120' text-anchor='middle' font-size='10' fill='#4f46e5' font-family='sans-serif'>生产系统+全流程文档</text><text x='812' y='147' text-anchor='middle' font-size='10' fill='#5b6472' font-family='sans-serif'>输出</text><rect x='745' y='154' width='135' height='18' rx='4' fill='#e8f5e9'/><text x='812' y='167' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>操作/运维手册</text><rect x='745' y='177' width='135' height='18' rx='4' fill='#e8f5e9'/><text x='812' y='190' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>FAQ 知识库</text><rect x='745' y='200' width='135' height='18' rx='4' fill='#e8f5e9'/><text x='812' y='213' text-anchor='middle' font-size='10' fill='#1f9d57' font-family='sans-serif'>架构决策记录(ADR)</text><rect x='745' y='330' width='135' height='30' rx='6' fill='#fff0f0' stroke='#d6336c' stroke-width='1.5'/><text x='812' y='348' text-anchor='middle' font-size='10' fill='#d6336c' font-family='sans-serif' font-weight='bold'>退出: 客户独立操作验证</text><line x1='140' y1='220' x2='155' y2='220' stroke='#8b3ff0' stroke-width='2'/><polygon points='155,216 155,224 163,220' fill='#8b3ff0'/><line x1='285' y1='220' x2='300' y2='220' stroke='#0e8aa0' stroke-width='2'/><polygon points='300,216 300,224 308,220' fill='#0e8aa0'/><line x1='430' y1='220' x2='445' y2='220' stroke='#c2780a' stroke-width='2'/><polygon points='445,216 445,224 453,220' fill='#c2780a'/><line x1='575' y1='220' x2='590' y2='220' stroke='#d6336c' stroke-width='2'/><polygon points='590,216 590,224 598,220' fill='#d6336c'/><line x1='720' y1='220' x2='735' y2='220' stroke='#4f46e5' stroke-width='2'/><polygon points='735,216 735,224 743,220' fill='#4f46e5'/><rect x='10' y='390' width='880' height='24' rx='6' fill='white' stroke='#e0ddd6' stroke-width='1'/><text x='450' y='407' text-anchor='middle' font-size='11' fill='#5b6472' font-family='sans-serif'>所有门控均为硬性卡点：未达标不得进入下一阶段。数据接入阶段建议提前并行推进权限申请，避免成为整体阻塞点。</text></svg><figcaption>FDE 各阶段核心交付物与门控关系</figcaption></figure></div><div class="kacc"><details><summary>阶段一：需求诊断</summary><div><p>FDE 进场首要任务是区分<b>症状与根因</b>：客户描述的痛点往往是现象，真实需求隐藏在业务流程断点中。</p><p>标准动作包括：2-3 天深度访谈（业务负责人 + 一线操作员 + IT）、绘制 AS-IS 业务流程图、识别关键瓶颈节点。</p><p>进入下一阶段的判断标准：<b>需求已由业务 Owner 书面确认</b>，且技术可行性初步评估完成。</p><p>常见失败点：只和决策层对话，忽略一线操作员的实际痛点，导致后续方案落地阻力大。</p></div></details><details><summary>阶段二：数据接入</summary><div><p>数据接入是 FDE 项目中最容易低估工时的环节——业界普遍反映实际耗时是预估的 2-4 倍。</p><p>关键动作：数据资产盘点（来源、格式、权限、质量）、制定接入方案（API/ETL/文件同步/实时流）、签署数据使用协议。</p><p>交付产出物：<b>数据字典 + 接入链路拓扑图 + 数据质量基线报告</b>。</p><p>常见失败点：数据权限申请流程漫长（尤其 To-G 场景可达数周），需提前并行推进，否则阻塞整体进度。</p></div></details><details><summary>阶段三：原型验证</summary><div><p>原型阶段目标不是做出完整产品，而是<b>用最小成本验证核心假设</b>，通常控制在 5-10 个工作日内。</p><p>标准做法：锁定 1-2 个高价值场景，快速搭建可交互 Demo（不追求稳定性），邀请 3-5 名关键用户参与走查。</p><p>进入下一阶段的判断标准：核心假设通过用户验证，业务 Owner 认可原型方向并批准进入迭代。</p><p>常见失败点：过度打磨原型 UI，把原型验证阶段变成了产品开发阶段，浪费宝贵的早期灵活度。</p></div></details><details><summary>阶段四：现场迭代</summary><div><p>现场迭代强调<b>短周期、高频反馈</b>，推荐 1-2 周一个迭代，每次迭代结束进行 Demo Review。</p><p>FDE 需在客户现场驻守，实时响应需求变更，同时管控<b>范围蔓延（Scope Creep）</b>——任何新需求必须经过优先级评估才能纳入当前迭代。</p><p>交付产出物：可测试的功能增量版本、用户反馈记录、更新的需求优先级矩阵。</p><p>常见失败点：客户方人员频繁更换，需求一致性难以保障；建议指定单一业务对接人（Business Champion）作为需求窗口。</p></div></details><details><summary>阶段五：上线部署</summary><div><p>上线前必须完成<b>三道门检查</b>：技术验收（性能/安全/稳定性）、业务验收（UAT 场景覆盖率）、运维交接（监控/告警/回滚方案就绪）。</p><p>部署策略优先选择灰度发布或蓝绿部署，降低上线风险；To-G 项目还需通过等保/数据合规审查。</p><p>FDE 需制定详细的<b>上线 Runbook</b>：包含每个步骤的负责人、预期时间、验证标准和回滚触发条件。</p><p>常见失败点：UAT 走形式，等到生产环境才暴露真实数据量下的性能问题，导致上线后紧急回滚。</p></div></details><details><summary>阶段六：知识交接</summary><div><p>知识交接是 FDE 项目生命周期中最容易被忽视、却对客户长期价值影响最大的阶段。</p><p>标准交付物包括：<b>系统操作手册、运维手册、常见问题 FAQ、数据字典最终版、架构决策记录（ADR）</b>。</p><p>建议采用「影子期」模式：FDE 退出前 2 周让客户团队主导操作，FDE 仅作旁观和答疑，确保能力真正转移。</p><p>常见失败点：只交付文档不做培训，客户团队在 FDE 离场后 1-2 个月内系统即出现运维断层；需设计至少一次「应急演练」确保交接质量。</p></div></details><details><summary>任务优先级判断：价值-可行性矩阵</summary><div><p>FDE 面临多个并发需求时，用<b>业务价值（高/低）× 实施可行性（高/低）</b>四象限快速分类：高价值高可行 → 立即做；高价值低可行 → 拆解降难度；低价值高可行 → 排队或自动化；低价值低可行 → 拒绝或搁置。</p><p>「业务价值」评估维度：影响用户规模、解决核心流程痛点程度、是否支撑客户 KPI。</p><p>「可行性」评估维度：数据就绪度、技术栈匹配度、客户侧配合能力、监管/合规约束。</p><p>矩阵应动态更新：每次迭代结束重新评估，避免用静态优先级指导动态环境下的决策。</p></div></details><details><summary>FDE 与传统实施顾问的核心差异</summary><div><p>传统实施顾问以<b>文档交付</b>为中心，FDE 以<b>业务结果</b>为中心——FDE 对系统上线后的业务指标负责，不仅是交付物负责。</p><p>FDE 同时具备业务分析能力与动手编码能力，能在客户现场独立完成「需求→原型→部署」闭环，减少跨团队传递损耗。</p><p>FDE 的核心竞争力在于<b>情境适应速度</b>：能在 48 小时内理解陌生行业的关键业务流程，并给出可执行的技术路径建议。</p></div></details></div></section>
+<!--ENRICH:END-->
+<!--LINKS:START-->
+<section class="reads-sec" style="--cat:var(--c10)">
+<h2 class="reads-h">🔗 延伸阅读 · FDE 职业定义、薪酬与入行路径</h2>
+<p class="reads-tip">以下为联网检索的真实公开链接（官方文档 / 权威媒体 / 研究报告 / arXiv 等），点击在新窗口打开；离线浏览本站不受影响。链接可能随时间变动或失效，请以打开后的实际内容为准。</p>
+<div class="reads">
+<a class="read" href="https://thenewstack.io/why-the-forward-deployed-engineer-is-techs-hottest-job/" target="_blank" rel="noopener noreferrer"><div class="rt">Why the forward-deployed engineer is tech&#x27;s hottest job</div><div class="rs">The New Stack · 2025</div><div class="rn">The New Stack深度报道为何FDE成为科技行业最热门职位，分析这一角色在AI落地浪潮中的崛起</div></a>
+<a class="read" href="https://thenewstack.io/forward-deployed-engineer-fde-openai-google/" target="_blank" rel="noopener noreferrer"><div class="rt">Forward deployed engineer is AI&#x27;s hottest job as OpenAI and Google race to hire. Here&#x27;s how to become one.</div><div class="rs">The New Stack · 2025</div><div class="rn">The New Stack详解OpenAI、Google等公司争抢FDE人才的背景，并给出入行路径指南</div></a>
+<a class="read" href="https://bloomberry.com/blog/i-analyzed-1000-forward-deployed-engineer-jobs-what-i-learned/" target="_blank" rel="noopener noreferrer"><div class="rt">What I learned analyzing 1K forward deployed engineer jobs</div><div class="rs">Bloomberry · 2025</div><div class="rn">Bloomberry对1000条FDE招聘数据的深度分析：岗位同比增长1165%、中位薪资17.4万美元、核心技能分布等</div></a>
+<a class="read" href="https://blog.palantir.com/dev-versus-delta-demystifying-engineering-roles-at-palantir-ad44c2a6e87" target="_blank" rel="noopener noreferrer"><div class="rt">Dev versus Delta: Demystifying engineering roles at Palantir</div><div class="rs">Palantir Blog · 2022</div><div class="rn">Palantir官方博客解释Dev（产品工程师）与Delta（FDE）两种工程师角色的本质区别与职责边界</div></a>
+<a class="read" href="https://blog.palantir.com/a-day-in-the-life-of-a-palantir-forward-deployed-software-engineer-45ef2de257b1" target="_blank" rel="noopener noreferrer"><div class="rt">A Day in the Life of a Palantir Forward Deployed Software Engineer</div><div class="rs">Palantir Blog · 2022</div><div class="rn">Palantir官方博客通过真实工程师访谈，呈现FDSE在国防客户现场的一天工作实录</div></a>
+<a class="read" href="https://openai.com/careers/forward-deployed-engineer-(fde)-sf-san-francisco/" target="_blank" rel="noopener noreferrer"><div class="rt">Forward Deployed Engineer (FDE) - SF | OpenAI</div><div class="rs">OpenAI · 2025</div><div class="rn">OpenAI官方招聘页面，展示FDE岗位在旧金山的完整职责与任职要求，代表顶级AI公司标准定义</div></a>
+<a class="read" href="https://www.levels.fyi/companies/palantir/salaries/software-engineer/title/fdse" target="_blank" rel="noopener noreferrer"><div class="rt">Palantir Forward Deployed Software Engineer Salary | $171K-$295K+</div><div class="rs">Levels.fyi · 2025</div><div class="rn">Levels.fyi薪酬数据库：Palantir FDSE岗位总薪酬区间171K-295K美元，含股权与奖金分布</div></a>
+<a class="read" href="https://www.levels.fyi/t/software-engineer/title/fdse" target="_blank" rel="noopener noreferrer"><div class="rt">Forward Deployed Software Engineer Salary (all companies)</div><div class="rs">Levels.fyi · 2025</div><div class="rn">Levels.fyi全行业FDE薪酬汇总页，横向对比各公司该职位的总薪资水平</div></a>
+<a class="read" href="https://www.svpg.com/forward-deployed-engineers/" target="_blank" rel="noopener noreferrer"><div class="rt">Forward Deployed Engineers - Silicon Valley Product Group</div><div class="rs">Silicon Valley Product Group (SVPG) · 2024</div><div class="rn">产品管理权威机构SVPG从产品视角诠释FDE模式的价值：嵌入客户是最快创造真实价值的路径</div></a>
+<a class="read" href="https://en.wikipedia.org/wiki/Forward_Deployed_Engineer" target="_blank" rel="noopener noreferrer"><div class="rt">Forward Deployed Engineer - Wikipedia</div><div class="rs">Wikipedia · 2025</div><div class="rn">Wikipedia对FDE职业的标准化定义与历史沿革，包括与CSE、解决方案架构师等相关角色的对比</div></a>
+</div>
+</section>
+<!--LINKS:END-->
+<div class="foot">由调研 agent 生成 · 实操向</div></div>
+<script>
+marked.setOptions({gfm:true,breaks:false});
+document.getElementById('sop-c').innerHTML=marked.parse("# FDE\u7aef\u5230\u7aef\u5de5\u4f5cSOP\uff1a\u4ece\u552e\u524d\u5230\u9000\u51fa\u4ea4\u63a5\n\n---\n\n## \u603b\u89c8\n\n```\n\u552e\u524d \u2192 Kickoff \u2192 \u7528\u4f8b\u4f18\u5148\u7ea7 \u2192 \u6570\u636e\u6574\u5408 \u2192 \u5f00\u53d1\u7f16\u6392 \u2192 \u6d4b\u8bd5\u8bc4\u4f30 \u2192 \u7070\u5ea6\u4e0a\u7ebf \u2192 \u76d1\u63a7\u8fd0\u7ef4 \u2192 \u7ecf\u9a8c\u6c89\u6dc0 \u2192 \u9000\u51fa\u4ea4\u63a5\n```\n\n\u6bcf\u9636\u6bb5\u8017\u65f6\u53c2\u8003\uff08\u4e2d\u578b\u4f01\u4e1a\u5355\u7528\u4f8b\uff09\uff1a\n\n| \u9636\u6bb5 | \u5178\u578b\u8017\u65f6 |\n|------|---------|\n| \u552e\u524d | 1-2\u5468 |\n| Kickoff | 3-5\u5929 |\n| \u7528\u4f8b\u4f18\u5148\u7ea7 | 2-3\u5929 |\n| \u6570\u636e\u6574\u5408 | 1-3\u5468 |\n| \u5f00\u53d1\u7f16\u6392 | 2-6\u5468 |\n| \u6d4b\u8bd5\u8bc4\u4f30 | 1-2\u5468 |\n| \u7070\u5ea6\u4e0a\u7ebf | 1-2\u5468 |\n| \u76d1\u63a7\u8fd0\u7ef4 | \u6301\u7eed\uff08\u81f3\u5c111\u4e2a\u6708\u966a\u8dd1\uff09 |\n| \u7ecf\u9a8c\u6c89\u6dc0 | \u8d2f\u7a7f\u5168\u7a0b\uff0c\u6700\u540e\u96c6\u4e2d1\u5468 |\n| \u9000\u51fa\u4ea4\u63a5 | 1-2\u5468 |\n\n---\n\n## \u9636\u6bb5\u4e00\uff1a\u552e\u524d\uff08\u9700\u6c42\u53d1\u73b0 / \u53ef\u884c\u6027\uff09\n\n### \u76ee\u6807\n\u641e\u6e05\u695a\u5ba2\u6237\u7684\u771f\u5b9e\u75db\u70b9\u662f\u4ec0\u4e48\u3001AI\u80fd\u4e0d\u80fd\u89e3\u51b3\u3001\u503c\u4e0d\u503c\u5f97\u505a\u3001\u8c01\u662f\u51b3\u7b56\u4eba\u3002\n\n### \u5173\u952e\u52a8\u4f5c\n\n**1. \u521d\u59cb\u8bbf\u8c08\uff081-2\u6b21\uff0c\u54041\u5c0f\u65f6\uff09**\n- \u56fa\u5b9a\u95ee\u9898\u6e05\u5355\uff1a\n  - \"\u73b0\u5728\u8fd9\u4ef6\u4e8b\u662f\u8c01\u5728\u505a\uff1f\u6bcf\u5929/\u6bcf\u5468\u82b1\u591a\u5c11\u65f6\u95f4\uff1f\"\n  - \"\u6700\u75db\u7684\u5730\u65b9\u662f\u4ec0\u4e48\uff1f\u9519\u8bef\u7387/\u5ef6\u8fdf/\u6210\u672c\uff1f\"\n  - \"\u4f60\u4eec\u4e0a\u4e00\u6b21\u5c1d\u8bd5\u89e3\u51b3\u8fd9\u4e2a\u95ee\u9898\u662f\u7528\u4ec0\u4e48\u65b9\u5f0f\uff1f\u7ed3\u679c\u5462\uff1f\"\n  - \"\u5982\u679c\u8fd9\u4e2a\u95ee\u9898\u89e3\u51b3\u4e86\uff0c\u4f60\u600e\u4e48\u8861\u91cf\u6210\u529f\uff1f\"\n  - \"\u6570\u636e\u5728\u54ea\uff1f\u8c01\u80fd\u7ed9\u6211\u8bbf\u95ee\u6743\u9650\uff1f\"\n- \u540c\u65f6\u8bbf\u8c08\uff1a\u4e1a\u52a1\u8d1f\u8d23\u4eba + \u6280\u672f\u8d1f\u8d23\u4eba + \u4e00\u7ebf\u6267\u884c\u4eba\u5458\uff08\u4e09\u4e2a\u89c6\u89d2\u5fc5\u987b\u90fd\u8981\uff09\n\n**2. \u5f71\u5b50\u89c2\u5bdf\uff08Shadow Session\uff09**\n- \u5750\u5728\u4e00\u7ebf\u5458\u5de5\u65c1\u8fb9\uff0c\u4eb2\u773c\u770b\u4ed6\u4eec\u600e\u4e48\u505a\u8fd9\u4ef6\u4e8b\n- \u8bb0\u5f55\uff1a\u9f20\u6807\u70b9\u51fb\u8def\u5f84\u3001\u7cfb\u7edf\u5207\u6362\u6b21\u6570\u3001\u624b\u52a8\u590d\u5236\u7c98\u8d34\u7684\u5185\u5bb9\u3001\u53e3\u5934\u786e\u8ba4\u6b65\u9aa4\n- \u8fd9\u662f\u53d1\u73b0\"\u4ed6\u4eec\u8bf4\u7684\u9700\u6c42\"\u548c\"\u771f\u5b9e\u5de5\u4f5c\u6d41\"\u5dee\u8ddd\u7684\u6838\u5fc3\u624b\u6bb5\n\n**3. \u6280\u672f\u53ef\u884c\u6027\u5feb\u901f\u626b\u63cf**\n- \u6570\u636e\u53ef\u5f97\u6027\uff1a\u539f\u59cb\u6570\u636e\u5728\u54ea\uff0c\u683c\u5f0f\uff0c\u91cf\u7ea7\uff0c\u662f\u5426\u6709\u6807\u6ce8\n- \u7cfb\u7edf\u53ef\u63a5\u5165\u6027\uff1a\u6709\u65e0API\uff0c\u662f\u5426\u5141\u8bb8\u63a5\u5916\u90e8\u670d\u52a1\uff0c\u7f51\u7edc\u9694\u79bb\u60c5\u51b5\n- \u5408\u89c4\u8fb9\u754c\uff1a\u6570\u636e\u80fd\u5426\u51fa\u672c\u5730\uff0c\u662f\u5426\u6d89\u53caPII/\u884c\u4e1a\u76d1\u7ba1\n- \u5927\u6a21\u578b\u9002\u914d\u5ea6\uff1a\u4efb\u52a1\u7c7b\u578b\u662f\u5426\u5728LLM\u80fd\u529b\u8303\u56f4\u5185\uff08\u5206\u7c7b/\u751f\u6210/\u62bd\u53d6/\u63a8\u7406\uff09\n\n**4. \u521d\u6b65ROI\u4f30\u7b97**\n```\n\u5f53\u524d\u6210\u672c = \u4eba\u529b\u5c0f\u65f6 \u00d7 \u65f6\u85aa \u00d7 \u9891\u7387\n\u9884\u671f\u8282\u7701\u7387\uff08\u4fdd\u5b88\u4f30\u8ba1\uff1a30-50%\uff09\n\u5b9e\u65bd\u6210\u672c\uff08\u5de5\u65f6+API\u8d39\u7528+\u57fa\u7840\u8bbe\u65bd\uff09\n\u56de\u6536\u5468\u671f = \u5b9e\u65bd\u6210\u672c / \u6708\u5747\u8282\u7701\n```\n\u56de\u6536\u5468\u671f > 18\u4e2a\u6708\u7684\u9879\u76ee\uff0c\u5927\u6982\u7387\u63a8\u4e0d\u52a8\u3002\n\n**5. \u51b3\u7b56\u5730\u56fe\uff08Stakeholder Map\uff09**\n- \u753b\u51fa\uff1a\u53d1\u8d77\u4eba\u3001\u51b3\u7b56\u4eba\u3001\u6280\u672f\u628a\u5173\u4eba\u3001\u5b9e\u9645\u4f7f\u7528\u4eba\u3001\u6f5c\u5728\u53cd\u5bf9\u8005\n- \u627e\u5230\"\u5173\u952e\u652f\u6301\u8005\"\u548c\"\u6700\u5927\u963b\u529b\u70b9\"\u5728\u54ea\n\n### \u4ea4\u4ed8\u7269\n- \u8bbf\u8c08\u8bb0\u5f55\uff08\u539f\u59cb\uff09\n- \u5f71\u5b50\u89c2\u5bdf\u7b14\u8bb0\uff08\u9644\u6d41\u7a0b\u56fe\u8349\u7a3f\uff09\n- \u53ef\u884c\u6027\u5907\u5fd8\u5f55\uff081\u9875\uff09\uff1a\u7ed3\u8bba/\u98ce\u9669/\u5efa\u8bae\u524d\u8fdb\u65b9\u5f0f\n- \u521d\u6b65ROI\u6d4b\u7b97\u8868\n\n### \u5e38\u89c1\u5751\n- **\u57511**\uff1a\u53ea\u8bbf\u8c08\u9ad8\u5c42\uff0c\u4e0d\u8bbf\u8c08\u4e00\u7ebf\u3002\u9ad8\u5c42\u7ed9\u7684\u9700\u6c42\u7ecf\u5e38\u662f\"\u60f3\u8c61\u4e2d\u7684\u573a\u666f\"\uff0c\u4e00\u7ebf\u624d\u77e5\u9053\u771f\u5b9e\u5de5\u4f5c\u6d41\u3002\n- **\u57512**\uff1a\u88ab\"\u6211\u4eec\u6709\u5927\u91cf\u6570\u636e\"\u9a97\u4e86\u3002\u95ee\u6e05\u695a\uff1a\u6570\u636e\u662f\u7ed3\u6784\u5316\u8fd8\u662f\u975e\u7ed3\u6784\u5316\uff1f\u6709\u6ca1\u6709\u6807\u6ce8\uff1f\u80fd\u4e0d\u80fd\u8bbf\u95ee\uff1f\n- **\u57513**\uff1a\u7b54\u5e94\u505a\"\u5e73\u53f0\"\u800c\u4e0d\u662f\"\u7528\u4f8b\"\u3002\u552e\u524d\u9636\u6bb5\u5fc5\u987b\u9501\u5b9a\u5177\u4f53\u7528\u4f8b\uff0c\u62d2\u7edd\"\u5168\u9762\u6570\u5b57\u5316\"\u7c7b\u7684\u6a21\u7cca\u9700\u6c42\u3002\n- **\u57514**\uff1a\u5ffd\u7565\u5408\u89c4\u98ce\u9669\uff0c\u8fdb\u573a\u540e\u53d1\u73b0\u6570\u636e\u6839\u672c\u4e0d\u80fd\u7528\u3002\n\n### \u5de5\u5177\n- \u8bbf\u8c08\uff1aNotion\u6a21\u677f / \u98de\u4e66\u6587\u6863\n- \u6d41\u7a0b\u53ef\u89c6\u5316\uff1aMiro / draw.io\n- ROI\u6d4b\u7b97\uff1aExcel / Google Sheets\n- \u5f55\u97f3\u6574\u7406\uff1aWhisper\u672c\u5730\u8dd1 / \u98de\u4e66\u5999\u8bb0\n\n---\n\n## \u9636\u6bb5\u4e8c\uff1aKickoff\n\n### \u76ee\u6807\n\u5bf9\u9f50\u6240\u6709\u4eba\u5bf9\"\u6210\u529f\"\u7684\u5b9a\u4e49\uff0c\u5efa\u7acb\u5de5\u4f5c\u8282\u594f\uff0c\u9a8c\u8bc1\u6280\u672f\u8def\u5f84\uff0c\u542f\u52a8POC\u3002\n\n### \u5173\u952e\u52a8\u4f5c\n\n**1. Kickoff\u4f1a\u8bae\uff08\u534a\u5929\uff0c\u5173\u952e\u4eba\u5168\u5230\u573a\uff09**\n\n\u8bae\u7a0b\u56fa\u5b9a\u7ed3\u6784\uff1a\n```\n09:00-09:30  \u80cc\u666f\u5bf9\u9f50\uff08\u4e3a\u4ec0\u4e48\u8981\u505a\uff0c\u505a\u4ec0\u4e48\uff09\n09:30-10:00  \u76ee\u6807\u4e0eKPI\u786e\u8ba4\uff08\u5fc5\u987b\u91cf\u5316\uff09\n10:00-10:30  \u8303\u56f4\u8fb9\u754c\uff08\u4ec0\u4e48\u5728\u5185\u3001\u4ec0\u4e48\u4e0d\u5728\u5185\uff09\n10:30-11:00  \u6280\u672f\u8def\u5f84\u521d\u7a3f\n11:00-11:30  \u6570\u636e\u8bbf\u95ee\u4e0e\u6743\u9650\u786e\u8ba4\n11:30-12:00  \u5de5\u4f5c\u8282\u594f\u3001\u8054\u7edc\u4eba\u3001\u5347\u7ea7\u8def\u5f84\n```\n\n**2. KPI\u91cf\u5316\uff08\u8fd9\u6b65\u6700\u91cd\u8981\uff0c\u4e0d\u80fd\u542b\u7cca\uff09**\n\n\u6bcf\u4e2a\u7528\u4f8b\u5fc5\u987b\u6709\uff1a\n- **\u57fa\u7ebf\u6307\u6807**\uff1a\u73b0\u5728\u662f\u591a\u5c11\uff08e.g., \u4eba\u5de5\u5904\u7406\u4e00\u4efd\u5408\u540c\u5e73\u574745\u5206\u949f\uff09\n- **\u76ee\u6807\u6307\u6807**\uff1a\u8981\u8fbe\u5230\u591a\u5c11\uff08e.g., AI\u8f85\u52a9\u540e15\u5206\u949f\u4ee5\u5185\uff09\n- **\u6d4b\u91cf\u65b9\u5f0f**\uff1a\u600e\u4e48\u6d4b\uff0c\u8c01\u6765\u6d4b\uff0c\u591a\u4e45\u6d4b\u4e00\u6b21\n- **\u9a8c\u6536\u6807\u51c6**\uff1aPOC\u7ed3\u675f\u65f6\uff0c\u4ec0\u4e48\u7ed3\u679c\u7b97\"\u901a\u8fc7\"\n\n\u62d2\u7edd\u63a5\u53d7\"\u66f4\u5feb\"\"\u66f4\u597d\"\"\u66f4\u667a\u80fd\"\u8fd9\u7c7b\u63cf\u8ff0\uff0c\u903c\u51fa\u6570\u5b57\u3002\n\n**3. API / \u7cfb\u7edf\u8bbf\u95ee\u9a8c\u8bc1\uff08Kickoff\u540e24\u5c0f\u65f6\u5185\u5fc5\u987b\u5b8c\u6210\uff09**\n\n\u9010\u4e00\u9a8c\u8bc1\uff1a\n```python\n# \u9a8c\u8bc1\u6e05\u5355\u793a\u4f8b\nchecklist = [\n    \"\u80fd\u5426\u8bbf\u95ee\u76ee\u6807\u6570\u636e\u5e93/\u6587\u4ef6\u7cfb\u7edf\",\n    \"LLM API key\u662f\u5426\u53ef\u7528\uff08\u6d4b\u4e00\u4e2a\u771f\u5b9e\u8c03\u7528\uff09\",\n    \"\u4f01\u4e1a\u5185\u7f51\u662f\u5426\u80fd\u8bbf\u95ee\u5916\u90e8API\uff08\u6216\u9700\u8981\u4ee3\u7406\uff09\",\n    \"\u6c99\u7bb1\u73af\u5883\u662f\u5426\u51c6\u5907\u597d\",\n    \"\u6d4b\u8bd5\u6570\u636e\u96c6\u662f\u5426\u5df2\u62ff\u5230\uff0850-100\u6761\u771f\u5b9e\u6837\u672c\uff09\",\n]\n```\n\n**4. POC\u8303\u56f4\u9501\u5b9a**\n\nPOC\u539f\u5219\uff1a\n- \u65f6\u95f4\uff1a\u4e0d\u8d85\u8fc72\u5468\n- \u6570\u636e\u91cf\uff1a50-200\u6761\u771f\u5b9e\u6837\u672c\uff08\u4e0d\u80fd\u7528\u5047\u6570\u636e\uff09\n- \u8bc4\u4f30\u6807\u51c6\uff1a\u63d0\u524d\u5199\u597d\uff0c\u4e0d\u80fdPOC\u7ed3\u675f\u540e\u518d\u5b9a\n- \u4ea7\u51fa\uff1a\u53ef\u6f14\u793a\u7684\u539f\u578b\uff0c\u4e0d\u662fPPT\n\n**5. \u5efa\u7acb\u5de5\u4f5c\u8282\u594f**\n```\n\u6bcf\u65e5\uff1aasync\u72b6\u6001\u66f4\u65b0\uff08\u98de\u4e66/\u4f01\u5fae\uff0c5\u884c\u4ee5\u5185\uff09\n\u6bcf\u5468\uff1a30\u5206\u949f\u540c\u6b65\u4f1a\uff08\u8fdb\u5ea6+\u963b\u585e+\u4e0b\u5468\u8ba1\u5212\uff09\n\u5173\u952e\u51b3\u7b56\uff1a24\u5c0f\u65f6\u5185\u54cd\u5e94\n\u5347\u7ea7\u8def\u5f84\uff1a\u8c01\u662f\u6700\u7ec8\u62cd\u677f\u4eba\uff0c\u4ec0\u4e48\u60c5\u51b5\u89e6\u53d1\u5347\u7ea7\n```\n\n### \u4ea4\u4ed8\u7269\n- Kickoff\u4f1a\u8bae\u7eaa\u8981\uff08\u5f53\u5929\u53d1\u51fa\uff09\n- \u91cf\u5316KPI\u8868\uff08\u542b\u57fa\u7ebf/\u76ee\u6807/\u6d4b\u91cf\u65b9\u5f0f/\u9a8c\u6536\u6807\u51c6\uff09\n- \u6280\u672f\u67b6\u6784\u8349\u56fe\uff08\u4e00\u9875\uff09\n- \u6743\u9650\u4e0e\u8bbf\u95ee\u6e05\u5355\uff08\u5df2\u9a8c\u8bc1vs\u5f85\u89e3\u51b3\uff09\n- POC\u8ba1\u5212\uff08\u65f6\u95f4\u7ebf+\u9a8c\u6536\u6807\u51c6\uff09\n\n### \u5e38\u89c1\u5751\n- **\u57511**\uff1aKPI\u6ca1\u5728Kickoff\u9501\u5b9a\uff0c\u9879\u76ee\u7ed3\u675f\u65f6\u626f\u76ae\"\u7b97\u4e0d\u7b97\u6210\u529f\"\u3002\n- **\u57512**\uff1aAPI\u6743\u9650\"\u4e0b\u5468\u7ed9\"\uff0c\u7ed3\u679c\u62d63\u5468\u3002Kickoff\u524d\u5c31\u8981push\uff0cKickoff\u5f53\u5929\u6ca1\u62ff\u5230\u5c31\u662f\u7ea2\u8272\u98ce\u9669\u3002\n- **\u57513**\uff1aPOC\u8303\u56f4\u8513\u5ef6\uff0c\u5ba2\u6237\u4e0d\u65ad\u52a0\u9700\u6c42\u3002Kickoff\u6587\u6863\u8981\u660e\u5199\"POC\u4e0d\u5305\u542bXXX\"\u3002\n- **\u57514**\uff1a\u6ca1\u6709\u4e00\u7ebf\u7528\u6237\u53c2\u4e0eKickoff\uff0c\u7ed3\u679c\u505a\u51fa\u6765\u4e00\u7ebf\u4e0d\u4e70\u8d26\u3002\n\n### \u5de5\u5177\n- \u4f1a\u8bae\uff1a\u98de\u4e66/\u817e\u8baf\u4f1a\u8bae\uff08\u5168\u7a0b\u5f55\u5c4f\uff09\n- \u6587\u6863\uff1aNotion / Confluence\n- \u6280\u672f\u56fe\uff1adraw.io / Excalidraw\n- \u6743\u9650\u8ffd\u8e2a\uff1a\u98de\u4e66\u591a\u7ef4\u8868\u683c / Jira\n\n---\n\n## \u9636\u6bb5\u4e09\uff1a\u7528\u4f8b\u4f18\u5148\u7ea7\u6392\u5e8f\uff0880/20\u6cd5\u5219\uff09\n\n### \u76ee\u6807\n\u4ece\u6240\u6709\u6f5c\u5728\u7528\u4f8b\u4e2d\uff0c\u627e\u51fa\u90a3\u4e2a\"\u6295\u5165\u6700\u5c0f\u3001\u4ef7\u503c\u6700\u5927\u3001\u80fd\u5feb\u901f\u51fa\u7ed3\u679c\"\u7684\u7528\u4f8b\u5148\u6253\u3002\n\n### \u5173\u952e\u52a8\u4f5c\n\n**1. \u7528\u4f8b\u6536\u96c6\uff08\u7a77\u4e3e\uff09**\n\n\u8bbf\u8c08\u4ea7\u51fa + \u5f71\u5b50\u89c2\u5bdf\u4ea7\u51fa\uff0c\u5217\u51fa\u6240\u6709\u5019\u9009\u7528\u4f8b\uff0c\u901a\u5e3810-30\u4e2a\u3002\n\n**2. \u4e8c\u7ef4\u8bc4\u5206\u77e9\u9635**\n\n\u5bf9\u6bcf\u4e2a\u7528\u4f8b\u6253\u5206\uff081-5\u5206\uff09\uff1a\n\n| \u7ef4\u5ea6 | \u542b\u4e49 | \u6743\u91cd |\n|------|------|------|\n| \u4e1a\u52a1\u4ef7\u503c | \u8282\u7701\u6210\u672c/\u589e\u52a0\u6536\u5165/\u98ce\u9669\u89c4\u907f\u7684\u91cf\u7ea7 | 30% |\n| \u5b9e\u65bd\u96be\u5ea6\uff08\u53d6\u53cd\uff09 | \u6570\u636e\u3001\u6280\u672f\u3001\u96c6\u6210\u590d\u6742\u5ea6\uff08\u8d8a\u96be\u5206\u8d8a\u4f4e\uff09 | 25% |\n| \u6570\u636e\u53ef\u5f97\u6027 | \u6570\u636e\u91cf\u3001\u8d28\u91cf\u3001\u53ef\u8bbf\u95ee\u6027 | 20% |\n| \u7528\u6237\u63a5\u53d7\u5ea6 | \u4e00\u7ebf\u5458\u5de5\u7684\u610f\u613f\u7a0b\u5ea6 | 15% |\n| \u6218\u7565\u5951\u5408\u5ea6 | \u662f\u5426\u7b26\u5408\u4f01\u4e1a\u5f53\u524d\u91cd\u70b9 | 10% |\n\n\u52a0\u6743\u7b97\u51fa\u603b\u5206\uff0c\u6392\u5e8f\u3002\n\n**3. \u56db\u8c61\u9650\u5206\u7c7b**\n\n```\n\u9ad8\u4ef7\u503c + \u4f4e\u96be\u5ea6 = \u7acb\u5373\u505a\uff08Quick Win\uff09\n\u9ad8\u4ef7\u503c + \u9ad8\u96be\u5ea6 = \u89c4\u5212\u505a\uff08Strategic\uff09\n\u4f4e\u4ef7\u503c + \u4f4e\u96be\u5ea6 = \u6709\u7a7a\u505a\uff08Fill-in\uff09\n\u4f4e\u4ef7\u503c + \u9ad8\u96be\u5ea6 = \u4e0d\u505a\uff08Drop\uff09\n```\n\n\u4f18\u5148\u6253\"Quick Win\"\u8c61\u9650\uff0c\u7528\u7ed3\u679c\u5efa\u7acb\u4fe1\u4efb\uff0c\u518d\u63a8\"Strategic\"\u3002\n\n**4. \u7528\u4f8b\u62c6\u89e3\uff08\u628a\u5927\u7528\u4f8b\u62c6\u6210\u6700\u5c0f\u53ef\u884c\u5207\u7247\uff09**\n\n\u4f8b\uff1a\"\u5408\u540c\u5ba1\u67e5\u81ea\u52a8\u5316\"\u592a\u5927\uff0c\u62c6\u6210\uff1a\n- \u5207\u72471\uff1a\u5408\u540c\u5173\u952e\u6761\u6b3e\u62bd\u53d6\uff082\u5468\u53ef\u4ea4\u4ed8\uff09\n- \u5207\u72472\uff1a\u98ce\u9669\u6761\u6b3e\u6807\u8bb0\uff08\u57fa\u4e8e\u5207\u72471\uff09\n- \u5207\u72473\uff1a\u4e0e\u6807\u51c6\u6a21\u677f\u5bf9\u6bd4\uff08\u57fa\u4e8e\u5207\u72472\uff09\n- \u5207\u72474\uff1a\u4fee\u6539\u5efa\u8bae\u751f\u6210\uff08\u57fa\u4e8e\u5207\u72473\uff09\n\n\u6bcf\u4e2a\u5207\u7247\u72ec\u7acb\u6709\u4ef7\u503c\uff0c\u72ec\u7acb\u53ef\u4ea4\u4ed8\u3002\n\n**5. \u4e0e\u5ba2\u6237\u5bf9\u9f50\u4f18\u5148\u7ea7**\n\n\u628a\u77e9\u9635\u548c\u56db\u8c61\u9650\u5c55\u793a\u7ed9\u51b3\u7b56\u4eba\u548c\u4e00\u7ebf\u8d1f\u8d23\u4eba\uff0c\u8ba9\u4ed6\u4eec\u786e\u8ba4\u6392\u5e8f\u3002\n\u5173\u952e\u95ee\u9898\uff1a\"\u8fd9\u4e2a\u6392\u5e8f\u548c\u4f60\u4eec\u7684\u5b9e\u9645\u75db\u70b9\u543b\u5408\u5417\uff1f\"\n\n### \u4ea4\u4ed8\u7269\n- \u7528\u4f8b\u6e05\u5355\uff08\u542b\u8bc4\u5206\u7ec6\u8282\uff09\n- \u4f18\u5148\u7ea7\u77e9\u9635\uff08\u56db\u8c61\u9650\u56fe\uff09\n- \u5f53\u524d\u9636\u6bb5\u805a\u7126\u7528\u4f8b\uff081-3\u4e2a\uff09+ \u540e\u7eed\u8def\u7ebf\u56fe\n- \u7b2c\u4e00\u4e2a\u7528\u4f8b\u7684\u62c6\u89e3\u5207\u7247\u8ba1\u5212\n\n### \u5e38\u89c1\u5751\n- **\u57511**\uff1a\u5ba2\u6237\u60f3\u540c\u65f6\u505a\u6240\u6709\u7528\u4f8b\uff0c\u7ed3\u679c\u90fd\u505a\u4e0d\u597d\u3002\u5fc5\u987b\u5f3a\u786c\u5730\u5355\u70b9\u7a81\u7834\u3002\n- **\u57512**\uff1a\u6280\u672f\u4e0a\u6709\u8da3\u4f46\u4e1a\u52a1\u4ef7\u503c\u4f4e\u7684\u7528\u4f8b\uff0c\u5bb9\u6613\u88ab\u5de5\u7a0b\u5e08\u4f18\u5148\u9009\uff0c\u8981\u8b66\u60d5\u3002\n- **\u57513**\uff1a\u5ffd\u7565\"\u7528\u6237\u63a5\u53d7\u5ea6\"\u7ef4\u5ea6\uff0c\u7ed3\u679c\u505a\u51fa\u6765\u6ca1\u4eba\u7528\u3002\n\n### \u5de5\u5177\n- \u8bc4\u5206\u77e9\u9635\uff1a\u98de\u4e66\u591a\u7ef4\u8868\u683c / Excel\n- \u56db\u8c61\u9650\u56fe\uff1aMiro / PPT\n- \u7528\u4f8b\u6587\u6863\uff1aNotion\n\n---\n\n## \u9636\u6bb5\u56db\uff1a\u6570\u636e\u6574\u5408\n\n### \u76ee\u6807\n\u8ba9\u6570\u636e\u4ece\u6563\u843d\u5404\u5904\u53d8\u6210LLM\u53ef\u4ee5\u6d88\u8d39\u7684\u5f62\u5f0f\uff0c\u540c\u65f6\u641e\u6e05\u695a\u6570\u636e\u8d28\u91cf\u8fb9\u754c\u5728\u54ea\u3002\n\n### \u5173\u952e\u52a8\u4f5c\n\n**1. \u6570\u636e\u6e90\u76d8\u70b9**\n\n\u5bf9\u6bcf\u4e2a\u6570\u636e\u6e90\u8bb0\u5f55\uff1a\n```\n\u6570\u636e\u6e90\u540d\u79f0\uff1a\n\u7c7b\u578b\uff08DB/\u6587\u4ef6/API/\u624b\u5de5\u5f55\u5165\uff09\uff1a\n\u683c\u5f0f\uff08CSV/JSON/PDF/\u56fe\u7247/\u97f3\u9891\uff09\uff1a\n\u91cf\u7ea7\uff08\u884c\u6570/\u6587\u4ef6\u6570/\u5927\u5c0f\uff09\uff1a\n\u66f4\u65b0\u9891\u7387\uff1a\n\u8bbf\u95ee\u65b9\u5f0f\uff1a\n\u8d1f\u8d23\u4eba\uff1a\nPII/\u654f\u611f\u6570\u636e\uff1a\u662f/\u5426\n```\n\n**2. \u6570\u636e\u8d28\u91cf\u8bc4\u4f30\uff08\u5148\u62bd\u6837100\u6761\u4eba\u5de5\u770b\uff09**\n\n\u91cd\u70b9\u770b\uff1a\n- \u5b8c\u6574\u6027\uff1a\u5173\u952e\u5b57\u6bb5\u7f3a\u5931\u7387\n- \u4e00\u81f4\u6027\uff1a\u540c\u4e00\u6982\u5ff5\u6709\u591a\u5c11\u79cd\u5199\u6cd5\n- \u51c6\u786e\u6027\uff1a\u6709\u6ca1\u6709\u660e\u663e\u9519\u8bef\n- \u65f6\u6548\u6027\uff1a\u6570\u636e\u6709\u591a\u65e7\n\n\u6839\u636e\u8d28\u91cf\u51b3\u5b9a\u662f\u5426\u9700\u8981\u6e05\u6d17\uff0c\u4ee5\u53ca\u6e05\u6d17\u590d\u6742\u5ea6\u3002\n\n**3. \u6570\u636e\u9884\u5904\u7406\u7ba1\u9053**\n\n\u9488\u5bf9\u975e\u7ed3\u6784\u5316\u6570\u636e\uff08PDF/Word/\u56fe\u7247\uff09\uff1a\n```python\n# \u6587\u6863\u89e3\u6790\u4f18\u5148\u7ea7\uff08\u6309\u8d28\u91cf\u6392\uff09\n# 1. \u539f\u751f\u6587\u672c\u63d0\u53d6\uff08PDF\u6709\u6587\u5b57\u5c42\uff09\nimport pdfplumber  # \u6bd4pymupdf\u66f4\u51c6\u786e\u5904\u7406\u8868\u683c\n\n# 2. OCR\uff08\u626b\u63cf\u4ef6/\u56fe\u7247\uff09\n# \u672c\u5730\u4f18\u5148\uff1aPaddleOCR\nfrom paddleocr import PaddleOCR\nocr = PaddleOCR(use_angle_cls=True, lang='ch')\n\n# 3. \u7ed3\u6784\u5316\u63d0\u53d6\uff08\u8868\u683c/\u5b57\u6bb5\uff09\n# \u7528LLM\u62bd\u53d6 + \u89c4\u5219\u6821\u9a8c\u515c\u5e95\n```\n\n\u9488\u5bf9\u7ed3\u6784\u5316\u6570\u636e\uff1a\n- \u5efa\u7acb\u5b57\u6bb5\u6620\u5c04\u8868\uff08\u6e90\u5b57\u6bb5 \u2192 \u6807\u51c6\u5b57\u6bb5\uff09\n- \u6570\u636e\u7c7b\u578b\u7edf\u4e00\n- \u5f02\u5e38\u503c\u5904\u7406\u7b56\u7565\u6587\u6863\u5316\n\n**4. \u77e5\u8bc6\u5e93\u6784\u5efa\uff08RAG\u573a\u666f\uff09**\n\n```python\n# Chunk\u7b56\u7565\uff08\u6309\u6587\u6863\u7c7b\u578b\u533a\u5206\uff09\n# \u5408\u540c\u7c7b\uff1a\u6309\u6761\u6b3e\u5206\u5272\uff0c\u4fdd\u7559\u6761\u6b3e\u7f16\u53f7\u4e0a\u4e0b\u6587\n# \u62a5\u544a\u7c7b\uff1a\u6309\u6bb5\u843d+\u6ed1\u7a97\uff0cchunk_size=512, overlap=64\n# FAQ\u7c7b\uff1a\u95ee\u9898+\u7b54\u6848\u4f5c\u4e3a\u4e00\u4e2achunk\uff0c\u4e0d\u5207\u5272\n\n# Embedding\u9009\u578b\uff08\u672c\u5730\u90e8\u7f72\u573a\u666f\uff09\n# \u4e2d\u6587\u9996\u9009\uff1aBAAI/bge-m3\uff08\u591a\u8bed\u8a00\uff0c\u6548\u679c\u597d\uff09\n# \u8f7b\u91cf\u9009\u9879\uff1aBAAI/bge-small-zh-v1.5\n\n# \u5411\u91cf\u5e93\u9009\u578b\n# \u672c\u5730/\u5c0f\u89c4\u6a21\uff1aChroma / FAISS\n# \u751f\u4ea7\u7ea7\uff1aMilvus / Qdrant\n```\n\n**5. \u5efa\u7acb\u6570\u636e\u7248\u672c\u63a7\u5236**\n\n- \u539f\u59cb\u6570\u636e\u5feb\u7167\uff08\u53ea\u8bfb\uff0c\u4e0d\u80fd\u52a8\uff09\n- \u5904\u7406\u540e\u6570\u636e\u7248\u672c\uff08\u5e26\u5904\u7406\u65e5\u671f\u548c\u65b9\u6cd5\u8bb0\u5f55\uff09\n- \u6d4b\u8bd5\u96c6/\u9a8c\u8bc1\u96c6\u4ece\u4e00\u5f00\u59cb\u5c31\u9694\u79bb\u51fa\u6765\uff0c\u4e0d\u80fd\u7528\u4e8e\u5f00\u53d1\n\n### \u4ea4\u4ed8\u7269\n- \u6570\u636e\u6e90\u76d8\u70b9\u8868\n- \u6570\u636e\u8d28\u91cf\u62a5\u544a\uff08\u542b\u62bd\u6837\u5206\u6790\uff09\n- \u6570\u636e\u9884\u5904\u7406\u7ba1\u9053\u4ee3\u7801\uff08\u53ef\u590d\u73b0\uff09\n- \u6d4b\u8bd5\u96c6/\u9a8c\u8bc1\u96c6\uff08\u5df2\u9694\u79bb\uff0c\u542b\u4eba\u5de5\u6807\u6ce8\uff09\n- \u6570\u636e\u5b57\u5178\uff08\u5b57\u6bb5\u542b\u4e49\u3001\u6765\u6e90\u3001\u66f4\u65b0\u9891\u7387\uff09\n\n### \u5e38\u89c1\u5751\n- **\u57511**\uff1a\u76f8\u4fe1\"\u6570\u636e\u5f88\u5e72\u51c0\"\u3002\u5b9e\u6d4b\u5fc5\u91c7\u6837\uff0c100%\u90fd\u6709\u95ee\u9898\uff0c\u533a\u522b\u53ea\u662f\u4e25\u91cd\u7a0b\u5ea6\u3002\n- **\u57512**\uff1a\u628a\u6d4b\u8bd5\u6570\u636e\u7528\u4e8e\u5f00\u53d1\uff0c\u6700\u540e\u6d4b\u8bd5\u7ed3\u679c\u865a\u9ad8\u3002\u9694\u79bb\u5fc5\u987b\u5728\u7b2c\u4e00\u5929\u505a\u3002\n- **\u57513**\uff1a\u5ffd\u7565\u6570\u636e\u66f4\u65b0\u673a\u5236\uff0c\u505a\u5b8c\u9759\u6001\u77e5\u8bc6\u5e93\uff0c6\u4e2a\u6708\u540e\u6570\u636e\u8fc7\u671f\u4e86\u3002\n- **\u57514**\uff1aPDF\u89e3\u6790\u7528pypdf/PyPDF2\uff0c\u9047\u5230\u590d\u6742\u5e03\u5c40/\u8868\u683c/\u626b\u63cf\u4ef6\u5c31\u5e9f\u4e86\u3002\n- **\u57515**\uff1a\u6ca1\u6709\u8bb0\u5f55\u6570\u636e\u5904\u7406\u6b65\u9aa4\uff0c\u540e\u7eed\u65e0\u6cd5\u590d\u73b0\u3002\n\n### \u5de5\u5177\n- \u6587\u6863\u89e3\u6790\uff1apdfplumber / PaddleOCR / Marker\n- \u5411\u91cf\u5e93\uff1aChroma\uff08\u5f00\u53d1\uff09/ Milvus\uff08\u751f\u4ea7\uff09\n- Embedding\uff1abge-m3\uff08\u672c\u5730\uff09/ text-embedding-3-small\uff08\u4e91\u7aef\uff09\n- \u6570\u636e\u7248\u672c\uff1aDVC / \u624b\u52a8\u5feb\u7167+\u547d\u540d\u89c4\u8303\n- \u6d41\u6c34\u7ebf\u7f16\u6392\uff1aPrefect / \u7b80\u5355\u811a\u672c\uff08\u89c6\u89c4\u6a21\uff09\n\n---\n\n## \u9636\u6bb5\u4e94\uff1a\u5f00\u53d1\u4e0e\u7f16\u6392\n\n### \u76ee\u6807\n\u628a\u7528\u4f8b\u53d8\u6210\u53ef\u8fd0\u884c\u7684\u7cfb\u7edf\uff0cAgent/\u5de5\u4f5c\u6d41/\u96c6\u6210\u5168\u90e8\u5230\u4f4d\u3002\n\n### \u5173\u952e\u52a8\u4f5c\n\n**1. \u67b6\u6784\u51b3\u7b56\uff08\u5148\u5b9a\u597d\uff0c\u4e0d\u8981\u8fb9\u505a\u8fb9\u6539\uff09**\n\n\u6838\u5fc3\u95ee\u9898\u6e05\u5355\uff1a\n```\n1. \u662fRAG\u3001Fine-tune\u8fd8\u662fPrompt Engineering\uff1f\n   \u2192 \u5927\u591a\u6570\u4f01\u4e1a\u573a\u666f\u5148RAG\uff0c\u6548\u679c\u4e0d\u591f\u518d\u8003\u8651\u5fae\u8c03\n\n2. \u5355Agent\u8fd8\u662f\u591aAgent\uff1f\n   \u2192 \u5355\u4e00\u4efb\u52a1\uff1a\u5355Agent+\u5de5\u5177\n   \u2192 \u590d\u6742\u6d41\u7a0b\uff08\u591a\u6b65\u9aa4/\u9700\u8981\u5e76\u884c\uff09\uff1a\u591aAgent\u7f16\u6392\n\n3. \u540c\u6b65\u8fd8\u662f\u5f02\u6b65\uff1f\n   \u2192 \u7528\u6237\u7b49\u5f85 < 10\u79d2\uff1a\u540c\u6b65\n   \u2192 \u5904\u7406\u65f6\u95f4 > 10\u79d2\uff1a\u5f02\u6b65+\u72b6\u6001\u67e5\u8be2\n\n4. \u6a21\u578b\u9009\u578b\uff1a\n   \u2192 \u4e91\u7aef\uff1aClaude Sonnet\uff08\u63a8\u7406\uff09/ Haiku\uff08\u9ad8\u9891\u4f4e\u6210\u672c\uff09\n   \u2192 \u672c\u5730\uff1aQwen2.5-72B\uff08\u901a\u7528\uff09/ DeepSeek-R1\uff08\u63a8\u7406\uff09\n\n5. \u6d41\u5f0f\u8f93\u51fa\u8fd8\u662f\u6279\u91cf\uff1f\n   \u2192 \u9762\u5411\u7528\u6237\u7684\u5bf9\u8bdd\uff1a\u6d41\u5f0f\n   \u2192 \u540e\u53f0\u6279\u5904\u7406\uff1a\u6279\u91cf\uff08\u7701\u6210\u672c\uff09\n```\n\n**2. Prompt\u5de5\u7a0b\uff08\u8fed\u4ee3\u5f0f\uff0c\u4e0d\u8981\u4e00\u6b21\u5199\u5b8c\uff09**\n\n```python\n# Prompt\u7ed3\u6784\u6a21\u677f\nSYSTEM_PROMPT = \"\"\"\n\u4f60\u662f[\u89d2\u8272\u5b9a\u4e49]\uff0c\u4e13\u95e8\u8d1f\u8d23[\u5177\u4f53\u4efb\u52a1]\u3002\n\n## \u4efb\u52a1\u8bf4\u660e\n[\u6e05\u6670\u7684\u4efb\u52a1\u63cf\u8ff0]\n\n## \u8f93\u5165\u683c\u5f0f\n[\u8f93\u5165\u7684\u7ed3\u6784\u548c\u5b57\u6bb5\u8bf4\u660e]\n\n## \u8f93\u51fa\u683c\u5f0f\n[\u4e25\u683c\u7684\u8f93\u51fa\u683c\u5f0f\uff0c\u4f18\u5148JSON\uff0c\u542b\u5b57\u6bb5\u8bf4\u660e]\n\n## \u89c4\u5219\u4e0e\u7ea6\u675f\n- [\u89c4\u52191]\n- [\u89c4\u52192]\n- \u5982\u679c[\u5f02\u5e38\u60c5\u51b5]\uff0c\u8f93\u51fa[\u5904\u7406\u65b9\u5f0f]\n\n## \u793a\u4f8b\n\u8f93\u5165\uff1a[example_input]\n\u8f93\u51fa\uff1a[example_output]\n\"\"\"\n\n# \u8fed\u4ee3\u6d41\u7a0b\uff1a\n# \u5199prompt \u2192 \u8dd150\u6761\u6837\u672c \u2192 \u4eba\u5de5\u770b\u5931\u8d25\u6848\u4f8b \u2192 \n# \u5206\u6790\u5931\u8d25\u6a21\u5f0f \u2192 \u4fee\u6539prompt\u6216\u52a0few-shot \u2192 \u5faa\u73af\n```\n\n**3. \u5de5\u5177/\u51fd\u6570\u5b9a\u4e49\uff08Agent\u573a\u666f\uff09**\n\n```python\n# \u5de5\u5177\u5b9a\u4e49\u8981\u539f\u5b50\u5316\uff0c\u5355\u4e00\u804c\u8d23\ntools = [\n    {\n        \"name\": \"search_contract_db\",\n        \"description\": \"\u5728\u5408\u540c\u6570\u636e\u5e93\u4e2d\u68c0\u7d22\u76f8\u5173\u5408\u540c\uff0c\u8f93\u5165\u5173\u952e\u8bcd\uff0c\u8fd4\u56de\u6700\u76f8\u5173\u76845\u4efd\u5408\u540c\u6458\u8981\",\n        \"parameters\": {\n            \"query\": {\"type\": \"string\", \"description\": \"\u641c\u7d22\u5173\u952e\u8bcd\"},\n            \"date_range\": {\"type\": \"string\", \"description\": \"\u65e5\u671f\u8303\u56f4\uff0c\u683c\u5f0fYYYY-MM ~ YYYY-MM\uff0c\u53ef\u9009\"}\n        }\n    },\n    # \u6bcf\u4e2a\u5de5\u5177\u7684description\u8981\u7cbe\u786e\uff0cLLM\u9760\u8fd9\u4e2a\u5224\u65ad\u7528\u4e0d\u7528\n]\n\n# \u5de5\u5177\u5b9e\u73b0\u8981\u6709\uff1a\n# 1. \u8f93\u5165\u6821\u9a8c\n# 2. \u8d85\u65f6\u63a7\u5236\n# 3. \u9519\u8bef\u6355\u83b7 + \u6709\u610f\u4e49\u7684\u9519\u8bef\u6d88\u606f\u8fd4\u56de\u7ed9LLM\n# 4. \u8c03\u7528\u65e5\u5fd7\n```\n\n**4. \u7f16\u6392\u6846\u67b6\u9009\u62e9**\n\n| \u573a\u666f | \u63a8\u8350\u6846\u67b6 | \u7406\u7531 |\n|------|---------|------|\n| \u7b80\u5355RAG\u95ee\u7b54 | \u81ea\u5df1\u5199\uff08LangChain\u53ef\u9009\uff09 | \u8f7b\u91cf\uff0c\u53ef\u63a7 |\n| \u591a\u6b65\u9aa4Agent | LangGraph / \u81ea\u7814\u72b6\u6001\u673a | \u53ef\u8c03\u8bd5\uff0c\u6d41\u7a0b\u900f\u660e |\n| \u590d\u6742\u591aAgent | LangGraph\u591a\u56fe / CrewAI | \u89d2\u8272\u5206\u5de5\u6e05\u6670 |\n| \u751f\u4ea7\u7ea7\u5de5\u4f5c\u6d41 | Temporal / Prefect | \u6709\u91cd\u8bd5/\u6301\u4e45\u5316 |\n| \u5feb\u901f\u539f\u578b | n8n / Dify | \u53ef\u89c6\u5316\uff0c\u975e\u6280\u672f\u4eba\u5458\u53ef\u6539 |\n\n**5. \u4eba\u5de5\u5e72\u9884\u8282\u70b9\u8bbe\u8ba1\uff08Human-in-the-Loop\uff09**\n\n\u4e0d\u662f\u6240\u6709\u51b3\u7b56\u90fd\u8ba9AI\u5168\u81ea\u52a8\uff0c\u9ad8\u98ce\u9669\u64cd\u4f5c\u5fc5\u987b\u52a0\u4eba\u5de5\u8282\u70b9\uff1a\n```python\n# \u51b3\u7b56\u6811\uff1a\u4ec0\u4e48\u60c5\u51b5\u89e6\u53d1\u4eba\u5de5\u5ba1\u6838\ndef should_require_human_review(result):\n    return any([\n        result.confidence < 0.85,      # \u7f6e\u4fe1\u5ea6\u4f4e\n        result.involves_money > 10000, # \u6d89\u53ca\u5927\u989d\n        result.is_novel_case,          # \u65e0\u5386\u53f2\u5148\u4f8b\n        result.legal_risk == \"high\",   # \u6cd5\u5f8b\u98ce\u9669\n    ])\n```\n\n**6. \u9519\u8bef\u5904\u7406\u4e0e\u964d\u7ea7**\n\n```python\n# \u4e09\u7ea7\u964d\u7ea7\u7b56\u7565\nasync def process_with_fallback(input_data):\n    try:\n        # \u4e3b\u8def\u5f84\uff1a\u9ad8\u8d28\u91cf\u6a21\u578b\n        return await primary_model(input_data)\n    except RateLimitError:\n        # \u964d\u7ea71\uff1a\u6362\u4f4e\u6210\u672c\u6a21\u578b\n        return await fallback_model(input_data)\n    except Exception:\n        # \u964d\u7ea72\uff1a\u89c4\u5219\u5f15\u64ce\u515c\u5e95\n        return rule_based_fallback(input_data)\n```\n\n### \u4ea4\u4ed8\u7269\n- \u67b6\u6784\u51b3\u7b56\u8bb0\u5f55\uff08ADR\u6587\u6863\uff09\n- \u6838\u5fc3Prompt\u5e93\uff08\u7248\u672c\u5316\u7ba1\u7406\uff09\n- \u5de5\u5177/API\u96c6\u6210\u4ee3\u7801\n- \u7f16\u6392\u903b\u8f91\u4ee3\u7801\uff08\u542b\u6ce8\u91ca\uff09\n- \u672c\u5730\u8fd0\u884c\u7684Demo\n\n### \u5e38\u89c1\u5751\n- **\u57511**\uff1aPrompt\u5199\u4e00\u6b21\u5c31\u4e0d\u6539\u4e86\u3002Prompt\u5fc5\u987b\u7528\u6d4b\u8bd5\u96c6\u8fed\u4ee3\uff0c\u4e0d\u80fd\u51ed\u611f\u89c9\u3002\n- **\u57512**\uff1a\u6ca1\u6709\u964d\u7ea7\u673a\u5236\uff0cAPI\u4e00\u6302\u5168\u7ebf\u5d29\u3002\n- **\u57513**\uff1aAgent\u5de5\u5177\u592a\u591a\u592a\u590d\u6742\uff0cLLM\u641e\u6df7\u3002\u5355Agent\u5de5\u5177\u6570\u4e0d\u8981\u8d85\u8fc710\u4e2a\u3002\n- **\u57514**\uff1a\u6ca1\u6709Human-in-the-Loop\uff0cAI\u51fa\u9519\u6ca1\u6709\u4eba\u5de5\u515c\u5e95\uff0c\u5728\u9ad8\u98ce\u9669\u573a\u666f\u707e\u96be\u6027\u7684\u3002\n- **\u57515**\uff1a\u4ee3\u7801\u6ca1\u6709\u65e5\u5fd7\uff0c\u51fa\u95ee\u9898\u5b8c\u5168\u65e0\u6cd5\u6392\u67e5\u3002\u6bcf\u6b21LLM\u8c03\u7528\u90fd\u8981\u8bb0\u5f55\u8f93\u5165/\u8f93\u51fa/\u5ef6\u8fdf/token\u6570\u3002\n\n### \u5de5\u5177\n- LLM\u8c03\u7528\uff1aLangChain / \u76f4\u63a5\u8c03SDK\uff08\u63a8\u8350\uff09\n- Agent\u7f16\u6392\uff1aLangGraph / \u81ea\u7814\n- \u5411\u91cf\u68c0\u7d22\uff1aLangChain Retriever / \u76f4\u63a5\u7528\u5411\u91cf\u5e93SDK\n- \u7248\u672c\u63a7\u5236\uff1aGit\uff08prompt\u6587\u4ef6\u4e5f\u8981\u8fdbGit\uff09\n- \u8c03\u8bd5\uff1aLangSmith / Langfuse\uff08\u8c03\u7528\u94fe\u53ef\u89c6\u5316\uff09\n\n---\n\n## \u9636\u6bb5\u516d\uff1a\u6d4b\u8bd5\u4e0e\u8bc4\u4f30\n\n### \u76ee\u6807\n\u7528\u6570\u636e\u8bc1\u660e\u7cfb\u7edf\u8fbe\u5230\u4e86Kickoff\u65f6\u5b9a\u7684\u9a8c\u6536\u6807\u51c6\uff0c\u627e\u51fa\u8fb9\u754c\u548c\u5931\u8d25\u6a21\u5f0f\u3002\n\n### \u5173\u952e\u52a8\u4f5c\n\n**1. \u6d4b\u8bd5\u96c6\u6784\u5efa\uff08\u5f00\u53d1\u524d\u5c31\u8981\u505a\uff09**\n\n```\n\u6d4b\u8bd5\u96c6\u7ec4\u6210\uff1a\n- \u6b63\u5e38\u6848\u4f8b\uff0880%\uff09\uff1a\u8986\u76d6\u5178\u578b\u573a\u666f\n- \u8fb9\u7f18\u6848\u4f8b\uff0815%\uff09\uff1a\u7f55\u89c1\u4f46\u5408\u6cd5\u7684\u8f93\u5165\n- \u5bf9\u6297\u6848\u4f8b\uff085%\uff09\uff1a\u5201\u94bb\u8f93\u5165\u3001\u6076\u610f\u8f93\u5165\u3001\u7a7a\u8f93\u5165\n\n\u6bcf\u7c7b\u6848\u4f8b\u90fd\u8981\u6709\uff1a\n- \u8f93\u5165\n- \u9884\u671f\u8f93\u51fa\uff08\u4eba\u5de5\u6807\u6ce8\uff09\n- \u6807\u6ce8\u4eba + \u6807\u6ce8\u65f6\u95f4\n```\n\n**2. \u8bc4\u4f30\u6307\u6807\u4f53\u7cfb**\n\n\u6839\u636e\u4efb\u52a1\u7c7b\u578b\u9009\u6307\u6807\uff1a\n\n```\n\u62bd\u53d6\u4efb\u52a1\uff1aPrecision / Recall / F1\n\u5206\u7c7b\u4efb\u52a1\uff1aAccuracy / Macro-F1 / Confusion Matrix\n\u751f\u6210\u4efb\u52a1\uff1a\n  - \u81ea\u52a8\uff1aROUGE / BERTScore\uff08\u53c2\u8003\u7528\uff0c\u4e0d\u8981\u76f2\u4fe1\uff09\n  - \u4eba\u5de5\uff1a\u51c6\u786e\u6027/\u6d41\u7545\u6027/\u6709\u7528\u6027\uff081-5\u5206\uff0c\u53cc\u76f2\u8bc4\u5ba1\uff09\nRAG\u95ee\u7b54\uff1a\n  - \u68c0\u7d22\u5c42\uff1aRecall@K / MRR\n  - \u751f\u6210\u5c42\uff1aFaithfulness\uff08\u6709\u6ca1\u6709\u5e7b\u89c9\uff09/ Relevance\n```\n\n**3. \u8bc4\u4f30\u6d41\u6c34\u7ebf**\n\n```python\n# \u6279\u91cf\u8bc4\u4f30\u811a\u672c\u6846\u67b6\nasync def run_evaluation(test_cases, pipeline, evaluator):\n    results = []\n    for case in test_cases:\n        output = await pipeline.run(case.input)\n        score = await evaluator.score(\n            input=case.input,\n            expected=case.expected_output,\n            actual=output\n        )\n        results.append({\n            \"case_id\": case.id,\n            \"input\": case.input,\n            \"expected\": case.expected_output,\n            \"actual\": output,\n            \"score\": score,\n            \"latency_ms\": output.latency,\n            \"token_count\": output.tokens_used,\n        })\n    return EvaluationReport(results)\n```\n\n**4. \u5931\u8d25\u6848\u4f8b\u5206\u6790\uff08\u6700\u91cd\u8981\u7684\u6b65\u9aa4\uff09**\n\n\u8dd1\u5b8c\u6d4b\u8bd5\u540e\uff1a\n- \u4eba\u5de5\u9010\u6761\u770b\u5931\u8d25\u6848\u4f8b\n- \u6309\u5931\u8d25\u539f\u56e0\u5206\u7c7b\uff08\u6570\u636e\u95ee\u9898/Prompt\u95ee\u9898/\u68c0\u7d22\u95ee\u9898/\u6a21\u578b\u80fd\u529b\u8fb9\u754c\uff09\n- \u6bcf\u7c7b\u5931\u8d25\uff0c\u51b3\u5b9a\uff1a\u4fee\u590d / \u63a5\u53d7 / \u52a0\u4eba\u5de5\u8282\u70b9\n- \u5f62\u6210\"\u5df2\u77e5\u5931\u8d25\u6a21\u5f0f\"\u6587\u6863\n\n**5. \u6027\u80fd\u4e0e\u6210\u672c\u6d4b\u8bd5**\n\n```python\n# \u6027\u80fd\u57fa\u51c6\u6d4b\u8bd5\nmetrics_to_test = {\n    \"p50_latency\": \"50%\u8bf7\u6c42\u7684\u5ef6\u8fdf\",\n    \"p95_latency\": \"95%\u8bf7\u6c42\u7684\u5ef6\u8fdf\uff08\u7528\u6237\u611f\u77e5\uff09\",\n    \"p99_latency\": \"99%\u8bf7\u6c42\u7684\u5ef6\u8fdf\uff08\u6700\u5dee\u60c5\u51b5\uff09\",\n    \"throughput\": \"\u6bcf\u5206\u949f\u53ef\u5904\u7406\u8bf7\u6c42\u6570\",\n    \"cost_per_request\": \"\u6bcf\u6b21\u8c03\u7528\u6210\u672c\uff08token\u6570 \u00d7 \u5355\u4ef7\uff09\",\n    \"cost_per_month\": \"\u6309\u9884\u671f\u91cf\u4f30\u7b97\u6708\u6210\u672c\",\n}\n\n# \u5e76\u53d1\u6d4b\u8bd5\uff08\u751f\u4ea7\u8d1f\u8f7d\u76841.5\u500d\uff09\n# \u68c0\u67e5\uff1a\u6709\u6ca1\u6709\u8d85\u65f6\u3001\u6709\u6ca1\u6709\u9519\u8bef\u7387\u4e0a\u5347\u3001\u5ef6\u8fdf\u6709\u6ca1\u6709\u5927\u5e45\u589e\u52a0\n```\n\n**6. \u7528\u6237\u9a8c\u6536\u6d4b\u8bd5\uff08UAT\uff09**\n\n- \u627e3-5\u4e2a\u771f\u5b9e\u7528\u6237\uff0c\u7ed9\u771f\u5b9e\u573a\u666f\uff0c\u8ba9\u4ed6\u4eec\u81ea\u5df1\u7528\n- \u89c2\u5bdf\uff1a\u54ea\u91cc\u5361\u4f4f\u4e86\uff0c\u54ea\u91cc\u4e0d\u4fe1\u4efb\uff0c\u54ea\u91cc\u6709\u60ca\u559c\n- \u6536\u96c6\u5b9a\u6027\u53cd\u9988\uff0c\u8865\u5145\u5230\u6d4b\u8bd5\u96c6\n\n### \u4ea4\u4ed8\u7269\n- \u6d4b\u8bd5\u96c6\uff08\u542b\u6807\u6ce8\uff0c\u7248\u672c\u5316\uff09\n- \u8bc4\u4f30\u62a5\u544a\uff08\u542b\u5404\u7ef4\u5ea6\u6307\u6807 vs \u9a8c\u6536\u6807\u51c6\u5bf9\u6bd4\uff09\n- \u5931\u8d25\u6a21\u5f0f\u5206\u6790\u6587\u6863\n- \u6027\u80fd/\u6210\u672c\u6d4b\u8bd5\u62a5\u544a\n- UAT\u53cd\u9988\u6c47\u603b\n\n### \u5e38\u89c1\u5751\n- **\u57511**\uff1a\u6d4b\u8bd5\u96c6\u592a\u5c0f\uff08< 50\u6761\uff09\uff0c\u7ed3\u679c\u6ca1\u6709\u7edf\u8ba1\u610f\u4e49\u3002\n- **\u57512**\uff1a\u53ea\u6d4bhappy path\uff0c\u4e0d\u6d4b\u8fb9\u7f18\u6848\u4f8b\uff0c\u4e0a\u7ebf\u540e\u88ab\u5947\u602a\u8f93\u5165\u641e\u5d29\u3002\n- **\u57513**\uff1a\u7528\u81ea\u52a8\u6307\u6807\u4ee3\u66ff\u4eba\u5de5\u8bc4\u4f30\u3002ROUGE\u9ad8\u4e0d\u4ee3\u8868\u7528\u6237\u6ee1\u610f\uff0c\u5fc5\u987b\u8981\u4eba\u770b\u3002\n- **\u57514**\uff1a\u4e0d\u505a\u6210\u672c\u6d4b\u8bd5\uff0c\u4e0a\u7ebf\u540e\u53d1\u73b0\u6708\u8d26\u5355\u8d85\u9884\u7b9710\u500d\u3002\n- **\u57515**\uff1aUAT\u627e\u7684\u662f\u6280\u672f\u4eba\u5458\u800c\u4e0d\u662f\u771f\u5b9e\u7528\u6237\uff0c\u62ff\u5230\u7684\u53cd\u9988\u6ca1\u6709\u4ee3\u8868\u6027\u3002\n\n### \u5de5\u5177\n- \u6279\u91cf\u8bc4\u4f30\uff1a\u81ea\u7814\u811a\u672c / Ragas\uff08RAG\u8bc4\u4f30\uff09\n- \u8ffd\u8e2a\uff1aLangfuse / LangSmith\n- \u8d1f\u8f7d\u6d4b\u8bd5\uff1aLocust / k6\n- \u4eba\u5de5\u8bc4\u5ba1\u8868\uff1a\u98de\u4e66\u591a\u7ef4\u8868\u683c\n\n---\n\n## \u9636\u6bb5\u4e03\uff1a\u7070\u5ea6\u4e0a\u7ebf\n\n### \u76ee\u6807\n\u5728\u53d7\u63a7\u6761\u4ef6\u4e0b\u628a\u7cfb\u7edf\u63a8\u7ed9\u771f\u5b9e\u7528\u6237\uff0c\u5728\u5f71\u54cd\u6700\u5c0f\u7684\u60c5\u51b5\u4e0b\u66b4\u9732\u95ee\u9898\u3002\n\n### \u5173\u952e\u52a8\u4f5c\n\n**1. \u7070\u5ea6\u7b56\u7565\u8bbe\u8ba1**\n\n```\n\u65b9\u6848A\uff1a\u7528\u6237\u6bd4\u4f8b\u7070\u5ea6\n  \u7b2c1\u5468\uff1a5%\u7528\u6237\uff08\u5185\u90e8\u7528\u6237/\u5fd7\u613f\u8005\uff09\n  \u7b2c2\u5468\uff1a20%\uff08\u67d0\u4e2a\u90e8\u95e8\uff09\n  \u7b2c3\u5468\uff1a50%\n  \u7b2c4\u5468\uff1a100%\n\n\u65b9\u6848B\uff1a\u529f\u80fd\u5f00\u5173\u7070\u5ea6\n  \u6838\u5fc3\u529f\u80fd\u5168\u91cf\uff0c\u65b0\u529f\u80fd\u6309\u5f00\u5173\u63a7\u5236\n  \u9002\u5408\uff1a\u5df2\u6709\u7cfb\u7edf\u4e2d\u96c6\u6210AI\u529f\u80fd\n\n\u65b9\u6848C\uff1a\u5f71\u5b50\u6a21\u5f0f\uff08Shadow Mode\uff09\n  AI\u7cfb\u7edf\u5e76\u884c\u8dd1\uff0c\u4e0d\u5f71\u54cd\u4e3b\u6d41\u7a0b\n  \u4eba\u5de5\u5bf9\u6bd4AI\u8f93\u51fa vs \u539f\u6709\u8f93\u51fa\n  \u9002\u5408\uff1a\u9ad8\u98ce\u9669\u573a\u666f\u7684\u9a8c\u8bc1\u9636\u6bb5\n```\n\n**2. \u56de\u6eda\u65b9\u6848\uff08\u4e0a\u7ebf\u524d\u5fc5\u987b\u51c6\u5907\u597d\uff09**\n\n```python\n# \u529f\u80fd\u5f00\u5173\uff08Feature Flag\uff09\nclass FeatureFlags:\n    AI_ENABLED = os.getenv(\"AI_ENABLED\", \"true\") == \"true\"\n    AI_TRAFFIC_PERCENT = int(os.getenv(\"AI_TRAFFIC_PERCENT\", \"5\"))\n    FALLBACK_TO_MANUAL = os.getenv(\"FALLBACK_TO_MANUAL\", \"false\") == \"true\"\n\n# \u4e00\u952e\u56de\u6eda\uff1a\u6539\u73af\u5883\u53d8\u91cf\uff0c\u4e0d\u7528\u91cd\u65b0\u90e8\u7f72\n# AI_ENABLED=false \u2192 \u6240\u6709\u6d41\u91cf\u8d70\u539f\u6709\u903b\u8f91\n```\n\n**3. \u7070\u5ea6\u671f\u76d1\u63a7\u91cd\u70b9**\n\n\u4e0a\u7ebf\u540e\u524d72\u5c0f\u65f6\u76ef\u4f4f\uff1a\n```\n\u4e1a\u52a1\u6307\u6807\uff1a\n  - \u4efb\u52a1\u5b8c\u6210\u7387\uff08\u6709\u6ca1\u6709\u5361\u4f4f\u6ca1\u5b8c\u6210\u7684\uff09\n  - \u7528\u6237\u653e\u5f03\u7387\uff08\u6709\u6ca1\u6709\u4eba\u76f4\u63a5\u5173\u6389\uff09\n  - \u4eba\u5de5\u4ecb\u5165\u7387\uff08\u9700\u8981\u4eba\u5de5\u7ea0\u6b63\u7684\u6bd4\u4f8b\uff09\n\n\u6280\u672f\u6307\u6807\uff1a\n  - \u9519\u8bef\u7387\uff08\u4efb\u4f55 > 1% \u7acb\u5373\u544a\u8b66\uff09\n  - P95\u5ef6\u8fdf\uff08\u8d85\u8fc7\u76ee\u6807\u503c50%\u7acb\u5373\u544a\u8b66\uff09\n  - API\u8c03\u7528\u5931\u8d25\u7387\n\n\u6210\u672c\u6307\u6807\uff1a\n  - \u5b9e\u9645token\u6d88\u8017 vs \u9884\u4f30\n  - \u5f02\u5e38\u9ad8\u7684\u8bf7\u6c42\uff08\u53ef\u80fd\u662f\u5faa\u73af\u6216\u8d85\u5927\u8f93\u5165\uff09\n```\n\n**4. \u7528\u6237\u53cd\u9988\u6536\u96c6**\n\n\u7070\u5ea6\u671f\u5f3a\u5236\u52a0\u53cd\u9988\u5165\u53e3\uff1a\n```\n\u6bcf\u6b21AI\u8f93\u51fa\u540e\uff1a\n  [\ud83d\udc4d \u6709\u5e2e\u52a9] [\ud83d\udc4e \u4e0d\u51c6\u786e] [\u26a0\ufe0f \u9700\u8981\u4fee\u6b63]\n  \n\u70b9\ud83d\udc4e\u540e\u5f39\u51fa\uff1a\n  - \u5b9e\u9645\u5e94\u8be5\u662f\u4ec0\u4e48\uff1f\uff08\u81ea\u7531\u6587\u672c\uff0c\u53ef\u9009\uff09\n  \n\u8fd9\u4e9b\u53cd\u9988\u6570\u636e\uff1a\n  - \u8fdbBad case\u5e93\n  - \u6bcf\u5929review\n  - \u4f5c\u4e3a\u4e0b\u4e00\u8f6e\u8fed\u4ee3\u7684\u8bad\u7ec3/\u4f18\u5316\u6750\u6599\n```\n\n**5. \u7070\u5ea6\u6269\u91cf\u51b3\u7b56\u6807\u51c6**\n\n\u5199\u6210\u6587\u6863\uff0c\u660e\u786e\u4ec0\u4e48\u6761\u4ef6\u624d\u6269\u91cf\uff1a\n```\n\u6269\u91cf\u6761\u4ef6\uff08\u540c\u65f6\u6ee1\u8db3\uff09\uff1a\n  \u2713 \u9519\u8bef\u7387 < 2%\uff08\u8fde\u7eed48\u5c0f\u65f6\uff09\n  \u2713 P95\u5ef6\u8fdf < \u76ee\u6807\u503c\n  \u2713 \u7528\u6237\u6b63\u9762\u53cd\u9988 > 70%\n  \u2713 \u6ca1\u6709\u672a\u89e3\u51b3\u7684P0/P1 Bug\n  \u2713 \u6210\u672c\u5728\u9884\u7b97\u8303\u56f4\u5185\n\n\u6682\u505c/\u56de\u6eda\u6761\u4ef6\uff08\u4efb\u4e00\u89e6\u53d1\uff09\uff1a\n  \u2717 \u9519\u8bef\u7387 > 5%\n  \u2717 \u53d1\u73b0\u6570\u636e\u6cc4\u9732\u98ce\u9669\n  \u2717 \u7528\u6237\u6295\u8bc9\u96c6\u4e2d\u7206\u53d1\n  \u2717 \u6838\u5fc3\u4e1a\u52a1\u6d41\u7a0b\u53d7\u5f71\u54cd\n```\n\n### \u4ea4\u4ed8\u7269\n- \u7070\u5ea6\u8ba1\u5212\uff08\u542b\u5206\u9636\u6bb5\u65f6\u95f4\u8868\u548c\u6761\u4ef6\uff09\n- \u529f\u80fd\u5f00\u5173\u5b9e\u73b0\uff08\u53ef\u4e00\u952e\u56de\u6eda\uff09\n- \u76d1\u63a7\u544a\u8b66\u914d\u7f6e\n- \u7070\u5ea6\u671f\u65e5\u62a5\uff08\u6bcf\u5929\u53d1\u7ed9\u5ba2\u6237\u51b3\u7b56\u4eba\uff09\n- \u6269\u91cf/\u56de\u6eda\u51b3\u7b56\u8bb0\u5f55\n\n### \u5e38\u89c1\u5751\n- **\u57511**\uff1a\u6ca1\u6709\u56de\u6eda\u65b9\u6848\u5c31\u4e0a\u7ebf\uff0c\u51fa\u95ee\u9898\u53ea\u80fd\u7d27\u6025\u91cd\u65b0\u90e8\u7f72\u3002\n- **\u57512**\uff1a\u7070\u5ea6\u7528\u6237\u9009\u7684\u662f\u6700\u7b80\u5355\u7684\u573a\u666f\uff0c\u6ca1\u6709\u6d4b\u5230\u771f\u5b9e\u590d\u6742\u573a\u666f\u3002\n- **\u57513**\uff1a\u6ca1\u6709\u7528\u6237\u53cd\u9988\u5165\u53e3\uff0c\u51fa\u4e86\u95ee\u9898\u9760\u7528\u6237\u4e3b\u52a8\u6295\u8bc9\u624d\u77e5\u9053\u3002\n- **\u57514**\uff1a\u6269\u91cf\u592a\u5feb\uff0c\u95ee\u9898\u6765\u4e0d\u53ca\u4fee\u590d\u5c31\u5168\u91cf\u4e86\u3002\n\n### \u5de5\u5177\n- \u529f\u80fd\u5f00\u5173\uff1a\u81ea\u7814env var / LaunchDarkly / Flagsmith\n- \u76d1\u63a7\uff1aPrometheus + Grafana / \u963f\u91cc\u4e91ARMS\n- \u544a\u8b66\uff1aPagerDuty / \u4f01\u5fae\u673a\u5668\u4eba\n- \u65e5\u5fd7\uff1aELK Stack / \u963f\u91cc\u4e91SLS\n\n---\n\n## \u9636\u6bb5\u516b\uff1a\u76d1\u63a7\u8fd0\u7ef4\n\n### \u76ee\u6807\n\u7cfb\u7edf\u4e0a\u7ebf\u540e\u4fdd\u6301\u5065\u5eb7\u8fd0\u884c\uff0c\u6301\u7eed\u4f18\u5316\uff0c\u53ca\u65f6\u53d1\u73b0\u5e76\u5904\u7406\u5f02\u5e38\u3002\n\n### \u5173\u952e\u52a8\u4f5c\n\n**1. \u56db\u5c42\u76d1\u63a7\u4f53\u7cfb**\n\n```\nLayer 1 - \u57fa\u7840\u8bbe\u65bd\u5c42\n  CPU / \u5185\u5b58 / \u78c1\u76d8 / \u7f51\u7edc\n  \u54cd\u5e94\u65f6\u95f4 / \u53ef\u7528\u6027\n  \u2192 \u5de5\u5177\uff1aPrometheus / \u4e91\u5e73\u53f0\u81ea\u5e26\n\nLayer 2 - \u5e94\u7528\u5c42\n  API\u8c03\u7528\u6210\u529f\u7387 / \u5931\u8d25\u7387\n  P50/P95/P99\u5ef6\u8fdf\n  \u961f\u5217\u79ef\u538b\u957f\u5ea6\uff08\u5f02\u6b65\u573a\u666f\uff09\n  \u2192 \u5de5\u5177\uff1aLangfuse / \u81ea\u7814\u65e5\u5fd7\n\nLayer 3 - AI\u8d28\u91cf\u5c42\uff08\u6700\u5bb9\u6613\u88ab\u5ffd\u7565\uff09\n  \u5e73\u5747\u7f6e\u4fe1\u5ea6\u8d8b\u52bf\n  \u62d2\u7edd\u56de\u7b54\u7387\uff08\u592a\u9ad8=prompt\u6709\u95ee\u9898\uff09\n  \u5e7b\u89c9\u7387\uff08\u62bd\u6837\u4eba\u5de5\u68c0\u67e5\uff09\n  \u7528\u6237\u53cd\u9988\u6b63\u8d1f\u6bd4\n  \u2192 \u5de5\u5177\uff1a\u81ea\u7814\u8bc4\u4f30\u811a\u672c + \u4eba\u5de5\u62bd\u68c0\n\nLayer 4 - \u4e1a\u52a1\u5f71\u54cd\u5c42\n  \u4f7f\u7528\u76ee\u6807KPI\u7684\u53d8\u5316\u8d8b\u52bf\n  \u4eba\u5de5\u4ecb\u5165\u7387\n  \u4efb\u52a1\u5b8c\u6210\u65f6\u95f4\u5bf9\u6bd4\u57fa\u7ebf\n  \u2192 \u5de5\u5177\uff1a\u4e1a\u52a1BI\u7cfb\u7edf\n```\n\n**2. \u5b9a\u671f\u8bc4\u4f30\u5236\u5ea6**\n\n```\n\u6bcf\u5929\uff1a\u81ea\u52a8\u8dd1\u8bc4\u4f30\u96c6\uff0c\u5bf9\u6bd4\u6307\u6807\uff08\u81ea\u52a8\u5316\uff09\n\u6bcf\u5468\uff1a\u62bd\u53d650\u6761\u771f\u5b9e\u8bf7\u6c42\u4eba\u5de5\u8bc4\u5ba1\uff0830\u5206\u949f\uff09\n\u6bcf\u6708\uff1a\u5168\u91cf\u8bc4\u4f30\u96c6\u91cd\u8dd1\uff0c\u751f\u6210\u6708\u5ea6\u8d28\u91cf\u62a5\u544a\n\u6bcf\u5b63\u5ea6\uff1a\u91cd\u65b0\u5ba1\u89c6KPI\uff0c\u662f\u5426\u9700\u8981\u8c03\u6574\u76ee\u6807\u6216\u6269\u5c55\u7528\u4f8b\n```\n\n**3. \u6570\u636e\u6f02\u79fb\u76d1\u6d4b**\n\n\u771f\u5b9e\u4e16\u754c\u7684\u6570\u636e\u5206\u5e03\u4f1a\u53d8\uff0c\u8981\u76d1\u63a7\uff1a\n```python\n# \u8f93\u5165\u5206\u5e03\u76d1\u63a7\ndef monitor_input_distribution(requests, baseline_stats):\n    current_stats = compute_stats(requests)\n    drift_score = compute_drift(current_stats, baseline_stats)\n    \n    if drift_score > THRESHOLD:\n        alert(\"\u8f93\u5165\u5206\u5e03\u53d1\u751f\u663e\u8457\u6f02\u79fb\uff0c\u9700\u8981\u91cd\u65b0\u8bc4\u4f30\u6a21\u578b\u8868\u73b0\")\n        # \u89e6\u53d1\uff1a\u6269\u5145\u6d4b\u8bd5\u96c6 + \u91cd\u65b0\u8bc4\u4f30 + \u53ef\u80fd\u9700\u8981\u66f4\u65b0prompt\u6216\u77e5\u8bc6\u5e93\n```\n\n**4. Bad Case\u7ba1\u7406**\n\n```\nBad Case\u751f\u547d\u5468\u671f\uff1a\n  \u53d1\u73b0\uff08\u7528\u6237\u53cd\u9988/\u81ea\u52a8\u68c0\u6d4b/\u4eba\u5de5\u62bd\u68c0\uff09\n  \u2192 \u5f55\u5165Bad Case\u5e93\uff08\u542b\u8f93\u5165/\u9519\u8bef\u8f93\u51fa/\u5e94\u6709\u8f93\u51fa/\u539f\u56e0\u5206\u7c7b\uff09\n  \u2192 \u5206\u6790\u6839\u56e0\uff08\u6570\u636e/Prompt/\u68c0\u7d22/\u6a21\u578b\uff09\n  \u2192 \u4fee\u590d\uff08\u66f4\u65b0Prompt/\u8865\u5145\u77e5\u8bc6\u5e93/\u52a0\u89c4\u5219\u8fc7\u6ee4\uff09\n  \u2192 \u9a8c\u8bc1\uff08Bad Case\u4e0d\u518d\u51fa\u73b0\uff09\n  \u2192 \u5f52\u6863\n\n\u6bcf\u5468Bad Case Review\uff1a30\u5206\u949f\uff0cFDE + \u5ba2\u6237\u6280\u672f\u5bf9\u63a5\u4eba\n```\n\n**5. \u6210\u672c\u4f18\u5316**\n\n```\n\u6301\u7eed\u8ffd\u8e2a\u6210\u672c\uff1a\n  - \u6309\u529f\u80fd/\u7528\u4f8b\u62c6\u5206token\u6d88\u8017\n  - \u8bc6\u522b\u9ad8\u6210\u672c/\u4f4e\u4ef7\u503c\u7684\u8c03\u7528\n  \n\u4f18\u5316\u624b\u6bb5\uff08\u6309\u4f18\u5148\u7ea7\uff09\uff1a\n  1. \u51cf\u5c11prompt\u5197\u4f59\uff08\u780d\u6389\u6ca1\u7528\u7684\u4e0a\u4e0b\u6587\uff09\n  2. \u9ad8\u9891\u7b80\u5355\u4efb\u52a1\u6362\u5c0f\u6a21\u578b\uff08Haiku vs Sonnet\uff09\n  3. \u52a0\u7f13\u5b58\uff08\u76f8\u540c\u8f93\u5165\u76f4\u63a5\u8fd4\u56de\u7f13\u5b58\uff09\n  4. \u6279\u5904\u7406\uff08\u975e\u5b9e\u65f6\u4efb\u52a1\u5408\u5e76\u8c03\u7528\uff09\n  5. Prompt\u538b\u7f29\uff08LLMLingua\u7b49\uff09\n```\n\n**6. \u77e5\u8bc6\u5e93\u66f4\u65b0\u673a\u5236**\n\n```\n\u77e5\u8bc6\u5e93\u4e0d\u66f4\u65b0 = \u7cfb\u7edf\u6162\u6162\u53d8\u5dee\n\n\u66f4\u65b0\u89e6\u53d1\u6761\u4ef6\uff1a\n  - \u4e1a\u52a1\u89c4\u5219\u53d8\u66f4\uff08\u7acb\u5373\u66f4\u65b0\uff09\n  - \u7528\u6237\u53cd\u9988\"\u4fe1\u606f\u8fc7\u65f6\"\u9891\u7e41\u51fa\u73b0\n  - \u5b9a\u671f\u66f4\u65b0\uff08\u6309\u6570\u636e\u66f4\u65b0\u9891\u7387\uff0c\u5982\u6bcf\u6708\uff09\n\n\u66f4\u65b0\u6d41\u7a0b\uff1a\n  \u65b0\u6570\u636e \u2192 \u5904\u7406 \u2192 \u6d4b\u8bd5\uff08\u4e0d\u80fd\u964d\u6307\u6807\uff09\u2192 \u7070\u5ea6\u66ff\u6362 \u2192 \u5168\u91cf\n```\n\n### \u4ea4\u4ed8\u7269\n- \u76d1\u63a7Dashboard\uff08\u542b\u56db\u5c42\u6307\u6807\uff0c7\u00d724\u544a\u8b66\uff09\n- \u6708\u5ea6\u8d28\u91cf\u62a5\u544a\uff08\u7ed9\u5ba2\u6237\u51b3\u7b56\u4eba\uff09\n- Bad Case\u5e93\uff08\u6301\u7eed\u7ef4\u62a4\uff09\n- \u6210\u672c\u8ffd\u8e2a\u62a5\u544a\uff08\u6708\u5ea6\uff09\n- \u77e5\u8bc6\u5e93\u66f4\u65b0\u8bb0\u5f55\n\n### \u5e38\u89c1\u5751\n- **\u57511**\uff1a\u53ea\u76d1\u63a7\u57fa\u7840\u8bbe\u65bd\uff0c\u4e0d\u76d1\u63a7AI\u8d28\u91cf\uff0c\u7cfb\u7edf\"\u8dd1\u7740\"\u4f46\u7b54\u6848\u8d8a\u6765\u8d8a\u5dee\u3002\n- **\u57512**\uff1a\u6ca1\u6709Bad Case\u7ba1\u7406\uff0c\u7528\u6237\u53cd\u9988\u7684\u95ee\u9898\u6d88\u5931\u5728\u6c9f\u901a\u8bb0\u5f55\u91cc\uff0c\u6ca1\u6709\u95ed\u73af\u3002\n- **\u57513**\uff1a\u77e5\u8bc6\u5e936\u4e2a\u6708\u6ca1\u66f4\u65b0\uff0c\u7528\u6237\u95ee\u6700\u65b0\u653f\u7b56AI\u7ed9\u7684\u662f\u65e7\u7b54\u6848\u3002\n- **\u57514**\uff1a\u6ca1\u6709\u6210\u672c\u8ffd\u8e2a\uff0c\u6708\u8d26\u5355\u8d85\u6807\u4e86\u624d\u53d1\u73b0\u3002\n\n### \u5de5\u5177\n- \u76d1\u63a7\uff1aGrafana + Prometheus\n- AI\u8d28\u91cf\u8ffd\u8e2a\uff1aLangfuse / \u81ea\u7814\n- \u544a\u8b66\uff1a\u4f01\u5fae/\u9489\u9489\u673a\u5668\u4eba + \u90ae\u4ef6\n- \u6210\u672c\uff1aAnthropic Console\u7528\u91cf\u9762\u677f + \u81ea\u7814\u7edf\u8ba1\n\n---\n\n## \u9636\u6bb5\u4e5d\uff1a\u7ecf\u9a8c\u6c89\u6dc0\u4e3aSkill\n\n### \u76ee\u6807\n\u628a\u8fd9\u4e2a\u9879\u76ee\u91cc\u9a8c\u8bc1\u6709\u6548\u7684\u65b9\u6cd5\u3001Prompt\u3001\u6d41\u7a0b\uff0c\u5c01\u88c5\u6210\u53ef\u590d\u7528\u7684Skill/\u6a21\u677f\uff0c\u4f9b\u4e0b\u4e00\u4e2a\u9879\u76ee/\u56e2\u961f\u6210\u5458\u76f4\u63a5\u7528\u3002\n\n### \u5173\u952e\u52a8\u4f5c\n\n**1. \u6574\u7406\u53ef\u590d\u7528\u8d44\u4ea7\u6e05\u5355**\n\n\u6bcf\u4e2a\u9879\u76ee\u7ed3\u675f\u524d\uff0c\u9010\u4e00\u95ee\uff1a\n```\n\u25a1 \u6709\u6ca1\u6709\u901a\u7528\u7684Prompt\u6a21\u677f\uff1f\uff08\u5982\"\u5408\u540c\u6761\u6b3e\u62bd\u53d6\"\uff09\n\u25a1 \u6709\u6ca1\u6709\u53ef\u590d\u7528\u7684\u6570\u636e\u5904\u7406\u811a\u672c\uff1f\n\u25a1 \u6709\u6ca1\u6709\u8bc4\u4f30\u6d41\u6c34\u7ebf\u53ef\u4ee5\u76f4\u63a5\u5957\u7528\uff1f\n\u25a1 \u6709\u6ca1\u6709\u7279\u5b9a\u884c\u4e1a\u7684\u9886\u57df\u77e5\u8bc6\uff08\u672f\u8bed/\u89c4\u5219/\u5e38\u89c1\u5751\uff09\uff1f\n\u25a1 \u6709\u6ca1\u6709\u7279\u5b9a\u7cfb\u7edf\u7684\u63a5\u5165\u65b9\u5f0f\uff08\u67d0ERP/\u67d0\u6570\u636e\u5e93\uff09\uff1f\n\u25a1 \u6709\u6ca1\u6709\u503c\u5f97\u63a8\u5e7f\u7684\u67b6\u6784\u6a21\u5f0f\uff1f\n```\n\n**2. Skill\u5c01\u88c5\u6807\u51c6**\n\n\u6bcf\u4e2aSkill\u5305\u542b\uff1a\n```\nskill-name/\n\u251c\u2500\u2500 SKILL.md          # \u6280\u80fd\u8bf4\u660e\u3001\u9002\u7528\u573a\u666f\u3001\u4f7f\u7528\u65b9\u6cd5\n\u251c\u2500\u2500 prompt/\n\u2502   \u251c\u2500\u2500 system.md     # System Prompt\n\u2502   \u2514\u2500\u2500 examples/     # Few-shot\u793a\u4f8b\uff08\u81f3\u5c115\u4e2a\uff09\n\u251c\u2500\u2500 code/\n\u2502   \u251c\u2500\u2500 main.py       # \u6838\u5fc3\u5b9e\u73b0\n\u2502   \u2514\u2500\u2500 evaluate.py   # \u8bc4\u4f30\u811a\u672c\n\u251c\u2500\u2500 tests/\n\u2502   \u2514\u2500\u2500 test_cases.json  # \u6d4b\u8bd5\u7528\u4f8b\uff08\u81f3\u5c1120\u6761\uff09\n\u2514\u2500\u2500 README.md         # \u5feb\u901f\u4e0a\u624b\uff085\u5206\u949f\u80fd\u8dd1\u901a\uff09\n```\n\n**3. \u8e29\u5751\u6587\u6863**\n\n\u9879\u76ee\u4e2d\u8e29\u8fc7\u7684\u6bcf\u4e2a\u5751\uff0c\u90fd\u8981\u5199\u6210\u4e00\u6761\u53ef\u68c0\u7d22\u7684\u8bb0\u5f55\uff1a\n```markdown\n## \u5751\uff1a[\u63cf\u8ff0]\n- \u573a\u666f\uff1a\u4ec0\u4e48\u60c5\u51b5\u4e0b\u4f1a\u9047\u5230\n- \u73b0\u8c61\uff1a\u5177\u4f53\u62a5\u9519/\u5f02\u5e38\u884c\u4e3a\n- \u6839\u56e0\uff1a\u4e3a\u4ec0\u4e48\u4f1a\u53d1\u751f\n- \u89e3\u51b3\u65b9\u6848\uff1a\u600e\u4e48\u89e3\u51b3\n- \u9884\u9632\uff1a\u4e0b\u6b21\u600e\u4e48\u63d0\u524d\u907f\u514d\n- \u53d1\u73b0\u65f6\u95f4\uff1a[\u65e5\u671f]\n- \u9879\u76ee\uff1a[\u9879\u76ee\u540d]\n```\n\n**4. \u6700\u4f73\u5b9e\u8df5\u63d0\u70bc**\n\n\u4ece\u8fd9\u4e2a\u9879\u76ee\u7684\u6210\u529f/\u5931\u8d25\u4e2d\uff0c\u63d0\u70bc\u51fa3-5\u6761\u53ef\u63a8\u5e7f\u7684\u539f\u5219\uff0c\u5199\u8fdb\u56e2\u961f\u5de5\u4f5c\u624b\u518c\u3002\n\n**5. \u5185\u90e8\u5206\u4eab**\n\n- \u9879\u76ee\u7ed3\u675f\u540e1-2\u5468\u5185\uff0c\u5bf9\u56e2\u961f\u505a30\u5206\u949f\u5206\u4eab\n- \u5185\u5bb9\uff1a\u505a\u4e86\u4ec0\u4e48 / \u6700\u6709\u4ef7\u503c\u7684\u53d1\u73b0 / \u6700\u5927\u7684\u5751 / \u53ef\u590d\u7528\u7684\u4e1c\u897f\n- \u5f55\u5c4f\u5b58\u6863\n\n### \u4ea4\u4ed8\u7269\n- Skill\u5e93\uff08\u65b0\u589e\u6216\u66f4\u65b0\u7684Skill\u5305\uff09\n- \u8e29\u5751\u6570\u636e\u5e93\uff08\u65b0\u589e\u6761\u76ee\uff09\n- \u6700\u4f73\u5b9e\u8df5\u6587\u6863\u66f4\u65b0\n- \u5185\u90e8\u5206\u4eab\u5f55\u5c4f\n\n### \u5e38\u89c1\u5751\n- **\u57511**\uff1a\u9879\u76ee\u7ed3\u675f\u5c31\u6563\u4e86\uff0c\u6ca1\u6709\u4eba\u505a\u6c89\u6dc0\uff0c\u4e0b\u4e2a\u9879\u76ee\u91cd\u590d\u8e29\u540c\u6837\u7684\u5751\u3002\n- **\u57512**\uff1a\u6c89\u6dc0\u7684\u4e1c\u897f\u592a\u62bd\u8c61\uff08\"\u8981\u6ce8\u610f\u6570\u636e\u8d28\u91cf\"\uff09\uff0c\u6ca1\u6709\u53ef\u64cd\u4f5c\u7684\u5177\u4f53\u5185\u5bb9\u3002\n- **\u57513**\uff1aSkill\u6ca1\u6709\u6d4b\u8bd5\u7528\u4f8b\uff0c\u4e0b\u6b21\u7528\u53d1\u73b0\u8dd1\u4e0d\u901a\u3002\n\n### \u5de5\u5177\n- Skill\u7ba1\u7406\uff1aGit\u4ed3\u5e93\uff08\u7edf\u4e00\u7684skill-library repo\uff09\n- \u8e29\u5751\u5e93\uff1aNotion / \u98de\u4e66\u77e5\u8bc6\u5e93\n- \u5206\u4eab\uff1a\u98de\u4e66\u89c6\u9891 / Loom\n\n---\n\n## \u9636\u6bb5\u5341\uff1a\u9000\u51fa\u4e0e\u4ea4\u63a5\n\n### \u76ee\u6807\n\u8ba9\u5ba2\u6237\u56e2\u961f\u80fd\u591f\u72ec\u7acb\u8fd0\u8425\u8fd9\u4e2a\u7cfb\u7edf\uff0cFDE\u4f18\u96c5\u9000\u51fa\uff0c\u4e0d\u7559\u9690\u60a3\u3002\n\n### \u5173\u952e\u52a8\u4f5c\n\n**1. \u4ea4\u63a5\u5c31\u7eea\u8bc4\u4f30\uff08\u9000\u51fa\u524d4\u5468\u5f00\u59cb\uff09**\n\n\u8bc4\u4f30\u5ba2\u6237\u56e2\u961f\u662f\u5426\u5177\u5907\uff1a\n```\n\u6280\u672f\u80fd\u529b\uff1a\n  \u25a1 \u80fd\u770b\u61c2\u76d1\u63a7Dashboard\uff0c\u7406\u89e3\u6bcf\u4e2a\u6307\u6807\n  \u25a1 \u80fd\u5904\u7406\u5e38\u89c1\u544a\u8b66\uff08\u6709runbook\uff09\n  \u25a1 \u80fd\u66f4\u65b0\u77e5\u8bc6\u5e93\uff08\u6709\u64cd\u4f5c\u6587\u6863\uff09\n  \u25a1 \u80fd\u4fee\u6539\u529f\u80fd\u5f00\u5173\n  \u25a1 \u77e5\u9053\u4f55\u65f6\u4ee5\u53ca\u5982\u4f55\u8054\u7cfb\u6280\u672f\u652f\u6301\n\n\u8fd0\u8425\u80fd\u529b\uff1a\n  \u25a1 \u77e5\u9053\u5982\u4f55\u6536\u96c6\u548c\u5904\u7406\u7528\u6237\u53cd\u9988\n  \u25a1 \u80fd\u770b\u61c2\u6708\u5ea6\u8d28\u91cf\u62a5\u544a\u5e76\u5224\u65ad\u662f\u5426\u6b63\u5e38\n  \u25a1 \u6709Bad Case\u5904\u7406\u6d41\u7a0b\n\n\u5347\u7ea7\u8def\u5f84\uff1a\n  \u25a1 \u9047\u5230\u81ea\u5df1\u89e3\u51b3\u4e0d\u4e86\u7684\u95ee\u9898\uff0c\u77e5\u9053\u627e\u8c01\u3001\u600e\u4e48\u627e\n```\n\n**2. \u77e5\u8bc6\u8f6c\u79fb\u8ba1\u5212\uff084\u5468\uff09**\n\n```\n\u7b2c1-2\u5468\uff1a\u7ed3\u5bf9\u64cd\u4f5c\n  FDE\u64cd\u4f5c\uff0c\u5ba2\u6237\u56e2\u961f\u5728\u65c1\u8fb9\u770b\uff0c\u89e3\u91ca\u6bcf\u4e00\u6b65\n\n\u7b2c3\u5468\uff1a\u7ffb\u8f6c\u64cd\u4f5c\n  \u5ba2\u6237\u56e2\u961f\u64cd\u4f5c\uff0cFDE\u5728\u65c1\u8fb9\u770b\uff0c\u968f\u65f6\u7ea0\u6b63\n\n\u7b2c4\u5468\uff1a\u72ec\u7acb\u64cd\u4f5c\n  \u5ba2\u6237\u56e2\u961f\u72ec\u7acb\uff0cFDE\u8fdc\u7a0b\u5f85\u547d\n\n\u6bcf\u5468\u9a8c\u6536\uff1a\u5ba2\u6237\u56e2\u961f\u5b8c\u6210\u4e00\u4e2a\u5177\u4f53\u64cd\u4f5c\u4efb\u52a1\n```\n\n**3. \u4ea4\u63a5\u6587\u6863\u5305\uff08\u5b8c\u6574\uff09**\n\n```\n\u7cfb\u7edf\u6587\u6863\uff1a\n  \u251c\u2500\u2500 \u7cfb\u7edf\u67b6\u6784\u56fe\uff08\u542b\u6240\u6709\u7ec4\u4ef6\u548c\u6570\u636e\u6d41\uff09\n  \u251c\u2500\u2500 \u90e8\u7f72\u6587\u6863\uff08\u5982\u4f55\u91cd\u65b0\u90e8\u7f72\uff09\n  \u251c\u2500\u2500 \u914d\u7f6e\u8bf4\u660e\uff08\u6240\u6709\u73af\u5883\u53d8\u91cf\u548c\u914d\u7f6e\u9879\uff09\n  \u2514\u2500\u2500 API\u63a5\u53e3\u6587\u6863\n\n\u8fd0\u8425\u6587\u6863\uff1a\n  \u251c\u2500\u2500 \u76d1\u63a7\u64cd\u4f5c\u624b\u518c\uff08\u6bcf\u4e2a\u544a\u8b66\u600e\u4e48\u5904\u7406\uff09\n  \u251c\u2500\u2500 \u77e5\u8bc6\u5e93\u66f4\u65b0SOP\uff08\u6b65\u9aa4\u622a\u56fe\uff09\n  \u251c\u2500\u2500 \u5e38\u89c1\u95ee\u9898\u6392\u67e5\u624b\u518c\uff08Troubleshooting Guide\uff09\n  \u2514\u2500\u2500 \u6570\u636e\u5907\u4efd\u4e0e\u6062\u590d\u6d41\u7a0b\n\n\u8054\u7edc\u6587\u6863\uff1a\n  \u251c\u2500\u2500 \u5916\u90e8\u4f9d\u8d56\u8054\u7cfb\u4eba\uff08API\u4f9b\u5e94\u5546/\u57fa\u7840\u8bbe\u65bd/\u6570\u636e\u63d0\u4f9b\u65b9\uff09\n  \u251c\u2500\u2500 \u5185\u90e8\u8054\u7cfb\u4eba\uff08\u8c01\u8d1f\u8d23\u4ec0\u4e48\uff09\n  \u2514\u2500\u2500 \u5347\u7ea7\u6d41\u7a0b\uff08\u4ec0\u4e48\u95ee\u9898\u5347\u7ea7\u7ed9\u8c01\uff09\n```\n\n**4. \u7cfb\u7edf\u5065\u5eb7\u72b6\u6001\u786e\u8ba4**\n\n\u9000\u51fa\u524d\u6700\u540e\u68c0\u67e5\uff1a\n```\n\u25a1 \u6240\u6709\u5bc6\u94a5/API Key\u5df2\u8f6c\u79fb\u7ed9\u5ba2\u6237\uff08\u4e0d\u5728FDE\u624b\u91cc\u7559\u526f\u672c\uff09\n\u25a1 \u6587\u6863\u8bbf\u95ee\u6743\u9650\u5df2\u8f6c\u79fb\n\u25a1 \u4ee3\u7801\u5e93\u6743\u9650\u5df2\u66f4\u65b0\n\u25a1 \u76d1\u63a7\u544a\u8b66\u8054\u7cfb\u4eba\u5df2\u66f4\u65b0\u4e3a\u5ba2\u6237\u56e2\u961f\n\u25a1 \u77e5\u8bc6\u5e93\u6700\u65b0\u7248\u672c\u5df2\u540c\u6b65\n\u25a1 \u6700\u8fd1\u4e00\u6b21\u6708\u5ea6\u8d28\u91cf\u62a5\u544a\u6307\u6807\u6b63\u5e38\n\u25a1 \u6ca1\u6709\u672a\u89e3\u51b3\u7684P0/P1\u95ee\u9898\n```\n\n**5. \u552e\u540e\u652f\u6301\u5b89\u6392\uff08\u6e05\u6670\u8fb9\u754c\uff09**\n\n\u9000\u51fa\u540e\u7684\u652f\u6301\u6a21\u5f0f\u8981\u63d0\u524d\u8bb2\u6e05\u695a\uff1a\n```\n\u65b9\u6848A\uff1a\u8d23\u4efb\u7ec8\u6b62\n  \u4ea4\u63a5\u5b8c\u6210\u540e\uff0c\u5ba2\u6237\u5b8c\u5168\u72ec\u7acb\uff0cFDE\u4e0d\u518d\u8d1f\u8d23\n\n\u65b9\u6848B\uff1a\u6709\u9650\u652f\u6301\uff08\u63a8\u8350\uff09\n  \u4ea4\u63a5\u540e30-90\u5929\uff0c\u91cd\u5927\u95ee\u9898FDE\u534f\u52a9\u6392\u67e5\n  \u54cd\u5e94\u65f6\u95f4\uff1a\u5de5\u4f5c\u65e524\u5c0f\u65f6\u5185\n  \u8303\u56f4\uff1a\u4e0d\u505a\u65b0\u529f\u80fd\uff0c\u53ea\u505aBug\u4fee\u590d\u548c\u64cd\u4f5c\u6307\u5bfc\n\n\u65b9\u6848C\uff1a\u6301\u7eed\u670d\u52a1\uff08\u9700\u5355\u72ec\u5408\u540c\uff09\n  \u6f14\u53d8\u4e3a\u957f\u671f\u6280\u672f\u652f\u6301\u5408\u540c\n```\n\n**6. \u590d\u76d8\u4f1a\uff08\u5185\u5916\u5404\u4e00\u6b21\uff09**\n\n\u5916\u90e8\uff08\u4e0e\u5ba2\u6237\uff09\uff1a\n- \u505a\u4e86\u4ec0\u4e48\uff0c\u8fbe\u6210\u4e86\u54ea\u4e9bKPI\n- \u54ea\u4e9b\u8d85\u51fa\u9884\u671f\uff0c\u54ea\u4e9b\u4f4e\u4e8e\u9884\u671f\n- \u4e0b\u4e00\u6b65\u5efa\u8bae\uff08\u6269\u5c55\u7528\u4f8b/\u6df1\u5316\u4f18\u5316\uff09\n\n\u5185\u90e8\uff08\u56e2\u961f\u81ea\u5df1\uff09\uff1a\n- \u8fd9\u4e2a\u9879\u76ee\u6700\u6210\u529f\u7684\u5730\u65b9\u662f\u4ec0\u4e48\n- \u6700\u5927\u7684\u5931\u8bef/\u6d6a\u8d39\u662f\u4ec0\u4e48\n- \u5982\u679c\u91cd\u6765\uff0c\u54ea3\u4ef6\u4e8b\u4f1a\u505a\u4e0d\u540c\n\n### \u4ea4\u4ed8\u7269\n- \u4ea4\u63a5\u5c31\u7eea\u8bc4\u4f30\u62a5\u544a\n- \u5b8c\u6574\u4ea4\u63a5\u6587\u6863\u5305\n- \u7cfb\u7edf\u5065\u5eb7\u786e\u8ba4\u6e05\u5355\uff08\u53cc\u65b9\u7b7e\u5b57\uff09\n- \u552e\u540e\u652f\u6301\u534f\u8bae\uff08\u660e\u786e\u8fb9\u754c\uff09\n- \u5185\u5916\u590d\u76d8\u8bb0\u5f55\n\n### \u5e38\u89c1\u5751\n- **\u57511**\uff1a\u6587\u6863\u5728FDE\u7684\u7535\u8111\u4e0a/\u4e2a\u4eba\u8d26\u53f7\u91cc\uff0c\u4ea4\u63a5\u540e\u5ba2\u6237\u627e\u4e0d\u5230\u3002\n- **\u57512**\uff1aAPI Key\u8fd8\u5728FDE\u7684\u8d26\u53f7\u4e0b\uff0cFDE\u79bb\u5f00\u540e\u670d\u52a1\u6302\u4e86\u3002\n- **\u57513**\uff1a\u4ea4\u63a5\u65f6\u95f4\u592a\u77ed\uff082-3\u5929\uff09\uff0c\u5ba2\u6237\u6ca1\u6709\u771f\u6b63\u638c\u63e1\u64cd\u4f5c\u80fd\u529b\u3002\n- **\u57514**\uff1a\u6ca1\u6709\u660e\u786e\u552e\u540e\u652f\u6301\u8fb9\u754c\uff0c\u9000\u51fa\u540e\u5ba2\u6237\u8fd8\u6301\u7eed\u627eFDE\u89e3\u51b3\u5404\u79cd\u95ee\u9898\u3002\n- **\u57515**\uff1a\u590d\u76d8\u8d70\u8fc7\u573a\uff0c\u6ca1\u6709\u771f\u6b63\u63d0\u70bc\u51fa\u53ef\u4ee5\u6539\u8fdb\u7684\u4e1c\u897f\u3002\n\n---\n\n## \u9644\u5f55\uff1aFDE\u5de5\u5177\u7bb1\u901f\u67e5\n\n| \u7c7b\u522b | \u5de5\u5177 | \u573a\u666f |\n|------|------|------|\n| \u6587\u6863\u534f\u4f5c | \u98de\u4e66/Notion | \u65e5\u5e38\u6587\u6863\u3001\u4f1a\u8bae\u7eaa\u8981 |\n| \u6d41\u7a0b\u56fe | Excalidraw/draw.io | \u67b6\u6784\u56fe\u3001\u6d41\u7a0b\u56fe |\n| \u5411\u91cf\u5e93 | Chroma/Milvus | RAG\u77e5\u8bc6\u5e93 |\n| LLM\u8ffd\u8e2a | Langfuse | \u8c03\u7528\u94fe\u53ef\u89c6\u5316\u3001\u8bc4\u4f30 |\n| \u8bc4\u4f30\u6846\u67b6 | Ragas/\u81ea\u7814 | RAG\u8d28\u91cf\u8bc4\u4f30 |\n| \u8d1f\u8f7d\u6d4b\u8bd5 | Locust | \u6027\u80fd\u538b\u6d4b |\n| \u76d1\u63a7 | Grafana+Prometheus | \u751f\u4ea7\u76d1\u63a7 |\n| \u529f\u80fd\u5f00\u5173 | \u73af\u5883\u53d8\u91cf/Flagsmith | \u7070\u5ea6\u63a7\u5236 |\n| \u6d41\u7a0b\u7f16\u6392 | LangGraph/Prefect | \u590d\u6742Agent/\u5de5\u4f5c\u6d41 |\n| \u6587\u6863\u89e3\u6790 | pdfplumber/PaddleOCR | \u975e\u7ed3\u6784\u5316\u6570\u636e\u5904\u7406 |\n\n---\n\n## \u5173\u952e\u539f\u5219\uff08\u8d2f\u7a7f\u59cb\u7ec8\uff09\n\n1. **\u5355\u70b9\u7a81\u7834**\uff1a\u6c38\u8fdc\u5148\u6253\u4e00\u4e2a\u7528\u4f8b\uff0c\u8dd1\u51fa\u7ed3\u679c\uff0c\u518d\u6269\u5c55\n2. **\u6570\u5b57\u8bf4\u8bdd**\uff1a\u6bcf\u4e2a\u9636\u6bb5\u7684\u6210\u529f\u6807\u51c6\u5fc5\u987b\u91cf\u5316\uff0c\u4e0d\u63a5\u53d7\u6a21\u7cca\u63cf\u8ff0\n3. **\u4eba\u5de5\u515c\u5e95**\uff1a\u9ad8\u98ce\u9669\u51b3\u7b56\u5fc5\u987b\u6709\u4eba\u5de5\u8282\u70b9\uff0c\u4e0d\u8981\u5168\u81ea\u52a8\n4. **\u5931\u8d25\u5148\u884c**\uff1a\u6d4b\u8bd5\u96c6\u548c\u8bc4\u4f30\u6807\u51c6\u5728\u5f00\u53d1\u524d\u5b9a\uff0c\u4e0d\u5728\u5f00\u53d1\u540e\n5. **\u6c89\u6dc0\u4f18\u5148**\uff1a\u6bcf\u4e2a\u9879\u76ee\u7ed3\u675f\u540e\u5fc5\u987b\u6c89\u6dc0Skill\u548c\u8e29\u5751\u8bb0\u5f55\uff0c\u5426\u5219\u7ecf\u9a8c\u5f52\u96f6");
+document.getElementById('skill-c').innerHTML=marked.parse("# FDE \u6280\u80fd\u6811\u4e0e\u5b66\u4e60\u8def\u5f84\n\n## \u4e00\u3001\u4ec0\u4e48\u662f FDE\uff08\u5b9a\u4e49\u951a\u5b9a\uff09\n\n> Forward Deployment Engineer\uff1a\u5d4c\u5165\u5ba2\u6237\u73b0\u573a\uff0c\u628a AI \u4ece demo \u53d8\u6210\u751f\u4ea7\u7cfb\u7edf\uff0c\u540c\u65f6\u628a\u524d\u7ebf\u75db\u70b9\u53cd\u54fa\u4ea7\u54c1\u7814\u53d1\u3002  \n> \u6838\u5fc3\u5b9a\u4f4d\uff1a**\u5de5\u7a0b\u5e08 + \u54a8\u8be2\u5e08 + \u4ea7\u54c1\u63a2\u9488**\uff0c\u4e09\u4f4d\u4e00\u4f53\u3002\n\n---\n\n## \u4e8c\u3001\u6280\u80fd\u6811\u5168\u56fe\n\n### \u2460 \u5de5\u7a0b\u6280\u80fd\n\n#### 1.1 \u7f16\u7a0b\u57fa\u7840\n\n| \u5c42\u7ea7 | \u5185\u5bb9 |\n|------|------|\n| \u5fc5\u987b | Python\uff08async/await\u3001\u7c7b\u578b\u6ce8\u89e3\u3001\u6253\u5305\uff09|\n| \u5fc5\u987b | Git \u5de5\u4f5c\u6d41\uff08PR\u3001review\u3001CI \u96c6\u6210\uff09|\n| \u63a8\u8350 | TypeScript/Node\uff08\u524d\u7aef\u8054\u8c03\u3001MCP Server \u5f00\u53d1\uff09|\n| \u52a0\u5206 | SQL \u719f\u7ec3\u3001Shell \u811a\u672c\u3001\u57fa\u7840 Linux \u8fd0\u7ef4 |\n\n#### 1.2 AI Agent \u5f00\u53d1\u4e0e\u6d4b\u8bd5\n\n```\n\u6838\u5fc3\u6982\u5ff5\n\u251c\u2500\u2500 Tool Use\uff08\u51fd\u6570\u8c03\u7528\u3001\u7ed3\u6784\u5316\u8f93\u51fa\uff09\n\u251c\u2500\u2500 Memory \u4e09\u7c7b\uff08In-context / External / Parametric\uff09\n\u251c\u2500\u2500 Multi-agent \u7f16\u6392\uff08orchestrator-subagent \u6a21\u5f0f\uff09\n\u251c\u2500\u2500 Human-in-the-loop \u8bbe\u8ba1\n\u2514\u2500\u2500 \u5bb9\u9519\u4e0e\u964d\u7ea7\uff08\u91cd\u8bd5\u3001fallback\u3001\u5e42\u7b49\uff09\n\n\u6d4b\u8bd5\u65b9\u6cd5\n\u251c\u2500\u2500 \u5355\u5143\u6d4b\u8bd5 Mock LLM \u54cd\u5e94\n\u251c\u2500\u2500 Trace-level \u56de\u653e\uff08\u56fa\u5b9a seed / deterministic mode\uff09\n\u251c\u2500\u2500 \u5bf9\u6297\u6d4b\u8bd5\uff08\u8d8a\u72f1\u3001\u5e7b\u89c9\u6ce8\u5165\u3001\u8fb9\u754c case\uff09\n\u2514\u2500\u2500 A/B \u8bc4\u4f30\uff08\u63a7\u5236 prompt \u53d8\u91cf\uff09\n```\n\n#### 1.3 Prompt \u5de5\u7a0b\n\n- \u7ed3\u6784\u5316 prompt\uff08\u89d2\u8272/\u4efb\u52a1/\u7ea6\u675f/\u8f93\u51fa\u683c\u5f0f\u5206\u79bb\uff09\n- System prompt \u4e0e user prompt \u804c\u8d23\u5212\u5206\n- Few-shot \u793a\u4f8b\u9009\u62e9\u7b56\u7565\n- Chain-of-Thought / ReAct / Tree-of-Thought \u9002\u7528\u573a\u666f\u5224\u65ad\n- Prompt \u7248\u672c\u7ba1\u7406\uff08\u50cf\u4ee3\u7801\u4e00\u6837 diff \u548c\u56de\u6eda\uff09\n\n#### 1.4 RAG\uff08\u68c0\u7d22\u589e\u5f3a\u751f\u6210\uff09\n\n```\n\u5b8c\u6574\u94fe\u8def\n\u539f\u59cb\u6570\u636e \u2192 \u6e05\u6d17 \u2192 \u5207\u5757(chunking) \u2192 \u5d4c\u5165(embedding) \u2192 \u5411\u91cf\u5e93\n       \u2193\n\u67e5\u8be2 \u2192 \u68c0\u7d22(hybrid: vector + BM25) \u2192 \u91cd\u6392(rerank) \u2192 \u4e0a\u4e0b\u6587\u6ce8\u5165 \u2192 \u751f\u6210\n\n\u5173\u952e\u51b3\u7b56\u70b9\n\u251c\u2500\u2500 \u5207\u5757\u7c92\u5ea6\uff08\u6309\u6bb5\u843d/\u53e5\u5b50/\u8bed\u4e49\u6ed1\u7a97\uff09\n\u251c\u2500\u2500 \u5d4c\u5165\u6a21\u578b\u9009\u578b\uff08BGE-M3 / text-embedding-3-large\uff09\n\u251c\u2500\u2500 \u5411\u91cf\u5e93\u9009\u578b\uff08Qdrant / Weaviate / pgvector\uff09\n\u251c\u2500\u2500 \u68c0\u7d22\u7b56\u7565\uff08\u76f8\u4f3c\u5ea6\u9608\u503c\u3001MMR \u53bb\u91cd\u3001\u7236\u5b50chunk\uff09\n\u2514\u2500\u2500 \u5e7b\u89c9\u6291\u5236\uff08\u5f15\u7528\u6eaf\u6e90\u3001\u7f6e\u4fe1\u5ea6\u8fc7\u6ee4\uff09\n```\n\n#### 1.5 Eval\uff08\u8bc4\u4f30\u4f53\u7cfb\uff09\n\n| \u8bc4\u4f30\u7ef4\u5ea6 | \u65b9\u6cd5 |\n|----------|------|\n| \u51c6\u786e\u7387 | \u4e0e ground truth \u5bf9\u6bd4\uff08exact match / F1\uff09|\n| \u76f8\u5173\u6027 | LLM-as-judge\uff08GPT-4o / Claude \u6253\u5206\uff09|\n| \u5fe0\u5b9e\u5ea6 | \u5f15\u7528\u9a8c\u8bc1\uff08\u8f93\u51fa\u662f\u5426\u6709\u6587\u6863\u652f\u6491\uff09|\n| \u5ef6\u8fdf/\u6210\u672c | P50/P99 \u5ef6\u8fdf\u3001token \u6d88\u8017\u8ffd\u8e2a |\n| \u56de\u5f52 | \u6bcf\u6b21 prompt \u53d8\u66f4\u89e6\u53d1\u81ea\u52a8 eval \u5957\u4ef6 |\n\n\u5de5\u5177\uff1a**RAGAS\u3001LangSmith\u3001Braintrust\u3001DeepEval**\n\n#### 1.6 \u7f16\u6392\u6846\u67b6\n\n```\n\u6846\u67b6\u9009\u578b\u5224\u65ad\u6811\n\u251c\u2500\u2500 \u8f7b\u91cf workflow \u2192 Prefect / Airflow\uff08\u786e\u5b9a\u6027\u7ba1\u9053\uff09\n\u251c\u2500\u2500 Agent \u7f16\u6392 \u2192 LangGraph\uff08\u6709\u72b6\u6001\u56fe\uff09/ CrewAI\uff08\u591a\u89d2\u8272\uff09\n\u251c\u2500\u2500 \u751f\u4ea7\u7ea7 \u2192 Temporal\uff08\u6301\u4e45\u5316 workflow + \u5bb9\u9519\uff09\n\u2514\u2500\u2500 \u8fb9\u7f18\u90e8\u7f72 \u2192 \u65e0\u6846\u67b6 + \u624b\u5199\u72b6\u6001\u673a\uff08\u53ef\u63a7\u6027\u4f18\u5148\uff09\n\n\u6838\u5fc3 LangGraph \u6982\u5ff5\n\u251c\u2500\u2500 Node\uff08\u6267\u884c\u5355\u5143\uff09/ Edge\uff08\u6761\u4ef6\u8def\u7531\uff09\n\u251c\u2500\u2500 State\uff08\u8d2f\u7a7f\u6574\u56fe\u7684\u4e0a\u4e0b\u6587\u5bf9\u8c61\uff09\n\u251c\u2500\u2500 Checkpointing\uff08\u65ad\u70b9\u7eed\u8dd1\uff09\n\u2514\u2500\u2500 Human-in-the-loop \u8282\u70b9\n```\n\n#### 1.7 \u53ef\u89c2\u6d4b\u6027\n\n- **Tracing**\uff1aLangSmith / LangFuse / Arize Phoenix\n- **\u7ed3\u6784\u5316\u65e5\u5fd7**\uff1a\u6bcf\u6b21 LLM \u8c03\u7528\u8bb0\u5f55 prompt/response/token/\u5ef6\u8fdf\n- **\u544a\u8b66**\uff1a\u5e7b\u89c9\u7387\u3001\u9519\u8bef\u7387\u3001\u5ef6\u8fdf P99 \u9608\u503c\n- **\u6210\u672c\u8ffd\u8e2a**\uff1a\u6309\u7528\u6237/\u529f\u80fd/\u79df\u6237\u7ec6\u5206 token \u6d88\u8017\n\n---\n\n### \u2461 AI \u843d\u5730\u65b9\u6cd5\u8bba\n\n#### 2.1 \u9700\u6c42\u8bc6\u522b\u6846\u67b6\n\n```\n\u53d1\u73b0\u771f\u95ee\u9898\u7684 5 \u6b65\n1. \u5f71\u5b50\u8ddf\u8e2a\uff08Shadow Work\uff09\uff1a\u8ddf\u7740\u4e1a\u52a1\u5458\u5e72\u4e00\u5929\uff0c\u627e\u91cd\u590d\u6027\u9ad8\u3001\u5bb9\u9519\u53ef\u63a7\u7684\u4efb\u52a1\n2. \u4ef7\u503c\u91cf\u5316\uff1a\u65f6\u95f4\u8282\u7701 \u00d7 \u4eba\u529b\u6210\u672c = ROI \u4e0a\u9650\n3. \u53ef\u884c\u6027\u8bc4\u4f30\uff1a\u6570\u636e\u53ef\u5f97\u6027\u3001\u5408\u89c4\u8fb9\u754c\u3001\u6a21\u578b\u80fd\u529b\u8fb9\u754c\n4. MVP \u8303\u56f4\u88c1\u526a\uff1a\u5355\u4e00\u573a\u666f\u3001\u5355\u4e00\u89d2\u8272\u3001\u5355\u4e00\u6570\u636e\u6e90\n5. \u6210\u529f\u6807\u51c6\u5bf9\u9f50\uff1a\u5199\u5728\u7eb8\u4e0a\uff0c\u4e1a\u52a1\u65b9\u7b7e\u5b57\n```\n\n#### 2.2 \u4ea4\u4ed8\u751f\u547d\u5468\u671f\n\n```\nDiscovery\uff081-2\u5468\uff09\u2192 Prototype\uff081-3\u5468\uff09\u2192 Pilot\uff084-8\u5468\uff09\u2192 Production \u2192 Iterate\n     \u2193                   \u2193                  \u2193\n  \u95ee\u9898\u5b9a\u4e49            \u53ef\u7528 demo           \u771f\u5b9e\u7528\u6237           \u76d1\u63a7+\u53cd\u9988\n  \u6570\u636e\u6478\u5e95            eval \u57fa\u7ebf           eval \u63d0\u5347          \u6301\u7eed\u4f18\u5316\n```\n\n#### 2.3 \u5e38\u89c1\u9677\u9631\u4e0e\u5bf9\u7b56\n\n| \u9677\u9631 | \u5bf9\u7b56 |\n|------|------|\n| \"AI \u4ec0\u4e48\u90fd\u80fd\u505a\"\u671f\u671b\u7ba1\u7406\u5931\u8d25 | \u7b2c\u4e00\u6b21\u4f1a\u8bae\u5c31\u6f14\u793a\u5931\u8d25\u6848\u4f8b |\n| \u6570\u636e\u6cbb\u7406\u7f3a\u4f4d | \u843d\u5730\u524d\u5148\u505a\u6570\u636e\u5ba1\u8ba1\uff08\u6709\u6ca1\u6709\u3001\u80fd\u4e0d\u80fd\u7528\u3001\u8d28\u91cf\u5982\u4f55\uff09|\n| \u5355\u70b9 demo \u65e0\u6cd5\u6269\u5c55 | MVP \u9636\u6bb5\u5c31\u8bbe\u8ba1\u591a\u79df\u6237\u9694\u79bb |\n| \u7f3a\u4e4f GT\uff08ground truth\uff09| \u7b2c\u4e00\u5468\u5c31\u8ba9\u4e1a\u52a1\u65b9\u6807\u6ce8 50-100 \u6761\u6837\u672c |\n| \u4e0a\u7ebf\u5373\u5f03\u7528 | \u5d4c\u5165\u4e1a\u52a1\u65e5\u4f1a\uff0cweekly \u6570\u636e\u6c47\u62a5 |\n\n---\n\n### \u2462 \u6570\u636e\u5de5\u7a0b\n\n```\nFDE \u5fc5\u61c2\u7684\u6570\u636e\u6280\u80fd\uff08\u4e0d\u9700\u8981 DE \u7ea7\u522b\u6df1\u5ea6\uff0c\u4f46\u8981\u80fd\u72ec\u7acb\u8d70\u901a\uff09\n\n\u6570\u636e\u91c7\u96c6\n\u251c\u2500\u2500 API \u5bf9\u63a5\uff08REST / GraphQL / Webhook\uff09\n\u251c\u2500\u2500 \u6570\u636e\u5e93\u76f4\u8fde\uff08PostgreSQL / MySQL / MongoDB\uff09\n\u251c\u2500\u2500 \u6587\u4ef6\u89e3\u6790\uff08PDF/Word/Excel/HTML \u2192 \u7ed3\u6784\u5316\u6587\u672c\uff09\n\u2514\u2500\u2500 \u722c\u866b\u57fa\u7840\uff08Playwright / Scrapy\uff09\n\n\u6570\u636e\u6e05\u6d17\n\u251c\u2500\u2500 PII \u8131\u654f\uff08\u6b63\u5219 + NER\uff09\n\u251c\u2500\u2500 \u53bb\u91cd\u3001\u683c\u5f0f\u7edf\u4e00\n\u251c\u2500\u2500 \u566a\u58f0\u8fc7\u6ee4\uff08\u4f4e\u8d28\u91cf\u6587\u672c\u8bc6\u522b\uff09\n\u2514\u2500\u2500 Schema \u9a8c\u8bc1\uff08Pydantic\uff09\n\n\u6570\u636e\u7ba1\u9053\n\u251c\u2500\u2500 \u6279\u5904\u7406\uff08pandas / Polars / DuckDB\uff09\n\u251c\u2500\u2500 \u589e\u91cf\u540c\u6b65\uff08CDC \u6982\u5ff5\uff09\n\u2514\u2500\u2500 \u7b80\u5355 ETL\uff08Python \u811a\u672c \u2192 \u5b9a\u65f6\u4efb\u52a1\uff09\n```\n\n---\n\n### \u2463 \u5ba2\u6237\u6c9f\u901a\u4e0e\u54a8\u8be2\u80fd\u529b\n\n#### 4.1 \u4f1a\u8bae\u6280\u80fd\n\n- **\u9700\u6c42\u8bbf\u8c08**\uff1a\u7528\"5W1H + \u73b0\u5728\u600e\u4e48\u505a\"\u7ed3\u6784\uff0c\u4e0d\u8bf4 AI \u672f\u8bed\n- **\u6280\u672f\u65b9\u6848\u6c47\u62a5**\uff1a\u7ed3\u8bba\u5148\u884c\uff08Pyramid Principle\uff09\uff0c3 \u5206\u949f\u5185\u8ba9\u975e\u6280\u672f\u51b3\u7b56\u8005\u7406\u89e3\n- **\u963b\u529b\u5904\u7406**\uff1a\u542c\u61c2\"\u8fd9\u4e2a\u4e0d\u597d\u7528\"\u80cc\u540e\u7684\u771f\u5b9e\u8bc9\u6c42\n\n#### 4.2 \u6587\u6863\u80fd\u529b\n\n- \u4e00\u9875\u7eb8 POC \u62a5\u544a\uff08\u95ee\u9898 / \u65b9\u6848 / \u7ed3\u679c / \u4e0b\u4e00\u6b65\uff09\n- \u6280\u672f\u89c4\u683c\u4e66\uff08\u63a5\u53e3\u5b9a\u4e49\u3001\u6570\u636e\u6d41\u56fe\u3001\u5b89\u5168\u8bf4\u660e\uff09\n- \u8fd0\u8425\u624b\u518c\uff08\u975e\u6280\u672f\u4eba\u5458\u80fd\u770b\u61c2\u7684\u4f7f\u7528\u6307\u5357\uff09\n\n#### 4.3 \u9879\u76ee\u7ba1\u7406\n\n- \u8303\u56f4\u8513\u5ef6\uff08Scope Creep\uff09\u8bc6\u522b\u4e0e\u63a7\u5236\n- \u98ce\u9669\u524d\u7f6e\u66b4\u9732\uff08\u5b81\u53ef\u65e9\u8bf4\"\u505a\u4e0d\u5230\"\uff09\n- \u8de8\u56e2\u961f\u534f\u8c03\uff08IT / \u5b89\u5168 / \u4e1a\u52a1 / \u6cd5\u52a1\uff09\n\n---\n\n### \u2464 \u884c\u4e1a Know-How\n\nFDE \u4e0d\u9700\u8981\u6210\u4e3a\u884c\u4e1a\u4e13\u5bb6\uff0c\u4f46\u8981\u80fd\u5728 **2 \u5468\u5185\u5feb\u901f\u5efa\u7acb\u9886\u57df\u6a21\u578b**\u3002\n\n#### \u901a\u7528\u884c\u4e1a\u6846\u67b6\n\n```\n\u8fdb\u5165\u65b0\u884c\u4e1a\u7684 2 \u5468\u5b66\u4e60\u6cd5\nWeek 1\uff1a\n\u251c\u2500\u2500 \u8bfb\u884c\u4e1a\u5e74\u62a5/\u767d\u76ae\u4e66\uff082-3\u4efd\uff09\n\u251c\u2500\u2500 \u8ddf\u7528\u6237\u5750\u4e00\u5929\uff08\u89c2\u5bdf\uff0c\u4e0d\u53d1\u8a00\uff09\n\u251c\u2500\u2500 \u753b\u51fa\u6570\u636e\u6d41\u5411\u56fe\uff08\u4fe1\u606f\u4ece\u54ea\u6765\u3001\u6d41\u5230\u54ea\u3001\u8c01\u51b3\u7b56\uff09\n\u2514\u2500\u2500 \u627e\u51fa3\u4e2a\"\u6700\u6d6a\u8d39\u65f6\u95f4\u7684\u91cd\u590d\u52a8\u4f5c\"\n\nWeek 2\uff1a\n\u251c\u2500\u2500 \u4e86\u89e3\u76d1\u7ba1\u7ea6\u675f\uff08\u6570\u636e\u5408\u89c4\u7ea2\u7ebf\uff09\n\u251c\u2500\u2500 \u641e\u61c2 KPI \u4f53\u7cfb\uff08\u4e1a\u52a1\u65b9\u7528\u4ec0\u4e48\u6307\u6807\u8861\u91cf\u81ea\u5df1\uff09\n\u251c\u2500\u2500 \u8bc6\u522b\u51b3\u7b56\u94fe\uff08\u8c01\u662f champion\uff0c\u8c01\u662f gatekeeper\uff09\n\u2514\u2500\u2500 \u5efa\u7acb\u672f\u8bed\u8868\uff08\u907f\u514d\u9e21\u540c\u9e2d\u8bb2\uff09\n```\n\n#### \u9ad8\u4ef7\u503c\u843d\u5730\u884c\u4e1a\uff082025-2026 \u91cd\u70b9\uff09\n\n| \u884c\u4e1a | \u9ad8\u9891\u573a\u666f | \u5173\u952e\u5408\u89c4 |\n|------|----------|----------|\n| \u91d1\u878d | \u7814\u62a5\u6458\u8981\u3001\u5408\u89c4\u5ba1\u67e5\u3001\u5ba2\u670d | \u6570\u636e\u4e0d\u51fa\u5883\u3001\u53ef\u89e3\u91ca\u6027 |\n| \u533b\u7597 | \u75c5\u5386\u7ed3\u6784\u5316\u3001\u8f85\u52a9\u8bca\u65ad | HIPAA / \u56fd\u5185\u7b49\u4fdd |\n| \u6cd5\u5f8b | \u5408\u540c\u5ba1\u67e5\u3001\u6848\u4f8b\u68c0\u7d22 | \u5f8b\u6240\u5185\u7f51\u9694\u79bb |\n| \u5236\u9020 | \u5de5\u5355\u5904\u7406\u3001\u8bbe\u5907\u77e5\u8bc6\u5e93 | OT \u7f51\u7edc\u9694\u79bb |\n| \u653f\u52a1 | \u516c\u6587\u5904\u7406\u3001\u653f\u7b56\u95ee\u7b54 | \u79c1\u6709\u5316\u90e8\u7f72 |\n\n---\n\n### \u2465 \u63a8\u8350\u5de5\u5177\u6808\n\n#### \u5f00\u53d1\u73af\u5883\n\n| \u7c7b\u522b | \u5de5\u5177 | \u5907\u6ce8 |\n|------|------|------|\n| IDE | **Cursor** | Tab \u8865\u5168 + Agent \u6a21\u5f0f\uff0cFDE \u6807\u914d |\n| CLI AI | **Claude Code** | \u4ee3\u7801\u5e93\u7ea7\u522b\u7406\u89e3\uff0c\u9002\u5408\u73b0\u573a\u5feb\u901f\u6539\u9020 |\n| \u7248\u672c\u63a7\u5236 | GitHub / GitLab | PR \u9a71\u52a8\u5f00\u53d1 |\n| \u5bb9\u5668 | Docker + Docker Compose | \u73af\u5883\u4ea4\u4ed8\u6807\u51c6\u5316 |\n| API \u6d4b\u8bd5 | Bruno / Postman | |\n\n#### AI \u5f00\u53d1\n\n| \u7c7b\u522b | \u5de5\u5177 |\n|------|------|\n| LLM API | Anthropic Claude / OpenAI / \u672c\u5730 Ollama |\n| Agent \u6846\u67b6 | LangGraph\u3001CrewAI |\n| RAG | LlamaIndex\u3001\u81ea\u5efa\u7ba1\u9053 |\n| \u5411\u91cf\u5e93 | Qdrant\u3001pgvector |\n| Eval | RAGAS\u3001Braintrust |\n| Tracing | LangFuse\uff08\u5f00\u6e90\u53ef\u79c1\u6709\u5316\uff09|\n\n#### \u5ba2\u6237\u4ea4\u4ed8\n\n| \u7c7b\u522b | \u5de5\u5177 |\n|------|------|\n| \u5feb\u901f\u539f\u578b UI | Gradio\u3001Streamlit\u3001v0.dev |\n| \u6587\u6863 | Notion\u3001\u98de\u4e66\uff08\u5ba2\u6237\u7528\u5565\u7528\u5565\uff09|\n| \u6d41\u7a0b\u56fe | draw.io\u3001Miro |\n| \u6f14\u793a | Loom\uff08\u5f55\u5c4f\u5f02\u6b65\u6c47\u62a5\uff09|\n\n#### \u5b66\u4e60\u8d44\u6e90\n\n```\n\u57fa\u7840\u5c42\uff080\u2192Junior\uff09\n\u251c\u2500\u2500 fast.ai Practical Deep Learning\uff08\u6982\u5ff5\u5efa\u7acb\uff09\n\u251c\u2500\u2500 LangChain / LangGraph \u5b98\u65b9\u6587\u6863\uff08\u52a8\u624b\u4e3a\u4e3b\uff09\n\u251c\u2500\u2500 Andrej Karpathy \"Let's build GPT\" \u7cfb\u5217\n\u251c\u2500\u2500 DeepLearning.AI Short Courses\uff08RAG / Agent \u4e13\u9879\uff09\n\u2514\u2500\u2500 Anthropic \u5b98\u65b9 Prompt Engineering Guide\n\n\u8fdb\u9636\u5c42\uff08Junior\u2192Senior\uff09\n\u251c\u2500\u2500 \"Designing Machine Learning Systems\" - Chip Huyen\uff08\u7cfb\u7edf\u601d\u7ef4\uff09\n\u251c\u2500\u2500 Eugene Yan \u7684 Applied LLM \u535a\u5ba2\uff08\u5b9e\u6218\u6a21\u5f0f\uff09\n\u251c\u2500\u2500 Hamel Husain \u7684 LLM Finetuning \u7cfb\u5217\n\u251c\u2500\u2500 Simon Willison \u7684 llm \u5de5\u5177\u535a\u5ba2\n\u2514\u2500\u2500 Latent Space / Practical AI \u64ad\u5ba2\n\n\u65b9\u6cd5\u8bba\u5c42\n\u251c\u2500\u2500 \"The Consulting Bible\" - Alan Weiss\uff08\u54a8\u8be2\u5fc3\u6cd5\uff09\n\u251c\u2500\u2500 \"The Mom Test\" - Rob Fitzpatrick\uff08\u9700\u6c42\u8bbf\u8c08\uff09\n\u2514\u2500\u2500 Palantir Forward Deployed \u516c\u5f00\u62db\u8058 JD\uff08\u76f4\u63a5\u5bf9\u6807\uff09\n```\n\n---\n\n## \u4e09\u3001\u8fdb\u9636\u8def\u7ebf\uff1a0\u57fa\u7840 \u2192 Junior \u2192 Senior\n\n### \u9636\u6bb5\u4e00\uff1a0\u57fa\u7840\uff080-6\u4e2a\u6708\uff09\n\n**\u76ee\u6807**\uff1a\u80fd\u72ec\u7acb\u642d\u51fa\u53ef demo \u7684 AI \u5e94\u7528\n\n#### \u5b66\u4e60\u8def\u5f84\n\n```\nMonth 1-2\uff1aPython \u624e\u5b9e + LLM API \u5165\u95e8\n\u251c\u2500\u2500 \u638c\u63e1 Python async\u3001Pydantic\u3001FastAPI\n\u251c\u2500\u2500 \u80fd\u8c03\u7528 Claude / OpenAI API \u505a\u57fa\u7840\u5bf9\u8bdd\n\u2514\u2500\u2500 \u7406\u89e3 token\u3001\u4e0a\u4e0b\u6587\u7a97\u53e3\u3001system prompt \u6982\u5ff5\n\nMonth 3-4\uff1aRAG \u4ece\u96f6\u5230\u80fd\u8dd1\n\u251c\u2500\u2500 \u642d\u5b8c\u6574 RAG \u94fe\u8def\uff08PDF \u2192 \u5411\u91cf\u5e93 \u2192 \u95ee\u7b54\uff09\n\u251c\u2500\u2500 \u7406\u89e3 chunking \u7b56\u7565\u5dee\u5f02\u5bf9\u6548\u679c\u7684\u5f71\u54cd\n\u2514\u2500\u2500 \u7528 LangFuse \u770b\u5230\u6bcf\u6b21\u8c03\u7528\u7684 trace\n\nMonth 5-6\uff1aAgent \u5165\u95e8\n\u251c\u2500\u2500 \u7528 LangGraph \u5b9e\u73b0\u4e00\u4e2a\u5e26\u5de5\u5177\u8c03\u7528\u7684 agent\n\u251c\u2500\u2500 \u5199\u57fa\u7840 eval \u811a\u672c\uff08LLM-as-judge\uff09\n\u2514\u2500\u2500 \u628a\u4e00\u4e2a\u5b8c\u6574\u9879\u76ee\u7528 Docker \u4ea4\u4ed8\u51fa\u53bb\n```\n\n#### \u91cc\u7a0b\u7891\uff08\u53ef\u9a8c\u8bc1\uff09\n\n- [ ] \u72ec\u7acb\u642d\u5efa RAG \u5e94\u7528\uff0c\u652f\u6301\u4e0a\u4f20 PDF \u95ee\u7b54\uff0ceval \u51c6\u786e\u7387 > 70%\n- [ ] \u5b9e\u73b0\u4e00\u4e2a\u80fd\u8c03\u7528\u5916\u90e8 API \u7684 agent\uff0c\u6709\u5b8c\u6574\u7684 trace \u65e5\u5fd7\n- [ ] \u628a\u5e94\u7528\u6253\u5305\u6210 Docker\uff0c\u5199\u51fa\u975e\u6280\u672f\u4eba\u5458\u80fd\u770b\u61c2\u7684\u4f7f\u7528\u8bf4\u660e\n- [ ] GitHub \u4e0a\u6709 3 \u4e2a\u4ee5\u4e0a\u771f\u5b9e\u9879\u76ee\uff08\u4e0d\u662f\u6559\u7a0b clone\uff09\n\n---\n\n### \u9636\u6bb5\u4e8c\uff1aJunior FDE\uff086-18\u4e2a\u6708\uff09\n\n**\u76ee\u6807**\uff1a\u80fd\u5728\u5ba2\u6237\u73b0\u573a\u72ec\u7acb\u5b8c\u6210 POC \u2192 Pilot\uff0c\u6709\u4eba\u5e26\u7684\u60c5\u51b5\u4e0b\u63a8\u8fdb Production\n\n#### \u5b66\u4e60\u8def\u5f84\n\n```\n\u6280\u672f\u6df1\u5316\n\u251c\u2500\u2500 LangGraph \u590d\u6742 workflow\uff08\u6761\u4ef6\u8def\u7531\u3001\u5b50\u56fe\u3001\u6301\u4e45\u5316\uff09\n\u251c\u2500\u2500 Eval \u4f53\u7cfb\u5efa\u7acb\uff08GT \u6807\u6ce8 + \u81ea\u52a8\u5316\u56de\u5f52\uff09\n\u251c\u2500\u2500 \u591a\u79df\u6237 RAG\uff08\u5411\u91cf\u5e93\u9694\u79bb\u3001\u6743\u9650\u63a7\u5236\uff09\n\u251c\u2500\u2500 Prompt \u7248\u672c\u7ba1\u7406\uff08\u50cf\u4ee3\u7801\u4e00\u6837\u7ba1\u7406\uff09\n\u2514\u2500\u2500 \u6210\u672c\u4f18\u5316\uff08\u7f13\u5b58\u3001\u6a21\u578b\u964d\u7ea7\u7b56\u7565\uff09\n\n\u65b9\u6cd5\u8bba\u5efa\u7acb\n\u251c\u2500\u2500 \u72ec\u7acb\u5b8c\u6210\u5ba2\u6237\u9700\u6c42\u8bbf\u8c08\uff085\u6b21\u4ee5\u4e0a\uff09\n\u251c\u2500\u2500 \u8f93\u51fa\u8fc7 POC \u62a5\u544a\u5e76\u83b7\u5f97\u7eed\u7ea6\n\u2514\u2500\u2500 \u906d\u9047\u8fc7\"\u6570\u636e\u62ff\u4e0d\u5230\"\u56f0\u5883\u5e76\u89e3\u51b3\n```\n\n#### \u91cc\u7a0b\u7891\uff08\u53ef\u9a8c\u8bc1\uff09\n\n- [ ] \u72ec\u7acb\u5b8c\u6210 1 \u4e2a\u4ece\u9700\u6c42 \u2192 \u4e0a\u7ebf\u7684\u5b8c\u6574\u9879\u76ee\uff08\u771f\u5b9e\u5ba2\u6237\uff0c\u975e\u5185\u90e8\uff09\n- [ ] \u5efa\u7acb eval \u57fa\u7ebf\uff0c\u5e76\u901a\u8fc7 prompt \u8fed\u4ee3\u628a\u67d0\u6307\u6807\u63d0\u5347 > 20%\n- [ ] \u80fd\u5728 30 \u5206\u949f\u5185\u5411\u975e\u6280\u672f\u9ad8\u7ba1\u6c47\u62a5\u9879\u76ee\u4ef7\u503c\uff08\u6709\u6c47\u62a5\u8bb0\u5f55\uff09\n- [ ] \u5904\u7406\u8fc7\u751f\u4ea7\u73af\u5883\u4e8b\u6545\u5e76\u5199\u4e86 post-mortem\n- [ ] \u80fd\u72ec\u7acb\u8bc4\u4f30\u4e00\u4e2a\u65b0\u884c\u4e1a\u843d\u5730\u53ef\u884c\u6027\uff082\u5468\u5185\u51fa\u62a5\u544a\uff09\n\n---\n\n### \u9636\u6bb5\u4e09\uff1aSenior FDE\uff0818\u4e2a\u6708+\uff09\n\n**\u76ee\u6807**\uff1a\u80fd\u4e3b\u5bfc\u591a\u5ba2\u6237\u5e76\u884c\u3001\u5b9a\u4e49\u65b9\u6cd5\u8bba\u3001\u8f93\u51fa\u53ef\u590d\u7528\u6846\u67b6\u3001\u57f9\u517b Junior\n\n#### \u7279\u5f81\n\n```\n\u6280\u672f\u9886\u5bfc\u529b\n\u251c\u2500\u2500 \u8bbe\u8ba1\u8fc7\u591a\u79df\u6237\u3001\u591a\u6a21\u578b\u7684\u751f\u4ea7\u7ea7 agent \u7cfb\u7edf\n\u251c\u2500\u2500 \u5efa\u7acb\u8fc7\u56e2\u961f\u7ea7 eval \u6846\u67b6\uff08\u4e0d\u53ea\u662f\u81ea\u5df1\u7528\uff09\n\u251c\u2500\u2500 \u5bf9\u6210\u672c/\u5ef6\u8fdf/\u8d28\u91cf\u7684\u4e09\u89d2\u53d6\u820d\u6709\u7cfb\u7edf\u6027\u5224\u65ad\n\u2514\u2500\u2500 \u80fd\u8bc4\u4f30\u5e76\u5f15\u5165\u65b0\u6280\u672f\uff08\u800c\u4e0d\u53ea\u662f\u8ddf\u98ce\uff09\n\n\u4e1a\u52a1\u9886\u5bfc\u529b\n\u251c\u2500\u2500 \u80fd\u8bc6\u522b\u54ea\u4e9b\u9700\u6c42\u503c\u5f97\u505a\u3001\u54ea\u4e9b\u662f\u9677\u9631\n\u251c\u2500\u2500 \u80fd\u5728\u5ba2\u6237\u5185\u90e8\u627e\u5230 champion \u5e76\u57f9\u517b\u5173\u7cfb\n\u251c\u2500\u2500 \u628a 1 \u4e2a\u5ba2\u6237\u7684\u89e3\u51b3\u65b9\u6848\u62bd\u8c61\u6210\u884c\u4e1a\u901a\u7528\u4ea7\u54c1\n\u2514\u2500\u2500 \u57f9\u517b\u8fc7\u81f3\u5c11 2 \u540d Junior FDE\n\n\u65b9\u6cd5\u8bba\u8f93\u51fa\n\u251c\u2500\u2500 \u6709\u5185\u90e8 playbook\uff08\u53ef\u590d\u7528\u7684\u843d\u5730\u65b9\u6cd5\u8bba\u6587\u6863\uff09\n\u251c\u2500\u2500 \u5bf9\u5916\u6709\u5206\u4eab\uff08\u535a\u5ba2/\u6f14\u8bb2/\u5f00\u6e90\uff09\n\u2514\u2500\u2500 \u80fd\u5b9a\u4e49\u65b0\u573a\u666f\u7684 eval \u6807\u51c6\uff08\u65e0\u53c2\u8003\u7b54\u6848\u65f6\uff09\n```\n\n#### \u91cc\u7a0b\u7891\uff08\u53ef\u9a8c\u8bc1\uff09\n\n- [ ] \u540c\u65f6\u7ba1\u7406 3+ \u5ba2\u6237\u9879\u76ee\uff0c\u65e0\u91cd\u5927\u4e8b\u6545\n- [ ] \u8f93\u51fa 1 \u4efd\u884c\u4e1a\u843d\u5730 Playbook\uff08\u5185\u90e8\u53ef\u4f20\u627f\uff09\n- [ ] \u4e3b\u5bfc\u8fc7\u4e00\u6b21\u4ece POC \u5230\u7eed\u7ea6\u6269\u5c55\u7684\u5b8c\u6574\u5546\u52a1-\u6280\u672f\u8054\u5408\u8c08\u5224\n- [ ] \u6709\u516c\u5f00\u7684\u6280\u672f\u8f93\u51fa\uff08\u6587\u7ae0/\u5f00\u6e90/\u6f14\u8bb2\uff0c\u5916\u90e8\u80fd Google \u5230\uff09\n- [ ] \u5e26\u8fc7\u7684 Junior \u80fd\u72ec\u7acb\u4ea4\u4ed8 POC\n\n---\n\n## \u56db\u3001\u4e00\u53e5\u8bdd\u6838\u5fc3\u5224\u65ad\u6807\u51c6\n\n```\nJunior\uff1a\u80fd\u628a demo \u53d8\u6210\u53ef\u7528\u7684\u4e1c\u897f\nSenior\uff1a\u80fd\u628a\u53ef\u7528\u7684\u4e1c\u897f\u53d8\u6210\u5ba2\u6237\u7eed\u7ea6\u7684\u7406\u7531\nTop FDE\uff1a\u80fd\u628a\u7eed\u7ea6\u7684\u7406\u7531\u53d8\u6210\u53ef\u590d\u5236\u7684\u4ea7\u54c1\n```");
+</script><script src="assets/anim.js"></script></body></html>

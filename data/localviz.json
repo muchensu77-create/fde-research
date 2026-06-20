@@ -1,0 +1,202 @@
+[
+  {
+    "metric": "美国/硅谷 FDE 相关公司赛道分布（本报告收录）",
+    "chart_type": "bar",
+    "unit": "家",
+    "x_label": "赛道",
+    "y_label": "公司数",
+    "series": [
+      {
+        "name": "公司数",
+        "points": [
+          {
+            "label": "AI咨询转型 / 企业AI落地",
+            "value": 3
+          },
+          {
+            "label": "基础模型厂商官方FDE团队",
+            "value": 2
+          },
+          {
+            "label": "法律AI落地（合同审阅/企业法务）",
+            "value": 2
+          },
+          {
+            "label": "基础模型厂商官方FDE/企业AI落地合资体",
+            "value": 1
+          },
+          {
+            "label": "基础模型厂商+SI联合FDE体系",
+            "value": 1
+          },
+          {
+            "label": "云平台官方企业AI部署/FDE团队",
+            "value": 1
+          },
+          {
+            "label": "Palantir系数据落地/FDE模式原创者",
+            "value": 1
+          },
+          {
+            "label": "企业专属基础模型厂商/主权AI落地",
+            "value": 1
+          },
+          {
+            "label": "开源/欧洲主权AI基础模型厂商",
+            "value": 1
+          },
+          {
+            "label": "基础模型厂商企业版部署",
+            "value": 1
+          },
+          {
+            "label": "其他",
+            "value": 99
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "point": "本报告收录去重后 113 家美国公司，按 agent 标注的赛道字段统计",
+        "source": "本报告自有数据（companies-us）",
+        "credibility": "confirmed"
+      }
+    ],
+    "insight": "本报告共收录 113 家美国/硅谷 FDE 相关公司，赛道分布反映了企业 AI 落地的供给结构——客服/CX、垂直行业 AI、数据/agent 基建是密度最高的几条赛道。",
+    "caveat": "赛道字段由调研 agent 标注，粒度不完全统一（部分公司跨赛道），此处按主赛道归类，仅反映本报告收录样本的结构，非全市场普查。"
+  },
+  {
+    "metric": "中国 FDE/企业AI落地公司赛道分布（本报告收录）",
+    "chart_type": "bar",
+    "unit": "家",
+    "x_label": "赛道",
+    "y_label": "公司数",
+    "series": [
+      {
+        "name": "公司数",
+        "points": [
+          {
+            "label": "金融AI落地",
+            "value": 3
+          },
+          {
+            "label": "医疗AI落地",
+            "value": 2
+          },
+          {
+            "label": "语音/对话AI",
+            "value": 2
+          },
+          {
+            "label": "基础大模型 / 企业私有化部署",
+            "value": 1
+          },
+          {
+            "label": "基础大模型 / 企业API与Agent定制",
+            "value": 1
+          },
+          {
+            "label": "基础大模型 / 多模态 / 企业Agent平台",
+            "value": 1
+          },
+          {
+            "label": "基础大模型 / 垂直医疗AI落地",
+            "value": 1
+          },
+          {
+            "label": "基础大模型 / 智能终端Agent落地",
+            "value": 1
+          },
+          {
+            "label": "开源基础大模型 / 私有化部署生态",
+            "value": 1
+          },
+          {
+            "label": "基础大模型 / 企业AI Infra + 应用交付",
+            "value": 1
+          },
+          {
+            "label": "其他",
+            "value": 48
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "point": "本报告收录去重后 62 家中国公司，按赛道字段统计",
+        "source": "本报告自有数据（companies-cn）",
+        "credibility": "confirmed"
+      }
+    ],
+    "insight": "本报告收录 62 家中国公司，赛道分布显示中国市场以模型厂/大厂平台、Agent/RPA 服务商、垂直行业落地为主，且多用「交付/驻场/私有化」而非「FDE」称谓。",
+    "caveat": "同上，赛道粒度不完全统一，反映本报告样本结构。"
+  },
+  {
+    "metric": "本报告数据可信度分布（公司+案例条目）",
+    "chart_type": "pie",
+    "unit": "条",
+    "series": [
+      {
+        "name": "条目数",
+        "points": [
+          {
+            "label": "已证实",
+            "value": 197
+          },
+          {
+            "label": "有报道",
+            "value": 28
+          },
+          {
+            "label": "推断",
+            "value": 2
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "point": "对 175 家公司 + 52 个案例共 227 条目的可信度标注统计",
+        "source": "本报告自有数据",
+        "credibility": "confirmed"
+      }
+    ],
+    "insight": "透明披露本报告的数据可信度构成——多数条目为「已证实/有报道」，但仍有相当比例为「推断」（尤其 ROI/估值/客户数）。这张图本身就是对全报告「数据可信度分级」承诺的量化兑现。",
+    "caveat": "可信度由调研 agent 自评，已证实=多源/官方，有报道=单一媒体，推断=基于公开信息合理估算。引用具体数字前请按标签核验。"
+  },
+  {
+    "metric": "100 个行业 AI 落地适用度分布",
+    "chart_type": "pie",
+    "unit": "个行业",
+    "series": [
+      {
+        "name": "行业数",
+        "points": [
+          {
+            "label": "高",
+            "value": 42
+          },
+          {
+            "label": "中",
+            "value": 48
+          },
+          {
+            "label": "低",
+            "value": 10
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "point": "对 100 个行业的 AI 落地适用度（高/中/低）评估统计",
+        "source": "本报告自有数据（industries）",
+        "credibility": "reported"
+      }
+    ],
+    "insight": "本报告评估的 100 个行业中，多数为「中-高」适用度——印证 AI 落地正从科技/金融向全行业扩散，但适用度仍受数据成熟度与合规约束分化。",
+    "caveat": "适用度为基于公开信息的方向性判断，非定量测算。"
+  }
+]
