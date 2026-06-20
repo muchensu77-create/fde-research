@@ -5,6 +5,17 @@
 <link rel="stylesheet" href="assets/style.css"><script src="assets/marked.min.js"></script><style>html.js .kdom,html.js .tablewrap,html.js .note,html.js .think,html.js .wrap h2,html.js .archd{opacity:1!important;transform:none!important}</style><style>
 /* 电路图 */
 .circuit{background:var(--paper);border:1px solid var(--line2);border-radius:18px;padding:22px;margin:18px 0;box-shadow:var(--shadow)}
+@media(max-width:600px){
+  .circuit{padding:15px}
+  .pnode .pn-tap{display:none!important}
+  .pnode .go,.gnode .go{position:static!important;display:inline-block;margin-left:5px;top:auto!important;right:auto!important;opacity:.55}
+  .pnode,.gnode{padding:11px 12px}
+  .pnode{text-align:left}
+  .bus{gap:6px}.bus .wire{min-width:10px}
+  .dash{padding:14px 16px;gap:14px}
+  .gauge{width:78px;height:78px}.gauge::before{width:58px;height:58px}.gauge b{font-size:17px}
+  .dash-info{min-width:100%}.di-1 b{font-size:20px}
+}
 .cir-row{margin:14px 0}
 .cir-tag{display:inline-block;font-size:12.5px;font-weight:700;color:#fff;background:var(--cat);padding:4px 12px;border-radius:980px;margin-bottom:12px}
 .bus{display:flex;align-items:center;flex-wrap:wrap;gap:4px}

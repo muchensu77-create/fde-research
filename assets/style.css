@@ -319,10 +319,10 @@ html.js .think,html.js .quote,html.js .kdom,html.js .mdbox,html.js .wrap h2,html
   html{-webkit-text-size-adjust:100%}
   body{font-size:16px}
   /* 导航：单行横向滚动，保留全部 16 项；品牌固定在左 */
-  .nav-inner{height:auto;min-height:48px;padding:7px 10px;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;gap:1px;scrollbar-width:none}
+  .nav-inner{height:auto;min-height:46px;padding:6px 12px;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;gap:4px;scrollbar-width:none}
   .nav-inner::-webkit-scrollbar{display:none}
-  .nav .brand{position:sticky;left:0;background:linear-gradient(90deg,rgba(245,244,241,.98) 80%,transparent);padding:4px 10px 4px 2px;z-index:2;font-size:13.5px;margin-right:4px}
-  .nav a{white-space:nowrap;font-size:13px;padding:6px 9px;flex:none}
+  .nav .brand{flex:none;white-space:nowrap;font-size:13px;margin-right:10px}
+  .nav a{white-space:nowrap;font-size:13px;padding:6px 10px;flex:none;border-radius:8px}
   /* 容器与英雄区 */
   .wrap{padding:0 14px 70px}
   .hero{margin:0 -14px 44px;padding:62px 16px 46px;border-radius:0}
@@ -356,6 +356,13 @@ html.js .think,html.js .quote,html.js .kdom,html.js .mdbox,html.js .wrap h2,html
   .chip{padding:7px 13px;font-size:12px}
   a,button,summary{-webkit-tap-highlight-color:rgba(47,106,224,.14)}
   .cc-search{font-size:15px}
+  /* 修复 sticky 渐变下方内容透出重叠 */
+  .cc-tools{background:var(--bg)!important;padding-bottom:10px;box-shadow:0 6px 8px -7px rgba(40,38,34,.18)}
+  /* 防伪元素图标(竖条/方块)与标题文字重叠：允许换行、图标不收缩 */
+  .reads-h,.enrich-h,.extra-h,h2.cat-h,.cat-h{flex-wrap:wrap;row-gap:3px}
+  .reads-h::before,.enrich-h::before,.extra-h::before,h2.cat-h::before{flex:none}
+  /* 内联 SVG 信息图/电路图不溢出重叠 */
+  .wrap svg:not(.mermaid svg){max-width:100%;height:auto}
 }
 /* ===================== 响应式 · 小屏 (≤400px) ===================== */
 @media(max-width:400px){
